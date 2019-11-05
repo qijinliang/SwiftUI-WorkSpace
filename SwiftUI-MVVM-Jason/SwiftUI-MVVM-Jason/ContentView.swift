@@ -31,11 +31,11 @@ class CoursesViewModel: ObservableObject {
         guard let url = URL(string: apiUrl) else { return }
         
         URLSession.shared.dataTask(with: url) {(data, resp, err) in
-            
             DispatchQueue.main.async {
                 do {
                     //模型转换
                     self.courses = try JSONDecoder().decode([Course].self, from:data!)
+                    print("打印JSONDecoder->",try JSONDecoder().decode([Course].self, from: data!))
                 } catch {
                     
                 }
@@ -76,7 +76,7 @@ struct ContentView: View {
             }.navigationBarTitle("Courses")
             //导航栏按钮的点击事件
             .navigationBarItems(trailing: Button(action: {
-                print("Fetching json data")
+                print("请求成功")
                 //请求网络
                 self.coursesVM.fetchCourses()
                 
