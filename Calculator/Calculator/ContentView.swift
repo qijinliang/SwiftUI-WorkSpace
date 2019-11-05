@@ -8,13 +8,38 @@
 
 import SwiftUI
 
+//注释解释
+
+//: .font(.title)
+//将文本字体设置为font.title，除了title以外，还定义一系列字体
+  //比如.headline .body等，具体按数值指定字号的话，可以使用.font(.system(size:48))方式
+  //自定义字体.font(.custom("Copperplate",size:48))
+
 struct ContentView: View {
     var body: some View {
-        Text("+")
-            .background(Color.orange)
-            .font(.title)
-            .padding()
-            .foregroundColor(.white)
+    
+        HStack() {
+            Text("+")
+                .background(Color.orange)
+                .font(.title)
+                .padding()
+                .foregroundColor(.white)
+            Text("+")
+                .background(Color.orange)
+                .font(.title)
+                .padding()
+                .foregroundColor(.white)
+            Text("+")
+                .background(Color.orange)
+                .font(.title)
+                .padding()
+                .foregroundColor(.white)
+            Text("+")
+                .background(Color.orange)
+                .font(.title)
+                .padding()
+                .foregroundColor(.white)
+        }
     }
 }
 
