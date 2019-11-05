@@ -69,7 +69,7 @@ struct ContentView: View {
                         
                         HStack {
                             VStack(alignment: .leading) {
-                                Text("Price: $\(course.price)")
+                                Text("设备UUID: $\(course.id)")
                                 .padding(.bottom, 5)
                                 Text("Price: $\(course.price)")
                                 .padding(.bottom, 5)

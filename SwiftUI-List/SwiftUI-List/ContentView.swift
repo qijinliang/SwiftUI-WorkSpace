@@ -26,6 +26,8 @@ struct PeopleList: View {
         .init(firstName: "Steve", lastName: "Jobs",image:#imageLiteral(resourceName: "jobs"),jobTitle:"Founder of Apple")
     ]
     
+    @State var isPresentingAddModal = false
+    
     var body: some View {
         
         NavigationView {
@@ -34,7 +36,48 @@ struct PeopleList: View {
                     self.people.removeAll( where: {$0.id == person.id } )
                 })
             }.navigationBarTitle("People")
+                .navigationBarItems(trailing: Button(action: {
+                        self.isPresentingAddModal.toggle()
+                    }, label: {
+                        Text("Add")
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding(.vertical, 8)
+                            .padding(.horizontal, 8)
+                            .background(Color.green)
+                            .cornerRadius(4)
+                    }))
+                .sheet(isPresented: $isPresentingAddModal, content: {
+                PersonFrom(isPresented: self.$isPresentingAddModal)
+            })
         }
+    }
+}
+
+
+struct PersonFrom: View {
+    
+    @Binding var isPresented: Bool
+    
+    var body: some View {
+        VStack (alignment: .leading, spacing: 16) {
+            
+            Button(action: {
+                self.isPresented = false
+            }, label: {
+                HStack {
+                    Spacer()
+                        Text("Cancel")
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding(.vertical,12)
+                        Spacer()
+                }
+            })
+            .background(Color.red)
+            .cornerRadius(5)
+            Spacer()
+        }.padding(.all, 20)
     }
 }
 
