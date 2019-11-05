@@ -66,8 +66,20 @@ struct ContentView: View {
                             Spacer()
                             
                         }.padding(.bottom, 4)
-                        Text("Price: $\(course.price)")
-                        .padding(.bottom, 16)
+                        
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text("Price: $\(course.price)")
+                                .padding(.bottom, 5)
+                                Text("Price: $\(course.price)")
+                                .padding(.bottom, 5)
+                            }
+           
+                            Spacer()
+                            Text("作者: 最看红尘这场梦").foregroundColor(Color.red).font(.system(size: 14))
+                            .padding(.bottom, 16)
+                        }.padding(.bottom, 4)
+
                     }
                 }.padding(.horizontal, 22)
                     .padding(.top, 8)
