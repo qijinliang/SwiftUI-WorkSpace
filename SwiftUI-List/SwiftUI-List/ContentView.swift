@@ -60,6 +60,7 @@ struct PeopleList: View {
 struct PersonFrom: View {
     
     @State var isShowingImagePicker = false
+    @State var selectedImage = UIImage()
     
     var didAddPerson: (Person) -> ()
     
@@ -77,7 +78,7 @@ struct PersonFrom: View {
             
             HStack{
                 Spacer()
-                Image(uiImage: UIImage())
+                Image(uiImage: selectedImage)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 80, height: 80)
@@ -101,7 +102,7 @@ struct PersonFrom: View {
                     Spacer()
                 }
                 }).sheet(isPresented: $isShowingImagePicker, content: {
-                    HBybridImagePickerController()
+                    HBybridImagePickerController(imageFormPicker: self.$selectedImage)
                 })
             
             HStack(spacing: 16){
@@ -121,8 +122,7 @@ struct PersonFrom: View {
             }
             
             Button(action: {
-                let person = Person(firstName: self.firstName, lastName: self.lastName, image: UIImage(named: "jobs")!, jobTitle: "")
-                print(self.firstName,self.lastName)
+                let person = Person(firstName: self.firstName, lastName: self.lastName, image: self.selectedImage, jobTitle: "")
                 self.didAddPerson(person)
                 self.isPresented = false
             }, label: {
@@ -159,13 +159,36 @@ struct PersonFrom: View {
 }
 
 struct HBybridImagePickerController: UIViewControllerRepresentable {
-    func makeUIViewController(context: UIViewControllerRepresentableContext<HBybridImagePickerController>) -> UIImagePickerController {
-        let imagePicker = UIImagePickerController()
-        return imagePicker
-    }
+    
+    @Binding var imageFormPicker: UIImage
     
     func updateUIViewController(_ uiViewController: UIImagePickerController, context: UIViewControllerRepresentableContext<HBybridImagePickerController>) {
         
+    }
+    
+    func makeCoordinator() -> HBybridImagePickerController.Coordinator {
+        return Coordinator(self)
+    }
+    func makeUIViewController(context: UIViewControllerRepresentableContext<HBybridImagePickerController>) -> UIImagePickerController {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = context.coordinator
+        return imagePicker
+    }
+    
+    
+    class Coordinator: NSObject, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+        
+        var parent: HBybridImagePickerController
+        
+        init(_ parent: HBybridImagePickerController) {
+            self.parent = parent
+        }
+        
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            let selectedImage = info[.originalImage] as! UIImage
+            parent.imageFormPicker = selectedImage
+            picker.dismiss(animated: true)
+        }
     }
 }
 
