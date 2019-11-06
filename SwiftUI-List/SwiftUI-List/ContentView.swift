@@ -48,7 +48,9 @@ struct PeopleList: View {
                             .cornerRadius(4)
                     }))
                 .sheet(isPresented: $isPresentingAddModal, content: {
-                PersonFrom(isPresented: self.$isPresentingAddModal)
+                   PersonFrom(didAddPerson: {
+                    p in self.people.append(p)
+                   }, isPresented: self.$isPresentingAddModal)
             })
         }
     }
@@ -57,10 +59,54 @@ struct PeopleList: View {
 
 struct PersonFrom: View {
     
+    var didAddPerson: (Person) -> ()
+    
     @Binding var isPresented: Bool
+    
+    @State var firstName: String = ""
+    @State var lastName: String = ""
     
     var body: some View {
         VStack (alignment: .leading, spacing: 16) {
+            
+            Text("Create Person")
+                .fontWeight(.heavy)
+                .font(.system(size: 32))
+            
+            HStack(spacing: 16){
+                Text("First Name")
+                TextField("First Name", text: $firstName)
+                    .padding(.all, 12)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 4).strokeBorder(style: StrokeStyle(lineWidth: 1)).foregroundColor(Color(.sRGB,red: 0.1,green: 0.1,blue: 0.1,opacity: 0.2)))
+            }
+            
+            HStack(spacing: 16){
+                Text("Last Name")
+                TextField("Last Name", text: $lastName)
+                    .padding(.all, 12)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 4).strokeBorder(style: StrokeStyle(lineWidth: 1)).foregroundColor(Color(.sRGB,red: 0.1,green: 0.1,blue: 0.1,opacity: 0.2)))
+            }
+            
+            Button(action: {
+                let person = Person(firstName: self.firstName, lastName: self.lastName, image: UIImage(named: "jobs")!, jobTitle: "")
+                print(self.firstName,self.lastName)
+                self.didAddPerson(person)
+                self.isPresented = false
+            }, label: {
+                HStack {
+                    Spacer()
+                    Text("Add")
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding(.vertical, 12)
+                    
+                    Spacer()
+                }
+            })
+                .background(Color.green)
+                .cornerRadius(4)
             
             Button(action: {
                 self.isPresented = false
@@ -75,7 +121,7 @@ struct PersonFrom: View {
                 }
             })
             .background(Color.red)
-            .cornerRadius(5)
+            .cornerRadius(4)
             Spacer()
         }.padding(.all, 20)
     }
