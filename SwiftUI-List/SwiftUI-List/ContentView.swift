@@ -59,6 +59,8 @@ struct PeopleList: View {
 
 struct PersonFrom: View {
     
+    @State var isShowingImagePicker = false
+    
     var didAddPerson: (Person) -> ()
     
     @Binding var isPresented: Bool
@@ -72,6 +74,35 @@ struct PersonFrom: View {
             Text("Create Person")
                 .fontWeight(.heavy)
                 .font(.system(size: 32))
+            
+            HStack{
+                Spacer()
+                Image(uiImage: UIImage())
+                .resizable()
+                .scaledToFill()
+                .frame(width: 80, height: 80)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 80).strokeBorder(style: StrokeStyle(lineWidth: 2)).foregroundColor(Color(.sRGB,red: 0.1,green: 0.1,blue: 0.1,opacity: 1)))
+                .cornerRadius(80)
+                Spacer()
+            }
+            
+            Button(action: {
+                self.isShowingImagePicker.toggle()
+            }, label: {
+                HStack {
+                    Spacer()
+                    Text("Select Image")
+                        .fontWeight(.bold)
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .padding(.all, 8)
+                        .cornerRadius(4)
+                    Spacer()
+                }
+                }).sheet(isPresented: $isShowingImagePicker, content: {
+                    HBybridImagePickerController()
+                })
             
             HStack(spacing: 16){
                 Text("First Name")
@@ -124,6 +155,17 @@ struct PersonFrom: View {
             .cornerRadius(4)
             Spacer()
         }.padding(.all, 20)
+    }
+}
+
+struct HBybridImagePickerController: UIViewControllerRepresentable {
+    func makeUIViewController(context: UIViewControllerRepresentableContext<HBybridImagePickerController>) -> UIImagePickerController {
+        let imagePicker = UIImagePickerController()
+        return imagePicker
+    }
+    
+    func updateUIViewController(_ uiViewController: UIImagePickerController, context: UIViewControllerRepresentableContext<HBybridImagePickerController>) {
+        
     }
 }
 
