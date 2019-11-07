@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Calculator
+//  SwiftUI-Calculator
 //
-//  Created by Jerry on 2019/11/5.
+//  Created by Jerry on 2019/11/6.
 //  Copyright © 2019 QijinLiang. All rights reserved.
 //
 

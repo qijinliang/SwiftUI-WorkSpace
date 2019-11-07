@@ -13,6 +13,9 @@ struct ContentView: View {
         
         VStack() {
             HStack {
+                Button(action: {
+                    
+                }, label: {
                 Text("Hello World")
                     .foregroundColor(.white)
                     .font(.system(size: 16))
@@ -22,12 +25,12 @@ struct ContentView: View {
                     .overlay(
                         RoundedRectangle(cornerRadius: 3)
                         .strokeBorder(style: StrokeStyle(lineWidth: 1))
-                            .foregroundColor(Color(.sRGB, red: 0.1,green: 0.1,blue: 0.1,opacity: 1))
+                            .foregroundColor(Color(.sRGB, red: 0.1,green: 0.1,blue: 0.1,opacity: 1)))
                         .cornerRadius(4)
                             .shadow(color: .init(.sRGB, red: 0,green: 0,blue: 0,opacity: 0.5), radius: 5, x: 0, y: 0)
-                        )
-                    }
-                }
+                })
+            }
+        }
     }
 }
 
