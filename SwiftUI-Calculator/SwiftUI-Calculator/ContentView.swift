@@ -8,6 +8,20 @@
 
 import SwiftUI
 
+class CalculatorViewModel: ObservableObject {
+    @Published var display = CalculatorViewModel.defaultDisplay
+    var pressedOperator = ""
+    
+    static let defaultDisplay = "0"
+    
+    var firstExpression = ""
+    var secondExpression = ""
+    
+    func receiveButtonPress(button: CalculatorButton) {
+        display = button.title
+    }
+}
+
 struct CalculatorButton: Identifiable,Hashable {
     let id = UUID()
     let title: String
@@ -20,6 +34,8 @@ extension Color {
 }
 
 struct CalculatorView: View {
+    
+    @State var displayText = "0"
     
     let buttons: [[CalculatorButton]] = [
         [.init(title: "AC", color: .lightGray),
@@ -46,17 +62,30 @@ struct CalculatorView: View {
     
     let spacing: CGFloat = 12
     
+    @ObservedObject var calculatorVM = CalculatorViewModel()
+    
     var body: some View {
         GeometryReader { geometry in
             ZStack {
                 Color.black.edgesIgnoringSafeArea(.all)
                 VStack(spacing: self.spacing) {
                     Spacer()
-                    ForEach(self.buttons, id: \.self) { row in
-                            CalculatorButtonsRow(screenWidth: geometry.size.width, spacing: self.spacing, buttons: row)
-                        }
+                    
+                    HStack {
+                        Spacer()
+                        Text(self.calculatorVM.display)
+                            .foregroundColor(.white)
+                            .font(.system(size: 74))
+                            .multilineTextAlignment(.trailing)
+
+                    }.padding(.horizontal,self.spacing)
+                        ForEach(self.buttons, id: \.self) { row in
+                            CalculatorButtonsRow(screenWidth: geometry.size.width, spacing: self.spacing, buttons: row, didTapButton: { calcButton in
+                                self.calculatorVM.receiveButtonPress(button: calcButton)
+                        })
                     }
                 }
+            }
         }
     }
 }
@@ -73,15 +102,21 @@ struct CalculatorButtonsRow: View {
         (self.screenWidth - self.spacing * 5) / 4 * 2 + self.spacing
     }
     
+    var didTapButton: (CalculatorButton) -> ()
+    
     var body: some View {
         HStack(spacing: self.spacing) {
            ForEach(self.buttons) {button in
-               Text(button.title)
-                .font(.system(size: 28))
-                .foregroundColor(.white)
-                .frame(width: self.getButtonWidth(title: button.title), height: (self.screenWidth - self.spacing * 5) / 4)
-                .background(button.color)
-                .cornerRadius(100)
+            Button(action: {
+                self.didTapButton(button)
+            }, label:{
+                Text(button.title)
+                 .font(.system(size: 28))
+                 .foregroundColor(.white)
+                 .frame(width: self.getButtonWidth(title: button.title), height: (self.screenWidth - self.spacing * 5) / 4)
+                 .background(button.color)
+                 .cornerRadius(100)
+                })
                }
            }
        }
