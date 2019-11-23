@@ -13,6 +13,7 @@
 		C4207F3D2372F0950095E768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4207F3C2372F0950095E768 /* Assets.xcassets */; };
 		C4207F402372F0950095E768 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4207F3F2372F0950095E768 /* Preview Assets.xcassets */; };
 		C4207F432372F0950095E768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4207F412372F0950095E768 /* LaunchScreen.storyboard */; };
+		C47832A5238904AF004F3995 /* CalculatorButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47832A4238904AF004F3995 /* CalculatorButtonItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C4207F3F2372F0950095E768 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4207F422372F0950095E768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4207F442372F0950095E768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C47832A4238904AF004F3995 /* CalculatorButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButtonItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				C4207F412372F0950095E768 /* LaunchScreen.storyboard */,
 				C4207F442372F0950095E768 /* Info.plist */,
 				C4207F3E2372F0950095E768 /* Preview Content */,
+				C47832A4238904AF004F3995 /* CalculatorButtonItem.swift */,
 			);
 			path = "SwiftUI-Calculator";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4207F372372F0930095E768 /* AppDelegate.swift in Sources */,
+				C47832A5238904AF004F3995 /* CalculatorButtonItem.swift in Sources */,
 				C4207F392372F0930095E768 /* SceneDelegate.swift in Sources */,
 				C4207F3B2372F0930095E768 /* ContentView.swift in Sources */,
 			);
