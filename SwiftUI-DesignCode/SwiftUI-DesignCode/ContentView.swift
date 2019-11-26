@@ -23,7 +23,7 @@ struct ContentView: View {
                 .blur(radius: show ? 20 : 0)
                 .animation(.default)
             
-            CardButtomView()
+            CardBottomView()
                 .blur(radius: show ? 20 : 0)
                 .animation(.default)
             
@@ -49,6 +49,24 @@ struct ContentView: View {
                 .offset(x: viewState.width, y: viewState.height)
             
             CertificateView()
+                .offset(x: viewState.width, y: viewState.height)
+                .scaleEffect(0.95)
+                .rotationEffect(Angle(degrees: show ? 5 : 0))
+                .animation(.spring())
+                .onTapGesture {
+                    self.show.toggle()
+            }
+            .gesture(
+                DragGesture()
+                    .onChanged{ value in
+                        self.viewState = value.translation
+                        self.show = true
+                }
+                .onEnded{ _ in
+                    self.viewState = CGSize.zero
+                    self.show = false
+                }
+            )
         }
         
         
@@ -65,7 +83,7 @@ struct TitleView: View {
     var body: some View {
         return VStack {
             HStack {
-                Text("Certificates")
+                Text("卡片")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                 Spacer()
@@ -76,15 +94,15 @@ struct TitleView: View {
     }
 }
 
-struct CardButtomView: View {
+struct CardBottomView: View {
     var body: some View {
         return VStack(spacing: 20.0){
             Rectangle()
-                .frame(width: 60, height: 60)
+                .frame(width: 60, height: 6)
                 .cornerRadius(3.0)
                 .opacity(0.1)
             
-            Text("卡片滚动内容")
+            Text("该项目由齐金亮编写，SwiftUI练习")
                 .lineLimit(nil)
             Spacer()
         }
@@ -101,7 +119,7 @@ struct CardButtomView: View {
 struct CardView: View {
     var body: some View {
         return VStack {
-            Text("Card Back")
+            Text("卡片")
         }
         .frame(width: 340.0, height: 220.0)
     }
@@ -109,15 +127,36 @@ struct CardView: View {
 
 struct CertificateView: View {
     
-    var item = Certificate(title: "UI Design",image: "Certificate1",width: 340,height: 220)
+    var item = Certificate(title: "齐金亮名片",image: "Certificate1",width: 340,height: 220)
     
     var body: some View {
         return VStack {
             HStack {
                 VStack(alignment: .leading) {
-                    Text("哈哈哈")
+                    Text(item.title)
+                        .font(.headline)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color("accent"))
+                        .padding(.top)
+                    
+                    Text("卡片")
+                        .foregroundColor(.white)
                 }
+                Spacer()
+                Image("Logo")
+                    .resizable()
+                    .frame(width: 30, height: 30)
             }
+            .padding(.horizontal)
+            Spacer()
+            
+            Image(item.image)
+                .frame(minWidth: 0,maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                .offset(y: 50)
         }
+        .frame(width: CGFloat(item.width), height: CGFloat(item.height))
+        .background(Color.black)
+        .cornerRadius(10)
+        .shadow(radius: 10)
     }
 }
