@@ -85,11 +85,11 @@ struct Menu: Identifiable {
 }
 
 let menuData = [
-   Menu(title: "My Account", icon: "person.crop.circle"),
-   Menu(title: "Settings", icon: "gear"),
-   Menu(title: "Billing", icon: "creditcard"),
-   Menu(title: "Team", icon: "person.2"),
-   Menu(title: "Sign out", icon: "arrow.uturn.down")
+   Menu(title: "个人中心", icon: "person.crop.circle"),
+   Menu(title: "设置", icon: "gear"),
+   Menu(title: "卡包", icon: "creditcard"),
+   Menu(title: "团队", icon: "person.2"),
+   Menu(title: "退出", icon: "arrow.uturn.down")
 ]
 
 struct MenuView: View {
