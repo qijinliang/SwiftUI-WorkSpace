@@ -85,9 +85,6 @@ struct CalculatorButtonPad: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Group{
-            CalculatorView()
-            CalculatorView().previewDevice("iPhone SE")
-        }
+        CalculatorView()
     }
 }
