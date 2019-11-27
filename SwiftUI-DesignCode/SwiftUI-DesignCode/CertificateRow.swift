@@ -9,8 +9,29 @@
 import SwiftUI
 
 struct CertificateRow: View {
+    
+    var certificates = certificateData
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack(alignment: .leading) {
+            Text("下滑标题")
+                .font(.system(size: 20))
+                .fontWeight(.heavy)
+                .padding(.leading, 30)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 20) {
+                    ForEach(certificates) { item in
+                        CertificateView(item: item)
+                    }
+                }
+                .padding(20)
+                .padding(.leading, 10)
+            }
+        }
+        
+        
     }
 }
 
@@ -29,8 +50,8 @@ struct Certificate: Identifiable {
 }
 
 let certificateData = [
-    Certificate(title: "UI Design", image: "Certificate1", width: 230, height: 150),
+    Certificate(title: "UI 设计", image: "Certificate1", width: 230, height: 150),
     Certificate(title: "SwiftUI", image: "Certificate2", width: 230, height: 150),
-    Certificate(title: "Sketch", image: "Certificate3", width: 230, height: 150),
-    Certificate(title: "Framer", image: "Certificate4", width: 230, height: 150)
+    Certificate(title: "草图", image: "Certificate3", width: 230, height: 150),
+    Certificate(title: "筹划", image: "Certificate4", width: 230, height: 150)
 ]
