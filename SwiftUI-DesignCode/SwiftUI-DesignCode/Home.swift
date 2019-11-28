@@ -102,7 +102,7 @@ struct MenuView: View {
       return HStack {
          VStack(alignment: .leading) {
             ForEach(menu) { item in
-               if item.title == "Settings" {
+               if item.title == "设置" {
                   Button(action: { self.showSettings.toggle() }) {
                      MenuRow(image: item.icon, text: item.title)
                         .sheet(isPresented: self.$showSettings) { Settings() }

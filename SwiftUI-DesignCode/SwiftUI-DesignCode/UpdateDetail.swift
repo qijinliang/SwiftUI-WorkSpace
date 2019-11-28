@@ -20,7 +20,16 @@ struct UpdateDetail: View {
                 .font(.largeTitle)
                 .fontWeight(.heavy)
             
-            
+            Image(image)
+               .resizable()
+               .aspectRatio(contentMode: .fit)
+               .frame(height: 200)
+
+            Text(text)
+               .lineLimit(nil)
+               .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+
+            Spacer()
         }
         .padding(30.0)
     }
