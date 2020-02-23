@@ -18,7 +18,15 @@ struct PostListView: View {
     var body: some View {
         List {
             ForEach(postlist.list) { post in
-                PostCell(post: post)
+                
+                ZStack {
+                    
+                    PostCell(post: post)
+                    NavigationLink(destination: PostDetailView(post: post)) {
+                        EmptyView()
+                    }
+                    .hidden()
+                }
                 .listRowInsets(EdgeInsets())
             }
         }
@@ -27,6 +35,11 @@ struct PostListView: View {
 
 struct PostListView_Previews: PreviewProvider {
     static var previews: some View {
-        PostListView()
+        
+        NavigationView {
+            PostListView()
+                .navigationBarTitle("Title")
+                .navigationBarHidden(true)
+        }
     }
 }
