@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        PostCell(post: Post(avatra: "005tnxzUly8gab4i2r73xj30u00u0js8.jpg", vip: true, name: "用户昵称", date: "2020-2-21 00:00", isFollowed: true))
     }
 }
 

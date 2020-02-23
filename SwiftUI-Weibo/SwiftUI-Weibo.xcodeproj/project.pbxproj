@@ -98,6 +98,9 @@
 		596BF0A3240253D5004FACA5 /* bca7fdafly1gax1gqdhouj20c80axaam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 596BF050240253D5004FACA5 /* bca7fdafly1gax1gqdhouj20c80axaam.jpg */; };
 		596BF0A4240253D5004FACA5 /* 6ec3b446gy1gavd523embj20j60pytd6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 596BF051240253D5004FACA5 /* 6ec3b446gy1gavd523embj20j60pytd6.jpg */; };
 		596BF0A5240253D5004FACA5 /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 596BF052240253D5004FACA5 /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg */; };
+		596BF0A724025A59004FACA5 /* PostVIPBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596BF0A624025A59004FACA5 /* PostVIPBadge.swift */; };
+		596BF0AB24025C3A004FACA5 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596BF0AA24025C3A004FACA5 /* PostCell.swift */; };
+		596BF0AD24025D0F004FACA5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596BF0AC24025D0F004FACA5 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +218,9 @@
 		596BF050240253D5004FACA5 /* bca7fdafly1gax1gqdhouj20c80axaam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bca7fdafly1gax1gqdhouj20c80axaam.jpg; sourceTree = "<group>"; };
 		596BF051240253D5004FACA5 /* 6ec3b446gy1gavd523embj20j60pytd6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6ec3b446gy1gavd523embj20j60pytd6.jpg; sourceTree = "<group>"; };
 		596BF052240253D5004FACA5 /* 005tnxzUly8gab4i2r73xj30u00u0js8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 005tnxzUly8gab4i2r73xj30u00u0js8.jpg; sourceTree = "<group>"; };
+		596BF0A624025A59004FACA5 /* PostVIPBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVIPBadge.swift; sourceTree = "<group>"; };
+		596BF0AA24025C3A004FACA5 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		596BF0AC24025D0F004FACA5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +279,9 @@
 				596BEFDA24025330004FACA5 /* LaunchScreen.storyboard */,
 				596BEFDD24025330004FACA5 /* Info.plist */,
 				596BEFD724025330004FACA5 /* Preview Content */,
+				596BF0A624025A59004FACA5 /* PostVIPBadge.swift */,
+				596BF0AA24025C3A004FACA5 /* PostCell.swift */,
+				596BF0AC24025D0F004FACA5 /* Post.swift */,
 			);
 			path = "SwiftUI-Weibo";
 			sourceTree = "<group>";
@@ -608,8 +617,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				596BEFD02402532F004FACA5 /* AppDelegate.swift in Sources */,
+				596BF0A724025A59004FACA5 /* PostVIPBadge.swift in Sources */,
 				596BEFD22402532F004FACA5 /* SceneDelegate.swift in Sources */,
+				596BF0AD24025D0F004FACA5 /* Post.swift in Sources */,
 				596BEFD42402532F004FACA5 /* ContentView.swift in Sources */,
+				596BF0AB24025C3A004FACA5 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
