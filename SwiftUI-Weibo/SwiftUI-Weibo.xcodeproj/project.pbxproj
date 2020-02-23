@@ -101,6 +101,8 @@
 		596BF0A724025A59004FACA5 /* PostVIPBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596BF0A624025A59004FACA5 /* PostVIPBadge.swift */; };
 		596BF0AB24025C3A004FACA5 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596BF0AA24025C3A004FACA5 /* PostCell.swift */; };
 		596BF0AD24025D0F004FACA5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596BF0AC24025D0F004FACA5 /* Post.swift */; };
+		596BF0AF240268BD004FACA5 /* PostCellToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596BF0AE240268BD004FACA5 /* PostCellToolbarButton.swift */; };
+		596BF0B224026EB8004FACA5 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596BF0B124026EB8004FACA5 /* PostListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +223,8 @@
 		596BF0A624025A59004FACA5 /* PostVIPBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVIPBadge.swift; sourceTree = "<group>"; };
 		596BF0AA24025C3A004FACA5 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		596BF0AC24025D0F004FACA5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		596BF0AE240268BD004FACA5 /* PostCellToolbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellToolbarButton.swift; sourceTree = "<group>"; };
+		596BF0B124026EB8004FACA5 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +286,8 @@
 				596BF0A624025A59004FACA5 /* PostVIPBadge.swift */,
 				596BF0AA24025C3A004FACA5 /* PostCell.swift */,
 				596BF0AC24025D0F004FACA5 /* Post.swift */,
+				596BF0AE240268BD004FACA5 /* PostCellToolbarButton.swift */,
+				596BF0B124026EB8004FACA5 /* PostListView.swift */,
 			);
 			path = "SwiftUI-Weibo";
 			sourceTree = "<group>";
@@ -618,7 +624,9 @@
 			files = (
 				596BEFD02402532F004FACA5 /* AppDelegate.swift in Sources */,
 				596BF0A724025A59004FACA5 /* PostVIPBadge.swift in Sources */,
+				596BF0B224026EB8004FACA5 /* PostListView.swift in Sources */,
 				596BEFD22402532F004FACA5 /* SceneDelegate.swift in Sources */,
+				596BF0AF240268BD004FACA5 /* PostCellToolbarButton.swift in Sources */,
 				596BF0AD24025D0F004FACA5 /* Post.swift in Sources */,
 				596BEFD42402532F004FACA5 /* ContentView.swift in Sources */,
 				596BF0AB24025C3A004FACA5 /* PostCell.swift in Sources */,
