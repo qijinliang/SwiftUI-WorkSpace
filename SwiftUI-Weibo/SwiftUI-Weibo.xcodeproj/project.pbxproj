@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		596173F22403F84C001D6C4B /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596173F12403F84C001D6C4B /* HScrollViewController.swift */; };
+		596173F42404004D001D6C4B /* CommentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596173F32404004D001D6C4B /* CommentTextView.swift */; };
+		596173F624040069001D6C4B /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596173F524040069001D6C4B /* KeyboardResponder.swift */; };
+		596173F824040099001D6C4B /* CommentInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596173F724040099001D6C4B /* CommentInputView.swift */; };
 		596BEFD02402532F004FACA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596BEFCF2402532F004FACA5 /* AppDelegate.swift */; };
 		596BEFD22402532F004FACA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596BEFD12402532F004FACA5 /* SceneDelegate.swift */; };
-		596BEFD42402532F004FACA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596BEFD32402532F004FACA5 /* ContentView.swift */; };
 		596BEFD624025330004FACA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596BEFD524025330004FACA5 /* Assets.xcassets */; };
 		596BEFD924025330004FACA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596BEFD824025330004FACA5 /* Preview Assets.xcassets */; };
 		596BEFDC24025330004FACA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 596BEFDA24025330004FACA5 /* LaunchScreen.storyboard */; };
@@ -128,10 +131,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		596173F12403F84C001D6C4B /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
+		596173F32404004D001D6C4B /* CommentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextView.swift; sourceTree = "<group>"; };
+		596173F524040069001D6C4B /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
+		596173F724040099001D6C4B /* CommentInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputView.swift; sourceTree = "<group>"; };
 		596BEFCC2402532F004FACA5 /* SwiftUI-Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Weibo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		596BEFCF2402532F004FACA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		596BEFD12402532F004FACA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		596BEFD32402532F004FACA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		596BEFD524025330004FACA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		596BEFD824025330004FACA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		596BEFDB24025330004FACA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -288,7 +294,6 @@
 				596BEFFF240253D5004FACA5 /* Resources */,
 				596BEFCF2402532F004FACA5 /* AppDelegate.swift */,
 				596BEFD12402532F004FACA5 /* SceneDelegate.swift */,
-				596BEFD32402532F004FACA5 /* ContentView.swift */,
 				596BEFD524025330004FACA5 /* Assets.xcassets */,
 				596BEFDA24025330004FACA5 /* LaunchScreen.storyboard */,
 				596BEFDD24025330004FACA5 /* Info.plist */,
@@ -303,6 +308,10 @@
 				59B89B412402955B00754F77 /* HomeNavigationBar.swift */,
 				59F1905224039D1000282108 /* HomeView.swift */,
 				59F1905424039E8300282108 /* UserData.swift */,
+				596173F12403F84C001D6C4B /* HScrollViewController.swift */,
+				596173F32404004D001D6C4B /* CommentTextView.swift */,
+				596173F524040069001D6C4B /* KeyboardResponder.swift */,
+				596173F724040099001D6C4B /* CommentInputView.swift */,
 			);
 			path = "SwiftUI-Weibo";
 			sourceTree = "<group>";
@@ -639,14 +648,17 @@
 			files = (
 				59F1905524039E8300282108 /* UserData.swift in Sources */,
 				596BEFD02402532F004FACA5 /* AppDelegate.swift in Sources */,
+				596173F22403F84C001D6C4B /* HScrollViewController.swift in Sources */,
 				59B89B402402931500754F77 /* PostDetailView.swift in Sources */,
+				596173F42404004D001D6C4B /* CommentTextView.swift in Sources */,
+				596173F624040069001D6C4B /* KeyboardResponder.swift in Sources */,
 				596BF0A724025A59004FACA5 /* PostVIPBadge.swift in Sources */,
 				596BF0B224026EB8004FACA5 /* PostListView.swift in Sources */,
+				596173F824040099001D6C4B /* CommentInputView.swift in Sources */,
 				596BEFD22402532F004FACA5 /* SceneDelegate.swift in Sources */,
 				596BF0AF240268BD004FACA5 /* PostCellToolbarButton.swift in Sources */,
 				596BF0AD24025D0F004FACA5 /* Post.swift in Sources */,
 				59B89B422402955B00754F77 /* HomeNavigationBar.swift in Sources */,
-				596BEFD42402532F004FACA5 /* ContentView.swift in Sources */,
 				59F1905324039D1000282108 /* HomeView.swift in Sources */,
 				59B89B3E24028A7900754F77 /* PostImageCell.swift in Sources */,
 				596BF0AB24025C3A004FACA5 /* PostCell.swift in Sources */,

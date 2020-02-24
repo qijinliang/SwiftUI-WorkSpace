@@ -12,16 +12,13 @@ private let kLabelWidth: CGFloat = 60
 private let kButtonHeight: CGFloat = 24
 
 struct HomeNavigationBar: View {
-    
-   @State var leftPercent: CGFloat
+    @Binding var leftPercent: CGFloat // 0 for left, 1 for right
     
     var body: some View {
-        
         HStack(alignment: .top, spacing: 0) {
-            
             Button(action: {
-                print("Clikc camera button")
-            }){
+                print("Click camera button")
+            }) {
                 Image(systemName: "camera")
                     .resizable()
                     .scaledToFit()
@@ -35,15 +32,14 @@ struct HomeNavigationBar: View {
             
             VStack(spacing: 3) {
                 HStack(spacing: 0) {
-                    
                     Text("推荐")
                         .bold()
                         .frame(width: kLabelWidth, height: kButtonHeight)
                         .padding(.top, 5)
                         .opacity(Double(1 - leftPercent * 0.5))
                         .onTapGesture {
-                            withAnimation{
-                            self.leftPercent = 0
+                            withAnimation {
+                                self.leftPercent = 0
                             }
                     }
                     
@@ -51,17 +47,16 @@ struct HomeNavigationBar: View {
                     
                     Text("热门")
                         .bold()
-                        .frame(width: kLabelWidth, height: kButtonHeight)
+                        .frame(width: kLabelWidth)
                         .padding(.top, 5)
                         .opacity(Double(0.5 + leftPercent * 0.5))
                         .onTapGesture {
-                            withAnimation{
-                            self.leftPercent = 1
+                            withAnimation {
+                                self.leftPercent = 1
                             }
                     }
                 }
                 .font(.system(size: 20))
-                
                 
                 GeometryReader { geometry in
                     RoundedRectangle(cornerRadius: 2)
@@ -76,8 +71,8 @@ struct HomeNavigationBar: View {
             Spacer()
             
             Button(action: {
-                print("Clikc camera button")
-            }){
+                print("Click add button")
+            }) {
                 Image(systemName: "plus.circle.fill")
                     .resizable()
                     .scaledToFit()
@@ -93,6 +88,6 @@ struct HomeNavigationBar: View {
 
 struct HomeNavigationBar_Previews: PreviewProvider {
     static var previews: some View {
-        HomeNavigationBar(leftPercent: 1)
+        HomeNavigationBar(leftPercent: .constant(0))
     }
 }
