@@ -10,9 +10,15 @@ import SwiftUI
 
 struct PostListView: View {
     
-    init() {
-        UITableView.appearance().separatorStyle = .none
-        UITableViewCell.appearance().selectionStyle = .none
+    let category: PostListCategory
+    
+    var postList: PostList {
+        switch category {
+        case .recommend:
+            return loadPostListData("PostListData_recommend_1.json")
+        case .hot:
+            return loadPostListData("PostListData_hot_1.json")
+        }
     }
     
     var body: some View {
@@ -37,7 +43,7 @@ struct PostListView_Previews: PreviewProvider {
     static var previews: some View {
         
         NavigationView {
-            PostListView()
+            PostListView(category: .recommend)
                 .navigationBarTitle("Title")
                 .navigationBarHidden(true)
         }
