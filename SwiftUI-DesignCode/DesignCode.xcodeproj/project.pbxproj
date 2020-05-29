@@ -451,6 +451,7 @@
 				DEVELOPMENT_TEAM = 8UVG4AYTY4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DesignCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,9 +469,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"DesignCode/Preview Content\"";
-				DEVELOPMENT_TEAM = 68WS2M23VC;
+				DEVELOPMENT_TEAM = 8UVG4AYTY4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DesignCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
