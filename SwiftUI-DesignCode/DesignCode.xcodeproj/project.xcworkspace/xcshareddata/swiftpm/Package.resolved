@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/contentful/contentful.swift.git",
         "state": {
           "branch": null,
-          "revision": "979528cd5d1ad701c46abef0129705c39ef43570",
-          "version": "5.0.5"
+          "revision": "deefc3f10d98b57d1a5887db68b38737f829da3f",
+          "version": "5.0.11"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/airbnb/lottie-ios.git",
         "state": {
           "branch": null,
-          "revision": "eb115967234671b725264422d82c9d1d6b226e5a",
-          "version": "3.1.5"
+          "revision": "4e5877425dae5c10792fc9d22d53dc6bf6824dc1",
+          "version": "3.1.8"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/SDWebImage/SDWebImage.git",
         "state": {
           "branch": null,
-          "revision": "7ef9a314b12c1a31edb0d09d41fcba93143fe772",
-          "version": "5.4.0"
+          "revision": "5818cf70fde7e9e07e24196d0d54350bc8526f26",
+          "version": "5.8.0"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/SDWebImage/SDWebImageSwiftUI.git",
         "state": {
           "branch": null,
-          "revision": "a3f30bafdcee6ca2aeec58da3ab249e075f268f0",
-          "version": "0.10.0"
+          "revision": "e0af3b71af59b6da0c33f83686f9787bb54c175a",
+          "version": "0.10.3"
         }
       }
     ]
