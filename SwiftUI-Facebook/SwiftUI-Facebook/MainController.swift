@@ -89,6 +89,38 @@ class MainController: LBTAListHeaderController<PostCell, Post, StoryHeader>, UIC
             .init(name: "亮",text: "You can't be caught in your hands, can't be written in your diary, can only keep your heart forever", location: "广东深圳"),
         ]
         collectionView.alwaysBounceVertical = true
+        
+        setupNavBar()
+    }
+    
+    let fblogoImageView = UIImageView(image: UIImage(named: "NavgationTitle"), contentMode: .scaleAspectFit)
+    let searchButton = UIButton(title: "search", titleColor: .black)
+    
+    fileprivate func setupNavBar() {
+        
+        let width = view.frame.width - 80 - 16 - 60
+        let titleView = UIView(backgroundColor: .clear)
+        titleView.frame = .init(x: 0, y: 0, width: width, height: 50)
+        
+
+        titleView.hstack(fblogoImageView.withWidth(80),
+        UIView(backgroundColor: .clear).withWidth(width),
+        searchButton.withWidth(60))
+        navigationItem.titleView = titleView
+    }
+    
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let safeAreaTop = UIApplication.shared.windows.filter
+        {$0.isKeyWindow}.first?.safeAreaInsets.top ?? 0
+        
+        let magicalSafeAreaTop: CGFloat = safeAreaTop + (navigationController?.navigationBar.frame.height ?? 0)
+        let offset = scrollView.contentOffset.y + magicalSafeAreaTop
+        let alpha: CGFloat = 1 - ((scrollView.contentOffset.y + magicalSafeAreaTop) / magicalSafeAreaTop)
+        
+        fblogoImageView.alpha = alpha
+        [fblogoImageView, searchButton].forEach {$0.alpha = alpha }
+        navigationController?.navigationBar.transform = .init(translationX: 0, y: min(0, -offset))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
@@ -119,7 +151,7 @@ struct MainPreview: PreviewProvider {
         
         func makeUIViewController(context: UIViewControllerRepresentableContext<MainPreview.PreviewView>) -> UIViewController {
             
-            return MainController()
+            return UINavigationController(rootViewController: MainController())
         }
         
         

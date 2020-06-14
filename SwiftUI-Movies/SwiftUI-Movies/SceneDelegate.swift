@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  SwiftUI-Facebook
+//  SwiftUI-Movies
 //
-//  Created by qjinliang on 2020/6/13.
+//  Created by qjinliang on 2020/6/14.
 //  Copyright © 2020 醉看红尘这场梦. All rights reserved.
 //
 
@@ -20,13 +20,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-//        let contentView = ContentView()
+        let contentView = ContentView()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-//            window.rootViewController = UIHostingController(rootView: MainController)
-            window.rootViewController = UINavigationController(rootViewController: MainController())
+            window.rootViewController = UIHostingController(rootView: contentView)
             self.window = window
             window.makeKeyAndVisible()
         }
