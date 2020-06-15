@@ -10,27 +10,27 @@ import SwiftUI
 
 struct DetaiInfoView: View {
     
-    var detail1 = "影厅"
-    var detail2 = "8"
-    var detail3 = "价格"
-    var detail4 = "$19.9"
+    var detail1 = "SEST"
+    var detail2 = "34"
+    var detail3 = "TIME"
+    var detail4 = "18:15"
     
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 10) {
             VStack {
                 Text(detail1)
+                    .font(.system(size: 15, weight: .bold))
                     .foregroundColor(Color.gray)
                 Text(detail2)
-                    .font(.system(size: 30, weight: .heavy))
-                    .foregroundColor(Color.black)
+                    .font(.system(size: 30, weight: .black))
             }
             VStack {
                 Text(detail3)
+                    .font(.system(size: 15, weight: .bold))
                     .foregroundColor(Color.gray)
-                Text(detail4)
+                Text(detail4).font(.system(size: 15, weight: .bold))
             }
-        }
-        .fullWidthModifiner(alignment: .center)
+        }.modifier(FullWidthModifiner())
     }
 }
 

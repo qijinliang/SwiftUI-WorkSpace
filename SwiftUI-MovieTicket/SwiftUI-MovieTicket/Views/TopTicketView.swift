@@ -10,34 +10,32 @@ import SwiftUI
 
 struct TopTicketView: View {
     
-    var studioName: String = "深圳万象城"
-    var movieTitle: String = "长颈鹿"
-    var movieImage: String = "1"
+    var studioName: String = "studio"
+    var movieTitle: String = "ONLY GOD FORGIVES"
+    var imageName: String = "terminator.jpg"
     var body: some View {
         VStack {
-            VStack {
+            VStack(alignment: .leading) {
                 Text(studioName)
-                    .font(.system(size: 16))
+                    .font(.system(size: 20, weight: .bold))
                     .foregroundColor(Color.gray)
-                    .fullWidthModifiner(alignment: .leading)
                 Text(movieTitle)
-                    .font(.system(size: 30, weight: .heavy))
-                    .foregroundColor(Color.black)
-                    .fullWidthModifiner(alignment: .leading)
-            }
+                    .font(.system(size: 30, weight: .black))
+            }.frame(minWidth: 0.0, maxWidth: .infinity,alignment: .leading)
             .padding(.top, 30)
             .padding(.horizontal)
-            Image(movieImage)
-                .resizable()
+            
+            Image(uiImage: UIImage(named: imageName)!)
+                .resizable().modifier(FullWidthModifiner())
                 .frame(height: 200)
-                .fullWidthModifiner(alignment: .center)
+                .scaledToFit()
             
             HStack {
+                DetaiInfoView(detail1: "SCREEN", detail2: "18", detail3: "PRICE", detail4: "$5.68")
+                DetaiInfoView(detail1: "ROW", detail2: "H", detail3: "DATE", detail4: "23/05/13")
                 DetaiInfoView()
-                DetaiInfoView(detail1: "排号", detail2: "J", detail3: "日期", detail4: "23/6/2020")
-                DetaiInfoView(detail1: "座位", detail2: "34", detail3: "时间", detail4: "19:00")
             }
-            .padding(.bottom)
+            .padding(.vertical)
         }
     }
 }

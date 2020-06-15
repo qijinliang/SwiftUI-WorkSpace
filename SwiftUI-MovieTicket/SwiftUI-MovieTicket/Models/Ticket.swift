@@ -12,14 +12,18 @@ struct Ticket: Identifiable {
     var id: UUID = UUID()
     let studioName: String
     let movieTitle: String
-    let movieImage: String
+    let imageName: String
     
     static func data() -> [Ticket] {
         return [
-            Ticket(studioName: "深圳万象城", movieTitle: "万象城", movieImage: "1"),
-            Ticket(studioName: "深圳高新园", movieTitle: "高新园", movieImage: "2"),
-            Ticket(studioName: "深圳深大", movieTitle: "深大", movieImage: "3"),
-            Ticket(studioName: "深圳科技园", movieTitle: "科技园", movieImage: "4"),
+             Ticket(studioName: "‎Walt Disney Pictures", movieTitle: "ALADDIN", imageName: "aladdin.jpg"),
+             Ticket(studioName: "‎Walt Disney Pictures", movieTitle: "CARS", imageName: "cars.jpg"),
+             Ticket(studioName: "‎‎Seven Bucks Productions‎", movieTitle: "HOBBS AND SHAW", imageName: "hobbsandshaw.jpg"),
+             Ticket(studioName: "‎Lin Pictures", movieTitle: "IT", imageName: "it.jpg"),
+             Ticket(studioName: "‎Warner Bros. Pictures", movieTitle: "JOKER", imageName: "joker.jpg"),
+             Ticket(studioName: "‎Walt Disney Pictures", movieTitle: "LION KING", imageName: "lionking.jpg"),
+             Ticket(studioName: "‎Paramount Pictures", movieTitle: "TERMINATOR", imageName: "terminator.jpg"),
+             Ticket(studioName: "‎Marvel Studios", movieTitle: "X-MEN", imageName: "xmen.jpg"),
         ]
     }
 }

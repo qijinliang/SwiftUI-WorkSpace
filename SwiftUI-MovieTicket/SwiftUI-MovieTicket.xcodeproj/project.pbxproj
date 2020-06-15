@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5990FAE6249741E700CF3E19 /* cars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5990FADE249741E700CF3E19 /* cars.jpg */; };
+		5990FAE7249741E700CF3E19 /* aladdin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5990FADF249741E700CF3E19 /* aladdin.jpg */; };
+		5990FAE8249741E700CF3E19 /* xmen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5990FAE0249741E700CF3E19 /* xmen.jpg */; };
+		5990FAE9249741E700CF3E19 /* lionking.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5990FAE1249741E700CF3E19 /* lionking.jpg */; };
+		5990FAEA249741E700CF3E19 /* joker.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5990FAE2249741E700CF3E19 /* joker.jpg */; };
+		5990FAEB249741E700CF3E19 /* hobbsandshaw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5990FAE3249741E700CF3E19 /* hobbsandshaw.jpg */; };
+		5990FAEC249741E700CF3E19 /* terminator.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5990FAE4249741E700CF3E19 /* terminator.jpg */; };
+		5990FAED249741E700CF3E19 /* it.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5990FAE5249741E700CF3E19 /* it.jpg */; };
 		59F3C7E424960EB200F0028C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3C7E324960EB200F0028C /* AppDelegate.swift */; };
 		59F3C7E624960EB200F0028C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3C7E524960EB200F0028C /* SceneDelegate.swift */; };
 		59F3C7E824960EB200F0028C /* MovieTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3C7E724960EB200F0028C /* MovieTicketView.swift */; };
@@ -17,14 +25,22 @@
 		59F3C7FD24960FB400F0028C /* TopTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3C7FC24960FB400F0028C /* TopTicketView.swift */; };
 		59F3C7FF2496109D00F0028C /* FullWidthModifiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3C7FE2496109D00F0028C /* FullWidthModifiner.swift */; };
 		59F3C8032496124F00F0028C /* DetaiInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3C8022496124F00F0028C /* DetaiInfoView.swift */; };
-		59F3C805249613C000F0028C /* BottomTIcketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3C804249613C000F0028C /* BottomTIcketView.swift */; };
+		59F3C805249613C000F0028C /* BottomTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3C804249613C000F0028C /* BottomTicketView.swift */; };
 		59F3C8072496155600F0028C /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3C8062496155600F0028C /* TicketView.swift */; };
 		59F3C80A249615C200F0028C /* TicketShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3C809249615C200F0028C /* TicketShape.swift */; };
 		59F3C80C2496192900F0028C /* CardStyleModifiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3C80B2496192900F0028C /* CardStyleModifiner.swift */; };
-		59F3C81024961A3500F0028C /* DashedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3C80F24961A3500F0028C /* DashedLine.swift */; };
+		59F3C81024961A3500F0028C /* DashedSeperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F3C80F24961A3500F0028C /* DashedSeperator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5990FADE249741E700CF3E19 /* cars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cars.jpg; sourceTree = "<group>"; };
+		5990FADF249741E700CF3E19 /* aladdin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aladdin.jpg; sourceTree = "<group>"; };
+		5990FAE0249741E700CF3E19 /* xmen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = xmen.jpg; sourceTree = "<group>"; };
+		5990FAE1249741E700CF3E19 /* lionking.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lionking.jpg; sourceTree = "<group>"; };
+		5990FAE2249741E700CF3E19 /* joker.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = joker.jpg; sourceTree = "<group>"; };
+		5990FAE3249741E700CF3E19 /* hobbsandshaw.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hobbsandshaw.jpg; sourceTree = "<group>"; };
+		5990FAE4249741E700CF3E19 /* terminator.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = terminator.jpg; sourceTree = "<group>"; };
+		5990FAE5249741E700CF3E19 /* it.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = it.jpg; sourceTree = "<group>"; };
 		59F3C7E024960EB200F0028C /* SwiftUI-MovieTicket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-MovieTicket.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F3C7E324960EB200F0028C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59F3C7E524960EB200F0028C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,11 +53,11 @@
 		59F3C7FC24960FB400F0028C /* TopTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTicketView.swift; sourceTree = "<group>"; };
 		59F3C7FE2496109D00F0028C /* FullWidthModifiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullWidthModifiner.swift; sourceTree = "<group>"; };
 		59F3C8022496124F00F0028C /* DetaiInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaiInfoView.swift; sourceTree = "<group>"; };
-		59F3C804249613C000F0028C /* BottomTIcketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTIcketView.swift; sourceTree = "<group>"; };
+		59F3C804249613C000F0028C /* BottomTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTicketView.swift; sourceTree = "<group>"; };
 		59F3C8062496155600F0028C /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
 		59F3C809249615C200F0028C /* TicketShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketShape.swift; sourceTree = "<group>"; };
 		59F3C80B2496192900F0028C /* CardStyleModifiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStyleModifiner.swift; sourceTree = "<group>"; };
-		59F3C80F24961A3500F0028C /* DashedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedLine.swift; sourceTree = "<group>"; };
+		59F3C80F24961A3500F0028C /* DashedSeperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedSeperator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +71,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5990FADD249741E700CF3E19 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5990FADE249741E700CF3E19 /* cars.jpg */,
+				5990FADF249741E700CF3E19 /* aladdin.jpg */,
+				5990FAE0249741E700CF3E19 /* xmen.jpg */,
+				5990FAE1249741E700CF3E19 /* lionking.jpg */,
+				5990FAE2249741E700CF3E19 /* joker.jpg */,
+				5990FAE3249741E700CF3E19 /* hobbsandshaw.jpg */,
+				5990FAE4249741E700CF3E19 /* terminator.jpg */,
+				5990FAE5249741E700CF3E19 /* it.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		59F3C7D724960EB200F0028C = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +105,7 @@
 		59F3C7E224960EB200F0028C /* SwiftUI-MovieTicket */ = {
 			isa = PBXGroup;
 			children = (
+				5990FADD249741E700CF3E19 /* images */,
 				59F3C7F824960EC300F0028C /* Views */,
 				59F3C7F724960EBC00F0028C /* Models */,
 				59F3C7E324960EB200F0028C /* AppDelegate.swift */,
@@ -110,7 +142,7 @@
 				59F3C7FB24960F9B00F0028C /* modifiner */,
 				59F3C7FC24960FB400F0028C /* TopTicketView.swift */,
 				59F3C8022496124F00F0028C /* DetaiInfoView.swift */,
-				59F3C804249613C000F0028C /* BottomTIcketView.swift */,
+				59F3C804249613C000F0028C /* BottomTicketView.swift */,
 				59F3C8062496155600F0028C /* TicketView.swift */,
 			);
 			path = Views;
@@ -129,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				59F3C809249615C200F0028C /* TicketShape.swift */,
-				59F3C80F24961A3500F0028C /* DashedLine.swift */,
+				59F3C80F24961A3500F0028C /* DashedSeperator.swift */,
 			);
 			path = shapes;
 			sourceTree = "<group>";
@@ -192,7 +224,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5990FAE7249741E700CF3E19 /* aladdin.jpg in Resources */,
+				5990FAEB249741E700CF3E19 /* hobbsandshaw.jpg in Resources */,
+				5990FAE8249741E700CF3E19 /* xmen.jpg in Resources */,
+				5990FAE6249741E700CF3E19 /* cars.jpg in Resources */,
+				5990FAEA249741E700CF3E19 /* joker.jpg in Resources */,
 				59F3C7F024960EB300F0028C /* LaunchScreen.storyboard in Resources */,
+				5990FAEC249741E700CF3E19 /* terminator.jpg in Resources */,
+				5990FAED249741E700CF3E19 /* it.jpg in Resources */,
+				5990FAE9249741E700CF3E19 /* lionking.jpg in Resources */,
 				59F3C7ED24960EB300F0028C /* Preview Assets.xcassets in Resources */,
 				59F3C7EA24960EB300F0028C /* Assets.xcassets in Resources */,
 			);
@@ -209,11 +249,11 @@
 				59F3C7E624960EB200F0028C /* SceneDelegate.swift in Sources */,
 				59F3C7FD24960FB400F0028C /* TopTicketView.swift in Sources */,
 				59F3C80C2496192900F0028C /* CardStyleModifiner.swift in Sources */,
-				59F3C81024961A3500F0028C /* DashedLine.swift in Sources */,
+				59F3C81024961A3500F0028C /* DashedSeperator.swift in Sources */,
 				59F3C80A249615C200F0028C /* TicketShape.swift in Sources */,
 				59F3C7FF2496109D00F0028C /* FullWidthModifiner.swift in Sources */,
 				59F3C7E824960EB200F0028C /* MovieTicketView.swift in Sources */,
-				59F3C805249613C000F0028C /* BottomTIcketView.swift in Sources */,
+				59F3C805249613C000F0028C /* BottomTicketView.swift in Sources */,
 				59F3C8072496155600F0028C /* TicketView.swift in Sources */,
 				59F3C7FA24960ED500F0028C /* Ticket.swift in Sources */,
 				59F3C8032496124F00F0028C /* DetaiInfoView.swift in Sources */,

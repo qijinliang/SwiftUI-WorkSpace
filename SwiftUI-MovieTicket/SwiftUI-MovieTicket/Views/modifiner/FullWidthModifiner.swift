@@ -9,14 +9,13 @@
 import SwiftUI
 
 struct FullWidthModifiner: ViewModifier {
-    var alignment: Alignment = .leading
     func body(content: Content) -> some View {
-        content.frame(minWidth: 0, maxWidth: .infinity, alignment: alignment)
+        content.frame(minWidth: 0, maxWidth: .infinity)
     }
 }
 
-extension View {
-    func fullWidthModifiner(alignment: Alignment) -> some View {
-        self.modifier(FullWidthModifiner(alignment: alignment))
+struct CardStyleModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content.shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
     }
 }

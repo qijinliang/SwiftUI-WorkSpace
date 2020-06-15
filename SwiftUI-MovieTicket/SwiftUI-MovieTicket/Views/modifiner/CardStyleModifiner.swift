@@ -10,7 +10,7 @@ import SwiftUI
 
 struct CardStyleModifiner: ViewModifier {
     func body(content: Content) -> some View {
-        content.shadow(color: Color.gray, radius: 10, x: 0, y: 10)
+        content.shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
     }
 }
 

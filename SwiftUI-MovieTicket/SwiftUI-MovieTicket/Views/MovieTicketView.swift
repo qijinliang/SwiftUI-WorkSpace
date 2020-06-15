@@ -13,15 +13,11 @@ struct MovieTicketView: View {
     let tickets: [Ticket] = Ticket.data()
     
     var body: some View {
-        
-        VStack {
-            Spacer()
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(tickets) { ticket in
                         
                         GeometryReader { gr in
-                            Text("\(gr.frame(in: .global).minX)")
                             self.renderTicket(ticket: ticket, angle: gr.frame(in: .global).minX / 10)
                         }
                         .frame(width: UIScreen.main.bounds.width)
@@ -29,8 +25,6 @@ struct MovieTicketView: View {
                     }
                 }
             }
-            Spacer()
-        }
     }
     func renderTicket(ticket: Ticket, angle: CGFloat) -> some View {
         TicketView(ticket: ticket)
