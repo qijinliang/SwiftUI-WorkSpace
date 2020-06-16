@@ -14,16 +14,18 @@ struct ContentView: View {
     
     var body: some View {
         
-        return VStack {
-            renderHeader()
-            ScrollView(showsIndicators: false) {
-                VStack {
-                    renderCards()
-                    renderBarchart()
-                    ExpensesBreakownView(categories: expensesBreakDown.categories)
-                        .padding(.horizontal)
+        NavigationView {
+            VStack {
+                renderHeader()
+                ScrollView(showsIndicators: false) {
+                    VStack {
+                        renderCards()
+                        renderBarchart()
+                        ExpensesBreakownView(categories: expensesBreakDown.categories)
+                            .padding(.horizontal)
+                    }
                 }
-            }
+            }.padding().navigationBarTitle(Text("SwiftUI仿写记账"), displayMode: .inline)
         }
     }
     

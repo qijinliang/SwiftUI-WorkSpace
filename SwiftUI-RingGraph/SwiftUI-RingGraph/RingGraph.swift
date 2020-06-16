@@ -31,7 +31,7 @@ struct RingGraph: View {
                         .padding(.horizontal, 30)
                         .frame(height: 70)
                     
-                    Text("完美平衡 \n 一切都应该如此。")
+                    Text("保持好你的身体")
                         .multilineTextAlignment(.center)
                         .padding(.bottom, 30)
  
