@@ -7,16 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5951E74B2498778200642F8F /* ExpensesBreakDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E74A2498778200642F8F /* ExpensesBreakDown.swift */; };
+		5951E74D249879FE00642F8F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E74C249879FE00642F8F /* Date.swift */; };
+		5951E74F24987A0B00642F8F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E74E24987A0B00642F8F /* Color.swift */; };
+		5951E7522498999500642F8F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E7512498999500642F8F /* CardView.swift */; };
+		5951E75524989C9600642F8F /* PercentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E75424989C9600642F8F /* PercentAnimator.swift */; };
+		5951E75724989DDD00642F8F /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E75624989DDD00642F8F /* RingView.swift */; };
+		5951E7592498A3BD00642F8F /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E7582498A3BD00642F8F /* BarView.swift */; };
+		5951E75B2498A4FC00642F8F /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E75A2498A4FC00642F8F /* BarChartView.swift */; };
+		5951E77F2498CD2A00642F8F /* ExpenseCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E77E2498CD2A00642F8F /* ExpenseCategoryView.swift */; };
+		5951E7812498CD3D00642F8F /* ExpensesBreakownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E7802498CD3D00642F8F /* ExpensesBreakownView.swift */; };
 		5990FAC624971B1700CF3E19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990FAC524971B1700CF3E19 /* AppDelegate.swift */; };
 		5990FAC824971B1700CF3E19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990FAC724971B1700CF3E19 /* SceneDelegate.swift */; };
 		5990FACA24971B1700CF3E19 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990FAC924971B1700CF3E19 /* ContentView.swift */; };
 		5990FACC24971B1900CF3E19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5990FACB24971B1900CF3E19 /* Assets.xcassets */; };
 		5990FACF24971B1900CF3E19 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5990FACE24971B1900CF3E19 /* Preview Assets.xcassets */; };
 		5990FAD224971B1900CF3E19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5990FAD024971B1900CF3E19 /* LaunchScreen.storyboard */; };
-		5990FADC24971B4A00CF3E19 /* Exponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990FADB24971B4A00CF3E19 /* Exponse.swift */; };
+		5990FADC24971B4A00CF3E19 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990FADB24971B4A00CF3E19 /* Expense.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5951E74A2498778200642F8F /* ExpensesBreakDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesBreakDown.swift; sourceTree = "<group>"; };
+		5951E74C249879FE00642F8F /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		5951E74E24987A0B00642F8F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		5951E7512498999500642F8F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5951E75424989C9600642F8F /* PercentAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentAnimator.swift; sourceTree = "<group>"; };
+		5951E75624989DDD00642F8F /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
+		5951E7582498A3BD00642F8F /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		5951E75A2498A4FC00642F8F /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		5951E77E2498CD2A00642F8F /* ExpenseCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategoryView.swift; sourceTree = "<group>"; };
+		5951E7802498CD3D00642F8F /* ExpensesBreakownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesBreakownView.swift; sourceTree = "<group>"; };
 		5990FAC224971B1700CF3E19 /* SwiftUI-ExponseReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-ExponseReport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5990FAC524971B1700CF3E19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5990FAC724971B1700CF3E19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +45,7 @@
 		5990FACE24971B1900CF3E19 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5990FAD124971B1900CF3E19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5990FAD324971B1900CF3E19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5990FADB24971B4A00CF3E19 /* Exponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exponse.swift; sourceTree = "<group>"; };
+		5990FADB24971B4A00CF3E19 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +59,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5951E7502498996100642F8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5951E74C249879FE00642F8F /* Date.swift */,
+				5951E74E24987A0B00642F8F /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5951E75324989C8800642F8F /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				5951E75424989C9600642F8F /* PercentAnimator.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
 		5990FAB924971B1700CF3E19 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +95,8 @@
 		5990FAC424971B1700CF3E19 /* SwiftUI-ExponseReport */ = {
 			isa = PBXGroup;
 			children = (
+				5951E75324989C8800642F8F /* Modifiers */,
+				5951E7502498996100642F8F /* Extensions */,
 				5990FADA24971B3800CF3E19 /* Views */,
 				5990FAD924971B3100CF3E19 /* Models */,
 				5990FAC524971B1700CF3E19 /* AppDelegate.swift */,
@@ -81,7 +120,8 @@
 		5990FAD924971B3100CF3E19 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5990FADB24971B4A00CF3E19 /* Exponse.swift */,
+				5951E74A2498778200642F8F /* ExpensesBreakDown.swift */,
+				5990FADB24971B4A00CF3E19 /* Expense.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -90,6 +130,12 @@
 			isa = PBXGroup;
 			children = (
 				5990FAC924971B1700CF3E19 /* ContentView.swift */,
+				5951E7512498999500642F8F /* CardView.swift */,
+				5951E75624989DDD00642F8F /* RingView.swift */,
+				5951E7582498A3BD00642F8F /* BarView.swift */,
+				5951E75A2498A4FC00642F8F /* BarChartView.swift */,
+				5951E77E2498CD2A00642F8F /* ExpenseCategoryView.swift */,
+				5951E7802498CD3D00642F8F /* ExpensesBreakownView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,10 +211,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5951E75724989DDD00642F8F /* RingView.swift in Sources */,
+				5951E7592498A3BD00642F8F /* BarView.swift in Sources */,
+				5951E74B2498778200642F8F /* ExpensesBreakDown.swift in Sources */,
+				5951E74D249879FE00642F8F /* Date.swift in Sources */,
+				5951E7812498CD3D00642F8F /* ExpensesBreakownView.swift in Sources */,
+				5951E77F2498CD2A00642F8F /* ExpenseCategoryView.swift in Sources */,
+				5951E74F24987A0B00642F8F /* Color.swift in Sources */,
 				5990FAC624971B1700CF3E19 /* AppDelegate.swift in Sources */,
 				5990FAC824971B1700CF3E19 /* SceneDelegate.swift in Sources */,
-				5990FADC24971B4A00CF3E19 /* Exponse.swift in Sources */,
+				5990FADC24971B4A00CF3E19 /* Expense.swift in Sources */,
+				5951E7522498999500642F8F /* CardView.swift in Sources */,
 				5990FACA24971B1700CF3E19 /* ContentView.swift in Sources */,
+				5951E75524989C9600642F8F /* PercentAnimator.swift in Sources */,
+				5951E75B2498A4FC00642F8F /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

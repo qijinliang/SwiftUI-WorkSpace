@@ -9,8 +9,50 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var expensesBreakDown = ExpensesBreakDown()
+    
     var body: some View {
-        Text("Hello, World!")
+        
+        return VStack {
+            renderHeader()
+            ScrollView(showsIndicators: false) {
+                VStack {
+                    renderCards()
+                    renderBarchart()
+                    ExpensesBreakownView(categories: expensesBreakDown.categories)
+                        .padding(.horizontal)
+                }
+            }
+        }
+    }
+    
+    fileprivate func renderCards() -> some View {
+        return ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 10) {
+                ForEach(expensesBreakDown.categories) { category in
+                    CardView(category: (category)).frame(width: 330, height: UIScreen.main.bounds.height * 0.22)
+                }
+            }.padding(.horizontal)
+        }
+    }
+    
+    fileprivate func renderHeader() -> some View {
+        HStack {
+            VStack(alignment: .leading) {
+                Text(Date.fullMonthName(short: expensesBreakDown.expense.month)).font(.title)
+                Text("2019年").foregroundColor(Color.purpleGray)
+            }
+            Spacer()
+        }.padding(.horizontal)
+    }
+    
+    fileprivate func renderBarchart() -> some View {
+        return BarChartView(onSelected: { selectedExp in
+            self.expensesBreakDown.generateRandom(selectedExp)
+            }).frame(height: 50)
+            .padding(.vertical, 20)
+            .padding(.horizontal)
     }
 }
 

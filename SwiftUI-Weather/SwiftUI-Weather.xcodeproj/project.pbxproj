@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5951E77D2498B16900642F8F /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E77C2498B16900642F8F /* NavBarView.swift */; };
 		5990FAFB2497611A00CF3E19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990FAFA2497611A00CF3E19 /* AppDelegate.swift */; };
 		5990FAFD2497611A00CF3E19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990FAFC2497611A00CF3E19 /* SceneDelegate.swift */; };
 		5990FAFF2497611A00CF3E19 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5990FAFE2497611A00CF3E19 /* WeatherApp.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5951E77C2498B16900642F8F /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		5990FAF72497611A00CF3E19 /* SwiftUI-Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5990FAFA2497611A00CF3E19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5990FAFC2497611A00CF3E19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				5990FB142497690700CF3E19 /* MainCardView.swift */,
 				5990FB1624976E6A00CF3E19 /* SmallCard.swift */,
 				5990FB182497726A00CF3E19 /* DetailView.swift */,
+				5951E77C2498B16900642F8F /* NavBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5951E77D2498B16900642F8F /* NavBarView.swift in Sources */,
 				5990FB1724976E6A00CF3E19 /* SmallCard.swift in Sources */,
 				5990FB192497726A00CF3E19 /* DetailView.swift in Sources */,
 				5990FB152497690700CF3E19 /* MainCardView.swift in Sources */,
