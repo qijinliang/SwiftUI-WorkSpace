@@ -24,6 +24,11 @@
 		59A5CE3C249A02DD00330571 /* SavedTimeZones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A5CE3B249A02DD00330571 /* SavedTimeZones.swift */; };
 		59A5CE3E249A02F900330571 /* BottomToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A5CE3D249A02F900330571 /* BottomToolbar.swift */; };
 		59A5CE40249A031600330571 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A5CE3F249A031600330571 /* AddButton.swift */; };
+		59A5CE43249A065200330571 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A5CE42249A065200330571 /* WebService.swift */; };
+		59A5CE45249A075700330571 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A5CE44249A075700330571 /* Parser.swift */; };
+		59A5CE47249A08E500330571 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A5CE46249A08E500330571 /* DataProvider.swift */; };
+		59A5CE49249A0AF100330571 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A5CE48249A0AF100330571 /* Location.swift */; };
+		59A5CE4B249A0B0000330571 /* RemoteTimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A5CE4A249A0B0000330571 /* RemoteTimeZone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,11 @@
 		59A5CE3B249A02DD00330571 /* SavedTimeZones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTimeZones.swift; sourceTree = "<group>"; };
 		59A5CE3D249A02F900330571 /* BottomToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomToolbar.swift; sourceTree = "<group>"; };
 		59A5CE3F249A031600330571 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		59A5CE42249A065200330571 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		59A5CE44249A075700330571 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		59A5CE46249A08E500330571 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		59A5CE48249A0AF100330571 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		59A5CE4A249A0B0000330571 /* RemoteTimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTimeZone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,7 @@
 		59A5CE132499B5C900330571 /* SwiftUI-WatchTime */ = {
 			isa = PBXGroup;
 			children = (
+				59A5CE41249A063F00330571 /* Networking */,
 				59A5CE322499F5AE00330571 /* Shapes */,
 				59A5CE2F2499F57900330571 /* Models */,
 				59A5CE282499B65800330571 /* Views */,
@@ -120,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				59A5CE302499F58700330571 /* TimeZone.swift */,
+				59A5CE48249A0AF100330571 /* Location.swift */,
+				59A5CE4A249A0B0000330571 /* RemoteTimeZone.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +143,16 @@
 				59A5CE332499F5BF00330571 /* TopRoundedShape.swift */,
 			);
 			path = Shapes;
+			sourceTree = "<group>";
+		};
+		59A5CE41249A063F00330571 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				59A5CE42249A065200330571 /* WebService.swift */,
+				59A5CE44249A075700330571 /* Parser.swift */,
+				59A5CE46249A08E500330571 /* DataProvider.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,13 +230,18 @@
 				59A5CE40249A031600330571 /* AddButton.swift in Sources */,
 				59A5CE2A2499B66700330571 /* WatchHand.swift in Sources */,
 				59A5CE382499F7B000330571 /* AddedTimeZoneView.swift in Sources */,
+				59A5CE49249A0AF100330571 /* Location.swift in Sources */,
+				59A5CE4B249A0B0000330571 /* RemoteTimeZone.swift in Sources */,
+				59A5CE45249A075700330571 /* Parser.swift in Sources */,
 				59A5CE2E2499C39600330571 /* WatchView.swift in Sources */,
 				59A5CE3C249A02DD00330571 /* SavedTimeZones.swift in Sources */,
 				59A5CE312499F58700330571 /* TimeZone.swift in Sources */,
 				59A5CE3E249A02F900330571 /* BottomToolbar.swift in Sources */,
+				59A5CE43249A065200330571 /* WebService.swift in Sources */,
 				59A5CE3A249A02AD00330571 /* Header.swift in Sources */,
 				59A5CE362499F66F00330571 /* TimeZoneView.swift in Sources */,
 				59A5CE152499B5C900330571 /* AppDelegate.swift in Sources */,
+				59A5CE47249A08E500330571 /* DataProvider.swift in Sources */,
 				59A5CE342499F5BF00330571 /* TopRoundedShape.swift in Sources */,
 				59A5CE172499B5C900330571 /* SceneDelegate.swift in Sources */,
 				59A5CE192499B5C900330571 /* ContentView.swift in Sources */,
