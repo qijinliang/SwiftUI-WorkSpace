@@ -9,17 +9,31 @@
 import Foundation
 
 struct TimeZone: Identifiable {
+
     let id: UUID
-    let Country: String
-    let City: String
-    let time: String
-    
-    static func data() -> [TimeZone] {
-        return [
-            TimeZone(id: UUID(), Country: "美国", City: "芝加哥", time: "7:00 AM"),
-            TimeZone(id: UUID(), Country: "克罗地亚", City: "萨格勒布", time: "5:00 AM"),
-            TimeZone(id: UUID(), Country: "爱尔兰", City: "利默里克", time: "15:00 AM"),
-            TimeZone(id: UUID(), Country: "布隆迪", City: "布琼布拉", time: "10:00 AM"),
-        ]
+    let area: String
+    let location: String
+    let utcOffset: String
+
+    init() {
+        id = UUID()
+        self.area = "No area"
+        self.location = "No location"
+        self.utcOffset = "00:00"
+    }
+
+    init(_ area: String,_ location: String,_ utcOffset: String  ) {
+        id = UUID()
+        self.area = area
+        self.location = location
+        self.utcOffset = utcOffset
+    }
+
+    init(from remoteTimeZone: RemoteTimeZone) {
+        id = UUID()
+        utcOffset = remoteTimeZone.utcOffset
+        area = String(remoteTimeZone.timezone.split(separator: "/").first ?? "")
+        location =  String(remoteTimeZone.timezone.split(separator: "/").last ?? "")
+
     }
 }

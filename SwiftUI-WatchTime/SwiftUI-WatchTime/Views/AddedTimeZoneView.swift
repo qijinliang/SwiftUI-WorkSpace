@@ -10,12 +10,12 @@ import SwiftUI
 
 struct AddedTimeZoneView: View {
     
-    var timeZone = TimeZone.data().first!
+    var timeZone = TimeZone.init("测试","测试", "测试")
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(timeZone.Country).font(.system(size: 15, weight: Font.Weight.black))
-            Text(timeZone.City).foregroundColor(Color.gray)
+            Text(timeZone.area).font(.system(size: 15, weight: Font.Weight.black))
+            Text(timeZone.location).foregroundColor(Color.gray)
         }.padding()
             .background(Color.white)
         .cornerRadius(20)

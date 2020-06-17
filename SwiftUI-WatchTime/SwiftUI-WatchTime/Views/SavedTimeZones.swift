@@ -9,15 +9,15 @@
 import SwiftUI
 
 struct SavedTimeZones: View {
+    
+    var timeZone = TimeZone.init()
 
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
-                ForEach(TimeZone.data()) { timeZone in
-                    TimeZoneView(timeZone: timeZone)
+                    Text("")
                 }
             }
-        }
     }
 }
 
