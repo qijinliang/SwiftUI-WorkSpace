@@ -16,6 +16,12 @@
 		5951E7DA2498E78500642F8F /* NavIconStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E7D92498E78500642F8F /* NavIconStyle.swift */; };
 		5951E7DD2498E7A300642F8F /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E7DC2498E7A300642F8F /* RoundedShape.swift */; };
 		5951E7DF2498E92700642F8F /* WikiCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951E7DE2498E92700642F8F /* WikiCard.swift */; };
+		59DAE79D249B35EB002436DA /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DAE79C249B35EB002436DA /* SheetView.swift */; };
+		59DAE79F249B380E002436DA /* CustomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DAE79E249B380E002436DA /* CustomSheetView.swift */; };
+		59DAE7A1249B39B6002436DA /* CreateNewWikiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DAE7A0249B39B6002436DA /* CreateNewWikiView.swift */; };
+		59DAE7A3249B3F3A002436DA /* WikiButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DAE7A2249B3F3A002436DA /* WikiButton.swift */; };
+		59DAE7A5249B4307002436DA /* ToolbarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DAE7A4249B4307002436DA /* ToolbarButton.swift */; };
+		59DAE7A7249B4901002436DA /* ToolBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DAE7A6249B4901002436DA /* ToolBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		5951E7D92498E78500642F8F /* NavIconStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavIconStyle.swift; sourceTree = "<group>"; };
 		5951E7DC2498E7A300642F8F /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		5951E7DE2498E92700642F8F /* WikiCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiCard.swift; sourceTree = "<group>"; };
+		59DAE79C249B35EB002436DA /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		59DAE79E249B380E002436DA /* CustomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheetView.swift; sourceTree = "<group>"; };
+		59DAE7A0249B39B6002436DA /* CreateNewWikiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewWikiView.swift; sourceTree = "<group>"; };
+		59DAE7A2249B3F3A002436DA /* WikiButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiButton.swift; sourceTree = "<group>"; };
+		59DAE7A4249B4307002436DA /* ToolbarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarButton.swift; sourceTree = "<group>"; };
+		59DAE7A6249B4901002436DA /* ToolBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				5951E7DE2498E92700642F8F /* WikiCard.swift */,
+				59DAE79C249B35EB002436DA /* SheetView.swift */,
+				59DAE79E249B380E002436DA /* CustomSheetView.swift */,
+				59DAE7A0249B39B6002436DA /* CreateNewWikiView.swift */,
+				59DAE7A2249B3F3A002436DA /* WikiButton.swift */,
+				59DAE7A4249B4307002436DA /* ToolbarButton.swift */,
+				59DAE7A6249B4901002436DA /* ToolBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,11 +198,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5951E7DD2498E7A300642F8F /* RoundedShape.swift in Sources */,
+				59DAE79D249B35EB002436DA /* SheetView.swift in Sources */,
 				5951E7DA2498E78500642F8F /* NavIconStyle.swift in Sources */,
 				5951E7C32498E6FD00642F8F /* AppDelegate.swift in Sources */,
 				5951E7DF2498E92700642F8F /* WikiCard.swift in Sources */,
 				5951E7C52498E6FD00642F8F /* SceneDelegate.swift in Sources */,
+				59DAE7A7249B4901002436DA /* ToolBarView.swift in Sources */,
 				5951E7C72498E6FD00642F8F /* ContentView.swift in Sources */,
+				59DAE7A5249B4307002436DA /* ToolbarButton.swift in Sources */,
+				59DAE7A3249B3F3A002436DA /* WikiButton.swift in Sources */,
+				59DAE79F249B380E002436DA /* CustomSheetView.swift in Sources */,
+				59DAE7A1249B39B6002436DA /* CreateNewWikiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,4 +24,3 @@ struct RoundedShape: Shape {
         return path
     }
 }
-
