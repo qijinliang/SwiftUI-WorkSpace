@@ -9,10 +9,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var show = false
+    private let initialLaunchKey = "isInitialLaunch"
+    
     var body: some View {
         VStack {
-            PageViewContainer(viewControllers: Page.getAll.map({
-                UIHostingController(rootView: PageView(page: $0))}))
+            
+            if show || UserDefaults.standard.bool(forKey: initialLaunchKey) {
+                LoginView().transition(.move(edge: .bottom))
+            } else {
+                PageViewContainer(viewControllers: Page.getAll.map({
+                    UIHostingController(rootView: PageView(page: $0))}), presentSignupView: {
+                        withAnimation{
+                            self.show = true
+                        }
+                        UserDefaults.standard.set(true, forKey: self.initialLaunchKey)
+                }).transition(.scale)
+            }
         }.frame(maxWidth: .infinity)
             .background(Color.backgroundColor).edgesIgnoringSafeArea(.all)
     }
