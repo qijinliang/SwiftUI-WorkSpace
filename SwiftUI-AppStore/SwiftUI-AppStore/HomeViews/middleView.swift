@@ -26,7 +26,7 @@ struct middleView: View {
             HStack(spacing: 15) {
 
                 Button(action: {
-
+  
                 }) {
                     Image("trophy").renderingMode(.original)
                 }
@@ -49,6 +49,7 @@ struct middleView: View {
                     Image("punch").renderingMode(.original)
                 }
             }
+            
         }.sheet(isPresented: self.$show) {
             ExpandView(show: self.$show)
         }

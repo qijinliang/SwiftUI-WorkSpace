@@ -31,20 +31,23 @@ struct bottomView: View {
                 Spacer()
                 Text("->").foregroundColor(Color("Color"))
             }.padding(.vertical, 15)
-                .onTapGesture {
-                self.show.toggle()
-            }
+
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
                     ForEach(bottomlist) { i in
                         VStack(alignment: .leading, spacing: 8) {
-                            Image(i.image).renderingMode(.original)
+                            Image(i.image).renderingMode(.original).onTapGesture {
+                                self.show.toggle()
+                            }
                             Text(i.name)
                             Image("os")
                             Text(i.price).foregroundColor(Color("Color"))
                         }
                     }
+                }.sheet(isPresented: $show) {
+                    
+                    Detail()
                 }
             }
         }

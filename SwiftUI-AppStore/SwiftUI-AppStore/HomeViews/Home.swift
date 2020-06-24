@@ -14,6 +14,7 @@ struct Home: View {
     var scorlllist = ["游戏","应用","预购","应用购买"]
     
     var body: some View {
+        
         VStack(spacing: 15) {
             HStack {
                 Text("游戏商店").fontWeight(.heavy).font(.title)

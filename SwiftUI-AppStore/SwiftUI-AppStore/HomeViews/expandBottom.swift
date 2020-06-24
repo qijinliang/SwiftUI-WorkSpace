@@ -32,6 +32,7 @@ struct expandBottom: View {
                 }) {
                     Image("heartplus").renderingMode(.original).resizable()
                     .frame(width: 22, height: 20)
+
                 }.padding(.bottom, 35)
             }
             

@@ -10,27 +10,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            Home().tabItem {
-                Image("home")
-            }
-            
-            GameHome().tabItem {
-                Image("globe")
-            }
-            
-            Text("cart").tabItem {
-                Image("cart")
-            }
-            
-            Text("Heart").tabItem {
-                Image("heart")
-            }
-            
-            Text("user").tabItem {
-                Image("user")
-            }
-        }.accentColor(Color("Color"))
+            TabView {
+                Home().tabItem {
+                    Image("home")
+                }
+                
+                GameHome().tabItem {
+                    Image("globe")
+                }
+                
+                Text("cart").tabItem {
+                    Image("cart")
+                }
+                
+                Text("Heart").tabItem {
+                    Image("heart")
+                }
+                
+                Text("user").tabItem {
+                    Image("user")
+                }
+            }.accentColor(Color("Color"))
+        
     }
 }
 
