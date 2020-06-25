@@ -68,12 +68,20 @@ struct Card: View {
                     .clipShape(Circle())
                 
                 Spacer(minLength: 0)
-                
-//                NavigationLink(destination: Detail(data: self.data)) {
-//                    Text("123")
-//                }
+
+                .offset(y: -35)
             }
+            .padding(.trailing)
         }
+        .frame(height: 290)
+        .background(
+            Color.white.opacity(0.2)
+                .contrast(25)
+                .rotation3DEffect(.init(degrees: 20), axis: (x: 0, y: -1, z: 0))
+                .padding(.vertical, 35)
+                .padding(.trailing, 25)
+        )
+            .padding(.horizontal)
     }
 }
 

@@ -19,7 +19,7 @@ struct ContentView: View {
                     Image("globe")
                 }
                 
-                Text("cart").tabItem {
+                CartView().tabItem {
                     Image("cart")
                 }
                 
