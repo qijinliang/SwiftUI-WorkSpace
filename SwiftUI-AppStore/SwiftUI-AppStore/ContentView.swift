@@ -23,11 +23,11 @@ struct ContentView: View {
                     Image("cart")
                 }
                 
-                Text("Heart").tabItem {
+                PictureList().tabItem {
                     Image("heart")
                 }
                 
-                Text("user").tabItem {
+                ProfileView().tabItem {
                     Image("user")
                 }
             }.accentColor(Color("Color"))
