@@ -8,15 +8,15 @@
 
 import Foundation
 
-enum SortTtype: CaseIterable,CustomStringConvertible {
+enum SortType: CaseIterable, CustomStringConvertible {
     case popularity
     case rating
     case releaseData
-
+    
     var description: String {
         switch self {
         case .popularity:
-            return "最多喜欢"
+            return "最多人喜欢"
         case .rating:
             return "最多评价"
         case .releaseData:

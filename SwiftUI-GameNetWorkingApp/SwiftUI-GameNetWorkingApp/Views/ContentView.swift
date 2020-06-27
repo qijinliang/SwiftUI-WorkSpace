@@ -10,17 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-            .onAppear {
-                GameStore.shared.fetchGame(with: .games) { (result) in
-                    switch result {
-                    case .success(let games):
-                        print(games.count)
-                    case .failure(let error):
-                        print(error.localizedDescription)
-                    }
-                }
-        }
+        GameStoreController()
+            .edgesIgnoringSafeArea(.bottom)
     }
 }
 

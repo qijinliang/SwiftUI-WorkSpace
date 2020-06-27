@@ -35,7 +35,7 @@ class GameStore: GameService {
     
     
     func loadDataAndDecoder<D: Decodable>(url: URL, parmas: String? = nil, completion: @escaping(Result<D, GameError>) -> ()){
-
+        // check url
         guard let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) else {
             completion(.failure(.invalidEndpoint))
             return
@@ -96,3 +96,4 @@ class GameStore: GameService {
     
     
 }
+
