@@ -1,6 +1,0 @@
-framework module Pods_Swift_NetWorkingTests {
-  umbrella header "Pods-Swift-NetWorkingTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

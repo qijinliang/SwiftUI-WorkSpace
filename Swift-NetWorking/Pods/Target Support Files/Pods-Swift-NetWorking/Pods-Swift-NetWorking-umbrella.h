@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Swift_NetWorkingVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Swift_NetWorkingVersionString[];
+FOUNDATION_EXPORT double Pods_Swift_NetworkingVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Swift_NetworkingVersionString[];
 

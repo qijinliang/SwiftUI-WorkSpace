@@ -78,6 +78,17 @@ extension UIColor {
         let b = Double(RGBArr[3])
         return UIColor(red: CGFloat(r ?? 0.0), green: CGFloat(g ?? 0.0), blue: CGFloat(b ?? 0.0), alpha: alpha)
     }
+    
+    func image() -> UIImage {
+        let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        context!.setFillColor(self.cgColor)
+        context!.fill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
+    }
   
 }
 
