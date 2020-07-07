@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		599ACCBE24B416A50068EC71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599ACCBD24B416A50068EC71 /* AppDelegate.swift */; };
-		599ACCC024B416A50068EC71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599ACCBF24B416A50068EC71 /* SceneDelegate.swift */; };
 		599ACCC224B416A50068EC71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599ACCC124B416A50068EC71 /* ViewController.swift */; };
 		599ACCC524B416A50068EC71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599ACCC324B416A50068EC71 /* Main.storyboard */; };
 		599ACCC824B416A50068EC71 /* Swift_NetWorking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 599ACCC624B416A50068EC71 /* Swift_NetWorking.xcdatamodeld */; };
 		599ACCCA24B416A50068EC71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 599ACCC924B416A50068EC71 /* Assets.xcassets */; };
 		599ACCCD24B416A50068EC71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 599ACCCB24B416A50068EC71 /* LaunchScreen.storyboard */; };
 		599ACCD824B416A50068EC71 /* Swift_NetWorkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599ACCD724B416A50068EC71 /* Swift_NetWorkingTests.swift */; };
+		599ACCE524B41ACD0068EC71 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599ACCE424B41ACD0068EC71 /* StringExtension.swift */; };
+		599ACCE824B41B240068EC71 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599ACCE724B41B240068EC71 /* Common.swift */; };
+		599ACCEA24B41B520068EC71 /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599ACCE924B41B510068EC71 /* UIColorExtention.swift */; };
+		599ACCED24B41BA10068EC71 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599ACCEC24B41BA10068EC71 /* DeviceInfo.swift */; };
+		599ACCEF24B41BCB0068EC71 /* CustomHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599ACCEE24B41BCB0068EC71 /* CustomHUD.swift */; };
+		59F7D77524B41E0C00B89980 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F7D77424B41E0C00B89980 /* MainViewController.swift */; };
 		853E802539D43F50AEC60931 /* Pods_Swift_NetWorkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED2C33B1B9A07FB824E82D /* Pods_Swift_NetWorkingTests.framework */; };
 		DFFE3527DDEF522338185BFB /* Pods_Swift_NetWorking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA8619089ECEB5E603DC603 /* Pods_Swift_NetWorking.framework */; };
 /* End PBXBuildFile section */
@@ -34,7 +39,6 @@
 		48ED2C33B1B9A07FB824E82D /* Pods_Swift_NetWorkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_NetWorkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		599ACCBA24B416A50068EC71 /* Swift-NetWorking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-NetWorking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		599ACCBD24B416A50068EC71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		599ACCBF24B416A50068EC71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		599ACCC124B416A50068EC71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		599ACCC424B416A50068EC71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		599ACCC724B416A50068EC71 /* Swift_NetWorking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Swift_NetWorking.xcdatamodel; sourceTree = "<group>"; };
@@ -44,6 +48,12 @@
 		599ACCD324B416A50068EC71 /* Swift-NetWorkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-NetWorkingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		599ACCD724B416A50068EC71 /* Swift_NetWorkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_NetWorkingTests.swift; sourceTree = "<group>"; };
 		599ACCD924B416A50068EC71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		599ACCE424B41ACD0068EC71 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		599ACCE724B41B240068EC71 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		599ACCE924B41B510068EC71 /* UIColorExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
+		599ACCEC24B41BA10068EC71 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		599ACCEE24B41BCB0068EC71 /* CustomHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHUD.swift; sourceTree = "<group>"; };
+		59F7D77424B41E0C00B89980 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5BDAC020880ED98C998CD35A /* Pods-Swift-NetWorking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-NetWorking.debug.xcconfig"; path = "Target Support Files/Pods-Swift-NetWorking/Pods-Swift-NetWorking.debug.xcconfig"; sourceTree = "<group>"; };
 		78034E5BF67ED622E4EEB8A6 /* Pods-Swift-NetWorkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-NetWorkingTests.release.xcconfig"; path = "Target Support Files/Pods-Swift-NetWorkingTests/Pods-Swift-NetWorkingTests.release.xcconfig"; sourceTree = "<group>"; };
 		7CA63F70856852298219AB10 /* Pods-Swift-NetWorkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift-NetWorkingTests.debug.xcconfig"; path = "Target Support Files/Pods-Swift-NetWorkingTests/Pods-Swift-NetWorkingTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,8 +114,8 @@
 		599ACCBC24B416A50068EC71 /* Swift-NetWorking */ = {
 			isa = PBXGroup;
 			children = (
+				599ACCE224B41AA40068EC71 /* Classes */,
 				599ACCBD24B416A50068EC71 /* AppDelegate.swift */,
-				599ACCBF24B416A50068EC71 /* SceneDelegate.swift */,
 				599ACCC124B416A50068EC71 /* ViewController.swift */,
 				599ACCC324B416A50068EC71 /* Main.storyboard */,
 				599ACCC924B416A50068EC71 /* Assets.xcassets */,
@@ -123,6 +133,59 @@
 				599ACCD924B416A50068EC71 /* Info.plist */,
 			);
 			path = "Swift-NetWorkingTests";
+			sourceTree = "<group>";
+		};
+		599ACCE224B41AA40068EC71 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				59F7D77224B41DD200B89980 /* Main */,
+				599ACCEB24B41B870068EC71 /* Tools */,
+				599ACCE624B41B0F0068EC71 /* Common */,
+				599ACCE324B41AAD0068EC71 /* Extension */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		599ACCE324B41AAD0068EC71 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				599ACCE424B41ACD0068EC71 /* StringExtension.swift */,
+				599ACCE924B41B510068EC71 /* UIColorExtention.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		599ACCE624B41B0F0068EC71 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				599ACCE724B41B240068EC71 /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		599ACCEB24B41B870068EC71 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				599ACCEC24B41BA10068EC71 /* DeviceInfo.swift */,
+				599ACCEE24B41BCB0068EC71 /* CustomHUD.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		59F7D77224B41DD200B89980 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				59F7D77324B41DD700B89980 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		59F7D77324B41DD700B89980 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				59F7D77424B41E0C00B89980 /* MainViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		EA3DADE26CCCCB86B89A86EB /* Frameworks */ = {
@@ -304,8 +367,13 @@
 			files = (
 				599ACCC224B416A50068EC71 /* ViewController.swift in Sources */,
 				599ACCC824B416A50068EC71 /* Swift_NetWorking.xcdatamodeld in Sources */,
+				599ACCE524B41ACD0068EC71 /* StringExtension.swift in Sources */,
 				599ACCBE24B416A50068EC71 /* AppDelegate.swift in Sources */,
-				599ACCC024B416A50068EC71 /* SceneDelegate.swift in Sources */,
+				599ACCE824B41B240068EC71 /* Common.swift in Sources */,
+				599ACCEA24B41B520068EC71 /* UIColorExtention.swift in Sources */,
+				59F7D77524B41E0C00B89980 /* MainViewController.swift in Sources */,
+				599ACCED24B41BA10068EC71 /* DeviceInfo.swift in Sources */,
+				599ACCEF24B41BCB0068EC71 /* CustomHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Swift-NetWorking/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,7 +555,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Swift-NetWorking/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
