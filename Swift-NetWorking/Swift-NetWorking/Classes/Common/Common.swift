@@ -27,43 +27,24 @@ let kBlackColor = UIColor(red: 57/255, green: 57/255, blue: 58/255, alpha: 1.0)
 let kBackgroundColor = UIColor.hexStringToColor(stringToConvert: "#F7F8FC")
 let kLineColor = UIColor.hexStringToColor(stringToConvert: "#E5E7ED")
 
-//MARK:- font (不用动态字体)
-let kFont30 = UIFont.systemFont(ofSize: 30)
-let kFont20 = UIFont.systemFont(ofSize: 20)
-let kFont17  = UIFont.systemFont(ofSize: 17)
-let kFont16  = UIFont.systemFont(ofSize: 16)
-let kFont15  = UIFont.systemFont(ofSize: 15)
-let kFont14  = UIFont.systemFont(ofSize: 14)
-let kFont13  = UIFont.systemFont(ofSize: 13)
-let kFont12  = UIFont.systemFont(ofSize: 12)
-let kFont11  = UIFont.systemFont(ofSize: 11)
-let kFont10  = UIFont.systemFont(ofSize: 10)
 
-//MARK:-判断字符串是否存在
-func stringIsEmpty(_ string: String?)->Bool{
-    if string==nil || string == "" {
-        return true
-    }else {
-        return false
-    }
+/// 获取当前 秒级 时间戳 - 10位
+func getTimeStamp() -> String {
+    //获取当前时间
+    let now = NSDate()
+    //当前时间的时间戳
+    let timeInterval : TimeInterval = now.timeIntervalSince1970
+    let timeStamp = Int(timeInterval)
+    return "\(timeStamp)"
 }
 
-//MARK:-计算字体大小
-func calculateTextSize(text: String, font: UIFont) -> CGSize {
-    let str = NSString(string: text)
-    let size = str.size(withAttributes: [NSAttributedString.Key.font: font])
-    return size
-}
-
-//MARK:-延迟执行
-func delay(_ delay:Double, closure:@escaping ()->()) {
-    DispatchQueue.main.asyncAfter(
-        deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
-}
-
-func getStoryboardInstantiateViewController(identifier: String) -> UIViewController? {
-    let sb = UIStoryboard(name: "Main", bundle: nil)
-    return sb.instantiateViewController(withIdentifier: identifier)
+func getMilliStamp() -> String {
+    //获取当前时间
+    let now = NSDate()
+    //当前时间的时间戳
+    let timeInterval : TimeInterval = now.timeIntervalSince1970
+    let millisecond = CLongLong(round(timeInterval*1000))
+    return "\(millisecond)"
 }
 
 func timeIntervalToMMSSFormat(interval: Float64) -> String {

@@ -10,8 +10,8 @@ target 'Swift-Networking' do
   pod 'PKHUD'
   pod 'Alamofire'
   pod 'Kingfisher'
-  pod 'ObjectMapper'
+  pod 'HandyJSON'
   pod 'SnapKit'
   pod 'MJRefresh'
-
+  pod 'SwiftyJSON'
 end
