@@ -5,5 +5,7 @@
         <page name='HStack 简单布局'/>
         <page name='ZStack 简单布局'/>
         <page name='VStack&amp;&amp;HStack简单布局'/>
+        <page name='Charts图表'/>
+        <page name='MapView地图&amp;&amp; WKWebView'/>
     </pages>
 </playground>
