@@ -39,11 +39,13 @@ class PhotoGridController: LBTAListController<GridCell, Photo>, UICollectionView
         collectionView.isScrollEnabled = false
         
         items = [
-            Photo(imageName: "1"),
+            Photo(imageName: "11"),
             Photo(imageName: "2"),
             Photo(imageName: "3"),
             Photo(imageName: "4"),
-            Photo(imageName: "1"),
+            Photo(imageName: "5"),
+            Photo(imageName: "6"),
+            Photo(imageName: "7"),
         ]
         collectionView.backgroundColor = .lightGray
     }

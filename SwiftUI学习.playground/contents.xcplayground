@@ -4,8 +4,13 @@
         <page name='VStack简单布局'/>
         <page name='HStack 简单布局'/>
         <page name='ZStack 简单布局'/>
-        <page name='VStack&amp;&amp;HStack简单布局'/>
-        <page name='Charts图表'/>
+        <page name='VStack&amp;&amp;HStack 简单布局'/>
+        <page name='Charts 图表'/>
         <page name='MapView地图&amp;&amp; WKWebView'/>
+        <page name='FoodLayout 布局'/>
+        <page name='Movie 电影票'/>
+        <page name='Movie 电影票2'/>
+        <page name='Json网络加载图片'/>
+        <page name='@Binding'/>
     </pages>
 </playground>

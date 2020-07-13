@@ -22,7 +22,7 @@ class StoryCell: LBTAListCell<Story> {
         }
     }
     
-    let imageView = UIImageView(image: UIImage(named: "2"), contentMode: .scaleAspectFill)
+    let imageView = UIImageView(image: UIImage(named: "11"), contentMode: .scaleAspectFill)
     let avatarImageView = CircularImageView(width: 36, image: UIImage(named: "3"))
     let nameLabel = UILabel(text: "齐金亮", font: .systemFont(ofSize: 13, weight: .bold), textColor: .white)
 
@@ -80,8 +80,8 @@ class StoriesController: LBTAListController<StoryCell, Story>, UICollectionViewD
         super.viewDidLoad()
         
         items = [
-            .init(imageName: "2"),
-            .init(imageName: "4"),
+            .init(imageName: "11"),
+            .init(imageName: "8"),
             .init(imageName: "2"),
         ]
         collectionView.backgroundColor = UIColor.systemBackground
