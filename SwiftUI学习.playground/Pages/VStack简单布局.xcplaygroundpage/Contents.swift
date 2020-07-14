@@ -8,17 +8,15 @@ struct ContentView: View{
         VStack {
             VStack(alignment: .trailing, spacing: 10){
                 VStack{
-                    Text("我❤️")
+                    Text("我")
                         .frame(width: 100, height: 30)
                         .foregroundColor(Color.white)
                 }
                 .padding()
                 .background(Color.orange)
                 
-                
-                
                 VStack() {
-                    Text("何艳婷")
+                    Text("图片")
                         .frame(width: 100, height: 30)
                         .foregroundColor(Color.white)
                 }
@@ -30,14 +28,6 @@ struct ContentView: View{
         }
         .padding()
         .background(Color.blue)
-        .debug()
-    }
-}
-//检查body的实际类型，创建辅助函数
-extension View {
-    func debug()->Self {
-        print(Mirror(reflecting: self).subjectType)
-        return self
     }
 }
 

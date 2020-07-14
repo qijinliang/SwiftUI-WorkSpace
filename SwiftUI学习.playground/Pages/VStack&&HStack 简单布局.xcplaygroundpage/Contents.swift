@@ -10,6 +10,8 @@ struct ContentView: View {
                 HStack {
                     HStack {
                         Text("上下布局")
+                            .foregroundColor(Color.white)
+                        
                     }
                     .padding()
                     .background(Color.black)

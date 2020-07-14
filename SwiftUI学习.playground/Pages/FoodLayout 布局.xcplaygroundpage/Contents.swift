@@ -122,7 +122,8 @@ class ContentCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-
+        
+        
         self.backgroundColor = .purple
     }
     

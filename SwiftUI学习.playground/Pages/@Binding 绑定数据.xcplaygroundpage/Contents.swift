@@ -29,18 +29,20 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(pokemonList) { pokemon in
-                    VStack(alignment: .leading, spacing: 10) {
-                        Text(pokemon.name)
-                        
-                        if self.showDetail {
-                            Image.init(uiImage: pokemon.imageName)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: 50, height: 50)
-                        }
-
+                VStack(alignment: .leading, spacing: 10) {
+                    Text(pokemon.name)
+                    
+                    if self.showDetail {
+                        Image(uiImage: pokemon.imageName)
+                            .resizable()
+                            .scaledToFill()
+                            .cornerRadius(8)
+                            .shadow(radius: 10)
+                            .frame(width: 50, height: 50)
                     }
-                    .padding()
+                    
+                }
+                .padding()
             }
             .navigationBarTitle(Text("Pokemon"))
             .navigationBarItems(

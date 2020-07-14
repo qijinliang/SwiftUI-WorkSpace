@@ -23,7 +23,7 @@ struct Day: Identifiable{
 }
 
 struct BuyTicketsView: View {
-    let movie = Movie(name: "车票", imageName: #imageLiteral(resourceName: "车模1.jpg"))
+    let movie = Movie(name: "车票", imageName: #imageLiteral(resourceName: "车模.jpg"))
     
     let topDays: [Day] = [
         .init(month: "日期", day: "09", dayOfWeek: "周一"),
