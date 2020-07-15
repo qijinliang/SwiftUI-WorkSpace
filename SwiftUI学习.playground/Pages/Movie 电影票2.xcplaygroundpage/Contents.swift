@@ -35,7 +35,6 @@ struct ContentView: View {
                 }
                 ScrollView {
                     VStack(spacing: 48) {
-                        
                         ForEach(self.movies, id: \.self) { row in
                             HStack(spacing: 16) {
                                 ForEach(row) { movie in
