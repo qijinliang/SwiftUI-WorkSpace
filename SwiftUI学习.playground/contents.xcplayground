@@ -14,5 +14,6 @@
         <page name='@Binding 绑定数据'/>
         <page name='综合小应用'/>
         <page name='ScrollView 滚动视图'/>
+        <page name='ScrollView 滚动视图2'/>
     </pages>
 </playground>
