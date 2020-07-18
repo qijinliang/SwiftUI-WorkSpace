@@ -17,10 +17,11 @@ struct ContentView: View {
     @State var show = false
     
     let movies: [[Movie]] = [
-        [.init(name: "车模1", imageName: #imageLiteral(resourceName: "1.jpg")),
-         .init(name: "车模2", imageName: #imageLiteral(resourceName: "2.jpg"))],
-        [.init(name: "车模3",imageName: #imageLiteral(resourceName: "3.jpg")),
-         .init(name: "车模3",imageName: #imageLiteral(resourceName: "4.jpg"))]
+        [.init(name: "赵小臭", imageName: #imageLiteral(resourceName: "赵小臭1.jpg")),
+         .init(name: "赵小臭", imageName: #imageLiteral(resourceName: "赵小臭2.jpg"))],
+        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭3.jpg")),
+         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭4.jpg")),
+         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭5.jpg"))]
     ]
     
     
@@ -74,7 +75,7 @@ struct MovieView: View {
                     .offset(x: 10,y: -45)
                     .foregroundColor(Color.white)
             }
-
+            
         }
     }
 }
@@ -91,14 +92,14 @@ struct ShowMovie: Identifiable, Hashable {
 struct ShowView: View {
     
     let showmovies: [[ShowMovie]] = [
-        [.init(name: "车模", imageName: #imageLiteral(resourceName: "车模1.jpg")),
-         .init(name:"车模", imageName: #imageLiteral(resourceName: "车模2.jpg"))],
-        [.init(name: "车模",imageName: #imageLiteral(resourceName: "车模3.jpg")),
-         .init(name: "车模",imageName: #imageLiteral(resourceName: "车模4.jpg"))],
-        [.init(name: "车模",imageName: #imageLiteral(resourceName: "车模5.jpg")),
-         .init(name: "车模",imageName: #imageLiteral(resourceName: "车模6.jpg"))],
-        [.init(name: "车模",imageName: #imageLiteral(resourceName: "车模7.jpg")),
-         .init(name: "车模",imageName: #imageLiteral(resourceName: "车模8.jpg"))]
+        [.init(name: "赵小臭", imageName: #imageLiteral(resourceName: "赵小臭5.jpg")),
+         .init(name:"赵小臭", imageName: #imageLiteral(resourceName: "赵小臭6.jpg"))],
+        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭7.jpg")),
+         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭8.jpg"))],
+        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭9.jpg")),
+         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭10.jpg"))],
+        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭1.jpg")),
+         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭2.jpg"))]
     ]
     
     

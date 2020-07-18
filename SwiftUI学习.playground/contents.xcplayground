@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios'>
     <pages>
-        <page name='VStack简单布局'/>
         <page name='HStack 简单布局'/>
-        <page name='ZStack 简单布局'/>
         <page name='VStack&amp;&amp;HStack 简单布局'/>
         <page name='Charts 图表'/>
-        <page name='MapView地图&amp;&amp; WKWebView'/>
+        <page name='设置'/>
         <page name='FoodLayout 布局'/>
         <page name='Movie 电影票'/>
         <page name='Movie 电影票2'/>
@@ -15,5 +13,7 @@
         <page name='综合小应用'/>
         <page name='ScrollView 滚动视图'/>
         <page name='ScrollView 滚动视图2'/>
+        <page name='Gesture 手势'/>
+        <page name='GeometryReader'/>
     </pages>
 </playground>

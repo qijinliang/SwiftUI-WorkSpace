@@ -3,226 +3,80 @@
 import SwiftUI
 import PlaygroundSupport
 
-struct Card: Identifiable, Hashable {
-    let id: Int
-    let image: UIImage
-    let title: String
-    let subTitile: String
+struct Sections: Identifiable {
+    var id = UUID()
+    var title: String
+    var image: Image
+    var color: Color
 }
 
-
-var data = [
-    Card(id: 0, image: #imageLiteral(resourceName: "g1.png"), title: "游戏标题", subTitile: "游戏介绍"),
-    Card(id: 1, image: #imageLiteral(resourceName: "g2.png"), title: "游戏标题", subTitile: "游戏介绍"),
-    Card(id: 2, image: #imageLiteral(resourceName: "g3.png"), title: "游戏标题", subTitile: "游戏介绍"),
-    Card(id: 3, image: #imageLiteral(resourceName: "g4.png"), title: "游戏标题", subTitile: "游戏介绍"),
-    Card(id: 4, image: #imageLiteral(resourceName: "g5.png"), title: "游戏标题", subTitile: "游戏介绍"),
-    Card(id: 5, image: #imageLiteral(resourceName: "g6.png"), title: "游戏标题", subTitile: "游戏介绍"),
-    Card(id: 6, image: #imageLiteral(resourceName: "g7.png"), title: "游戏标题", subTitile: "游戏介绍"),
-    Card(id: 7, image: #imageLiteral(resourceName: "g8.png"), title: "游戏标题", subTitile: "游戏介绍")
+let sectionData = [
+    
+    Sections(title: "蘑菇炒豆角", image: Image(uiImage: #imageLiteral(resourceName: "4.png")), color: Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))),
+    Sections(title: "腊肠炒白菜", image: Image(uiImage: #imageLiteral(resourceName: "1.png")), color: Color(#colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1))),
+    Sections(title: "大葱豆腐",image:Image(uiImage: #imageLiteral(resourceName: "2.png")), color: Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1))),
+    Sections(title: "鱼香肉丝", image: Image(uiImage: #imageLiteral(resourceName: "3.png")), color: Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1))),
+    Sections(title: "香菇鸡肉", image: Image(uiImage: #imageLiteral(resourceName: "5.png")), color: Color(#colorLiteral(red: 0.3538610262, green: 0.6242842952, blue: 0.6906747523, alpha: 1)))
 ]
 
 
-struct contentView: View {
+struct ContentView: View {
+    
     var body: some View {
-        Home()
-    }
-}
-
-struct Home : View {
-    
-    @State var time = Timer.publish(every: 0.1, on: .current, in: .tracking).autoconnect()
-    
-    @State var show = false
-    
-    var body: some View{
-        
-        ZStack(alignment: .top, content: {
-            
-            ScrollView(.vertical, showsIndicators: false, content: {
+        VStack {
+            HStack {
+                Text("美食菜单")
+                    .font(.system(size: 28, weight: .bold))
                 
-                VStack{
-                    GeometryReader{g in
-                        Image.init(uiImage: #imageLiteral(resourceName: "poster.png")).resizable()
-                            .offset(y: g.frame(in: .global).minY > 0 ? -g.frame(in: .global).minY : 0)
-                            .frame(height: g.frame(in: .global).minY > 0 ? UIScreen.main.bounds.height / 2.2 + g.frame(in: .global).minY  : UIScreen.main.bounds.height / 2.2)
-                            .onReceive(self.time) { (_) in
-                                
-                                let y = g.frame(in: .global).minY
-                                
-                                if -y > (UIScreen.main.bounds.height / 2.2) - 50{
-                                    
-                                    withAnimation{
-                                        
-                                        self.show = true
-                                    }
-                                }
-                                else{
-                                    
-                                    withAnimation{
-                                        
-                                        self.show = false
-                                    }
-                                }
-                                
-                        }
-                        
-                    }
-                    .frame(height: UIScreen.main.bounds.height / 2.2)
-                    
-                    VStack{
-                        
-                        HStack{
-                            
-                            Text("2020年度游戏排行榜")
-                                .font(.title)
-                                .fontWeight(.bold)
-                            
-                            Spacer()
-                            
-                            Button(action: {
-                                
-                            }) {
-                                
-                                Text("查看全部")
-                                    .fontWeight(.bold)
-                            }
-                        }
-                        
-                        VStack(spacing: 20){
-                            
-                            ForEach(data){i in
-                                
-                                CardView(data: i)
-                            }
-                        }
-                        .padding(.top)
-                    }
-                    .padding()
-                    
-                    Spacer()
-                }
-            })
-            
-            if self.show{
-                
-                TopView()
-            }
-        })
-            .edgesIgnoringSafeArea(.top)
-    }
-}
-
-
-struct CardView : View {
-    
-    var data : Card
-    
-    var body: some View{
-        
-        HStack(alignment: .top, spacing: 20){
-            
-            Image.init(uiImage: self.data.image)
-            
-            VStack(alignment: .leading, spacing: 6) {
-                
-                Text(self.data.title)
-                    .fontWeight(.bold)
-                
-                Text(self.data.subTitile)
-                    .font(.caption)
-                    .foregroundColor(.gray)
-                
-                HStack(spacing: 12){
-                    
-                    Button(action: {
-                        
-                    }) {
-                        
-                        Text("下载")
-                            .fontWeight(.bold)
-                            .padding(.vertical,10)
-                            .padding(.horizontal,25)
-                            .background(Color.primary.opacity(0.06))
-                            .clipShape(Capsule())
-                    }
-                    
-                    Text("应用程序")
-                        .font(.caption)
-                        .foregroundColor(.gray)
-                }
+                Spacer()
                 
             }
+            .padding(.horizontal)
+            .padding(.leading, 14)
+            .padding(.top, 30)
             
-            Spacer(minLength: 0)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 20) {
+                    ForEach(sectionData) { item in
+                        GeometryReader { geometry in
+                            SectionView(section: item)
+                                .rotation3DEffect(Angle(degrees:
+                                    Double(geometry.frame(in: .global).minX - 30) / -20
+                                ), axis: (x: 0, y: 10, z: 0))
+                        }
+                        .frame(width: 275, height: 275)
+                    }
+                }
+                .padding(30)
+                .padding(.bottom, 30)
+            }
+            Spacer()
         }
     }
 }
 
-struct TopView : View {
+struct SectionView: View {
+    var section: Sections
     
-    var body: some View{
-        
-        HStack{
-            
-            VStack(alignment: .leading, spacing: 12) {
-                
-                HStack(alignment: .top){
-                    
-                    Image.init(uiImage: #imageLiteral(resourceName: "apple.png"))
-                        .renderingMode(.template)
-                        .resizable()
-                        .frame(width: 25, height: 30)
-                        .foregroundColor(.primary)
-                    
-                    Text("AppleStore")
-                        .font(.title)
-                        .fontWeight(.bold)
-                }
-                
-                Text("每个月12元")
-                    .font(.caption)
-                    .foregroundColor(.gray)
-            }
-            
-            Spacer(minLength: 0)
-            
-            Button(action: {
-                
-            }) {
-                
-                Text("免费订阅")
-                    .foregroundColor(.white)
-                    .padding(.vertical,10)
-                    .padding(.horizontal, 25)
-                    .background(Color.blue)
-                    .clipShape(Capsule())
-            }
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(section.title)
+                .font(.system(size: 24, weight: .bold))
+                .frame(width: 160, alignment: .leading)
+                .foregroundColor(section.color)
+            section.image
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 275,height: 275)
+                .cornerRadius(30)
         }
-        .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top == 0 ? 15 : (UIApplication.shared.windows.first?.safeAreaInsets.top)! + 5)
-        .padding(.horizontal)
-        .padding(.bottom)
-        .background(BlurBG())
+        .padding(.top, 20)
+        .padding(.horizontal, 20)
+        .frame(width: 300, height: 300)
+        .shadow(color: section.color.opacity(0.3), radius: 20, x: 0, y: 20)
     }
 }
 
-
-struct BlurBG : UIViewRepresentable {
-    
-    func makeUIView(context: Context) -> UIVisualEffectView{
-        
-        
-        let view = UIVisualEffectView(effect: UIBlurEffect(style: .systemMaterial))
-        
-        return view
-    }
-    
-    func updateUIView(_ uiView: UIVisualEffectView, context: Context) {
-        
-        
-    }
-}
-
-PlaygroundPage.current.setLiveView(contentView())
+PlaygroundPage.current.setLiveView(ContentView())
 
 //: [Next](@next)
