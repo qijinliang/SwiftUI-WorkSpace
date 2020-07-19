@@ -11,17 +11,17 @@ struct Movie: Identifiable, Hashable {
 }
 
 
-
 struct ContentView: View {
     
-    @State var show = false
-    
     let movies: [[Movie]] = [
-        [.init(name: "赵小臭", imageName: #imageLiteral(resourceName: "赵小臭1.jpg")),
-         .init(name: "赵小臭", imageName: #imageLiteral(resourceName: "赵小臭2.jpg"))],
-        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭3.jpg")),
-         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭4.jpg")),
-         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭5.jpg"))]
+    [.init(name: "车模", imageName: #imageLiteral(resourceName: "车模1.jpg")),
+    .init(name:"车模", imageName: #imageLiteral(resourceName: "车模2.jpg"))],
+    [.init(name: "车模",imageName: #imageLiteral(resourceName: "车模3.jpg")),
+    .init(name: "车模",imageName: #imageLiteral(resourceName: "车模4.jpg"))],
+    [.init(name: "车模", imageName: #imageLiteral(resourceName: "车模5.jpg")),
+    .init(name:"车模", imageName: #imageLiteral(resourceName: "车模6.jpg"))],
+    [.init(name: "车模",imageName: #imageLiteral(resourceName: "车模7.jpg")),
+    .init(name: "车模",imageName: #imageLiteral(resourceName: "车模8.jpg"))],
     ]
     
     
@@ -29,22 +29,22 @@ struct ContentView: View {
         GeometryReader { geo in
             
             VStack {
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 20) {
+                HStack {
+                    Text("图片加载")
+                        .font(.system(size: 20, weight: .semibold))
+                }
+                ScrollView {
+                    VStack(spacing: 48) {
                         ForEach(self.movies, id: \.self) { row in
-                            ForEach(row) { movie in
-                                
-                                MovieView(movie: movie, size: geo.size).onTapGesture {
-                                    self.show.toggle()
+                            HStack(spacing: 16) {
+                                ForEach(row) { movie in
+                                    MovieView(movie: movie, size: geo.size )
                                 }
-                                
                             }
                         }
                         Spacer()
                     }.padding(.horizontal, 16)
                 }
-            }.sheet(isPresented: self.$show) {
-                ShowView()
             }
         }
     }
@@ -58,95 +58,31 @@ struct MovieView: View {
     
     var body: some View {
         
-        VStack {
-            VStack(alignment: .leading ,spacing: 10) {
-                
-                Image(uiImage: self.movie.imageName)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: (size.width) / 2, height: 250)
-                    .clipped()
-                    .cornerRadius(8)
-                    .shadow(radius: 10)
-                
-                Text(self.movie.name)
-                    .font(.system(size: 24))
-                    .fontWeight(.heavy)
-                    .offset(x: 10,y: -45)
-                    .foregroundColor(Color.white)
-            }
-            
-        }
-    }
-}
-
-
-struct ShowMovie: Identifiable, Hashable {
-    let id = UUID.init()
-    let name: String
-    let imageName: UIImage
-    
-}
-
-
-struct ShowView: View {
-    
-    let showmovies: [[ShowMovie]] = [
-        [.init(name: "赵小臭", imageName: #imageLiteral(resourceName: "赵小臭5.jpg")),
-         .init(name:"赵小臭", imageName: #imageLiteral(resourceName: "赵小臭6.jpg"))],
-        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭7.jpg")),
-         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭8.jpg"))],
-        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭9.jpg")),
-         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭10.jpg"))],
-        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭1.jpg")),
-         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭2.jpg"))]
-    ]
-    
-    
-    var body: some View {
-        GeometryReader { geo in
-            
-            VStack {
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack(spacing: 20) {
-                        ForEach(self.showmovies, id: \.self) { row in
-                            ForEach(row) { showmovie in
-                                ShowMovieView(showmovie: showmovie, size: geo.size)
-                            }
-                        }
-                        Spacer()
-                    }.padding(.horizontal, 16)
-                }
-            }
-        }
-    }
-}
-
-struct ShowMovieView: View {
-    
-    let showmovie: ShowMovie
-    let size: CGSize
-    
-    var body: some View {
-        
-        VStack(alignment: .leading, spacing: 15) {
-            Image(uiImage: self.showmovie.imageName)
+        VStack(spacing: 8) {
+            Image(uiImage: self.movie.imageName)
                 .resizable()
                 .scaledToFill()
                 .frame(width: (size.width - 50) / 2, height: 250)
                 .clipped()
                 .cornerRadius(8)
                 .shadow(radius: 10)
-            Text(self.showmovie.name)
-                .font(.system(size: 24))
-                .fontWeight(.heavy)
-                .offset(x: 10,y: -45)
-                .foregroundColor(Color.white)
-            
+            Text(movie.name).font(.system(size: 15, weight: .bold))
+            Button(action: {
+                
+            }) {
+                Text("点击喜欢")
+                    .foregroundColor(.white)
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 8)
+                    .background(Color.red)
+                    .cornerRadius(8)
+                    .shadow(radius: 10)
+            }
         }
+        
     }
 }
 
-
 PlaygroundPage.current.setLiveView(ContentView())
+
 //: [Next](@next)

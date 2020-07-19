@@ -2,18 +2,16 @@
 <playground version='6.0' target-platform='ios'>
     <pages>
         <page name='HStack 简单布局'/>
-        <page name='VStack&amp;&amp;HStack 简单布局'/>
         <page name='Charts 图表'/>
-        <page name='设置'/>
         <page name='FoodLayout 布局'/>
         <page name='Movie 电影票'/>
-        <page name='Movie 电影票2'/>
+        <page name='ScrollView 滚动视图'/>
         <page name='Json网络加载图片'/>
         <page name='@Binding 绑定数据'/>
         <page name='综合小应用'/>
-        <page name='ScrollView 滚动视图'/>
-        <page name='ScrollView 滚动视图2'/>
         <page name='Gesture 手势'/>
         <page name='GeometryReader'/>
+        <page name='LinearGradient 设置'/>
+        <page name='NavigationView 导航栏'/>
     </pages>
 </playground>
