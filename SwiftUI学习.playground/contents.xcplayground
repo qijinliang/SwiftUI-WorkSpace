@@ -4,9 +4,8 @@
         <page name='HStack 简单布局'/>
         <page name='Charts 图表'/>
         <page name='FoodLayout 布局'/>
-        <page name='Movie 电影票'/>
         <page name='ScrollView 滚动视图'/>
-        <page name='Json网络加载图片'/>
+        <page name='RingView 扇形图'/>
         <page name='@Binding 绑定数据'/>
         <page name='综合小应用'/>
         <page name='Gesture 手势'/>

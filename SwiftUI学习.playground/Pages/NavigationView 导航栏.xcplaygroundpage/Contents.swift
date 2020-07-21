@@ -2,6 +2,7 @@
 
 import SwiftUI
 import PlaygroundSupport
+import Combine
 
 struct Update: Identifiable {
     var id = UUID()
@@ -20,39 +21,63 @@ let updateData = [
 ]
 
 
+class UpdateStore: ObservableObject {
+    @Published var updates: [Update] = updateData
+}
+
 struct ContentView: View {
+    
+    @ObservedObject var store = UpdateStore()
+    
+    func addUpdate() {
+        store.updates.append(Update(image: #imageLiteral(resourceName: "周杰伦.jpg"), title: "周杰伦（Jay Chou）", text: "周杰伦（Jay Chou），1979年1月18日出生于台湾省新北市，祖籍福建省泉州市永春县，中国台湾流行乐男歌手、原创音乐人、演员、导演等，毕业于淡江中学", date: "9月11号"))
+    }
+    
     var body: some View {
         NavigationView {
-            List(updateData) { update in
-                NavigationLink(destination: UpdateDetail(update: update)) {
-                    HStack {
-                        Image(uiImage: update.image)
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 80, height: 80)
-                            .cornerRadius(80)
-                            .padding(.trailing, 4)
-                        
-                        VStack(alignment: .leading, spacing: 8.0) {
-                            Text(update.title)
-                                .font(.system(size: 20, weight: .bold))
+            List {
+                ForEach(store.updates) { update in
+                    NavigationLink(destination: UpdateDetail(update: update)) {
+                        HStack {
+                            Image(uiImage: update.image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 80, height: 80)
+                                .cornerRadius(80)
+                                .padding(.trailing, 4)
                             
-                            Text(update.text)
-                                .lineLimit(2)
-                                .font(.subheadline)
-                                .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
-                            
-                            Text(update.date)
-                                .font(.caption)
-                                .fontWeight(.bold)
-                                .foregroundColor(.secondary)
+                            VStack(alignment: .leading, spacing: 8.0) {
+                                Text(update.title)
+                                    .font(.system(size: 20, weight: .bold))
+                                
+                                Text(update.text)
+                                    .lineLimit(2)
+                                    .font(.subheadline)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
+                                
+                                Text(update.date)
+                                    .font(.caption)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.secondary)
+                            }
                         }
+                        .padding(.vertical, 8)
                     }
-                    .padding(.vertical, 8)
+                }
+                .onDelete{ index in
+                    self.store.updates.remove(at: index.first!)
+                }
+                .onMove{(source: IndexSet, destination: Int) in
+                    self.store.updates.move(fromOffsets: source, toOffset: destination)
                 }
             }
             .navigationBarTitle(Text("明星介绍"))
+            .navigationBarItems(leading: Button(action: addUpdate) {
+                Text("添加")
+            },trailing: EditButton())
         }
+        .colorScheme(.dark)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -69,7 +94,7 @@ struct UpdateDetail: View {
                 Text(update.text)
                     .frame(maxWidth: .infinity, alignment: .leading)
             }
-             .navigationBarTitle(update.title)
+            .navigationBarTitle(update.title)
         }
         .listStyle(PlainListStyle())
     }

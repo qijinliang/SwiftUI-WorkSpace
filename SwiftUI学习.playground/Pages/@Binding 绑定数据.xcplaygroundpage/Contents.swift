@@ -1,74 +1,64 @@
 //: [Previous](@previous)
 
-//#imageLiteral(resourceName: "车模1.jpg")
+//#imageLiteral(resourceName: "赵小臭1.jpg")
 import SwiftUI
 import PlaygroundSupport
 
-struct Pokemon: Identifiable {
-    let id : Int
-    let name: String
-    let type: String
-    let color: Color
-    let imageName: UIImage
-}
-
 
 struct ContentView: View {
+    @State var showProfile = false
+    @State var viewState = CGSize.zero
     
-    @State var pokemonList = [
-        Pokemon(id: 0, name: "Charmander", type: "Fied", color: .red, imageName: #imageLiteral(resourceName: "head0.jpg")),
-        Pokemon(id: 1, name: "Squirtle", type: "Water", color: .blue, imageName: #imageLiteral(resourceName: "head1.jpg")),
-        Pokemon(id: 2, name: "Charmander", type: "Gress", color: .green, imageName: #imageLiteral(resourceName: "head3.jpg")),
-        Pokemon(id: 3, name: "animal", type: "Electric", color: .orange, imageName: #imageLiteral(resourceName: "head4.jpg")),
-        Pokemon(id: 4, name: "Jay", type: "Jerry", color: .gray, imageName: #imageLiteral(resourceName: "head5.jpg")),
-        Pokemon(id: 5, name: "Bulabsuar", type: "Tom", color: .pink, imageName: #imageLiteral(resourceName: "head6.jpg")),
-        Pokemon(id: 6, name: "Pikachu", type: "Panda", color: .yellow, imageName: #imageLiteral(resourceName: "head7.jpg")),
-    ]
-    
-    @State var showDetail = true
     var body: some View {
-        NavigationView {
-            List(pokemonList) { pokemon in
-                VStack(alignment: .leading, spacing: 10) {
-                    Text(pokemon.name)
-                    
-                    if self.showDetail {
-                        Image(uiImage: pokemon.imageName)
-                            .resizable()
-                            .scaledToFill()
-                            .cornerRadius(8)
-                            .shadow(radius: 10)
-                            .frame(width: 50, height: 50)
-                    }
-                    
-                }
-                .padding()
-            }
-            .navigationBarTitle(Text("Pokemon"))
-            .navigationBarItems(
-                leading: ToggleTextButton(isOn: $showDetail),
-                trailing: Button(
-                    action: addPokemno,
-                    label:{ Text("添加") }
-                ).font(.system(size: 30))
-            )
-        }
+        HomeView(showProfile: $showProfile)
+            .padding(.top, 44)
+            .background(Color.white)
+            .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+            .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
+            .offset(y: showProfile ? -450 : 0)
+            .rotation3DEffect(Angle(degrees: showProfile ? Double(viewState.height / 10) - 10 : 0), axis: (x: 10.0, y: 0, z: 0))
+            .scaleEffect(showProfile ? 0.9 : 1)
+            .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
+            .edgesIgnoringSafeArea(.all)
     }
+}
+
+
+struct HomeView: View {
+    @Binding var showProfile: Bool
     
-    func addPokemno() {
-        if let randomPokemon = pokemonList.randomElement() {
-            pokemonList.append(randomPokemon)
+    var body: some View {
+        VStack() {
+            HStack() {
+                Text("点击头像")
+                    .font(.system(size: 28, weight: .bold))
+                
+                Spacer()
+                
+                
+            }
+            ShowView(showProfile: $showProfile)
+            .padding(.horizontal)
+            .padding(.top, 30)
+            
+            Spacer()
         }
     }
 }
 
-struct ToggleTextButton: View {
-    @Binding var isOn: Bool
+struct ShowView: View {
+    @Binding var showProfile: Bool
+    
     var body: some View {
-        Button(
-            action: { self.isOn.toggle() },
-            label: { Text(self.isOn ? "隐藏" : "显示") }
-        ).font(.system(size: 30))
+        Button(action: {
+            self.showProfile.toggle()
+        }) {
+            Image(uiImage: #imageLiteral(resourceName: "赵小臭5.jpg"))
+                .renderingMode(.original)
+                .resizable()
+                .frame(width: 100, height: 100)
+                .clipShape(Circle())
+        }
     }
 }
 
