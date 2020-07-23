@@ -14,39 +14,39 @@ struct Movie: Identifiable, Hashable {
 struct ContentView: View {
     
     let movies: [[Movie]] = [
-    [.init(name: "车模", imageName: #imageLiteral(resourceName: "车模1.jpg")),
-    .init(name:"车模", imageName: #imageLiteral(resourceName: "车模2.jpg"))],
-    [.init(name: "车模",imageName: #imageLiteral(resourceName: "车模3.jpg")),
-    .init(name: "车模",imageName: #imageLiteral(resourceName: "车模4.jpg"))],
-    [.init(name: "车模", imageName: #imageLiteral(resourceName: "车模5.jpg")),
-    .init(name:"车模", imageName: #imageLiteral(resourceName: "车模6.jpg"))],
-    [.init(name: "车模",imageName: #imageLiteral(resourceName: "车模7.jpg")),
-    .init(name: "车模",imageName: #imageLiteral(resourceName: "车模8.jpg"))],
+        [.init(name: "赵小臭", imageName: #imageLiteral(resourceName: "赵小臭9.jpg")),
+         .init(name:"赵小臭", imageName: #imageLiteral(resourceName: "赵小臭10.jpg"))],
+        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭3.jpg")),
+         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭4.jpg"))],
+        [.init(name: "赵小臭", imageName: #imageLiteral(resourceName: "赵小臭5.jpg")),
+         .init(name:"赵小臭", imageName: #imageLiteral(resourceName: "赵小臭6.jpg"))],
+        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭7.jpg")),
+         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭8.jpg"))],
     ]
     
     
     var body: some View {
-        GeometryReader { geo in
-            
-            VStack {
-                HStack {
-                    Text("图片加载")
-                        .font(.system(size: 20, weight: .semibold))
-                }
-                ScrollView {
-                    VStack(spacing: 48) {
-                        ForEach(self.movies, id: \.self) { row in
-                            HStack(spacing: 16) {
-                                ForEach(row) { movie in
-                                    MovieView(movie: movie, size: geo.size )
+        NavigationView {
+            GeometryReader { geo in
+                
+                VStack {
+                    ScrollView {
+                        VStack(spacing: 48) {
+                            ForEach(self.movies, id: \.self) { row in
+                                HStack(spacing: 16) {
+                                    ForEach(row) { movie in
+                                        MovieView(movie: movie, size: geo.size )
+                                    }
                                 }
                             }
-                        }
-                        Spacer()
-                    }.padding(.horizontal, 16)
+                            Spacer()
+                        }.padding(.horizontal, 16)
+                    }
                 }
             }
+        .navigationBarTitle(Text("ScrollView"))
         }
+        
     }
 }
 
@@ -82,6 +82,7 @@ struct MovieView: View {
         
     }
 }
+
 
 PlaygroundPage.current.setLiveView(ContentView())
 

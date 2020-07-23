@@ -7,7 +7,6 @@ import PlaygroundSupport
 let kScreenH = UIScreen.main.bounds.size.width
 let KScreenW = UIScreen.main.bounds.size.width
 
-
 private let kEdgeMargin: CGFloat = 10
 private let kItemW: CGFloat = (KScreenW - 3 * kEdgeMargin) / 2
 private let kItemH: CGFloat = kItemW * 3 / 4
@@ -27,7 +26,7 @@ class CollectionViewCell: UICollectionViewCell {
     
     func setupUI() {
         
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: 250))
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: kItemW / 2, height: kItemH))
         imageView.contentMode = .scaleToFill
         let imag = UIImage(named: "CollectionCellimge.jpeg")
         imageView.image = imag
@@ -84,6 +83,11 @@ extension CollectionView: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kCellID, for: indexPath)
         cell.backgroundColor = UIColor.purple
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        return CGSize(width: kItemW, height: kItemH)
     }
 }
 
