@@ -2,9 +2,6 @@
 import SwiftUI
 import PlaygroundSupport
 
-//#imageLiteral(resourceName: "Home.png")
-
-
 struct ContentView: View {
     var body: some View {
         HomeView()

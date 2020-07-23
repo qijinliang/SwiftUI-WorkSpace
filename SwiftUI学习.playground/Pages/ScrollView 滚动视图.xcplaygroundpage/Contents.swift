@@ -18,10 +18,10 @@ struct ContentView: View {
          .init(name:"赵小臭", imageName: #imageLiteral(resourceName: "赵小臭10.jpg"))],
         [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭3.jpg")),
          .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭4.jpg"))],
-        [.init(name: "赵小臭", imageName: #imageLiteral(resourceName: "赵小臭5.jpg")),
-         .init(name:"赵小臭", imageName: #imageLiteral(resourceName: "赵小臭6.jpg"))],
-        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭7.jpg")),
-         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭8.jpg"))],
+        [.init(name: "赵小臭", imageName: #imageLiteral(resourceName: "赵小臭11.jpg")),
+         .init(name:"赵小臭", imageName: #imageLiteral(resourceName: "赵小臭13.jpg"))],
+        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭14.jpg")),
+         .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭15.jpg"))],
     ]
     
     

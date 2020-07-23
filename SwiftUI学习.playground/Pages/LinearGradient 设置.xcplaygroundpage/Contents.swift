@@ -35,7 +35,7 @@ struct ContentView : View {
             .shadow(color: Color.black.opacity(0.2), radius: 20, x: 0, y: 20)
             .padding(.horizontal, 30)
             .overlay(
-                Image(uiImage: #imageLiteral(resourceName: "横屏.jpg"))
+                Image(uiImage: #imageLiteral(resourceName: "胡歌.jpg"))
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 60, height: 60)

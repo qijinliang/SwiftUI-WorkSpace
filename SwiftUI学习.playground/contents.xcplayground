@@ -10,5 +10,7 @@
         <page name='GeometryReader'/>
         <page name='LinearGradient 设置'/>
         <page name='NavigationView 导航栏'/>
+        <page name='SlideMenu 滑动菜单'/>
+        <page name='BlurView 背景模糊'/>
     </pages>
 </playground>
