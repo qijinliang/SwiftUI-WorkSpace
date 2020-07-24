@@ -3,7 +3,7 @@
 
 //#imageLiteral(resourceName: "s1.jpg")
 //#imageLiteral(resourceName: "s2.jpg")
-//#imageLiteral(resourceName: "s3.png")
+
 import SwiftUI
 import PlaygroundSupport
 
