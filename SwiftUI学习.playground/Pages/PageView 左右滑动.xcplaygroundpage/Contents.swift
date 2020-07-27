@@ -3,11 +3,6 @@
 import SwiftUI
 import PlaygroundSupport
 
-//#imageLiteral(resourceName: "赵小臭11.jpg")
-
-
-
-
 struct TravelData: Identifiable {
     var id: Int
     var image: UIImage
