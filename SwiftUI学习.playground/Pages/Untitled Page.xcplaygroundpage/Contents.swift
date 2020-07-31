@@ -3,20 +3,117 @@
 import SwiftUI
 import PlaygroundSupport
 
-#colorLiteral(red: 0.976000011, green: 0.4709999859, blue: 0.4709999859, alpha: 1)
-#colorLiteral(red: 0.9610000253, green: 0.3059999943, blue: 0.4199999869, alpha: 1)
-#colorLiteral(red: 0.9607843137, green: 0.3058823529, blue: 0.4196078431, alpha: 1)
-
-struct ContentView: View {
+struct ConentView: View {
     var body: some View {
-        ZStack {
-            LinearGradient(gradient: .init(colors: [Color(#colorLiteral(red: 0.976000011, green: 0.4709999859, blue: 0.4709999859, alpha: 1)),Color(#colorLiteral(red: 0.9610000253, green: 0.3059999943, blue: 0.4199999869, alpha: 1)),Color(#colorLiteral(red: 0.9607843137, green: 0.3058823529, blue: 0.4196078431, alpha: 1))]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
+        VStack {
+            ZStack(alignment: .top) {
+                
+                VStack {
+                    Image.init(uiImage: #imageLiteral(resourceName: "赵小臭15.jpg"))
+                        .resizable()
+                        .scaledToFill()
+                        .shadow(radius: 8)
+                        .cornerRadius(10)
+                        .frame(height: 300)
+                }
+            }
+            .clipShape(CustomShape(corner: .bottomLeft, radii: 55))
+            .clipShape(CustomShape(corner: .bottomRight, radii: 55))
+            
+            Spacer()
+            
+            VStack {
+                VStack {
+                    HStack(spacing: 10) {
+                        Button(action: {
+                            
+                        }) {
+                            VStack {
+                                Text("22 W")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.black)
+                            }.padding()
+                            
+                        }
+                        .background(Color.black.opacity(0.06))
+                        .cornerRadius(12)
+                        
+                        Button(action: {
+                            
+                        }) {
+                            VStack {
+                                Text("22 W")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.black)
+                            }.padding()
+                            
+                        }
+                        .background(Color.black.opacity(0.06))
+                        .cornerRadius(12)
+                        
+                        Button(action: {
+                            
+                        }) {
+                            VStack {
+                                Text("22 W")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.black)
+                            }.padding()
+                            
+                        }
+                        .background(Color.black.opacity(0.06))
+                        .cornerRadius(12)
+                        
+                        Button(action: {
+                            
+                        }) {
+                            VStack {
+                                Text("22 W")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.black)
+                            }.padding()
+                            
+                        }
+                        .background(Color.black.opacity(0.06))
+                        .cornerRadius(12)
+                        
+                    }
+                    .padding(.top, 20)
+                    .padding(.bottom, 25)
+                }.padding()
+            }
+            
+            HStack {
+                Text("$12.4")
+                    .foregroundColor(Color.black)
+                    .font(.title)
+                    .fontWeight(.bold)
+                
+                Spacer()
+                
+                Button(action: {
+                    
+                }) {
+                    Image.init(uiImage: #imageLiteral(resourceName: "cart.png"))
+                        .renderingMode(.original)
+                        .padding()
+                }.background(Color.yellow)
+                    .clipShape(Circle())
+            }.padding()
+                .background(Color.white)
         }
     }
 }
 
-
-
-
-PlaygroundPage.current.setLiveView(ContentView())
+//扩展
+struct CustomShape: Shape {
+    var corner: UIRectCorner
+    var radii: CGFloat
+    
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corner, cornerRadii: CGSize(width: radii, height: radii))
+        return Path(path.cgPath)
+    }
+}
+PlaygroundPage.current.setLiveView(ConentView())
 //: [Next](@next)

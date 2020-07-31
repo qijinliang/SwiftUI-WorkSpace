@@ -267,7 +267,6 @@ struct HScrollView : View {
             }
         }
     }
-    
 }
 
 
