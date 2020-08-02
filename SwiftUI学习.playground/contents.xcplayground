@@ -14,5 +14,6 @@
         <page name='BlurView 背景模糊'/>
         <page name='PageView 左右滑动'/>
         <page name='LinearGradient 渐变'/>
+        <page name='CustomShape 画半径'/>
     </pages>
 </playground>
