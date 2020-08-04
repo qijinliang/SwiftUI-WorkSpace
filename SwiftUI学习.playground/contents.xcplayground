@@ -13,7 +13,8 @@
         <page name='SlideMenu 滑动菜单'/>
         <page name='BlurView 背景模糊'/>
         <page name='PageView 左右滑动'/>
-        <page name='LinearGradient 渐变'/>
+        <page name='App Store 苹果商城2'/>
         <page name='CustomShape 画半径'/>
+        <page name='App Store 苹果商城'/>
     </pages>
 </playground>
