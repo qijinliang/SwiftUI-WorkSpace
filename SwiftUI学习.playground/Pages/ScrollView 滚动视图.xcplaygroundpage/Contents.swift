@@ -20,10 +20,10 @@ struct ContentView: View {
          .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭4.jpg"))],
         [.init(name: "赵小臭", imageName: #imageLiteral(resourceName: "赵小臭11.jpg")),
          .init(name:"赵小臭", imageName: #imageLiteral(resourceName: "赵小臭13.jpg"))],
-        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭14.jpg")),
+        [.init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭12.jpg")),
          .init(name: "赵小臭",imageName: #imageLiteral(resourceName: "赵小臭15.jpg"))],
     ]
-    
+
     
     var body: some View {
         NavigationView {
