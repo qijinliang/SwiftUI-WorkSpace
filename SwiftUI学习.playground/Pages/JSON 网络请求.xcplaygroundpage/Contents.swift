@@ -3,11 +3,11 @@
 import SwiftUI
 import PlaygroundSupport
 
-struct Response: Codable {
+struct Response: Decodable {
     var results: [Result]
 }
 
-struct Result: Codable{
+struct Result: Decodable{
     var trackId: Int
     var trackName: String
     var collectionName: String
@@ -40,14 +40,18 @@ struct ContentView: View {
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data {
-                if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
+                do {
+                    let decodedResponse = try JSONDecoder().decode(Response.self, from: data)
                     DispatchQueue.main.async {
                         self.results = decodedResponse.results
                     }
                     return
+                } catch let jsonError as NSError {
+                    print("JSON decode failed: \(jsonError.localizedDescription)")
+                    return
                 }
             }
-            print("Error")
+            print("Fetch failed: \(error?.localizedDescription ?? "Unkonw error")")
         }.resume()
     }
 }
