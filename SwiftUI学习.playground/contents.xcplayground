@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios'>
     <pages>
-        <page name='ForEach 遍历'/>
         <page name='Charts 图表'/>
         <page name='ScrollView 滚动视图'/>
         <page name='RingView 扇形图'/>
@@ -16,6 +15,7 @@
         <page name='App Store 苹果商城2'/>
         <page name='CustomShape 画半径'/>
         <page name='App Store 苹果商城'/>
-        <page name='JSON 网络请求'/>
+        <page name='JSON 网络请求+加载图片'/>
+        <page name='JSON 网络请求进阶'/>
     </pages>
 </playground>
