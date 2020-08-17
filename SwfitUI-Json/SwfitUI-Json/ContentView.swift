@@ -1,14 +1,19 @@
-//: [Previous](@previous)
+//
+//  ContentView.swift
+//  SwfitUI-Json
+//
+//  Created by qjinliang on 2020/8/7.
+//  Copyright © 2020 醉看红尘这场梦. All rights reserved.
+//
 
 import SwiftUI
-import PlaygroundSupport
 
 struct ResultData: Decodable {
     var code: Int
-    var data: Data
+    var data: Data_Code
 }
 
-struct Data: Decodable {
+struct Data_Code: Decodable {
     var stateCode: Int
     var message: String
     var returnData: ReturnData
@@ -36,27 +41,38 @@ struct CommunityList: Decodable {
     var is_up: Int
     var content: String
     var user: Users
-    //    var taglist: [Taglist]
-    //    var image_num: Int
-    //    var image_list: [Image_list]
-    //    var is_follow: Int
+    var tag_list: [Taglist]
+    var image_num: Int
+    var image_list: [Image_list]
+    var is_follow: Int
     var create_time_str: String
     
     struct Users: Decodable {
-        //    var face: String
-        //            var nickname: String
-        //    var user_id: Int
-        //    var vip_level: Int
-        //    var group_user: Int
+        var face: String
+        var nickname: String
+        var user_id: Int
+        var vip_level: Int
+        var group_user: Int
     }
 }
 
 struct Taglist: Decodable {
-    //    var tag_name: String
+    var tag_name: String
+    var color: String
+    var tag_total: Int
+    var tag_id: String
 }
 
 struct Image_list: Decodable {
     var image_id: String
+    var width: Int
+    var high: Int
+    var url: String
+    var unique_key: String
+    var ori_url: String
+    var size: String
+    var sort: Int
+    var image_type: Int
 }
 
 struct NavList: Decodable {
@@ -76,19 +92,13 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(communityList, id: \.community_id) { item in
-                
                 HStack(alignment: .top, spacing: 10){
                     
-                    Image(uiImage: #imageLiteral(resourceName: "胡歌.jpg"))
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 80, height: 80)
-                        .cornerRadius(80)
-                        .padding(.trailing, 4)
+                    URLImage(url: item.user.face).scaledToFill().shadow(radius: 8).cornerRadius(10).frame(width: 80, height: 80).cornerRadius(80).padding(.trailing, 4)
                     
                     VStack(alignment: .leading, spacing: 6) {
                         
-                        Text(item.title)
+                        Text(item.user.nickname)
                             .fontWeight(.bold)
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
                         
@@ -103,7 +113,8 @@ struct ContentView: View {
                                 .font(.caption)
                                 .foregroundColor(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
                             Spacer()
-                            Text("点赞")
+                            
+                            Text(item.title)
                                 .fontWeight(.bold)
                                 .font(.subheadline)
                                 .padding(.vertical,10)
@@ -117,9 +128,6 @@ struct ContentView: View {
                     
                     Spacer(minLength: 0)
                 }
-                
-                
-                
             }.onAppear(perform: self.loadData)
                 .navigationBarTitle(Text("网络请求"))
         }
@@ -142,7 +150,14 @@ struct ContentView: View {
                     let jsonResponse = try JSONDecoder().decode(ResultData.self, from: data)
                     DispatchQueue.main.async {
                         self.communityList = jsonResponse.data.returnData.communityList
-                        print("\(String(describing: jsonResponse))")
+                        print("\(jsonResponse.data.returnData.communityList)")
+                        
+                        let cycleArr : [[Int]] = [[1],[2],[3],[4]]
+                        for cycle in cycleArr{
+                            for item in cycle{
+                                print(item) // Int num
+                            }
+                        }
                     }
                 }catch let jsonError as NSError {
                     print("Json error:\(String(describing: jsonError.localizedDescription))")
@@ -154,4 +169,55 @@ struct ContentView: View {
     }
 }
 
-PlaygroundPage.current.setLiveView(ContentView())//: [Next](@next)
+struct URLImage: View {
+    
+    let url: String
+    let placeholder: String
+    
+    @ObservedObject var imageLoader = ImageLoader()
+    
+    init(url: String, placehloder: String = "placeholder") {
+        self.url = url
+        self.placeholder = placehloder
+        self.imageLoader.downloadImgae(url: self.url)
+    }
+    
+    var body: some View {
+        if let data = self.imageLoader.downloadedData {
+            return Image(uiImage: UIImage(data: data)!).renderingMode(.original).resizable()
+        } else{
+            return Image("placeholder").renderingMode(.original).resizable()
+        }
+    }
+}
+
+class ImageLoader: ObservableObject {
+    
+    @Published var downloadedData: Data?
+    
+    func downloadImgae(url: String) {
+        
+        guard let imageURL = URL(string: url) else {
+            return
+        }
+        
+        URLSession.shared.dataTask(with: imageURL) { data, _, error in
+            
+            guard let data = data, error == nil else {
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.downloadedData = data
+            }
+        }.resume()
+    }
+}
+
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}

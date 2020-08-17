@@ -30,7 +30,6 @@ struct Rankinglist: Decodable {
 struct ContentView: View {
     
     @State var rankinglists = [Rankinglist]()
-    
     var body: some View {
         NavigationView {
             
@@ -39,7 +38,10 @@ struct ContentView: View {
                     
                     Text(item.rankingType).font(.title).fontWeight(.bold)
                     Text(item.subTitle).font(.subheadline).foregroundColor(.gray)
-                    URLImage(url: item.cover).scaledToFill().shadow(radius: 8).cornerRadius(10)
+                    URLImage(url: item.cover).scaledToFill().shadow(radius: 8).cornerRadius(10).frame(width: 320, height: 200)
+                        .scaleEffect(0.95)
+                        .rotation3DEffect(Angle(degrees: 0), axis: (x: 10, y: 0, z: 0))
+                        .animation(.easeInOut(duration: 0.3))
                 }.padding()
                 
             }.onAppear(perform: self.loadData)
@@ -106,11 +108,11 @@ class ImageLoader: ObservableObject {
         }
         
         URLSession.shared.dataTask(with: imageURL) { data, _, error in
-
+            
             guard let data = data, error == nil else {
                 return
             }
-
+            
             DispatchQueue.main.async {
                 self.downloadedData = data
             }
