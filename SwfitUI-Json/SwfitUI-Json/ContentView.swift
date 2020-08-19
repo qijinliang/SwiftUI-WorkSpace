@@ -88,6 +88,7 @@ struct DefaultNavList: Decodable {
 struct ContentView: View {
     
     @State var communityList = [CommunityList]()
+    @State var taglist = [Taglist]()
     
     var body: some View {
         NavigationView {
@@ -152,12 +153,6 @@ struct ContentView: View {
                         self.communityList = jsonResponse.data.returnData.communityList
                         print("\(jsonResponse.data.returnData.communityList)")
                         
-                        let cycleArr : [[Int]] = [[1],[2],[3],[4]]
-                        for cycle in cycleArr{
-                            for item in cycle{
-                                print(item) // Int num
-                            }
-                        }
                     }
                 }catch let jsonError as NSError {
                     print("Json error:\(String(describing: jsonError.localizedDescription))")
@@ -165,9 +160,10 @@ struct ContentView: View {
             }
             print("Featch error:\(String(describing: error?.localizedDescription))")
         }.resume()
-        
     }
 }
+
+
 
 struct URLImage: View {
     

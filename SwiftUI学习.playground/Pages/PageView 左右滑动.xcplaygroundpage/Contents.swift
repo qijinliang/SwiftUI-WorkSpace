@@ -22,13 +22,11 @@ struct Home: View {
     
     @State var data = [
         TravelData(id: 0, image: #imageLiteral(resourceName: "赵小臭15.jpg"), country: "USA",  place: "Yosemite", details: "Yosemite National Park is in California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoia trees, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome. In Yosemite Village are shops, restaurants, lodging, "),
-        
+
         TravelData(id: 1, image: #imageLiteral(resourceName: "赵小臭12.jpg"), country: "Arizona", place: "Antelope Canyon", details: "Antelope Canyon is a slot canyon in the American Southwest, on Navajo land east of Page, Arizona. It includes two separate, scenic slot canyon sections, referred to as Upper Antelope Canyon, and Lower Antelope Canyon."),
-        
-        TravelData(id: 2, image: #imageLiteral(resourceName: "赵小臭14.jpg"), country: "Portugal", place: "Azores", details: "The Azores, an autonomous region of Portugal, are an archipelago in the mid-Atlantic. The islands are characterized by dramatic landscapes, fishing villages, green pastures and hedgerows of blue hydrangeas. São Miguel, the largest, has lake-filled calderas and the Gorreana "),
-        
+
         TravelData(id: 3, image: #imageLiteral(resourceName: "赵小臭13.jpg"), country: "Italy", place: "Venice", details: "Venice, the capital of northern Italy’s Veneto region, is built on more than 100 small islands in a lagoon in the Adriatic Sea. It has no roads, just canals – including the Grand Canal thoroughfare – lined with Renaissance and Gothic palaces."),
-        
+
         TravelData(id: 4, image: #imageLiteral(resourceName: "赵小臭11.jpg"), country: "Venezuela", place: "Angel Falls", details: "Angel Falls is a waterfall in Venezuela. It is the world's highest uninterrupted waterfall, with a height of 979 metres and a plunge of 807 m. The waterfall drops over the edge of the Auyán-tepui mountain in the Canaima National Park")
     ]
     
