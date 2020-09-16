@@ -3,15 +3,16 @@
 import SwiftUI
 import PlaygroundSupport
 
-struct ContentView: View {
+struct Content : View {
     var body: some View {
-        VStack{
-            Text("😃")
-        }.padding()
-            .background(Color.pink)
+        VStack {
+            Text("123")
+                .padding()
+        }
     }
 }
 
-PlaygroundPage.current.setLiveView(ContentView())
+PlaygroundPage.current.setLiveView(Content())
 
 //: [Next](@next)
+
