@@ -3,5 +3,10 @@
     <pages>
         <page name='快速排序'/>
         <page name='希尔排序'/>
+        <page name='冒泡排序'/>
+        <page name='梳排序'/>
+        <page name='桶排序'/>
+        <page name='插入排序'/>
+        <page name='计数排序'/>
     </pages>
 </playground>
