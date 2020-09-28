@@ -12,5 +12,8 @@
         <page name='归并排序'/>
         <page name='基数排序'/>
         <page name='二叉树'/>
+        <page name='队列'/>
+        <page name='堆栈'/>
+        <page name='二分查找'/>
     </pages>
 </playground>
