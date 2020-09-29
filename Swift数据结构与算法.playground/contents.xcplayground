@@ -15,5 +15,6 @@
         <page name='队列'/>
         <page name='堆栈'/>
         <page name='二分查找'/>
+        <page name='向量'/>
     </pages>
 </playground>
