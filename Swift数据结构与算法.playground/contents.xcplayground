@@ -18,5 +18,6 @@
         <page name='向量'/>
         <page name='散列集合'/>
         <page name='散列表'/>
+        <page name='散列堆'/>
     </pages>
 </playground>
