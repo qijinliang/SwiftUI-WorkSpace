@@ -19,5 +19,6 @@
         <page name='散列集合'/>
         <page name='散列表'/>
         <page name='散列堆'/>
+        <page name='八叉树'/>
     </pages>
 </playground>
