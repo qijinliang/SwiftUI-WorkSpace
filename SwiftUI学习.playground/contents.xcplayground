@@ -17,5 +17,6 @@
         <page name='App Store 苹果商城'/>
         <page name='JSON 网络请求+加载图片'/>
         <page name='JSON 网络请求进阶'/>
+        <page name='Path Animations'/>
     </pages>
 </playground>
