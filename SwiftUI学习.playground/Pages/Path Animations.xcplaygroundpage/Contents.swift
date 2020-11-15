@@ -7,7 +7,7 @@ let p1 = CGPoint(x: 50, y: 50)
 let p2 = CGPoint(x: 100, y: 25)
 let p3 = CGPoint(x: 100, y: 100)
 
-struct Content : View {
+struct ContentView : View {
     
     @State var toggle = true
     var body: some View {
@@ -45,7 +45,7 @@ extension Line {
     }
 }
 
-PlaygroundPage.current.setLiveView(Content())
+PlaygroundPage.current.setLiveView(ContentView())
 
 //: [Next](@next)
 
