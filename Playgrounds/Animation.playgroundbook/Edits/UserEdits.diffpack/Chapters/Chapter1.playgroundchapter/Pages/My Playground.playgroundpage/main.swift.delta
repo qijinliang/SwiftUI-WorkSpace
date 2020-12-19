@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import SwiftUI
+import PlaygroundSupport
+
+struct ContentView: View {
+    var body: some View {
+        ExampleView()
+    }
+}
+
+struct ExampleView: View {
+    @State private var flag: Bool = true
+    var body: some View {
+        HStack {
+            if flag {
+                Rectangle().fill(Color.green).frame(width: 100, height: 100)
+            }
+            Spacer()
+            Button("Switch") {
+                withAnimation(.easeInOut(duration: 2.0)) {
+                    flag.toggle()
+                }
+            }
+            Spacer()
+            
+            if !flag {
+                Circle().fill(Color.blue).frame(width: 50, height: 50)
+            }
+        }.frame(width: 400)
+    }
+}
+
+
+PlaygroundPage.current.setLiveView(ContentView())
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 756}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import SwiftUI
+import PlaygroundSupport
+
+struct ContentView: View {
+    var body: some View {
+        ExampleView()
+    }
+}
+
+
+struct SubView: View {
+    var body: some View {
+        GeometryReader { proxy in
+            Rectangle()
+                .fill(Color.yellow.opacity(0.7))
+                .frame(width: max(proxy.size.width, 220), height: max(proxy.size.height, 220))
+        }
+    }
+}
+
+struct ExampleView: View {
+    @State private var width: CGFloat = 50
+    
+    var body: some View {
+        VStack {
+            SubView()
+                .frame(width: self.width, height: 220)
+                .border(Color.blue, width: 2)
+            
+            Text("Offered Width \(Int(width))")
+            Slider(value: $width, in: 0...300, step: 1)
+        }
+    }
+}
+
+
+
+PlaygroundPage.current.setLiveView(ContentView())
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 825}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
