@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import SwiftUI
+import PlaygroundSupport
+
+
+struct ContentView: View {
+    var body: some View {
+        MainView()
+    }
+}
+
+struct MainView: View {
+    
+    @State private var selectedFocusIdx = 2
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Circle().fill(Color(#colorLiteral(red: 0.9098039215686274, green: 0.47843137254901963, blue: 0.6431372549019608, alpha: 1.0)))
+                
+                VStack {
+                    Circle().fill(Color(#colorLiteral(red: 0.5725490196078431, green: 0.0, blue: 0.23137254901960785, alpha: 1.0)))
+                    HStack {
+                        Circle().fill(Color(#colorLiteral(red: 0.06274509803921569, green: 0.0, blue: 0.19215686274509805, alpha: 1.0)))
+                        Circle().fill(Color(#colorLiteral(red: 0.4745098039215686, green: 0.8392156862745098, blue: 0.9764705882352941, alpha: 1.0)))
+                    }
+                }
+            }.padding(.bottom, 40.0)
+                Rectangle().fill(Color(#colorLiteral(red: 0.4666666666666667, green: 0.7647058823529411, blue: 0.26666666666666666, alpha: 1.0)))
+                Circle().fill(Color(#colorLiteral(red: 0.7254901960784313, green: 0.47843137254901963, blue: 0.09803921568627451, alpha: 1.0)))
+                
+                HStack {
+                    Button("Deselect All") { self.selectedFocusIdx = 0 }
+                }
+        }
+        .padding(20)
+        .frame(width: 500, height: 300)
+    }
+}
+
+PlaygroundPage.current.setLiveView(ContentView())
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1528}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
