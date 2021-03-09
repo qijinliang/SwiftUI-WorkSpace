@@ -141,8 +141,17 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(showProfile: .constant(false), showContent: .constant(false), showSection: .constant(false))
-        .environmentObject(UserStore())
+        Group {
+            HomeView(showProfile: .constant(false), showContent: .constant(false), showSection: .constant(false))
+                .previewDevice("iPhone 12")
+                .environmentObject(UserStore())
+        }.colorScheme(.light)
+        
+        Group {
+            HomeView(showProfile: .constant(false), showContent: .constant(false), showSection: .constant(false))
+                .previewDevice("iPad Pro (12.9-inch) (4th generation)")
+                .environmentObject(UserStore())
+        }.colorScheme(.dark)
     }
 }
 
