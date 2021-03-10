@@ -16,6 +16,9 @@
 		04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A10E25F8A17F001339F8 /* HStackSwiftUIView.swift */; };
 		04A7A11425F8A192001339F8 /* VStackSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A11325F8A192001339F8 /* VStackSwiftUIView.swift */; };
 		04A7A11925F8A1A3001339F8 /* ZStackSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A11825F8A1A3001339F8 /* ZStackSwiftUIView.swift */; };
+		04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A11C25F8E042001339F8 /* VStack2SwiftUIView.swift */; };
+		04A7A12025F8E4C3001339F8 /* VStack3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A11F25F8E4C3001339F8 /* VStack3SwiftUIView.swift */; };
+		04A7A12325F8E4DA001339F8 /* VStacj4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A12225F8E4DA001339F8 /* VStacj4SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		04A7A10E25F8A17F001339F8 /* HStackSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackSwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A11325F8A192001339F8 /* VStackSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackSwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A11825F8A1A3001339F8 /* ZStackSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackSwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A11C25F8E042001339F8 /* VStack2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack2SwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A11F25F8E4C3001339F8 /* VStack3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack3SwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A12225F8E4DA001339F8 /* VStacj4SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStacj4SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				04A7A11325F8A192001339F8 /* VStackSwiftUIView.swift */,
+				04A7A11C25F8E042001339F8 /* VStack2SwiftUIView.swift */,
+				04A7A11F25F8E4C3001339F8 /* VStack3SwiftUIView.swift */,
+				04A7A12225F8E4DA001339F8 /* VStacj4SwiftUIView.swift */,
 			);
 			path = VStack;
 			sourceTree = "<group>";
@@ -178,6 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A7A12025F8E4C3001339F8 /* VStack3SwiftUIView.swift in Sources */,
+				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
+				04A7A12325F8E4DA001339F8 /* VStacj4SwiftUIView.swift in Sources */,
 				04A7A11925F8A1A3001339F8 /* ZStackSwiftUIView.swift in Sources */,
 				04A7A0F825F7B30B001339F8 /* AppDelegate.swift in Sources */,
 				04A7A11425F8A192001339F8 /* VStackSwiftUIView.swift in Sources */,

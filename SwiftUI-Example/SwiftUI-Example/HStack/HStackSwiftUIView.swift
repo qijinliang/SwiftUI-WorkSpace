@@ -9,12 +9,34 @@ import SwiftUI
 
 struct HStackSwiftUIView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 40) {
+            Text("HStack")
+                .font(.largeTitle)
+            Text("Introducation")
+                .font(.title)
+                .foregroundColor(.gray)
+            
+            VStack() {
+                Text("An HStack will horizontally arrange other views within it.")
+                    .font(.title)
+                    .foregroundColor(.black)
+            }
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(Color.orange)
+            
+            HStack(spacing: 30) {
+                ForEach(0..<3) { text in
+                    Text("View\(text)")
+                        .font(.title)
+                }
+            }
+        }
     }
 }
 
 struct HStackSwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        HStackSwiftUIView()
+        HStackSwiftUIView().preferredColorScheme(.dark)
     }
 }

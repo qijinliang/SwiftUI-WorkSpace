@@ -9,7 +9,33 @@ import SwiftUI
 
 struct ZStackSwiftUIView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack() {
+            Color.gray
+            VStack(spacing: 30) {
+                Text("ZStack")
+                    .font(.largeTitle)
+                
+                Text("Introducation")
+                    .font(.title)
+                    .foregroundColor(.white)
+                
+                VStack() {
+                    Text("ZStack are great for setting a background color.")
+                        .font(.title)
+                }
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(Color.green)
+                
+                VStack() {
+                    Text("But notice the Color stops at the Safe Areas(white areas on top and bottom)")
+                        .font(.title)
+                }
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(Color.green)
+            }
+        }
     }
 }
 
