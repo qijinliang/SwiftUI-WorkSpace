@@ -13,6 +13,9 @@
 		04A7A0FE25F7B30D001339F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A7A0FD25F7B30D001339F8 /* Assets.xcassets */; };
 		04A7A10125F7B30D001339F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A7A10025F7B30D001339F8 /* Preview Assets.xcassets */; };
 		04A7A10425F7B30D001339F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A7A10225F7B30D001339F8 /* LaunchScreen.storyboard */; };
+		04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A10E25F8A17F001339F8 /* HStackSwiftUIView.swift */; };
+		04A7A11425F8A192001339F8 /* VStackSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A11325F8A192001339F8 /* VStackSwiftUIView.swift */; };
+		04A7A11925F8A1A3001339F8 /* ZStackSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A11825F8A1A3001339F8 /* ZStackSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		04A7A10025F7B30D001339F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04A7A10325F7B30D001339F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A7A10525F7B30D001339F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A7A10E25F8A17F001339F8 /* HStackSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackSwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A11325F8A192001339F8 /* VStackSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackSwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A11825F8A1A3001339F8 /* ZStackSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 		04A7A0F625F7B30B001339F8 /* SwiftUI-Example */ = {
 			isa = PBXGroup;
 			children = (
+				04A7A11725F8A197001339F8 /* ZStack */,
+				04A7A11225F8A187001339F8 /* VStack */,
+				04A7A10D25F8A16F001339F8 /* HStack */,
 				04A7A0F725F7B30B001339F8 /* AppDelegate.swift */,
 				04A7A0F925F7B30B001339F8 /* SceneDelegate.swift */,
 				04A7A0FB25F7B30B001339F8 /* ContentView.swift */,
@@ -73,6 +82,30 @@
 				04A7A10025F7B30D001339F8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04A7A10D25F8A16F001339F8 /* HStack */ = {
+			isa = PBXGroup;
+			children = (
+				04A7A10E25F8A17F001339F8 /* HStackSwiftUIView.swift */,
+			);
+			path = HStack;
+			sourceTree = "<group>";
+		};
+		04A7A11225F8A187001339F8 /* VStack */ = {
+			isa = PBXGroup;
+			children = (
+				04A7A11325F8A192001339F8 /* VStackSwiftUIView.swift */,
+			);
+			path = VStack;
+			sourceTree = "<group>";
+		};
+		04A7A11725F8A197001339F8 /* ZStack */ = {
+			isa = PBXGroup;
+			children = (
+				04A7A11825F8A1A3001339F8 /* ZStackSwiftUIView.swift */,
+			);
+			path = ZStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A7A11925F8A1A3001339F8 /* ZStackSwiftUIView.swift in Sources */,
 				04A7A0F825F7B30B001339F8 /* AppDelegate.swift in Sources */,
+				04A7A11425F8A192001339F8 /* VStackSwiftUIView.swift in Sources */,
 				04A7A0FA25F7B30B001339F8 /* SceneDelegate.swift in Sources */,
+				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
 				04A7A0FC25F7B30B001339F8 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
