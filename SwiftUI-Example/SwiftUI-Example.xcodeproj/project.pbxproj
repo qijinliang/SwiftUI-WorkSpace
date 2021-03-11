@@ -29,6 +29,8 @@
 		04A7A14D25FA5774001339F8 /* FanshapedSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A14C25FA5774001339F8 /* FanshapedSwiftUIView.swift */; };
 		04A7A15125FA57C6001339F8 /* LineGraphSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A15025FA57C6001339F8 /* LineGraphSwiftUIView.swift */; };
 		04A7A15425FA57F9001339F8 /* Chart SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A15325FA57F9001339F8 /* Chart SwiftUIView.swift */; };
+		04A7A15825FA61F3001339F8 /* TextFieldSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A15725FA61F3001339F8 /* TextFieldSwiftUIView.swift */; };
+		04A7A15C25FA624E001339F8 /* RectangleSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A15B25FA624E001339F8 /* RectangleSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		04A7A14C25FA5774001339F8 /* FanshapedSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanshapedSwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A15025FA57C6001339F8 /* LineGraphSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphSwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A15325FA57F9001339F8 /* Chart SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chart SwiftUIView.swift"; sourceTree = "<group>"; };
+		04A7A15725FA61F3001339F8 /* TextFieldSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldSwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A15B25FA624E001339F8 /* RectangleSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		04A7A0F625F7B30B001339F8 /* SwiftUI-Example */ = {
 			isa = PBXGroup;
 			children = (
+				04A7A15625FA61E8001339F8 /* TextField */,
 				04A7A14B25FA5762001339F8 /* mathematics */,
 				04A7A14525FA4206001339F8 /* Button */,
 				04A7A13525FA35C1001339F8 /* Animation */,
@@ -175,8 +180,17 @@
 				04A7A14C25FA5774001339F8 /* FanshapedSwiftUIView.swift */,
 				04A7A15025FA57C6001339F8 /* LineGraphSwiftUIView.swift */,
 				04A7A15325FA57F9001339F8 /* Chart SwiftUIView.swift */,
+				04A7A15B25FA624E001339F8 /* RectangleSwiftUIView.swift */,
 			);
 			path = mathematics;
+			sourceTree = "<group>";
+		};
+		04A7A15625FA61E8001339F8 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				04A7A15725FA61F3001339F8 /* TextFieldSwiftUIView.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +267,7 @@
 				04A7A14025FA3FF2001339F8 /* FoldSwiftUIView.swift in Sources */,
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
 				04A7A12325F8E4DA001339F8 /* VStacj4SwiftUIView.swift in Sources */,
+				04A7A15825FA61F3001339F8 /* TextFieldSwiftUIView.swift in Sources */,
 				04A7A14725FA4220001339F8 /* ButtonSwiftUIView.swift in Sources */,
 				04A7A11925F8A1A3001339F8 /* ZStackSwiftUIView.swift in Sources */,
 				04A7A12C25FA0962001339F8 /* Json2SwiftUIView.swift in Sources */,
@@ -267,6 +282,7 @@
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
 				04A7A15425FA57F9001339F8 /* Chart SwiftUIView.swift in Sources */,
 				04A7A12825FA088A001339F8 /* JsonSwiftUIView.swift in Sources */,
+				04A7A15C25FA624E001339F8 /* RectangleSwiftUIView.swift in Sources */,
 				04A7A0FC25F7B30B001339F8 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
