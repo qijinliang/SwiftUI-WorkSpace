@@ -19,6 +19,8 @@
 		04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A11C25F8E042001339F8 /* VStack2SwiftUIView.swift */; };
 		04A7A12025F8E4C3001339F8 /* VStack3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A11F25F8E4C3001339F8 /* VStack3SwiftUIView.swift */; };
 		04A7A12325F8E4DA001339F8 /* VStacj4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A12225F8E4DA001339F8 /* VStacj4SwiftUIView.swift */; };
+		04A7A12825FA088A001339F8 /* JsonSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A12725FA088A001339F8 /* JsonSwiftUIView.swift */; };
+		04A7A12C25FA0962001339F8 /* Json2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A12B25FA0962001339F8 /* Json2SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		04A7A11C25F8E042001339F8 /* VStack2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack2SwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A11F25F8E4C3001339F8 /* VStack3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack3SwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A12225F8E4DA001339F8 /* VStacj4SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStacj4SwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A12725FA088A001339F8 /* JsonSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonSwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A12B25FA0962001339F8 /* Json2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json2SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		04A7A0F625F7B30B001339F8 /* SwiftUI-Example */ = {
 			isa = PBXGroup;
 			children = (
+				04A7A12625FA087C001339F8 /* Json */,
 				04A7A11725F8A197001339F8 /* ZStack */,
 				04A7A11225F8A187001339F8 /* VStack */,
 				04A7A10D25F8A16F001339F8 /* HStack */,
@@ -115,6 +120,15 @@
 				04A7A11825F8A1A3001339F8 /* ZStackSwiftUIView.swift */,
 			);
 			path = ZStack;
+			sourceTree = "<group>";
+		};
+		04A7A12625FA087C001339F8 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				04A7A12725FA088A001339F8 /* JsonSwiftUIView.swift */,
+				04A7A12B25FA0962001339F8 /* Json2SwiftUIView.swift */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,10 +205,12 @@
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
 				04A7A12325F8E4DA001339F8 /* VStacj4SwiftUIView.swift in Sources */,
 				04A7A11925F8A1A3001339F8 /* ZStackSwiftUIView.swift in Sources */,
+				04A7A12C25FA0962001339F8 /* Json2SwiftUIView.swift in Sources */,
 				04A7A0F825F7B30B001339F8 /* AppDelegate.swift in Sources */,
 				04A7A11425F8A192001339F8 /* VStackSwiftUIView.swift in Sources */,
 				04A7A0FA25F7B30B001339F8 /* SceneDelegate.swift in Sources */,
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
+				04A7A12825FA088A001339F8 /* JsonSwiftUIView.swift in Sources */,
 				04A7A0FC25F7B30B001339F8 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
