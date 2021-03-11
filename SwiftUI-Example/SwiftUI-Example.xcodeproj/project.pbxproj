@@ -21,6 +21,11 @@
 		04A7A12325F8E4DA001339F8 /* VStacj4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A12225F8E4DA001339F8 /* VStacj4SwiftUIView.swift */; };
 		04A7A12825FA088A001339F8 /* JsonSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A12725FA088A001339F8 /* JsonSwiftUIView.swift */; };
 		04A7A12C25FA0962001339F8 /* Json2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A12B25FA0962001339F8 /* Json2SwiftUIView.swift */; };
+		04A7A13725FA35F7001339F8 /* PopSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A13625FA35F7001339F8 /* PopSwiftUIView.swift */; };
+		04A7A13C25FA3638001339F8 /* ShadowSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A13B25FA3638001339F8 /* ShadowSwiftUIView.swift */; };
+		04A7A14025FA3FF2001339F8 /* FoldSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A13F25FA3FF2001339F8 /* FoldSwiftUIView.swift */; };
+		04A7A14325FA41D2001339F8 /* AnimationSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A14225FA41D2001339F8 /* AnimationSwiftUIView.swift */; };
+		04A7A14725FA4220001339F8 /* ButtonSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A14625FA4220001339F8 /* ButtonSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +45,11 @@
 		04A7A12225F8E4DA001339F8 /* VStacj4SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStacj4SwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A12725FA088A001339F8 /* JsonSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonSwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A12B25FA0962001339F8 /* Json2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json2SwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A13625FA35F7001339F8 /* PopSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopSwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A13B25FA3638001339F8 /* ShadowSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowSwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A13F25FA3FF2001339F8 /* FoldSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldSwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A14225FA41D2001339F8 /* AnimationSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationSwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A14625FA4220001339F8 /* ButtonSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,8 @@
 		04A7A0F625F7B30B001339F8 /* SwiftUI-Example */ = {
 			isa = PBXGroup;
 			children = (
+				04A7A14525FA4206001339F8 /* Button */,
+				04A7A13525FA35C1001339F8 /* Animation */,
 				04A7A12625FA087C001339F8 /* Json */,
 				04A7A11725F8A197001339F8 /* ZStack */,
 				04A7A11225F8A187001339F8 /* VStack */,
@@ -129,6 +141,25 @@
 				04A7A12B25FA0962001339F8 /* Json2SwiftUIView.swift */,
 			);
 			path = Json;
+			sourceTree = "<group>";
+		};
+		04A7A13525FA35C1001339F8 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				04A7A13625FA35F7001339F8 /* PopSwiftUIView.swift */,
+				04A7A13B25FA3638001339F8 /* ShadowSwiftUIView.swift */,
+				04A7A13F25FA3FF2001339F8 /* FoldSwiftUIView.swift */,
+				04A7A14225FA41D2001339F8 /* AnimationSwiftUIView.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		04A7A14525FA4206001339F8 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				04A7A14625FA4220001339F8 /* ButtonSwiftUIView.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,13 +233,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A7A12025F8E4C3001339F8 /* VStack3SwiftUIView.swift in Sources */,
+				04A7A14025FA3FF2001339F8 /* FoldSwiftUIView.swift in Sources */,
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
 				04A7A12325F8E4DA001339F8 /* VStacj4SwiftUIView.swift in Sources */,
+				04A7A14725FA4220001339F8 /* ButtonSwiftUIView.swift in Sources */,
 				04A7A11925F8A1A3001339F8 /* ZStackSwiftUIView.swift in Sources */,
 				04A7A12C25FA0962001339F8 /* Json2SwiftUIView.swift in Sources */,
+				04A7A14325FA41D2001339F8 /* AnimationSwiftUIView.swift in Sources */,
+				04A7A13C25FA3638001339F8 /* ShadowSwiftUIView.swift in Sources */,
 				04A7A0F825F7B30B001339F8 /* AppDelegate.swift in Sources */,
 				04A7A11425F8A192001339F8 /* VStackSwiftUIView.swift in Sources */,
 				04A7A0FA25F7B30B001339F8 /* SceneDelegate.swift in Sources */,
+				04A7A13725FA35F7001339F8 /* PopSwiftUIView.swift in Sources */,
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
 				04A7A12825FA088A001339F8 /* JsonSwiftUIView.swift in Sources */,
 				04A7A0FC25F7B30B001339F8 /* ContentView.swift in Sources */,
