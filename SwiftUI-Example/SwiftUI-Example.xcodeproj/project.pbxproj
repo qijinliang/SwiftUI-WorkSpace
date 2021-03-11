@@ -34,6 +34,7 @@
 		04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A15F25FA63E3001339F8 /* GestureSwiftUIView.swift */; };
 		04A7A16525FA66A4001339F8 /* NavigationSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A16425FA66A4001339F8 /* NavigationSwiftUIView.swift */; };
 		04A7A16A25FA69C4001339F8 /* ScrollViewSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A16925FA69C4001339F8 /* ScrollViewSwiftUIView.swift */; };
+		04A7A16E25FA6ED0001339F8 /* Json3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A16D25FA6ED0001339F8 /* Json3SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		04A7A15F25FA63E3001339F8 /* GestureSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureSwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A16425FA66A4001339F8 /* NavigationSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A16925FA69C4001339F8 /* ScrollViewSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewSwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A16D25FA6ED0001339F8 /* Json3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json3SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 			children = (
 				04A7A12725FA088A001339F8 /* JsonSwiftUIView.swift */,
 				04A7A12B25FA0962001339F8 /* Json2SwiftUIView.swift */,
+				04A7A16D25FA6ED0001339F8 /* Json3SwiftUIView.swift */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				04A7A0FA25F7B30B001339F8 /* SceneDelegate.swift in Sources */,
 				04A7A13725FA35F7001339F8 /* PopSwiftUIView.swift in Sources */,
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
+				04A7A16E25FA6ED0001339F8 /* Json3SwiftUIView.swift in Sources */,
 				04A7A15425FA57F9001339F8 /* Chart SwiftUIView.swift in Sources */,
 				04A7A12825FA088A001339F8 /* JsonSwiftUIView.swift in Sources */,
 				04A7A15C25FA624E001339F8 /* RectangleSwiftUIView.swift in Sources */,
