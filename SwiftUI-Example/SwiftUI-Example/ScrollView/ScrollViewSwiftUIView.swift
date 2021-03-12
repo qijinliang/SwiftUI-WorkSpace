@@ -27,7 +27,7 @@ struct ScrollViewSwiftUIView: View {
     
     
     var body: some View {
-        NavigationView {
+
             GeometryReader { geo in
                 
                 VStack {
@@ -45,8 +45,6 @@ struct ScrollViewSwiftUIView: View {
                     }
                 }
             }
-            .navigationBarTitle(Text("ScrollView"))
-        }
         
     }
 }
@@ -86,6 +84,6 @@ struct MovieView: View {
 
 struct ScrollViewSwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollViewSwiftUIView()
+        ScrollViewSwiftUIView().preferredColorScheme(.dark)
     }
 }

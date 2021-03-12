@@ -35,6 +35,7 @@
 		04A7A16525FA66A4001339F8 /* NavigationSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A16425FA66A4001339F8 /* NavigationSwiftUIView.swift */; };
 		04A7A16A25FA69C4001339F8 /* ScrollViewSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A16925FA69C4001339F8 /* ScrollViewSwiftUIView.swift */; };
 		04A7A16E25FA6ED0001339F8 /* Json3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A16D25FA6ED0001339F8 /* Json3SwiftUIView.swift */; };
+		04A7A17225FAFF32001339F8 /* DefinedSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A17125FAFF32001339F8 /* DefinedSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		04A7A16425FA66A4001339F8 /* NavigationSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A16925FA69C4001339F8 /* ScrollViewSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewSwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A16D25FA6ED0001339F8 /* Json3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json3SwiftUIView.swift; sourceTree = "<group>"; };
+		04A7A17125FAFF32001339F8 /* DefinedSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		04A7A0F625F7B30B001339F8 /* SwiftUI-Example */ = {
 			isa = PBXGroup;
 			children = (
+				04A7A17025FAFF1F001339F8 /* Defined */,
 				04A7A16825FA69BC001339F8 /* ScrollView */,
 				04A7A16325FA668F001339F8 /* NavigationView */,
 				04A7A15E25FA63D7001339F8 /* Gesture */,
@@ -229,6 +232,14 @@
 			path = ScrollView;
 			sourceTree = "<group>";
 		};
+		04A7A17025FAFF1F001339F8 /* Defined */ = {
+			isa = PBXGroup;
+			children = (
+				04A7A17125FAFF32001339F8 /* DefinedSwiftUIView.swift */,
+			);
+			path = Defined;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -313,6 +324,7 @@
 				04A7A14325FA41D2001339F8 /* AnimationSwiftUIView.swift in Sources */,
 				04A7A16525FA66A4001339F8 /* NavigationSwiftUIView.swift in Sources */,
 				04A7A13C25FA3638001339F8 /* ShadowSwiftUIView.swift in Sources */,
+				04A7A17225FAFF32001339F8 /* DefinedSwiftUIView.swift in Sources */,
 				04A7A0F825F7B30B001339F8 /* AppDelegate.swift in Sources */,
 				04A7A14D25FA5774001339F8 /* FanshapedSwiftUIView.swift in Sources */,
 				04A7A11425F8A192001339F8 /* VStackSwiftUIView.swift in Sources */,
