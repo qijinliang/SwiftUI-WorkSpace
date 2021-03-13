@@ -36,6 +36,7 @@
 		04A7A16E25FA6ED0001339F8 /* Json3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A16D25FA6ED0001339F8 /* Json3SwiftUIView.swift */; };
 		04A7A17225FAFF32001339F8 /* DefinedSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A17125FAFF32001339F8 /* DefinedSwiftUIView.swift */; };
 		04A7A17A25FB9244001339F8 /* VStack4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A17925FB9244001339F8 /* VStack4SwiftUIView.swift */; };
+		04B7E68025FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		04A7A16D25FA6ED0001339F8 /* Json3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json3SwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A17125FAFF32001339F8 /* DefinedSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedSwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A17925FB9244001339F8 /* VStack4SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack4SwiftUIView.swift; sourceTree = "<group>"; };
+		04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView2SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				04A7A16925FA69C4001339F8 /* ScrollViewSwiftUIView.swift */,
+				04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
 				04A7A15825FA61F3001339F8 /* TextFieldSwiftUIView.swift in Sources */,
+				04B7E68025FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift in Sources */,
 				04A7A16A25FA69C4001339F8 /* ScrollViewSwiftUIView.swift in Sources */,
 				04A7A14725FA4220001339F8 /* ButtonSwiftUIView.swift in Sources */,
 				04A7A11925F8A1A3001339F8 /* ZStackSwiftUIView.swift in Sources */,

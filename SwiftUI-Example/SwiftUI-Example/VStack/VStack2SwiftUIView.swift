@@ -54,6 +54,7 @@ struct HeadView: View {
                 .foregroundColor(Color(textColor))
         }
         .padding()
+        .frame(maxWidth: .infinity)
         .background(Color.blue)
     }
 }
