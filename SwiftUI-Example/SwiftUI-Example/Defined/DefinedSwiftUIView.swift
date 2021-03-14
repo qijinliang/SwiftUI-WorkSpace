@@ -16,15 +16,15 @@ struct DefinedSwiftUIView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 Spacer()
-                VStack{
-                    Rectangle()
-                        .frame(width: 300, height: 220)
-                        .foregroundColor(.clear)
-                }
-                .background(BlurView())
-                .cornerRadius(25)
-                .frame(maxWidth: .infinity)
-            }.padding()
+                    VStack{
+                        Text("胡歌，1982年9月20日出生于上海市徐汇区，中国内地影视男演员、流行乐歌手，民盟盟员 [1]  ，毕业于上海戏剧学院表演系。1996年，14岁的胡歌便成为上海教育电视台的小主持人。")
+                            .font(.title)
+                        
+                    }
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(BlurView())
+            }
         }
     }
 }
