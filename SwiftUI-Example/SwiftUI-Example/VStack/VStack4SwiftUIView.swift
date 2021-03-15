@@ -37,6 +37,31 @@ struct VStack4SwiftUIView: View {
             .background(RoundedRectangle(cornerRadius: 10))
             .foregroundColor(.blue)
             .padding()
+            
+            VStack(alignment: .trailing, spacing: 40){
+                Text("Trailing Alignment")
+                    .font(.title)
+                Divider()
+                Image.init(systemName: "arrow.right")
+            }
+            .padding()
+            .frame(maxWidth: .infinity)
+            .foregroundColor(.white)
+            .background(Color.blue)
+            .cornerRadius(10)
+            .padding()
+            
+            VStack(alignment: .center,spacing: 40){
+                Text("自定义视图")
+                Spacer()
+                Image.init(systemName: "arrow.right")
+            }
+            .padding()
+            .frame(maxWidth: .infinity,minHeight: 150)
+            .foregroundColor(.white)
+            .background(Color.blue)
+            .cornerRadius(10)
+            .padding()
         }
     }
 }
