@@ -52,7 +52,7 @@ struct VStack4SwiftUIView: View {
             .padding()
             
             VStack(alignment: .center,spacing: 40){
-                Text("自定义视图")
+                Text("Center").font(.title)
                 Spacer()
                 Image.init(systemName: "arrow.right")
             }
