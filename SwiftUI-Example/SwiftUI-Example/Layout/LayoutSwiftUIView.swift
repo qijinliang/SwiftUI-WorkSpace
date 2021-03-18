@@ -22,7 +22,7 @@ struct LayoutSwiftUIView: View {
             }
             .padding()
             .frame(maxWidth: .infinity)
-            //MARK - 颜色写法.background(Color(ColorLiteral))
+            //MARK: - 颜色写法.background(Color(ColorLiteral))
             .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
             Image(systemName: "arrow.down.to.line.alt")
             HStack(){

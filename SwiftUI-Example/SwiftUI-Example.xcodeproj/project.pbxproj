@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		047C9EAD26020BE90009A5A1 /* HStack2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */; };
 		047C9EB026020E470009A5A1 /* HStack3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EAF26020E470009A5A1 /* HStack3SwiftUIView.swift */; };
+		047C9EB82602F2130009A5A1 /* HStack4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */; };
 		04A7A0F825F7B30B001339F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A0F725F7B30B001339F8 /* AppDelegate.swift */; };
 		04A7A0FA25F7B30B001339F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A0F925F7B30B001339F8 /* SceneDelegate.swift */; };
 		04A7A0FC25F7B30B001339F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A0FB25F7B30B001339F8 /* ContentView.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack2SwiftUIView.swift; sourceTree = "<group>"; };
 		047C9EAF26020E470009A5A1 /* HStack3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack3SwiftUIView.swift; sourceTree = "<group>"; };
+		047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HStack4SwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A0F425F7B30B001339F8 /* SwiftUI-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A7A0F725F7B30B001339F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A7A0F925F7B30B001339F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				04A7A10E25F8A17F001339F8 /* HStackSwiftUIView.swift */,
 				047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */,
 				047C9EAF26020E470009A5A1 /* HStack3SwiftUIView.swift */,
+				047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */,
 			);
 			path = HStack;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				04A7A16A25FA69C4001339F8 /* ScrollViewSwiftUIView.swift in Sources */,
 				04A7A14725FA4220001339F8 /* ButtonSwiftUIView.swift in Sources */,
 				04A7A11925F8A1A3001339F8 /* ZStackSwiftUIView.swift in Sources */,
+				047C9EB82602F2130009A5A1 /* HStack4SwiftUIView.swift in Sources */,
 				04A7A12C25FA0962001339F8 /* Json2SwiftUIView.swift in Sources */,
 				04A7A15125FA57C6001339F8 /* LineGraphSwiftUIView.swift in Sources */,
 				04A7A14325FA41D2001339F8 /* AnimationSwiftUIView.swift in Sources */,
