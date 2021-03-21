@@ -47,6 +47,12 @@ struct LayoutSwiftUIView: View {
 
 struct LayoutSwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        LayoutSwiftUIView().preferredColorScheme(.dark)
+        Group {
+            //MARK: 默认竖屏
+            LayoutSwiftUIView().preferredColorScheme(.dark)
+            LayoutSwiftUIView().preferredColorScheme(.dark)
+                //MARK: 横屏设置
+                .previewLayout(PreviewLayout.fixed(width: 900, height: 450))
+        }
     }
 }

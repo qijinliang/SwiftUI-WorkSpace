@@ -28,11 +28,39 @@ struct Layout2SwiftUIView: View {
                     VStack(alignment: .leading,spacing: 10){
                         Image.init(systemName: "arrow.up.left")
                         Text("topLeading")
-                            .font(.title)
                     }
                     .padding()
                     ,alignment: .topLeading)
-                .font(.largeTitle)
+                .font(.title)
+            
+                .overlay(
+                    VStack(alignment: .trailing,spacing: 10) {
+                        Image.init(systemName: "arrow.up.right")
+                        Text("topTrailing")
+                    }
+                    .padding()
+                    ,alignment: .topTrailing)
+                .font(.title)
+            
+                .overlay(
+                    VStack(alignment: .leading) {
+                        Text("bottomLeading")
+                        Image.init(systemName: "arrow.down.left")
+                    }
+                    .padding()
+                    ,alignment: .bottomLeading
+                ).font(.title)
+            
+                .overlay(
+                    VStack(alignment: .trailing) {
+                        Text("bottomTrailing")
+                        Image.init(systemName: "arrow.down.right")
+                    }
+                    .padding()
+                    ,alignment: .bottomTrailing
+                ).font(.title)
+            
+                .overlay(Text("Colors are Push-Out views").font(.title))
         }.foregroundColor(.white)
         
     }
@@ -40,6 +68,7 @@ struct Layout2SwiftUIView: View {
 
 struct Layout2SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        Layout2SwiftUIView().preferredColorScheme(.dark)
+        //MARK: 字体大小设置
+        Layout2SwiftUIView().preferredColorScheme(.dark).environment(\.sizeCategory, .extraSmall)
     }
 }

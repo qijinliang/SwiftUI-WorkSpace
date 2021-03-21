@@ -68,6 +68,9 @@ struct VStack4SwiftUIView: View {
 
 struct VStack4SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        VStack4SwiftUIView()
+        Group{
+            VStack4SwiftUIView()
+            VStack4SwiftUIView().preferredColorScheme(.dark)
+        }
     }
 }
