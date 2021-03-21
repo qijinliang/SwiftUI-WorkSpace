@@ -48,6 +48,9 @@
 		04B7E68025FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */; };
 		5BDED08726023B44005AAEE7 /* LayoutSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */; };
 		5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */; };
+		5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813D7260700D80076F4C4 /* GeometryReader4SwiftUIView.swift */; };
+		5BF813DB260700F20076F4C4 /* GeometryReader3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813DA260700F20076F4C4 /* GeometryReader3SwiftUIView.swift */; };
+		5BF813DF2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813DE2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +97,9 @@
 		04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView2SwiftUIView.swift; sourceTree = "<group>"; };
 		5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSwiftUIView.swift; sourceTree = "<group>"; };
 		5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout2SwiftUIView.swift; sourceTree = "<group>"; };
+		5BF813D7260700D80076F4C4 /* GeometryReader4SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader4SwiftUIView.swift; sourceTree = "<group>"; };
+		5BF813DA260700F20076F4C4 /* GeometryReader3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader3SwiftUIView.swift; sourceTree = "<group>"; };
+		5BF813DE2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader5SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,9 @@
 			children = (
 				047C9F01260608640009A5A1 /* GeometryReaderSwiftUIView.swift */,
 				047C9F1226060B2B0009A5A1 /* GeometryReader2SwiftUIView.swift */,
+				5BF813DA260700F20076F4C4 /* GeometryReader3SwiftUIView.swift */,
+				5BF813D7260700D80076F4C4 /* GeometryReader4SwiftUIView.swift */,
+				5BF813DE2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift */,
 			);
 			path = GemoetryReader;
 			sourceTree = "<group>";
@@ -373,6 +382,7 @@
 				5BDED08726023B44005AAEE7 /* LayoutSwiftUIView.swift in Sources */,
 				04A7A12025F8E4C3001339F8 /* VStack3SwiftUIView.swift in Sources */,
 				04A7A14025FA3FF2001339F8 /* FoldSwiftUIView.swift in Sources */,
+				5BF813DF2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift in Sources */,
 				047C9EFE2605FF0A0009A5A1 /* Spacer4SwiftUIView.swift in Sources */,
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
@@ -392,6 +402,7 @@
 				047C9EED2605F3540009A5A1 /* Spacer3SwiftUIView.swift in Sources */,
 				047C9EB026020E470009A5A1 /* HStack3SwiftUIView.swift in Sources */,
 				04A7A13C25FA3638001339F8 /* ShadowSwiftUIView.swift in Sources */,
+				5BF813DB260700F20076F4C4 /* GeometryReader3SwiftUIView.swift in Sources */,
 				047C9ECA2604E1620009A5A1 /* SpacerSwiftUIView.swift in Sources */,
 				04A7A17225FAFF32001339F8 /* DefinedSwiftUIView.swift in Sources */,
 				04A7A0F825F7B30B001339F8 /* AppDelegate.swift in Sources */,
@@ -401,6 +412,7 @@
 				04A7A11425F8A192001339F8 /* VStackSwiftUIView.swift in Sources */,
 				04A7A0FA25F7B30B001339F8 /* SceneDelegate.swift in Sources */,
 				04A7A13725FA35F7001339F8 /* PopSwiftUIView.swift in Sources */,
+				5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */,
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
 				04A7A16E25FA6ED0001339F8 /* Json3SwiftUIView.swift in Sources */,
 				04A7A15425FA57F9001339F8 /* Chart SwiftUIView.swift in Sources */,
