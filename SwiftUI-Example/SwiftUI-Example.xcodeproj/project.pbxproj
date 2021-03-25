@@ -19,7 +19,6 @@
 		047C9F1326060B2B0009A5A1 /* GeometryReader2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9F1226060B2B0009A5A1 /* GeometryReader2SwiftUIView.swift */; };
 		04A7A0F825F7B30B001339F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A0F725F7B30B001339F8 /* AppDelegate.swift */; };
 		04A7A0FA25F7B30B001339F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A0F925F7B30B001339F8 /* SceneDelegate.swift */; };
-		04A7A0FC25F7B30B001339F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A0FB25F7B30B001339F8 /* ContentView.swift */; };
 		04A7A0FE25F7B30D001339F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A7A0FD25F7B30D001339F8 /* Assets.xcassets */; };
 		04A7A10125F7B30D001339F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A7A10025F7B30D001339F8 /* Preview Assets.xcassets */; };
 		04A7A10425F7B30D001339F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A7A10225F7B30D001339F8 /* LaunchScreen.storyboard */; };
@@ -70,7 +69,6 @@
 		04A7A0F425F7B30B001339F8 /* SwiftUI-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A7A0F725F7B30B001339F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A7A0F925F7B30B001339F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04A7A0FB25F7B30B001339F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04A7A0FD25F7B30D001339F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A7A10025F7B30D001339F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04A7A10325F7B30D001339F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 				040C67D9260C44B700A01500 /* Classes */,
 				04A7A0F725F7B30B001339F8 /* AppDelegate.swift */,
 				04A7A0F925F7B30B001339F8 /* SceneDelegate.swift */,
-				04A7A0FB25F7B30B001339F8 /* ContentView.swift */,
 				04A7A0FD25F7B30D001339F8 /* Assets.xcassets */,
 				04A7A10225F7B30D001339F8 /* LaunchScreen.storyboard */,
 				04A7A10525F7B30D001339F8 /* Info.plist */,
@@ -447,7 +444,6 @@
 				04A7A12825FA088A001339F8 /* JsonSwiftUIView.swift in Sources */,
 				04A7A15C25FA624E001339F8 /* RectangleSwiftUIView.swift in Sources */,
 				047C9F1326060B2B0009A5A1 /* GeometryReader2SwiftUIView.swift in Sources */,
-				04A7A0FC25F7B30B001339F8 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -106,6 +106,6 @@ struct UpdateDetail: View {
 
 struct NavigationSwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationSwiftUIView().previewDevice("iPad Pro (12.9-inch) (4th generation)").preferredColorScheme(.dark)
+        NavigationSwiftUIView().preferredColorScheme(.dark)
     }
 }
