@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040C67DC260C44CC00A01500 /* ListSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C67DB260C44CC00A01500 /* ListSwiftUIView.swift */; };
 		047C9EAD26020BE90009A5A1 /* HStack2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */; };
 		047C9EB026020E470009A5A1 /* HStack3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EAF26020E470009A5A1 /* HStack3SwiftUIView.swift */; };
 		047C9EB82602F2130009A5A1 /* HStack4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */; };
@@ -56,6 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040C67DB260C44CC00A01500 /* ListSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSwiftUIView.swift; sourceTree = "<group>"; };
 		047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack2SwiftUIView.swift; sourceTree = "<group>"; };
 		047C9EAF26020E470009A5A1 /* HStack3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack3SwiftUIView.swift; sourceTree = "<group>"; };
 		047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HStack4SwiftUIView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040C67D9260C44B700A01500 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				047C9F002606084F0009A5A1 /* GemoetryReader */,
+				047C9EC82604E1470009A5A1 /* Spacer */,
+				5BDED08526023B14005AAEE7 /* Layout */,
+				04A7A17025FAFF1F001339F8 /* Defined */,
+				04A7A16825FA69BC001339F8 /* ScrollView */,
+				04A7A16325FA668F001339F8 /* NavigationView */,
+				04A7A15E25FA63D7001339F8 /* Gesture */,
+				04A7A15625FA61E8001339F8 /* TextField */,
+				04A7A14B25FA5762001339F8 /* mathematics */,
+				04A7A14525FA4206001339F8 /* Button */,
+				04A7A13525FA35C1001339F8 /* Animation */,
+				04A7A12625FA087C001339F8 /* Json */,
+				04A7A11725F8A197001339F8 /* ZStack */,
+				04A7A11225F8A187001339F8 /* VStack */,
+				04A7A10D25F8A16F001339F8 /* HStack */,
+				040C67DA260C44BF00A01500 /* List */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		040C67DA260C44BF00A01500 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				040C67DB260C44CC00A01500 /* ListSwiftUIView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 		047C9EC82604E1470009A5A1 /* Spacer */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,21 +192,7 @@
 		04A7A0F625F7B30B001339F8 /* SwiftUI-Example */ = {
 			isa = PBXGroup;
 			children = (
-				047C9F002606084F0009A5A1 /* GemoetryReader */,
-				047C9EC82604E1470009A5A1 /* Spacer */,
-				5BDED08526023B14005AAEE7 /* Layout */,
-				04A7A17025FAFF1F001339F8 /* Defined */,
-				04A7A16825FA69BC001339F8 /* ScrollView */,
-				04A7A16325FA668F001339F8 /* NavigationView */,
-				04A7A15E25FA63D7001339F8 /* Gesture */,
-				04A7A15625FA61E8001339F8 /* TextField */,
-				04A7A14B25FA5762001339F8 /* mathematics */,
-				04A7A14525FA4206001339F8 /* Button */,
-				04A7A13525FA35C1001339F8 /* Animation */,
-				04A7A12625FA087C001339F8 /* Json */,
-				04A7A11725F8A197001339F8 /* ZStack */,
-				04A7A11225F8A187001339F8 /* VStack */,
-				04A7A10D25F8A16F001339F8 /* HStack */,
+				040C67D9260C44B700A01500 /* Classes */,
 				04A7A0F725F7B30B001339F8 /* AppDelegate.swift */,
 				04A7A0F925F7B30B001339F8 /* SceneDelegate.swift */,
 				04A7A0FB25F7B30B001339F8 /* ContentView.swift */,
@@ -391,6 +410,7 @@
 				5BF813CD2606FA270076F4C4 /* HStack5SwiftUIView.swift in Sources */,
 				5BF813DF2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift in Sources */,
 				047C9EFE2605FF0A0009A5A1 /* Spacer4SwiftUIView.swift in Sources */,
+				040C67DC260C44CC00A01500 /* ListSwiftUIView.swift in Sources */,
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
 				04A7A15825FA61F3001339F8 /* TextFieldSwiftUIView.swift in Sources */,
