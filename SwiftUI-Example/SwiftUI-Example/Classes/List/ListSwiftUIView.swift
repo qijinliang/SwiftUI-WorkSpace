@@ -10,14 +10,17 @@ import SwiftUI
 struct ListSwiftUIView: View {
     var body: some View {
         NavigationView {
-            List{
-                Text("HStack")
+            Form {
+                Section {
+                    VStackMainView()
+                    NavigationShowView()
+                }
             }
-            .navigationBarTitle("SwiftUI示例")
+            
+            .navigationBarTitle("SwiftUI示例",displayMode: .inline)
         }
     }
 }
-
 struct ListSwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         ListSwiftUIView()
