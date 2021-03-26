@@ -18,6 +18,14 @@ struct AnimationShowView: View {
                 NavigationLink(destination: ShadowSwiftUIView()) {
                     Text("Shadow")
                 }
+                
+                NavigationLink(destination: AnimationSwiftUIView()) {
+                    Text("Animation")
+                }
+                
+                NavigationLink(destination: FoldSwiftUIView()) {
+                    Text("Flod")
+                }
             }
         }
     }

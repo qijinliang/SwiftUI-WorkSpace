@@ -10,6 +10,13 @@
 		040C67DC260C44CC00A01500 /* ListSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C67DB260C44CC00A01500 /* ListSwiftUIView.swift */; };
 		0414C7E2260DEBC900F351BF /* AnimationMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7E1260DEBC900F351BF /* AnimationMainView.swift */; };
 		0414C7E5260DEBD600F351BF /* AnimationShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7E4260DEBD600F351BF /* AnimationShowView.swift */; };
+		0414C7E8260DF23800F351BF /* MathMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7E7260DF23800F351BF /* MathMainView.swift */; };
+		0414C7EB260DF24300F351BF /* MathShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7EA260DF24300F351BF /* MathShowView.swift */; };
+		0414C7EE260DF42000F351BF /* GestureMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7ED260DF42000F351BF /* GestureMainView.swift */; };
+		0414C7F1260DF60300F351BF /* ButtonMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F0260DF60300F351BF /* ButtonMainView.swift */; };
+		0414C7F4260DF69200F351BF /* ButtonShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F3260DF69200F351BF /* ButtonShowView.swift */; };
+		0414C7F7260DF84200F351BF /* ScrollMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F6260DF84200F351BF /* ScrollMainView.swift */; };
+		0414C7FA260DF85400F351BF /* ScrollShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F9260DF85400F351BF /* ScrollShowView.swift */; };
 		047C9EAD26020BE90009A5A1 /* HStack2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */; };
 		047C9EB026020E470009A5A1 /* HStack3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EAF26020E470009A5A1 /* HStack3SwiftUIView.swift */; };
 		047C9EB82602F2130009A5A1 /* HStack4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */; };
@@ -66,6 +73,13 @@
 		040C67DB260C44CC00A01500 /* ListSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSwiftUIView.swift; sourceTree = "<group>"; };
 		0414C7E1260DEBC900F351BF /* AnimationMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationMainView.swift; sourceTree = "<group>"; };
 		0414C7E4260DEBD600F351BF /* AnimationShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationShowView.swift; sourceTree = "<group>"; };
+		0414C7E7260DF23800F351BF /* MathMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathMainView.swift; sourceTree = "<group>"; };
+		0414C7EA260DF24300F351BF /* MathShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathShowView.swift; sourceTree = "<group>"; };
+		0414C7ED260DF42000F351BF /* GestureMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureMainView.swift; sourceTree = "<group>"; };
+		0414C7F0260DF60300F351BF /* ButtonMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonMainView.swift; sourceTree = "<group>"; };
+		0414C7F3260DF69200F351BF /* ButtonShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShowView.swift; sourceTree = "<group>"; };
+		0414C7F6260DF84200F351BF /* ScrollMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollMainView.swift; sourceTree = "<group>"; };
+		0414C7F9260DF85400F351BF /* ScrollShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollShowView.swift; sourceTree = "<group>"; };
 		047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack2SwiftUIView.swift; sourceTree = "<group>"; };
 		047C9EAF26020E470009A5A1 /* HStack3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack3SwiftUIView.swift; sourceTree = "<group>"; };
 		047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HStack4SwiftUIView.swift; sourceTree = "<group>"; };
@@ -286,6 +300,8 @@
 			isa = PBXGroup;
 			children = (
 				04A7A14625FA4220001339F8 /* ButtonSwiftUIView.swift */,
+				0414C7F0260DF60300F351BF /* ButtonMainView.swift */,
+				0414C7F3260DF69200F351BF /* ButtonShowView.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -297,6 +313,8 @@
 				04A7A15025FA57C6001339F8 /* LineGraphSwiftUIView.swift */,
 				04A7A15325FA57F9001339F8 /* Chart SwiftUIView.swift */,
 				04A7A15B25FA624E001339F8 /* RectangleSwiftUIView.swift */,
+				0414C7E7260DF23800F351BF /* MathMainView.swift */,
+				0414C7EA260DF24300F351BF /* MathShowView.swift */,
 			);
 			path = mathematics;
 			sourceTree = "<group>";
@@ -313,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				04A7A15F25FA63E3001339F8 /* GestureSwiftUIView.swift */,
+				0414C7ED260DF42000F351BF /* GestureMainView.swift */,
 			);
 			path = Gesture;
 			sourceTree = "<group>";
@@ -331,6 +350,8 @@
 			children = (
 				04A7A16925FA69C4001339F8 /* ScrollViewSwiftUIView.swift */,
 				04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */,
+				0414C7F6260DF84200F351BF /* ScrollMainView.swift */,
+				0414C7F9260DF85400F351BF /* ScrollShowView.swift */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
@@ -423,9 +444,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0414C7E5260DEBD600F351BF /* AnimationShowView.swift in Sources */,
+				0414C7F1260DF60300F351BF /* ButtonMainView.swift in Sources */,
+				0414C7F4260DF69200F351BF /* ButtonShowView.swift in Sources */,
 				5BDED08726023B44005AAEE7 /* LayoutSwiftUIView.swift in Sources */,
 				04A7A12025F8E4C3001339F8 /* VStack3SwiftUIView.swift in Sources */,
 				04A7A14025FA3FF2001339F8 /* FoldSwiftUIView.swift in Sources */,
+				0414C7EE260DF42000F351BF /* GestureMainView.swift in Sources */,
 				04DA97CF260D9E91005DDF21 /* VStackShowView.swift in Sources */,
 				5BF813CD2606FA270076F4C4 /* HStack5SwiftUIView.swift in Sources */,
 				5BF813DF2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift in Sources */,
@@ -455,7 +479,9 @@
 				047C9EB026020E470009A5A1 /* HStack3SwiftUIView.swift in Sources */,
 				04A7A13C25FA3638001339F8 /* ShadowSwiftUIView.swift in Sources */,
 				5BF813DB260700F20076F4C4 /* GeometryReader3SwiftUIView.swift in Sources */,
+				0414C7E8260DF23800F351BF /* MathMainView.swift in Sources */,
 				047C9ECA2604E1620009A5A1 /* SpacerSwiftUIView.swift in Sources */,
+				0414C7EB260DF24300F351BF /* MathShowView.swift in Sources */,
 				04A7A17225FAFF32001339F8 /* DefinedSwiftUIView.swift in Sources */,
 				04A7A0F825F7B30B001339F8 /* AppDelegate.swift in Sources */,
 				04A7A17A25FB9244001339F8 /* VStack4SwiftUIView.swift in Sources */,
@@ -463,6 +489,8 @@
 				04A7A14D25FA5774001339F8 /* FanshapedSwiftUIView.swift in Sources */,
 				04A7A11425F8A192001339F8 /* VStackSwiftUIView.swift in Sources */,
 				04A7A0FA25F7B30B001339F8 /* SceneDelegate.swift in Sources */,
+				0414C7F7260DF84200F351BF /* ScrollMainView.swift in Sources */,
+				0414C7FA260DF85400F351BF /* ScrollShowView.swift in Sources */,
 				04A7A13725FA35F7001339F8 /* PopSwiftUIView.swift in Sources */,
 				5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */,
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,

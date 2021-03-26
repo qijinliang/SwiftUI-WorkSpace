@@ -31,7 +31,6 @@ struct ShadowSwiftUIView: View {
             .background(Color.white)
             .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
         }
-        .edgesIgnoringSafeArea(.all)
     }
 }
 

@@ -26,6 +26,22 @@ struct ListSwiftUIView: View {
                 Section(header: Text("Animation").font(.title3).fontWeight(.heavy)) {
                     AnimationMainView()
                 }
+                
+                Section(header: Text("Math").font(.title3).fontWeight(.heavy)) {
+                    MathMainView()
+                }
+                
+                Section(header: Text("Gesture").font(.title3).fontWeight(.heavy)) {
+                    GestureMainView()
+                }
+                
+                Section(header: Text("Button").font(.title3).fontWeight(.heavy)) {
+                    ButtonMainView()
+                }
+                
+                Section(header: Text("ScrollView").font(.title3).fontWeight(.heavy)) {
+                    ScrollMainView()
+                }
             }
             
             .navigationBarTitle("SwiftUI示例",displayMode: .inline)
