@@ -11,9 +11,16 @@ struct ListSwiftUIView: View {
     var body: some View {
         NavigationView {
             Form {
-                Section {
+                Section(header: Text("View").font(.title3).fontWeight(.heavy)) {
                     VStackMainView()
+                }
+                
+                Section(header: Text("Navigation").font(.title3).fontWeight(.heavy)) {
                     NavigationShowView()
+                }
+                
+                Section(header: Text("Json").font(.title3).fontWeight(.heavy)) {
+                    JsonMainView()
                 }
             }
             

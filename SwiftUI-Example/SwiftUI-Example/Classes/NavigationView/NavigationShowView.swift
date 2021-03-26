@@ -12,8 +12,6 @@ struct NavigationShowView: View {
         Section() {
             NavigationLink(destination: NavigationSwiftUIView()) {
                 Text("NavigationView")
-                    .font(.title3)
-                    .fontWeight(.heavy)
             }
         }
     }

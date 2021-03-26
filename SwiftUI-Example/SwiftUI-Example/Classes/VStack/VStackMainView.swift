@@ -12,8 +12,6 @@ struct VStackMainView: View {
         Section() {
             NavigationLink(destination: VStackShowView()) {
                 Text("View")
-                    .font(.title3)
-                    .fontWeight(.heavy)
             }
         }
     }

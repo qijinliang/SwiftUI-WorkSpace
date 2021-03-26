@@ -11,30 +11,76 @@ struct VStackShowView: View {
     var body: some View {
         
         Form() {
-            Section {
+            //MARK: VStack
+            Section(header: Text("VStack").font(.title3).fontWeight(.heavy)) {
                 NavigationLink(destination: VStackSwiftUIView()) {
                     Text("VStack1")
-                        .font(.title3)
-                        .fontWeight(.heavy)
                 }
                 
                 NavigationLink(destination: VStack2SwiftUIView()) {
                     Text("VStack2")
-                        .font(.title3)
-                        .fontWeight(.heavy)
                 }
-            }
-            Section {
+                
                 NavigationLink(destination: VStack3SwiftUIView()) {
                     Text("VStack3")
-                        .font(.title3)
-                        .fontWeight(.heavy)
                 }
                 
                 NavigationLink(destination: VStack4SwiftUIView()) {
                     Text("VStack4")
-                        .font(.title3)
-                        .fontWeight(.heavy)
+                }
+            }
+            //MARK: HStack
+            Section(header: Text("HStack").font(.title3).fontWeight(.heavy)) {
+                NavigationLink(destination: HStackSwiftUIView()) {
+                    Text("HStack1")
+                }
+                
+                NavigationLink(destination: HStack2SwiftUIView()) {
+                    Text("HStack2")
+                }
+                
+                NavigationLink(destination: HStack3SwiftUIView()) {
+                    Text("HStack3")
+                }
+                
+                NavigationLink(destination: HStack4SwiftUIView()) {
+                    Text("HStack4")
+                }
+                
+                NavigationLink(destination: HStack5SwiftUIView()) {
+                    Text("HStack5")
+                }
+                
+                NavigationLink(destination: HStack6SwiftUIView()) {
+                    Text("HStack6")
+                }
+                
+            }
+            
+            //MARK: ZStack
+            Section(header: Text("ZStack").font(.title3).fontWeight(.heavy)) {
+                NavigationLink(destination: HStackSwiftUIView()) {
+                    Text("HStack1")
+                }
+                
+                NavigationLink(destination: HStack2SwiftUIView()) {
+                    Text("HStack2")
+                }
+                
+                NavigationLink(destination: HStack3SwiftUIView()) {
+                    Text("HStack3")
+                }
+                
+                NavigationLink(destination: HStack4SwiftUIView()) {
+                    Text("HStack4")
+                }
+                
+                NavigationLink(destination: HStack5SwiftUIView()) {
+                    Text("HStack5")
+                }
+                
+                NavigationLink(destination: HStack6SwiftUIView()) {
+                    Text("HStack6")
                 }
                 
             }

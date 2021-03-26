@@ -49,6 +49,8 @@
 		04DA97C6260D9597005DDF21 /* VStackMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97C5260D9597005DDF21 /* VStackMainView.swift */; };
 		04DA97CF260D9E91005DDF21 /* VStackShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97CE260D9E91005DDF21 /* VStackShowView.swift */; };
 		04DA97D4260DA0CB005DDF21 /* NavigationShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97D3260DA0CB005DDF21 /* NavigationShowView.swift */; };
+		04DA97D7260DAEED005DDF21 /* JsonShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97D6260DAEED005DDF21 /* JsonShowView.swift */; };
+		04DA97DA260DB0A4005DDF21 /* JsonMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97D9260DB0A4005DDF21 /* JsonMainView.swift */; };
 		5BDED08726023B44005AAEE7 /* LayoutSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */; };
 		5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */; };
 		5BF813CD2606FA270076F4C4 /* HStack5SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813CC2606FA270076F4C4 /* HStack5SwiftUIView.swift */; };
@@ -103,6 +105,8 @@
 		04DA97C5260D9597005DDF21 /* VStackMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackMainView.swift; sourceTree = "<group>"; };
 		04DA97CE260D9E91005DDF21 /* VStackShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackShowView.swift; sourceTree = "<group>"; };
 		04DA97D3260DA0CB005DDF21 /* NavigationShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationShowView.swift; sourceTree = "<group>"; };
+		04DA97D6260DAEED005DDF21 /* JsonShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonShowView.swift; sourceTree = "<group>"; };
+		04DA97D9260DB0A4005DDF21 /* JsonMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMainView.swift; sourceTree = "<group>"; };
 		5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSwiftUIView.swift; sourceTree = "<group>"; };
 		5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout2SwiftUIView.swift; sourceTree = "<group>"; };
 		5BF813CC2606FA270076F4C4 /* HStack5SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack5SwiftUIView.swift; sourceTree = "<group>"; };
@@ -255,6 +259,8 @@
 				04A7A12725FA088A001339F8 /* JsonSwiftUIView.swift */,
 				04A7A12B25FA0962001339F8 /* Json2SwiftUIView.swift */,
 				04A7A16D25FA6ED0001339F8 /* Json3SwiftUIView.swift */,
+				04DA97D6260DAEED005DDF21 /* JsonShowView.swift */,
+				04DA97D9260DB0A4005DDF21 /* JsonMainView.swift */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -429,9 +435,11 @@
 				04A7A16A25FA69C4001339F8 /* ScrollViewSwiftUIView.swift in Sources */,
 				04A7A14725FA4220001339F8 /* ButtonSwiftUIView.swift in Sources */,
 				04A7A11925F8A1A3001339F8 /* ZStackSwiftUIView.swift in Sources */,
+				04DA97D7260DAEED005DDF21 /* JsonShowView.swift in Sources */,
 				047C9EB82602F2130009A5A1 /* HStack4SwiftUIView.swift in Sources */,
 				04A7A12C25FA0962001339F8 /* Json2SwiftUIView.swift in Sources */,
 				047C9EEA2605ED820009A5A1 /* Spacer2SwiftUIView.swift in Sources */,
+				04DA97DA260DB0A4005DDF21 /* JsonMainView.swift in Sources */,
 				04A7A15125FA57C6001339F8 /* LineGraphSwiftUIView.swift in Sources */,
 				04A7A14325FA41D2001339F8 /* AnimationSwiftUIView.swift in Sources */,
 				04A7A16525FA66A4001339F8 /* NavigationSwiftUIView.swift in Sources */,

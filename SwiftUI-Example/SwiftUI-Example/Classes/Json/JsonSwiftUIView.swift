@@ -90,47 +90,44 @@ struct JsonSwiftUIView: View {
     @State var taglist = [Taglist]()
     
     var body: some View {
-        NavigationView {
-            List(communityList, id: \.community_id) { item in
-                HStack(alignment: .top, spacing: 10){
+        List(communityList, id: \.community_id) { item in
+            HStack(alignment: .top, spacing: 10){
+                
+                URLImage(url: item.user.face).scaledToFill().shadow(radius: 8).cornerRadius(10).frame(width: 80, height: 80).cornerRadius(80).padding(.trailing, 4)
+                
+                VStack(alignment: .leading, spacing: 6) {
                     
-                    URLImage(url: item.user.face).scaledToFill().shadow(radius: 8).cornerRadius(10).frame(width: 80, height: 80).cornerRadius(80).padding(.trailing, 4)
+                    Text(item.user.nickname)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
                     
-                    VStack(alignment: .leading, spacing: 6) {
+                    Text(item.content)
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                    
+                    HStack(spacing: 12){
                         
-                        Text(item.user.nickname)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
                         
-                        Text(item.content)
+                        Text(item.create_time_str)
                             .font(.caption)
-                            .foregroundColor(.gray)
+                            .foregroundColor(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
+                        Spacer()
                         
-                        HStack(spacing: 12){
-                            
-                            
-                            Text(item.create_time_str)
-                                .font(.caption)
-                                .foregroundColor(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
-                            Spacer()
-                            
-                            Text(item.title)
-                                .fontWeight(.bold)
-                                .font(.subheadline)
-                                .padding(.vertical,10)
-                                .padding(.horizontal,15)
-                                .background(Color.primary.opacity(0.06))
-                                .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                .clipShape(Capsule())
-                        }
-                        
+                        Text(item.title)
+                            .fontWeight(.bold)
+                            .font(.subheadline)
+                            .padding(.vertical,10)
+                            .padding(.horizontal,15)
+                            .background(Color.primary.opacity(0.06))
+                            .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .clipShape(Capsule())
                     }
                     
-                    Spacer(minLength: 0)
                 }
-            }.onAppear(perform: self.loadData)
-                .navigationBarTitle(Text("网络请求"))
-        }
+                
+                Spacer(minLength: 0)
+            }
+        }.onAppear(perform: self.loadData)
     }
     
     func loadData() {
