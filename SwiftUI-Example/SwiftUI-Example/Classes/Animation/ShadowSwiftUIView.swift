@@ -2,7 +2,7 @@
 //  ShadowSwiftUIView.swift
 //  SwiftUI-Example
 //
-//  Created by Cheney on 2021/3/11.
+//  Created by jinliang on 2021/3/11.
 //
 
 import SwiftUI
@@ -31,6 +31,7 @@ struct ShadowSwiftUIView: View {
             .background(Color.white)
             .clipShape(RoundedRectangle(cornerRadius: 25.0, style: .continuous))
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

@@ -2,7 +2,7 @@
 //  SpacerSwiftUIView.swift
 //  SwiftUI-Example
 //
-//  Created by Cheney on 2021/3/19.
+//  Created by jinliang on 2021/3/19.
 //
 
 import SwiftUI

@@ -2,16 +2,26 @@
 //  JsonShowView.swift
 //  SwiftUI-Example
 //
-//  Created by Cheney on 2021/3/26.
+//  Created by jinliang on 2021/3/26.
 //
 
 import SwiftUI
 
 struct JsonShowView: View {
     var body: some View {
-        Section() {
-            NavigationLink(destination: JsonSwiftUIView()) {
-                Text("Json")
+        Form {
+            Section(header: Text("Json").font(.title3).fontWeight(.heavy)) {
+                NavigationLink(destination: JsonSwiftUIView()) {
+                    Text("Json")
+                }
+                
+                NavigationLink(destination: Json2SwiftUIView()) {
+                    Text("Json2")
+                }
+                
+                NavigationLink(destination: Json3SwiftUIView()) {
+                    Text("Json3")
+                }
             }
         }
     }

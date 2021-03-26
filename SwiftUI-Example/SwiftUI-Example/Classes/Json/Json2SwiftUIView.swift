@@ -2,7 +2,7 @@
 //  Json2SwiftUIView.swift
 //  SwiftUI-Example
 //
-//  Created by Cheney on 2021/3/11.
+//  Created by jinliang on 2021/3/11.
 //
 
 import SwiftUI
@@ -46,18 +46,16 @@ struct Json2SwiftUIView: View {
     @ObservedObject var vm = GridViewModel()
     
     var body: some View {
-        NavigationView {
-            ScrollView {
-                LazyVGrid(columns: [
-                    GridItem(.flexible(minimum: 50, maximum: 200), spacing: 16, alignment: .top),
-                    GridItem(.flexible(minimum: 50, maximum: 200), spacing: 16, alignment: .top),
-                    GridItem(.flexible(minimum: 50, maximum: 200), spacing: 16),
-                ], alignment: .leading ,spacing: 16, content: {
-                    ForEach(vm.results, id: \.self) { app in
-                        AppInfo(app: app)
-                    }
-                }).padding(.horizontal, 12)
-            }.navigationTitle("Grid Search ")
+        ScrollView {
+            LazyVGrid(columns: [
+                GridItem(.flexible(minimum: 50, maximum: 200), spacing: 16, alignment: .top),
+                GridItem(.flexible(minimum: 50, maximum: 200), spacing: 16, alignment: .top),
+                GridItem(.flexible(minimum: 50, maximum: 200), spacing: 16),
+            ], alignment: .leading ,spacing: 16, content: {
+                ForEach(vm.results, id: \.self) { app in
+                    AppInfo(app: app)
+                }
+            }).padding(.horizontal, 12)
         }
     }
 }

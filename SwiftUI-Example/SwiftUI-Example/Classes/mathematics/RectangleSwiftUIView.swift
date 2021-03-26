@@ -2,7 +2,7 @@
 //  RectangleSwiftUIView.swift
 //  SwiftUI-Example
 //
-//  Created by Cheney on 2021/3/11.
+//  Created by jinliang on 2021/3/11.
 //
 
 import SwiftUI

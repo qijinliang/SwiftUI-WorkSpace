@@ -2,7 +2,7 @@
 //  HStack2SwiftUIView.swift
 //  SwiftUI-Example
 //
-//  Created by Cheney on 2021/3/17.
+//  Created by jinliang on 2021/3/17.
 //
 
 import SwiftUI

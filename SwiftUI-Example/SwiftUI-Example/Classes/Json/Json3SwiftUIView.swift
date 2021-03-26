@@ -2,7 +2,7 @@
 //  Json3SwiftUIView.swift
 //  SwiftUI-Example
 //
-//  Created by Cheney on 2021/3/11.
+//  Created by jinliang on 2021/3/11.
 //
 
 import SwiftUI
@@ -35,25 +35,21 @@ struct Json3SwiftUIView: View {
     
     @State var rankinglists = [Json3Rankinglist]()
     var body: some View {
-        NavigationView {
-            
-            List(rankinglists, id: \.argValue) { item in
-                VStack(alignment: .leading) {
-                    
-                    Text(item.rankingType).font(.title3).fontWeight(.bold)
-                    Text(item.subTitle).font(.subheadline).foregroundColor(.gray)
-                    URLImage(url: item.cover)
-                        .frame(width: 320, height: 200)
-                        .scaledToFill()
-                        .shadow(radius: 8)
-                        .cornerRadius(10)
-                        .scaleEffect(0.95)
-                    
-                }.padding()
+        List(rankinglists, id: \.argValue) { item in
+            VStack(alignment: .leading) {
                 
-            }.onAppear(perform: self.loadData)
-            .navigationBarTitle("JSON请求")
-        }
+                Text(item.rankingType).font(.title3).fontWeight(.bold)
+                Text(item.subTitle).font(.subheadline).foregroundColor(.gray)
+                URLImage(url: item.cover)
+                    .frame(width: 320, height: 200)
+                    .scaledToFill()
+                    .shadow(radius: 8)
+                    .cornerRadius(10)
+                    .scaleEffect(0.95)
+                
+            }.padding()
+            
+        }.onAppear(perform: self.loadData)
     }
     
     func loadData() {

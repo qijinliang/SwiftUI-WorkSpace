@@ -2,7 +2,7 @@
 //  DefinedSwiftUIView.swift
 //  SwiftUI-Example
 //
-//  Created by Cheney on 2021/3/12.
+//  Created by jinliang on 2021/3/12.
 //
 
 import SwiftUI

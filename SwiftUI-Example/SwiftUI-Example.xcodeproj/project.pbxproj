@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		040C67DC260C44CC00A01500 /* ListSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C67DB260C44CC00A01500 /* ListSwiftUIView.swift */; };
+		0414C7E2260DEBC900F351BF /* AnimationMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7E1260DEBC900F351BF /* AnimationMainView.swift */; };
+		0414C7E5260DEBD600F351BF /* AnimationShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7E4260DEBD600F351BF /* AnimationShowView.swift */; };
 		047C9EAD26020BE90009A5A1 /* HStack2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */; };
 		047C9EB026020E470009A5A1 /* HStack3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EAF26020E470009A5A1 /* HStack3SwiftUIView.swift */; };
 		047C9EB82602F2130009A5A1 /* HStack4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */; };
@@ -62,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		040C67DB260C44CC00A01500 /* ListSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSwiftUIView.swift; sourceTree = "<group>"; };
+		0414C7E1260DEBC900F351BF /* AnimationMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationMainView.swift; sourceTree = "<group>"; };
+		0414C7E4260DEBD600F351BF /* AnimationShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationShowView.swift; sourceTree = "<group>"; };
 		047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack2SwiftUIView.swift; sourceTree = "<group>"; };
 		047C9EAF26020E470009A5A1 /* HStack3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack3SwiftUIView.swift; sourceTree = "<group>"; };
 		047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HStack4SwiftUIView.swift; sourceTree = "<group>"; };
@@ -272,6 +276,8 @@
 				04A7A13B25FA3638001339F8 /* ShadowSwiftUIView.swift */,
 				04A7A13F25FA3FF2001339F8 /* FoldSwiftUIView.swift */,
 				04A7A14225FA41D2001339F8 /* AnimationSwiftUIView.swift */,
+				0414C7E1260DEBC900F351BF /* AnimationMainView.swift */,
+				0414C7E4260DEBD600F351BF /* AnimationShowView.swift */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0414C7E5260DEBD600F351BF /* AnimationShowView.swift in Sources */,
 				5BDED08726023B44005AAEE7 /* LayoutSwiftUIView.swift in Sources */,
 				04A7A12025F8E4C3001339F8 /* VStack3SwiftUIView.swift in Sources */,
 				04A7A14025FA3FF2001339F8 /* FoldSwiftUIView.swift in Sources */,
@@ -459,6 +466,7 @@
 				04A7A13725FA35F7001339F8 /* PopSwiftUIView.swift in Sources */,
 				5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */,
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
+				0414C7E2260DEBC900F351BF /* AnimationMainView.swift in Sources */,
 				04A7A16E25FA6ED0001339F8 /* Json3SwiftUIView.swift in Sources */,
 				04A7A15425FA57F9001339F8 /* Chart SwiftUIView.swift in Sources */,
 				04A7A12825FA088A001339F8 /* JsonSwiftUIView.swift in Sources */,

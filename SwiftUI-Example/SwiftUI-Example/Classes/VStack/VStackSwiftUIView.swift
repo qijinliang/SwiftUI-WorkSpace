@@ -2,7 +2,7 @@
 //  VStackSwiftUIView.swift
 //  SwiftUI-Example
 //
-//  Created by Cheney on 2021/3/10.
+//  Created by jinliang on 2021/3/10.
 //
 
 import SwiftUI

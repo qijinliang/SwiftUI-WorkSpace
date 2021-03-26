@@ -2,14 +2,18 @@
 //  JsonMainView.swift
 //  SwiftUI-Example
 //
-//  Created by Cheney on 2021/3/26.
+//  Created by jinliang on 2021/3/26.
 //
 
 import SwiftUI
 
 struct JsonMainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Section() {
+            NavigationLink(destination: JsonShowView()) {
+                Text("Json")
+            }
+        }
     }
 }
 

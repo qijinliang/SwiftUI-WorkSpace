@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SwiftUI-Example
 //
-//  Created by Cheney on 2021/3/9.
+//  Created by jinliang on 2021/3/9.
 //
 
 import UIKit

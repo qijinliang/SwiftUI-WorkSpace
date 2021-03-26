@@ -2,7 +2,7 @@
 //  ListSwiftUIView.swift
 //  SwiftUI-Example
 //
-//  Created by Cheney on 2021/3/25.
+//  Created by jinliang on 2021/3/25.
 //
 
 import SwiftUI
@@ -21,6 +21,10 @@ struct ListSwiftUIView: View {
                 
                 Section(header: Text("Json").font(.title3).fontWeight(.heavy)) {
                     JsonMainView()
+                }
+                
+                Section(header: Text("Animation").font(.title3).fontWeight(.heavy)) {
+                    AnimationMainView()
                 }
             }
             
