@@ -17,6 +17,9 @@
 		0414C7F4260DF69200F351BF /* ButtonShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F3260DF69200F351BF /* ButtonShowView.swift */; };
 		0414C7F7260DF84200F351BF /* ScrollMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F6260DF84200F351BF /* ScrollMainView.swift */; };
 		0414C7FA260DF85400F351BF /* ScrollShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F9260DF85400F351BF /* ScrollShowView.swift */; };
+		043803B2260F4BF700722A01 /* GemoetryReaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803B1260F4BF700722A01 /* GemoetryReaderMainView.swift */; };
+		043803B5260F4C0300722A01 /* GemoetryReaderShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803B4260F4C0300722A01 /* GemoetryReaderShowView.swift */; };
+		043803BB260F4D9D00722A01 /* LayoutShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803BA260F4D9D00722A01 /* LayoutShowView.swift */; };
 		047C9EAD26020BE90009A5A1 /* HStack2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */; };
 		047C9EB026020E470009A5A1 /* HStack3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EAF26020E470009A5A1 /* HStack3SwiftUIView.swift */; };
 		047C9EB82602F2130009A5A1 /* HStack4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */; };
@@ -80,6 +83,9 @@
 		0414C7F3260DF69200F351BF /* ButtonShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShowView.swift; sourceTree = "<group>"; };
 		0414C7F6260DF84200F351BF /* ScrollMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollMainView.swift; sourceTree = "<group>"; };
 		0414C7F9260DF85400F351BF /* ScrollShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollShowView.swift; sourceTree = "<group>"; };
+		043803B1260F4BF700722A01 /* GemoetryReaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemoetryReaderMainView.swift; sourceTree = "<group>"; };
+		043803B4260F4C0300722A01 /* GemoetryReaderShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemoetryReaderShowView.swift; sourceTree = "<group>"; };
+		043803BA260F4D9D00722A01 /* LayoutShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutShowView.swift; sourceTree = "<group>"; };
 		047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack2SwiftUIView.swift; sourceTree = "<group>"; };
 		047C9EAF26020E470009A5A1 /* HStack3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack3SwiftUIView.swift; sourceTree = "<group>"; };
 		047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HStack4SwiftUIView.swift; sourceTree = "<group>"; };
@@ -195,6 +201,8 @@
 				5BF813DA260700F20076F4C4 /* GeometryReader3SwiftUIView.swift */,
 				5BF813D7260700D80076F4C4 /* GeometryReader4SwiftUIView.swift */,
 				5BF813DE2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift */,
+				043803B1260F4BF700722A01 /* GemoetryReaderMainView.swift */,
+				043803B4260F4C0300722A01 /* GemoetryReaderShowView.swift */,
 			);
 			path = GemoetryReader;
 			sourceTree = "<group>";
@@ -369,6 +377,7 @@
 			children = (
 				5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */,
 				5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */,
+				043803BA260F4D9D00722A01 /* LayoutShowView.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -459,8 +468,10 @@
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
 				04A7A15825FA61F3001339F8 /* TextFieldSwiftUIView.swift in Sources */,
 				5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */,
+				043803B2260F4BF700722A01 /* GemoetryReaderMainView.swift in Sources */,
 				04DA97C6260D9597005DDF21 /* VStackMainView.swift in Sources */,
 				04B7E68025FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift in Sources */,
+				043803B5260F4C0300722A01 /* GemoetryReaderShowView.swift in Sources */,
 				047C9F02260608640009A5A1 /* GeometryReaderSwiftUIView.swift in Sources */,
 				04DA97D4260DA0CB005DDF21 /* NavigationShowView.swift in Sources */,
 				04A7A16A25FA69C4001339F8 /* ScrollViewSwiftUIView.swift in Sources */,
@@ -500,6 +511,7 @@
 				04A7A12825FA088A001339F8 /* JsonSwiftUIView.swift in Sources */,
 				04A7A15C25FA624E001339F8 /* RectangleSwiftUIView.swift in Sources */,
 				047C9F1326060B2B0009A5A1 /* GeometryReader2SwiftUIView.swift in Sources */,
+				043803BB260F4D9D00722A01 /* LayoutShowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -64,6 +64,13 @@ struct VStackShowView: View {
                 }
                 
             }
+            
+            //MARK: Layout
+            Section(header: Text("Layout").font(.title3).fontWeight(.heavy)) {
+                NavigationLink(destination: LayoutShowView()) {
+                    Text("Layout")
+                }
+            }
         }
     }
 }
