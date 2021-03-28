@@ -47,6 +47,11 @@ struct ListSwiftUIView: View {
                 Section(header: Text("GemoetryReader").font(.title3).fontWeight(.heavy)) {
                     GemoetryReaderMainView()
                 }
+                
+                //MARK: Space
+                Section(header: Text("Spacer").font(.title3).fontWeight(.heavy)) {
+                    SpaceMainView()
+                }
             }
             
             .navigationBarTitle("SwiftUI示例",displayMode: .inline)
@@ -55,6 +60,6 @@ struct ListSwiftUIView: View {
 }
 struct ListSwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ListSwiftUIView()
+        ListSwiftUIView().preferredColorScheme(.dark)
     }
 }

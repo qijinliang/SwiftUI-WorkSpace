@@ -65,6 +65,8 @@
 		04DA97DA260DB0A4005DDF21 /* JsonMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97D9260DB0A4005DDF21 /* JsonMainView.swift */; };
 		5BDED08726023B44005AAEE7 /* LayoutSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */; };
 		5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */; };
+		5BEA7072261089110007B55C /* SpaceMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA7071261089110007B55C /* SpaceMainView.swift */; };
+		5BEA70752610892A0007B55C /* SpaceShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA70742610892A0007B55C /* SpaceShowView.swift */; };
 		5BF813CD2606FA270076F4C4 /* HStack5SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813CC2606FA270076F4C4 /* HStack5SwiftUIView.swift */; };
 		5BF813D02606FD030076F4C4 /* HStack6SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813CF2606FD030076F4C4 /* HStack6SwiftUIView.swift */; };
 		5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813D7260700D80076F4C4 /* GeometryReader4SwiftUIView.swift */; };
@@ -133,6 +135,8 @@
 		04DA97D9260DB0A4005DDF21 /* JsonMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMainView.swift; sourceTree = "<group>"; };
 		5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSwiftUIView.swift; sourceTree = "<group>"; };
 		5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout2SwiftUIView.swift; sourceTree = "<group>"; };
+		5BEA7071261089110007B55C /* SpaceMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMainView.swift; sourceTree = "<group>"; };
+		5BEA70742610892A0007B55C /* SpaceShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceShowView.swift; sourceTree = "<group>"; };
 		5BF813CC2606FA270076F4C4 /* HStack5SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack5SwiftUIView.swift; sourceTree = "<group>"; };
 		5BF813CF2606FD030076F4C4 /* HStack6SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack6SwiftUIView.swift; sourceTree = "<group>"; };
 		5BF813D7260700D80076F4C4 /* GeometryReader4SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader4SwiftUIView.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				047C9EE92605ED820009A5A1 /* Spacer2SwiftUIView.swift */,
 				047C9EEC2605F3540009A5A1 /* Spacer3SwiftUIView.swift */,
 				047C9EFD2605FF090009A5A1 /* Spacer4SwiftUIView.swift */,
+				5BEA7071261089110007B55C /* SpaceMainView.swift */,
+				5BEA70742610892A0007B55C /* SpaceShowView.swift */,
 			);
 			path = Spacer;
 			sourceTree = "<group>";
@@ -464,6 +470,7 @@
 				5BF813DF2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift in Sources */,
 				047C9EFE2605FF0A0009A5A1 /* Spacer4SwiftUIView.swift in Sources */,
 				040C67DC260C44CC00A01500 /* ListSwiftUIView.swift in Sources */,
+				5BEA7072261089110007B55C /* SpaceMainView.swift in Sources */,
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
 				04A7A15825FA61F3001339F8 /* TextFieldSwiftUIView.swift in Sources */,
@@ -509,6 +516,7 @@
 				04A7A16E25FA6ED0001339F8 /* Json3SwiftUIView.swift in Sources */,
 				04A7A15425FA57F9001339F8 /* Chart SwiftUIView.swift in Sources */,
 				04A7A12825FA088A001339F8 /* JsonSwiftUIView.swift in Sources */,
+				5BEA70752610892A0007B55C /* SpaceShowView.swift in Sources */,
 				04A7A15C25FA624E001339F8 /* RectangleSwiftUIView.swift in Sources */,
 				047C9F1326060B2B0009A5A1 /* GeometryReader2SwiftUIView.swift in Sources */,
 				043803BB260F4D9D00722A01 /* LayoutShowView.swift in Sources */,
