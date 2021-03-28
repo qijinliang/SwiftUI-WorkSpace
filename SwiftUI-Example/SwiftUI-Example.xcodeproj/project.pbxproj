@@ -69,6 +69,9 @@
 		5BEA70752610892A0007B55C /* SpaceShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA70742610892A0007B55C /* SpaceShowView.swift */; };
 		5BEA707826108CE60007B55C /* ZStack2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA707726108CE60007B55C /* ZStack2SwiftUIView.swift */; };
 		5BEA707B26108E470007B55C /* ZStack5SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA707A26108E470007B55C /* ZStack5SwiftUIView.swift */; };
+		5BEA708326109B6A0007B55C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA708226109B6A0007B55C /* ContentView.swift */; };
+		5BEA70892610A0C80007B55C /* ListMainSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA70882610A0C80007B55C /* ListMainSwiftUIView.swift */; };
+		5BEA708D2610A0E60007B55C /* ListShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA708C2610A0E60007B55C /* ListShowView.swift */; };
 		5BF813CD2606FA270076F4C4 /* HStack5SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813CC2606FA270076F4C4 /* HStack5SwiftUIView.swift */; };
 		5BF813D02606FD030076F4C4 /* HStack6SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813CF2606FD030076F4C4 /* HStack6SwiftUIView.swift */; };
 		5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813D7260700D80076F4C4 /* GeometryReader4SwiftUIView.swift */; };
@@ -141,6 +144,9 @@
 		5BEA70742610892A0007B55C /* SpaceShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceShowView.swift; sourceTree = "<group>"; };
 		5BEA707726108CE60007B55C /* ZStack2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStack2SwiftUIView.swift; sourceTree = "<group>"; };
 		5BEA707A26108E470007B55C /* ZStack5SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStack5SwiftUIView.swift; sourceTree = "<group>"; };
+		5BEA708226109B6A0007B55C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5BEA70882610A0C80007B55C /* ListMainSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMainSwiftUIView.swift; sourceTree = "<group>"; };
+		5BEA708C2610A0E60007B55C /* ListShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListShowView.swift; sourceTree = "<group>"; };
 		5BF813CC2606FA270076F4C4 /* HStack5SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack5SwiftUIView.swift; sourceTree = "<group>"; };
 		5BF813CF2606FD030076F4C4 /* HStack6SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack6SwiftUIView.swift; sourceTree = "<group>"; };
 		5BF813D7260700D80076F4C4 /* GeometryReader4SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader4SwiftUIView.swift; sourceTree = "<group>"; };
@@ -186,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				040C67DB260C44CC00A01500 /* ListSwiftUIView.swift */,
+				5BEA70882610A0C80007B55C /* ListMainSwiftUIView.swift */,
+				5BEA708C2610A0E60007B55C /* ListShowView.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -238,6 +246,7 @@
 			children = (
 				040C67D9260C44B700A01500 /* Classes */,
 				04A7A0F725F7B30B001339F8 /* AppDelegate.swift */,
+				5BEA708226109B6A0007B55C /* ContentView.swift */,
 				04A7A0F925F7B30B001339F8 /* SceneDelegate.swift */,
 				04A7A0FD25F7B30D001339F8 /* Assets.xcassets */,
 				04A7A10225F7B30D001339F8 /* LaunchScreen.storyboard */,
@@ -508,7 +517,9 @@
 				047C9ECA2604E1620009A5A1 /* SpacerSwiftUIView.swift in Sources */,
 				0414C7EB260DF24300F351BF /* MathShowView.swift in Sources */,
 				04A7A17225FAFF32001339F8 /* DefinedSwiftUIView.swift in Sources */,
+				5BEA708D2610A0E60007B55C /* ListShowView.swift in Sources */,
 				04A7A0F825F7B30B001339F8 /* AppDelegate.swift in Sources */,
+				5BEA70892610A0C80007B55C /* ListMainSwiftUIView.swift in Sources */,
 				04A7A17A25FB9244001339F8 /* VStack4SwiftUIView.swift in Sources */,
 				047C9EAD26020BE90009A5A1 /* HStack2SwiftUIView.swift in Sources */,
 				04A7A14D25FA5774001339F8 /* FanshapedSwiftUIView.swift in Sources */,
@@ -519,6 +530,7 @@
 				04A7A13725FA35F7001339F8 /* PopSwiftUIView.swift in Sources */,
 				5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */,
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
+				5BEA708326109B6A0007B55C /* ContentView.swift in Sources */,
 				0414C7E2260DEBC900F351BF /* AnimationMainView.swift in Sources */,
 				04A7A16E25FA6ED0001339F8 /* Json3SwiftUIView.swift in Sources */,
 				04A7A15425FA57F9001339F8 /* Chart SwiftUIView.swift in Sources */,

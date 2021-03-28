@@ -12,16 +12,20 @@ struct ListSwiftUIView: View {
         NavigationView {
             Form {
                 //MARK: View
-                Section(header: Text("View").font(.title3).fontWeight(.heavy)) {
+                Section(header: Text("Example").font(.title3).fontWeight(.heavy)) {
                     VStackMainView()
-                }
-                //MARK: Navigation
-                Section(header: Text("Navigation").font(.title3).fontWeight(.heavy)) {
+                    //MARK: Navigation
                     NavigationShowView()
-                }
-                //MARK: Json
-                Section(header: Text("Json").font(.title3).fontWeight(.heavy)) {
+                    //MARK: Json
                     JsonMainView()
+                    //MARK: Button
+                    ButtonMainView()
+                    //MARK: ScrollView
+                    ScrollMainView()
+                    //MARK: Space
+                    SpaceMainView()
+                    //MARK: List
+                    ListMainSwiftUIView()
                 }
                 //MARK: Animation
                 Section(header: Text("Animation").font(.title3).fontWeight(.heavy)) {
@@ -35,22 +39,9 @@ struct ListSwiftUIView: View {
                 Section(header: Text("Gesture").font(.title3).fontWeight(.heavy)) {
                     GestureMainView()
                 }
-                //MARK: Button
-                Section(header: Text("Button").font(.title3).fontWeight(.heavy)) {
-                    ButtonMainView()
-                }
-                //MARK: ScrollView
-                Section(header: Text("ScrollView").font(.title3).fontWeight(.heavy)) {
-                    ScrollMainView()
-                }
                 //MARK: GemoetryReader
                 Section(header: Text("GemoetryReader").font(.title3).fontWeight(.heavy)) {
                     GemoetryReaderMainView()
-                }
-                
-                //MARK: Space
-                Section(header: Text("Spacer").font(.title3).fontWeight(.heavy)) {
-                    SpaceMainView()
                 }
             }
             

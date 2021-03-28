@@ -61,7 +61,7 @@ struct MovieView: View {
             Image(uiImage: self.movie.imageName)
                 .resizable()
                 .scaledToFill()
-                .frame(width: (size.width - 50) / 2, height: 250)
+                .frame(width: (size.width - 40) / 2, height: (size.height - 50) / 2)
                 .clipped()
                 .cornerRadius(8)
                 .shadow(radius: 10)
