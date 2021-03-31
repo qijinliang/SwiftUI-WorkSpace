@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040B1B712614828F00D88D4D /* DatePickerMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1B702614828F00D88D4D /* DatePickerMainView.swift */; };
+		040B1B75261482BC00D88D4D /* DatePickerShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1B74261482BC00D88D4D /* DatePickerShowView.swift */; };
+		040B1B782614831700D88D4D /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1B772614831700D88D4D /* DatePickerView.swift */; };
+		040B1B7B2614836100D88D4D /* DatePicker2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1B7A2614836100D88D4D /* DatePicker2View.swift */; };
+		040B1B8226148B7300D88D4D /* FormShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1B8126148B7300D88D4D /* FormShowView.swift */; };
+		040B1B8626148B7E00D88D4D /* FormMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1B8526148B7E00D88D4D /* FormMainView.swift */; };
+		040B1B8926148BD300D88D4D /* Form1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1B8826148BD300D88D4D /* Form1View.swift */; };
+		040B1B8C26148C0F00D88D4D /* Form2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1B8B26148C0F00D88D4D /* Form2View.swift */; };
 		040C67DC260C44CC00A01500 /* ListSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C67DB260C44CC00A01500 /* ListSwiftUIView.swift */; };
 		0414C7E2260DEBC900F351BF /* AnimationMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7E1260DEBC900F351BF /* AnimationMainView.swift */; };
 		0414C7E5260DEBD600F351BF /* AnimationShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7E4260DEBD600F351BF /* AnimationShowView.swift */; };
@@ -80,6 +88,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040B1B702614828F00D88D4D /* DatePickerMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerMainView.swift; sourceTree = "<group>"; };
+		040B1B74261482BC00D88D4D /* DatePickerShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerShowView.swift; sourceTree = "<group>"; };
+		040B1B772614831700D88D4D /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		040B1B7A2614836100D88D4D /* DatePicker2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker2View.swift; sourceTree = "<group>"; };
+		040B1B8126148B7300D88D4D /* FormShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormShowView.swift; sourceTree = "<group>"; };
+		040B1B8526148B7E00D88D4D /* FormMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormMainView.swift; sourceTree = "<group>"; };
+		040B1B8826148BD300D88D4D /* Form1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form1View.swift; sourceTree = "<group>"; };
+		040B1B8B26148C0F00D88D4D /* Form2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form2View.swift; sourceTree = "<group>"; };
 		040C67DB260C44CC00A01500 /* ListSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSwiftUIView.swift; sourceTree = "<group>"; };
 		0414C7E1260DEBC900F351BF /* AnimationMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationMainView.swift; sourceTree = "<group>"; };
 		0414C7E4260DEBD600F351BF /* AnimationShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationShowView.swift; sourceTree = "<group>"; };
@@ -165,9 +181,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040B1B6F2614821600D88D4D /* DataPicker */ = {
+			isa = PBXGroup;
+			children = (
+				040B1B702614828F00D88D4D /* DatePickerMainView.swift */,
+				040B1B74261482BC00D88D4D /* DatePickerShowView.swift */,
+				040B1B772614831700D88D4D /* DatePickerView.swift */,
+				040B1B7A2614836100D88D4D /* DatePicker2View.swift */,
+			);
+			path = DataPicker;
+			sourceTree = "<group>";
+		};
+		040B1B8026148B6000D88D4D /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				040B1B8126148B7300D88D4D /* FormShowView.swift */,
+				040B1B8526148B7E00D88D4D /* FormMainView.swift */,
+				040B1B8826148BD300D88D4D /* Form1View.swift */,
+				040B1B8B26148C0F00D88D4D /* Form2View.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
 		040C67D9260C44B700A01500 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				040B1B8026148B6000D88D4D /* Form */,
+				040B1B6F2614821600D88D4D /* DataPicker */,
 				047C9F002606084F0009A5A1 /* GemoetryReader */,
 				047C9EC82604E1470009A5A1 /* Spacer */,
 				5BDED08526023B14005AAEE7 /* Layout */,
@@ -489,6 +529,7 @@
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
 				04A7A15825FA61F3001339F8 /* TextFieldSwiftUIView.swift in Sources */,
+				040B1B8926148BD300D88D4D /* Form1View.swift in Sources */,
 				5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */,
 				043803B2260F4BF700722A01 /* GemoetryReaderMainView.swift in Sources */,
 				04DA97C6260D9597005DDF21 /* VStackMainView.swift in Sources */,
@@ -502,6 +543,7 @@
 				04DA97D7260DAEED005DDF21 /* JsonShowView.swift in Sources */,
 				047C9EB82602F2130009A5A1 /* HStack4SwiftUIView.swift in Sources */,
 				04A7A12C25FA0962001339F8 /* Json2SwiftUIView.swift in Sources */,
+				040B1B7B2614836100D88D4D /* DatePicker2View.swift in Sources */,
 				047C9EEA2605ED820009A5A1 /* Spacer2SwiftUIView.swift in Sources */,
 				04DA97DA260DB0A4005DDF21 /* JsonMainView.swift in Sources */,
 				04A7A15125FA57C6001339F8 /* LineGraphSwiftUIView.swift in Sources */,
@@ -519,19 +561,25 @@
 				04A7A17225FAFF32001339F8 /* DefinedSwiftUIView.swift in Sources */,
 				5BEA708D2610A0E60007B55C /* ListShowView.swift in Sources */,
 				04A7A0F825F7B30B001339F8 /* AppDelegate.swift in Sources */,
+				040B1B782614831700D88D4D /* DatePickerView.swift in Sources */,
 				5BEA70892610A0C80007B55C /* ListMainSwiftUIView.swift in Sources */,
+				040B1B712614828F00D88D4D /* DatePickerMainView.swift in Sources */,
 				04A7A17A25FB9244001339F8 /* VStack4SwiftUIView.swift in Sources */,
 				047C9EAD26020BE90009A5A1 /* HStack2SwiftUIView.swift in Sources */,
 				04A7A14D25FA5774001339F8 /* FanshapedSwiftUIView.swift in Sources */,
+				040B1B8226148B7300D88D4D /* FormShowView.swift in Sources */,
 				04A7A11425F8A192001339F8 /* VStackSwiftUIView.swift in Sources */,
 				04A7A0FA25F7B30B001339F8 /* SceneDelegate.swift in Sources */,
+				040B1B75261482BC00D88D4D /* DatePickerShowView.swift in Sources */,
 				0414C7F7260DF84200F351BF /* ScrollMainView.swift in Sources */,
+				040B1B8626148B7E00D88D4D /* FormMainView.swift in Sources */,
 				0414C7FA260DF85400F351BF /* ScrollShowView.swift in Sources */,
 				04A7A13725FA35F7001339F8 /* PopSwiftUIView.swift in Sources */,
 				5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */,
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
 				5BEA708326109B6A0007B55C /* ContentView.swift in Sources */,
 				0414C7E2260DEBC900F351BF /* AnimationMainView.swift in Sources */,
+				040B1B8C26148C0F00D88D4D /* Form2View.swift in Sources */,
 				04A7A16E25FA6ED0001339F8 /* Json3SwiftUIView.swift in Sources */,
 				04A7A15425FA57F9001339F8 /* Chart SwiftUIView.swift in Sources */,
 				04A7A12825FA088A001339F8 /* JsonSwiftUIView.swift in Sources */,

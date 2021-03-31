@@ -10,10 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
+            //MARK: 基本常用的控件示例
             ListSwiftUIView().tabItem {
                 Image.init(systemName: "list.bullet")
                 Text("SwiftUI")
             }
+            //MARK: 动画示例
             ZStack5SwiftUIView().tabItem {
                 Image.init(systemName: "rectangle.fill.on.rectangle.fill")
                 Text("Animation")

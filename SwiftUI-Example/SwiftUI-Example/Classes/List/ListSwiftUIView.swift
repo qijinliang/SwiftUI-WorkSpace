@@ -24,8 +24,12 @@ struct ListSwiftUIView: View {
                     ScrollMainView()
                     //MARK: Space
                     SpaceMainView()
+                    //MARK: Form
+                    FormMainView()
                     //MARK: List
                     ListMainSwiftUIView()
+                    //MARK: DatePicker
+                    DatePickerMainView()
                 }
                 //MARK: Animation
                 Section(header: Text("Animation").font(.title3).fontWeight(.heavy)) {
