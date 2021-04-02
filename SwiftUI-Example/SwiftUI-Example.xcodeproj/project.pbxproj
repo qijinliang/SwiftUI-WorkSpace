@@ -15,6 +15,9 @@
 		040B1B8626148B7E00D88D4D /* FormMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1B8526148B7E00D88D4D /* FormMainView.swift */; };
 		040B1B8926148BD300D88D4D /* Form1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1B8826148BD300D88D4D /* Form1View.swift */; };
 		040B1B8C26148C0F00D88D4D /* Form2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1B8B26148C0F00D88D4D /* Form2View.swift */; };
+		040B1BAC2616DBDB00D88D4D /* Form3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1BAB2616DBDB00D88D4D /* Form3View.swift */; };
+		040B1BAF2616DE7400D88D4D /* Form4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1BAE2616DE7400D88D4D /* Form4View.swift */; };
+		040B1BB22616DE7F00D88D4D /* Form5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040B1BB12616DE7F00D88D4D /* Form5View.swift */; };
 		040C67DC260C44CC00A01500 /* ListSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C67DB260C44CC00A01500 /* ListSwiftUIView.swift */; };
 		0414C7E2260DEBC900F351BF /* AnimationMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7E1260DEBC900F351BF /* AnimationMainView.swift */; };
 		0414C7E5260DEBD600F351BF /* AnimationShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7E4260DEBD600F351BF /* AnimationShowView.swift */; };
@@ -96,6 +99,9 @@
 		040B1B8526148B7E00D88D4D /* FormMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormMainView.swift; sourceTree = "<group>"; };
 		040B1B8826148BD300D88D4D /* Form1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form1View.swift; sourceTree = "<group>"; };
 		040B1B8B26148C0F00D88D4D /* Form2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form2View.swift; sourceTree = "<group>"; };
+		040B1BAB2616DBDB00D88D4D /* Form3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form3View.swift; sourceTree = "<group>"; };
+		040B1BAE2616DE7400D88D4D /* Form4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form4View.swift; sourceTree = "<group>"; };
+		040B1BB12616DE7F00D88D4D /* Form5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form5View.swift; sourceTree = "<group>"; };
 		040C67DB260C44CC00A01500 /* ListSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSwiftUIView.swift; sourceTree = "<group>"; };
 		0414C7E1260DEBC900F351BF /* AnimationMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationMainView.swift; sourceTree = "<group>"; };
 		0414C7E4260DEBD600F351BF /* AnimationShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationShowView.swift; sourceTree = "<group>"; };
@@ -199,6 +205,9 @@
 				040B1B8526148B7E00D88D4D /* FormMainView.swift */,
 				040B1B8826148BD300D88D4D /* Form1View.swift */,
 				040B1B8B26148C0F00D88D4D /* Form2View.swift */,
+				040B1BAB2616DBDB00D88D4D /* Form3View.swift */,
+				040B1BAE2616DE7400D88D4D /* Form4View.swift */,
+				040B1BB12616DE7F00D88D4D /* Form5View.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -523,12 +532,14 @@
 				04DA97CF260D9E91005DDF21 /* VStackShowView.swift in Sources */,
 				5BF813CD2606FA270076F4C4 /* HStack5SwiftUIView.swift in Sources */,
 				5BF813DF2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift in Sources */,
+				040B1BAF2616DE7400D88D4D /* Form4View.swift in Sources */,
 				047C9EFE2605FF0A0009A5A1 /* Spacer4SwiftUIView.swift in Sources */,
 				040C67DC260C44CC00A01500 /* ListSwiftUIView.swift in Sources */,
 				5BEA7072261089110007B55C /* SpaceMainView.swift in Sources */,
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
 				04A7A15825FA61F3001339F8 /* TextFieldSwiftUIView.swift in Sources */,
+				040B1BAC2616DBDB00D88D4D /* Form3View.swift in Sources */,
 				040B1B8926148BD300D88D4D /* Form1View.swift in Sources */,
 				5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */,
 				043803B2260F4BF700722A01 /* GemoetryReaderMainView.swift in Sources */,
@@ -567,6 +578,7 @@
 				04A7A17A25FB9244001339F8 /* VStack4SwiftUIView.swift in Sources */,
 				047C9EAD26020BE90009A5A1 /* HStack2SwiftUIView.swift in Sources */,
 				04A7A14D25FA5774001339F8 /* FanshapedSwiftUIView.swift in Sources */,
+				040B1BB22616DE7F00D88D4D /* Form5View.swift in Sources */,
 				040B1B8226148B7300D88D4D /* FormShowView.swift in Sources */,
 				04A7A11425F8A192001339F8 /* VStackSwiftUIView.swift in Sources */,
 				04A7A0FA25F7B30B001339F8 /* SceneDelegate.swift in Sources */,

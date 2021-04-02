@@ -18,6 +18,15 @@ struct FormShowView: View {
                 NavigationLink(destination: Form2View()) {
                     Text("Form2")
                 }
+                NavigationLink(destination: Form3View()) {
+                    Text("Form3")
+                }
+                NavigationLink(destination: Form4View()) {
+                    Text("Form4")
+                }
+                NavigationLink(destination: Form5View()) {
+                    Text("Form5")
+                }
             }
         }
     }
