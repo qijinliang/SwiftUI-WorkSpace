@@ -80,6 +80,11 @@
 		5B090467261846D600CDC5E6 /* CustomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B090466261846D600CDC5E6 /* CustomerView.swift */; };
 		5B09046A2618529500CDC5E6 /* Button2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904692618529500CDC5E6 /* Button2View.swift */; };
 		5B09046D2618581D00CDC5E6 /* Button3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09046C2618581D00CDC5E6 /* Button3View.swift */; };
+		5B090470261882E300CDC5E6 /* Button5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09046F261882E300CDC5E6 /* Button5View.swift */; };
+		5B0904732618893B00CDC5E6 /* Button4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904722618893B00CDC5E6 /* Button4View.swift */; };
+		5B090477261893C800CDC5E6 /* Button6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B090476261893C800CDC5E6 /* Button6View.swift */; };
+		5B09047A2618944400CDC5E6 /* Button7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904792618944400CDC5E6 /* Button7View.swift */; };
+		5B09047D2618944C00CDC5E6 /* Button8View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09047C2618944C00CDC5E6 /* Button8View.swift */; };
 		5BDED08726023B44005AAEE7 /* LayoutSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */; };
 		5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */; };
 		5BEA7072261089110007B55C /* SpaceMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA7071261089110007B55C /* SpaceMainView.swift */; };
@@ -172,6 +177,11 @@
 		5B090466261846D600CDC5E6 /* CustomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerView.swift; sourceTree = "<group>"; };
 		5B0904692618529500CDC5E6 /* Button2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button2View.swift; sourceTree = "<group>"; };
 		5B09046C2618581D00CDC5E6 /* Button3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button3View.swift; sourceTree = "<group>"; };
+		5B09046F261882E300CDC5E6 /* Button5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button5View.swift; sourceTree = "<group>"; };
+		5B0904722618893B00CDC5E6 /* Button4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button4View.swift; sourceTree = "<group>"; };
+		5B090476261893C800CDC5E6 /* Button6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button6View.swift; sourceTree = "<group>"; };
+		5B0904792618944400CDC5E6 /* Button7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button7View.swift; sourceTree = "<group>"; };
+		5B09047C2618944C00CDC5E6 /* Button8View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button8View.swift; sourceTree = "<group>"; };
 		5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSwiftUIView.swift; sourceTree = "<group>"; };
 		5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout2SwiftUIView.swift; sourceTree = "<group>"; };
 		5BEA7071261089110007B55C /* SpaceMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMainView.swift; sourceTree = "<group>"; };
@@ -398,6 +408,11 @@
 				0414C7F3260DF69200F351BF /* ButtonShowView.swift */,
 				5B0904692618529500CDC5E6 /* Button2View.swift */,
 				5B09046C2618581D00CDC5E6 /* Button3View.swift */,
+				5B0904722618893B00CDC5E6 /* Button4View.swift */,
+				5B09046F261882E300CDC5E6 /* Button5View.swift */,
+				5B090476261893C800CDC5E6 /* Button6View.swift */,
+				5B0904792618944400CDC5E6 /* Button7View.swift */,
+				5B09047C2618944C00CDC5E6 /* Button8View.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -565,6 +580,7 @@
 				5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */,
 				043803B2260F4BF700722A01 /* GemoetryReaderMainView.swift in Sources */,
 				04DA97C6260D9597005DDF21 /* VStackMainView.swift in Sources */,
+				5B0904732618893B00CDC5E6 /* Button4View.swift in Sources */,
 				04B7E68025FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift in Sources */,
 				043803B5260F4C0300722A01 /* GemoetryReaderShowView.swift in Sources */,
 				047C9F02260608640009A5A1 /* GeometryReaderSwiftUIView.swift in Sources */,
@@ -573,6 +589,7 @@
 				04A7A16A25FA69C4001339F8 /* ScrollViewSwiftUIView.swift in Sources */,
 				04A7A14725FA4220001339F8 /* ButtonSwiftUIView.swift in Sources */,
 				04A7A11925F8A1A3001339F8 /* ZStackSwiftUIView.swift in Sources */,
+				5B09047A2618944400CDC5E6 /* Button7View.swift in Sources */,
 				04DA97D7260DAEED005DDF21 /* JsonShowView.swift in Sources */,
 				047C9EB82602F2130009A5A1 /* HStack4SwiftUIView.swift in Sources */,
 				04A7A12C25FA0962001339F8 /* Json2SwiftUIView.swift in Sources */,
@@ -594,6 +611,7 @@
 				0414C7EB260DF24300F351BF /* MathShowView.swift in Sources */,
 				04A7A17225FAFF32001339F8 /* DefinedSwiftUIView.swift in Sources */,
 				5BEA708D2610A0E60007B55C /* ListShowView.swift in Sources */,
+				5B09047D2618944C00CDC5E6 /* Button8View.swift in Sources */,
 				04A7A0F825F7B30B001339F8 /* AppDelegate.swift in Sources */,
 				040B1B782614831700D88D4D /* DatePickerView.swift in Sources */,
 				5BEA70892610A0C80007B55C /* ListMainSwiftUIView.swift in Sources */,
@@ -602,6 +620,7 @@
 				047C9EAD26020BE90009A5A1 /* HStack2SwiftUIView.swift in Sources */,
 				04A7A14D25FA5774001339F8 /* FanshapedSwiftUIView.swift in Sources */,
 				040B1BB22616DE7F00D88D4D /* Form5View.swift in Sources */,
+				5B090477261893C800CDC5E6 /* Button6View.swift in Sources */,
 				040B1B8226148B7300D88D4D /* FormShowView.swift in Sources */,
 				04A7A11425F8A192001339F8 /* VStackSwiftUIView.swift in Sources */,
 				04A7A0FA25F7B30B001339F8 /* SceneDelegate.swift in Sources */,
@@ -609,6 +628,7 @@
 				0414C7F7260DF84200F351BF /* ScrollMainView.swift in Sources */,
 				040B1B8626148B7E00D88D4D /* FormMainView.swift in Sources */,
 				0414C7FA260DF85400F351BF /* ScrollShowView.swift in Sources */,
+				5B090470261882E300CDC5E6 /* Button5View.swift in Sources */,
 				04A7A13725FA35F7001339F8 /* PopSwiftUIView.swift in Sources */,
 				5B09046D2618581D00CDC5E6 /* Button3View.swift in Sources */,
 				5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */,

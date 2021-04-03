@@ -20,6 +20,21 @@ struct ButtonShowView: View {
                 NavigationLink(destination: Button3View()) {
                     Text("Button3")
                 }
+                NavigationLink(destination: Button4View()) {
+                    Text("Button4")
+                }
+                NavigationLink(destination: Button5View()) {
+                    Text("Button5")
+                }
+                NavigationLink(destination: Button6View()) {
+                    Text("Button6")
+                }
+                NavigationLink(destination: Button7View()) {
+                    Text("Button7")
+                }
+                NavigationLink(destination: Button8View()) {
+                    Text("Button8")
+                }
             }
         }
     }
