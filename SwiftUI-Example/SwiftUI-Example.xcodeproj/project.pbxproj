@@ -74,6 +74,10 @@
 		04DA97D4260DA0CB005DDF21 /* NavigationShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97D3260DA0CB005DDF21 /* NavigationShowView.swift */; };
 		04DA97D7260DAEED005DDF21 /* JsonShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97D6260DAEED005DDF21 /* JsonShowView.swift */; };
 		04DA97DA260DB0A4005DDF21 /* JsonMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97D9260DB0A4005DDF21 /* JsonMainView.swift */; };
+		5B09045E26183E1800CDC5E6 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09045D26183E1800CDC5E6 /* ListView.swift */; };
+		5B0904612618413A00CDC5E6 /* ListWithDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904602618413A00CDC5E6 /* ListWithDataView.swift */; };
+		5B0904642618433800CDC5E6 /* ListGroupedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904632618433800CDC5E6 /* ListGroupedView.swift */; };
+		5B090467261846D600CDC5E6 /* CustomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B090466261846D600CDC5E6 /* CustomerView.swift */; };
 		5BDED08726023B44005AAEE7 /* LayoutSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */; };
 		5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */; };
 		5BEA7072261089110007B55C /* SpaceMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA7071261089110007B55C /* SpaceMainView.swift */; };
@@ -160,6 +164,10 @@
 		04DA97D3260DA0CB005DDF21 /* NavigationShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationShowView.swift; sourceTree = "<group>"; };
 		04DA97D6260DAEED005DDF21 /* JsonShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonShowView.swift; sourceTree = "<group>"; };
 		04DA97D9260DB0A4005DDF21 /* JsonMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMainView.swift; sourceTree = "<group>"; };
+		5B09045D26183E1800CDC5E6 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		5B0904602618413A00CDC5E6 /* ListWithDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithDataView.swift; sourceTree = "<group>"; };
+		5B0904632618433800CDC5E6 /* ListGroupedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGroupedView.swift; sourceTree = "<group>"; };
+		5B090466261846D600CDC5E6 /* CustomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerView.swift; sourceTree = "<group>"; };
 		5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSwiftUIView.swift; sourceTree = "<group>"; };
 		5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout2SwiftUIView.swift; sourceTree = "<group>"; };
 		5BEA7071261089110007B55C /* SpaceMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMainView.swift; sourceTree = "<group>"; };
@@ -243,6 +251,10 @@
 				040C67DB260C44CC00A01500 /* ListSwiftUIView.swift */,
 				5BEA70882610A0C80007B55C /* ListMainSwiftUIView.swift */,
 				5BEA708C2610A0E60007B55C /* ListShowView.swift */,
+				5B09045D26183E1800CDC5E6 /* ListView.swift */,
+				5B0904602618413A00CDC5E6 /* ListWithDataView.swift */,
+				5B0904632618433800CDC5E6 /* ListGroupedView.swift */,
+				5B090466261846D600CDC5E6 /* CustomerView.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -536,7 +548,9 @@
 				047C9EFE2605FF0A0009A5A1 /* Spacer4SwiftUIView.swift in Sources */,
 				040C67DC260C44CC00A01500 /* ListSwiftUIView.swift in Sources */,
 				5BEA7072261089110007B55C /* SpaceMainView.swift in Sources */,
+				5B0904612618413A00CDC5E6 /* ListWithDataView.swift in Sources */,
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
+				5B090467261846D600CDC5E6 /* CustomerView.swift in Sources */,
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
 				04A7A15825FA61F3001339F8 /* TextFieldSwiftUIView.swift in Sources */,
 				040B1BAC2616DBDB00D88D4D /* Form3View.swift in Sources */,
@@ -548,6 +562,7 @@
 				043803B5260F4C0300722A01 /* GemoetryReaderShowView.swift in Sources */,
 				047C9F02260608640009A5A1 /* GeometryReaderSwiftUIView.swift in Sources */,
 				04DA97D4260DA0CB005DDF21 /* NavigationShowView.swift in Sources */,
+				5B09045E26183E1800CDC5E6 /* ListView.swift in Sources */,
 				04A7A16A25FA69C4001339F8 /* ScrollViewSwiftUIView.swift in Sources */,
 				04A7A14725FA4220001339F8 /* ButtonSwiftUIView.swift in Sources */,
 				04A7A11925F8A1A3001339F8 /* ZStackSwiftUIView.swift in Sources */,
@@ -559,6 +574,7 @@
 				04DA97DA260DB0A4005DDF21 /* JsonMainView.swift in Sources */,
 				04A7A15125FA57C6001339F8 /* LineGraphSwiftUIView.swift in Sources */,
 				04A7A14325FA41D2001339F8 /* AnimationSwiftUIView.swift in Sources */,
+				5B0904642618433800CDC5E6 /* ListGroupedView.swift in Sources */,
 				04A7A16525FA66A4001339F8 /* NavigationSwiftUIView.swift in Sources */,
 				5BF813D02606FD030076F4C4 /* HStack6SwiftUIView.swift in Sources */,
 				047C9EED2605F3540009A5A1 /* Spacer3SwiftUIView.swift in Sources */,

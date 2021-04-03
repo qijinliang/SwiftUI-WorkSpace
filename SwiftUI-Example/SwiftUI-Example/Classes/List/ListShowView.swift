@@ -11,14 +11,23 @@ struct ListShowView: View {
     var body: some View {
         Form() {
             Section() {
-                NavigationLink(destination: ScrollViewSwiftUIView()) {
+                NavigationLink(destination: ListView()) {
                     Text("List")
                 }
-                NavigationLink(destination: ScrollViewSwiftUIView()) {
-                    Text("Lis2")
+                NavigationLink(destination: ListWithDataView()) {
+                    Text("ListWithData")
                 }
-                NavigationLink(destination: ScrollViewSwiftUIView()) {
-                    Text("List")
+                NavigationLink(destination: ListGroupedView()) {
+                    Text("ListGrouped")
+                }
+                NavigationLink(destination: CustomerView()) {
+                    Text("Customer")
+                }
+                NavigationLink(destination: ListGroupedView()) {
+                    Text("ListGrouped")
+                }
+                NavigationLink(destination: ListGroupedView()) {
+                    Text("ListGrouped")
                 }
             }
         }
