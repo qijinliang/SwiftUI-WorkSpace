@@ -29,7 +29,8 @@ struct ListView: View {
                 Text("Line One")
                 Text("Line Two")
                 Text("Line Three")
-                Image.init("胡歌3").resizable().aspectRatio(contentMode: .fit).frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                //MARK: - uiImage输入image Literal即可选择图片
+                Image.init(uiImage: #imageLiteral(resourceName: "placeholder")).resizable().aspectRatio(contentMode: .fit).frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
                 Button.init("Click Here", action: {
                     print("Click Here....")
                 })

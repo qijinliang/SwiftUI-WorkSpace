@@ -78,6 +78,8 @@
 		5B0904612618413A00CDC5E6 /* ListWithDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904602618413A00CDC5E6 /* ListWithDataView.swift */; };
 		5B0904642618433800CDC5E6 /* ListGroupedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904632618433800CDC5E6 /* ListGroupedView.swift */; };
 		5B090467261846D600CDC5E6 /* CustomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B090466261846D600CDC5E6 /* CustomerView.swift */; };
+		5B09046A2618529500CDC5E6 /* Button2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904692618529500CDC5E6 /* Button2View.swift */; };
+		5B09046D2618581D00CDC5E6 /* Button3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09046C2618581D00CDC5E6 /* Button3View.swift */; };
 		5BDED08726023B44005AAEE7 /* LayoutSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */; };
 		5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */; };
 		5BEA7072261089110007B55C /* SpaceMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA7071261089110007B55C /* SpaceMainView.swift */; };
@@ -168,6 +170,8 @@
 		5B0904602618413A00CDC5E6 /* ListWithDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithDataView.swift; sourceTree = "<group>"; };
 		5B0904632618433800CDC5E6 /* ListGroupedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGroupedView.swift; sourceTree = "<group>"; };
 		5B090466261846D600CDC5E6 /* CustomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerView.swift; sourceTree = "<group>"; };
+		5B0904692618529500CDC5E6 /* Button2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button2View.swift; sourceTree = "<group>"; };
+		5B09046C2618581D00CDC5E6 /* Button3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button3View.swift; sourceTree = "<group>"; };
 		5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSwiftUIView.swift; sourceTree = "<group>"; };
 		5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout2SwiftUIView.swift; sourceTree = "<group>"; };
 		5BEA7071261089110007B55C /* SpaceMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMainView.swift; sourceTree = "<group>"; };
@@ -392,6 +396,8 @@
 				04A7A14625FA4220001339F8 /* ButtonSwiftUIView.swift */,
 				0414C7F0260DF60300F351BF /* ButtonMainView.swift */,
 				0414C7F3260DF69200F351BF /* ButtonShowView.swift */,
+				5B0904692618529500CDC5E6 /* Button2View.swift */,
+				5B09046C2618581D00CDC5E6 /* Button3View.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -554,6 +560,7 @@
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
 				04A7A15825FA61F3001339F8 /* TextFieldSwiftUIView.swift in Sources */,
 				040B1BAC2616DBDB00D88D4D /* Form3View.swift in Sources */,
+				5B09046A2618529500CDC5E6 /* Button2View.swift in Sources */,
 				040B1B8926148BD300D88D4D /* Form1View.swift in Sources */,
 				5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */,
 				043803B2260F4BF700722A01 /* GemoetryReaderMainView.swift in Sources */,
@@ -603,6 +610,7 @@
 				040B1B8626148B7E00D88D4D /* FormMainView.swift in Sources */,
 				0414C7FA260DF85400F351BF /* ScrollShowView.swift in Sources */,
 				04A7A13725FA35F7001339F8 /* PopSwiftUIView.swift in Sources */,
+				5B09046D2618581D00CDC5E6 /* Button3View.swift in Sources */,
 				5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */,
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
 				5BEA708326109B6A0007B55C /* ContentView.swift in Sources */,

@@ -14,6 +14,12 @@ struct ButtonShowView: View {
                 NavigationLink(destination: ButtonSwiftUIView()) {
                     Text("Button")
                 }
+                NavigationLink(destination: Button2View()) {
+                    Text("Button2")
+                }
+                NavigationLink(destination: Button3View()) {
+                    Text("Button3")
+                }
             }
         }
     }
