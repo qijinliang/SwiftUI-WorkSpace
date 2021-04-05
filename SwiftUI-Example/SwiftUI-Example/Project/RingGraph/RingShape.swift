@@ -21,7 +21,7 @@ struct RingShape: Shape {
             percent = newValue
         }
     }
-
+    
     
     func path(in rect: CGRect) -> Path {
         let width = rect.width

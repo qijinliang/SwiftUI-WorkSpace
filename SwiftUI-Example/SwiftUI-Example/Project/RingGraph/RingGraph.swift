@@ -20,46 +20,46 @@ struct RingGraph: View {
     private var thickness: CGFloat = 40
     
     var body: some View {
-        return NavigationView {
-                VStack {
-                    
-                    Text("今天你已经消耗了 \(String(format: "%.1f", CGFloat((self.percent1 + self.percent2 + self.percent3) / 3)))%")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .lineLimit(2)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 30)
-                        .frame(height: 70)
-                    
-                    Text("保持好你的身体")
-                        .multilineTextAlignment(.center)
-                        .padding(.bottom, 30)
- 
-                        
-                    self.createGrapth().frame(minWidth: 0.0, maxWidth: .infinity)
-                    Spacer()
-                    HStack {
-                        HStack{
-                            Rectangle().modifier(NutrientModifier(color: .ring1color1) )
-                            Text("碳水化合物")
-                            
-                        }
-                        Spacer()
-                        HStack{
-                            Rectangle().modifier(NutrientModifier(color: .ring2color2) )
-                            Text("蛋白")
-                            
-                        }
-                        Spacer()
-                        HStack{
-                            Rectangle().modifier(NutrientModifier(color: .ring3color2) )
-                            Text("脂肪")
-                        }
-                    }
-                    
-                }.padding().navigationBarTitle(Text("SwiftUI仿写运动"), displayMode: .inline).navigationBarItems(trailing: self.trailingButton())
+        
+        VStack {
             
-        }
+            Text("今天你已经消耗了 \(String(format: "%.1f", CGFloat((self.percent1 + self.percent2 + self.percent3) / 3)))%")
+                .font(.title)
+                .fontWeight(.bold)
+                .lineLimit(2)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 30)
+                .frame(height: 70)
+            
+            Text("保持好你的身体")
+                .multilineTextAlignment(.center)
+                .padding(.bottom, 30)
+            
+            
+            self.createGrapth().frame(minWidth: 0.0, maxWidth: .infinity)
+            Spacer()
+            HStack {
+                HStack{
+                    Rectangle().modifier(NutrientModifier(color: .ring1color1) )
+                    Text("碳水化合物")
+                    
+                }
+                Spacer()
+                HStack{
+                    Rectangle().modifier(NutrientModifier(color: .ring2color2) )
+                    Text("蛋白")
+                    
+                }
+                Spacer()
+                HStack{
+                    Rectangle().modifier(NutrientModifier(color: .ring3color2) )
+                    Text("脂肪")
+                }
+            }
+            
+        }.padding().navigationBarTitle(Text("SwiftUI仿写运动"), displayMode: .inline).navigationBarItems(trailing: self.trailingButton())
+        
+        
     }
     
     private func createGrapth() -> some View{
@@ -73,30 +73,30 @@ struct RingGraph: View {
     }
     
     private func trailingButton() -> some View{
-          return Button(action: {
-              withAnimation(.easeInOut(duration: 1)) {
-                  self.percent1 = Double.random(in: 1...100)
-                  self.percent2 = Double.random(in: 1...100)
-                  self.percent3 = Double.random(in: 1...100)
-              }
-          }) {
-              Image(systemName: "arrow.clockwise")
-                  .resizable()
-                  .frame(width: 25, height: 30)
+        return Button(action: {
+            withAnimation(.easeInOut(duration: 1)) {
+                self.percent1 = Double.random(in: 1...100)
+                self.percent2 = Double.random(in: 1...100)
+                self.percent3 = Double.random(in: 1...100)
+            }
+        }) {
+            Image(systemName: "arrow.clockwise")
+                .resizable()
+                .frame(width: 25, height: 30)
                 .foregroundColor(.ring3color2)
-                  .aspectRatio(contentMode: ContentMode.fit)
-          }
-      }
+                .aspectRatio(contentMode: ContentMode.fit)
+        }
+    }
 }
 
 struct NutrientModifier: ViewModifier {
     var color: Color = .red
     func body(content: Content) -> some View {
-           content.foregroundColor(color)
-           .frame(width: 25, height: 25)
-           .cornerRadius(4)
+        content.foregroundColor(color)
+            .frame(width: 25, height: 25)
+            .cornerRadius(4)
     }
-
+    
 }
 
 extension Color {

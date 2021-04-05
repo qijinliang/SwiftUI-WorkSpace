@@ -33,7 +33,7 @@ struct Ring: View {
                     LinearGradient(
                         gradient: .init(colors: gradientColors), startPoint: .init(x: 0.2, y: 0.4), endPoint:  .init(x: 0.5, y: 1)
                     )
-            )
+                )
             
             Text("\(formattedPercent)%")
                 .multilineTextAlignment(.trailing)
