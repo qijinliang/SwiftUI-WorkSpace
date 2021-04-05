@@ -33,10 +33,6 @@ struct ListSwiftUIView: View {
                     //MARK: DatePicker
                     DatePickerMainView()
                 }
-                //MARK: Animation
-                Section(header: Text("Animation").font(.title3).fontWeight(.heavy)) {
-                    AnimationMainView()
-                }
                 //MARK: Math
                 Section(header: Text("Math").font(.title3).fontWeight(.heavy)) {
                     MathMainView()

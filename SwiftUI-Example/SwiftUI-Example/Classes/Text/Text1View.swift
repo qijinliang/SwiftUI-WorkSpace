@@ -18,7 +18,7 @@ struct Text1View: View {
                 .foregroundColor(Color(#colorLiteral(red: 0.3967986107, green: 0.155584693, blue: 0.03261556849, alpha: 1)))
             
             VStack() {
-                Text("The Text view")
+                Text("The Text view shows read-only text that can be modified in manay ways.It wraps automatically. If you want to limit the text wrapping,add .lineLimit(<number of line here>)")
                     .font(.title)
                     .foregroundColor(.white)
             }

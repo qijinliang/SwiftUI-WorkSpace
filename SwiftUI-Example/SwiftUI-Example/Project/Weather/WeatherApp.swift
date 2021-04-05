@@ -24,8 +24,6 @@ struct WeatherApp: View {
                 Text("明天").tag(1)
             }.pickerStyle(SegmentedPickerStyle() )
                 .padding(.horizontal)
-            
-            
             ZStack {
                 ScrollView(.vertical, showsIndicators: false) {
                     MainCardView(weather: $weather)
@@ -63,10 +61,7 @@ struct WeatherApp: View {
     }
 }
 
-
-
-struct ContentView_Previews:
-PreviewProvider {
+struct WeatherApp_Previews: PreviewProvider {
     static var previews: some View {
         WeatherApp()
     }

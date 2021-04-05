@@ -16,8 +16,14 @@ struct ContentView: View {
                 Text("SwiftUI")
             }
             //MARK: 动画示例
-            ZStack5SwiftUIView().tabItem {
+            AnimationShowView().tabItem {
                 Image.init(systemName: "rectangle.fill.on.rectangle.fill")
+                Text("Animation")
+                    .foregroundColor(Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
+            }
+            //MARK: 小型综合示例
+            ProjectMainView().tabItem {
+                Image.init(systemName: "swift")
                 Text("Animation")
                     .foregroundColor(Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
             }

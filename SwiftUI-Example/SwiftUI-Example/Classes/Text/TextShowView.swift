@@ -29,6 +29,18 @@ struct TextShowView: View {
                 NavigationLink(destination: Text6View()) {
                     Text("Text6")
                 }
+                NavigationLink(destination: Text7View()) {
+                    Text("Text7")
+                }
+                NavigationLink(destination: Text8View()) {
+                    Text("Text8")
+                }
+                NavigationLink(destination: Text9View()) {
+                    Text("Text9")
+                }
+                NavigationLink(destination: Text10View()) {
+                    Text("Text10")
+                }
             }
         }
     }
