@@ -11,6 +11,12 @@ struct Button8View: View {
     var body: some View {
         VStack(spacing: 20) {
             
+            Text("Button")
+                .font(.largeTitle)
+            Text("Floating")
+                .font(.title)
+                .foregroundColor(.gray)
+            
             VStack() {
                 Text("You can also create floating buttons by using a ZStack so the button on the top layer,over everything else")
                     .font(.title)

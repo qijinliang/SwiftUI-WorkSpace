@@ -18,6 +18,8 @@ struct ListSwiftUIView: View {
                     NavigationShowView()
                     //MARK: Json
                     JsonMainView()
+                    //MARK: Text
+                    TextMainView()
                     //MARK: Button
                     ButtonMainView()
                     //MARK: ScrollView
