@@ -104,6 +104,9 @@
 		5B0904B3261AEC6300CDC5E6 /* MainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904AE261AEC6300CDC5E6 /* MainCardView.swift */; };
 		5B0904B6261AEC8200CDC5E6 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904B5261AEC8200CDC5E6 /* WeatherApp.swift */; };
 		5B0904C0261AF1D100CDC5E6 /* ProjectMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904BF261AF1D100CDC5E6 /* ProjectMainView.swift */; };
+		5BB0DA4F261AF9A800F09642 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4C261AF9A800F09642 /* Ring.swift */; };
+		5BB0DA50261AF9A800F09642 /* RingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4D261AF9A800F09642 /* RingGraph.swift */; };
+		5BB0DA51261AF9A800F09642 /* RingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4E261AF9A800F09642 /* RingShape.swift */; };
 		5BDED08726023B44005AAEE7 /* LayoutSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */; };
 		5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */; };
 		5BEA7072261089110007B55C /* SpaceMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA7071261089110007B55C /* SpaceMainView.swift */; };
@@ -220,6 +223,9 @@
 		5B0904AE261AEC6300CDC5E6 /* MainCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCardView.swift; sourceTree = "<group>"; };
 		5B0904B5261AEC8200CDC5E6 /* WeatherApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		5B0904BF261AF1D100CDC5E6 /* ProjectMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectMainView.swift; sourceTree = "<group>"; };
+		5BB0DA4C261AF9A800F09642 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		5BB0DA4D261AF9A800F09642 /* RingGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingGraph.swift; sourceTree = "<group>"; };
+		5BB0DA4E261AF9A800F09642 /* RingShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingShape.swift; sourceTree = "<group>"; };
 		5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutSwiftUIView.swift; sourceTree = "<group>"; };
 		5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout2SwiftUIView.swift; sourceTree = "<group>"; };
 		5BEA7071261089110007B55C /* SpaceMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceMainView.swift; sourceTree = "<group>"; };
@@ -524,6 +530,7 @@
 		5B0904A6261AEC0D00CDC5E6 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				5BB0DA4B261AF9A800F09642 /* RingGraph */,
 				5B0904BF261AF1D100CDC5E6 /* ProjectMainView.swift */,
 				5B0904A7261AEC1400CDC5E6 /* Weather */,
 			);
@@ -578,6 +585,16 @@
 				0414C7E4260DEBD600F351BF /* AnimationShowView.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		5BB0DA4B261AF9A800F09642 /* RingGraph */ = {
+			isa = PBXGroup;
+			children = (
+				5BB0DA4C261AF9A800F09642 /* Ring.swift */,
+				5BB0DA4D261AF9A800F09642 /* RingGraph.swift */,
+				5BB0DA4E261AF9A800F09642 /* RingShape.swift */,
+			);
+			path = RingGraph;
 			sourceTree = "<group>";
 		};
 		5BDED08526023B14005AAEE7 /* Layout */ = {
@@ -682,6 +699,7 @@
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
 				04A7A15825FA61F3001339F8 /* TextFieldSwiftUIView.swift in Sources */,
 				040B1BAC2616DBDB00D88D4D /* Form3View.swift in Sources */,
+				5BB0DA50261AF9A800F09642 /* RingGraph.swift in Sources */,
 				5B09046A2618529500CDC5E6 /* Button2View.swift in Sources */,
 				040B1B8926148BD300D88D4D /* Form1View.swift in Sources */,
 				5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */,
@@ -702,6 +720,7 @@
 				04DA97D7260DAEED005DDF21 /* JsonShowView.swift in Sources */,
 				047C9EB82602F2130009A5A1 /* HStack4SwiftUIView.swift in Sources */,
 				04A7A12C25FA0962001339F8 /* Json2SwiftUIView.swift in Sources */,
+				5BB0DA51261AF9A800F09642 /* RingShape.swift in Sources */,
 				5B0904912618BA8A00CDC5E6 /* Text4View.swift in Sources */,
 				040B1B7B2614836100D88D4D /* DatePicker2View.swift in Sources */,
 				047C9EEA2605ED820009A5A1 /* Spacer2SwiftUIView.swift in Sources */,
@@ -755,6 +774,7 @@
 				5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */,
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
 				5BEA708326109B6A0007B55C /* ContentView.swift in Sources */,
+				5BB0DA4F261AF9A800F09642 /* Ring.swift in Sources */,
 				0414C7E2260DEBC900F351BF /* AnimationMainView.swift in Sources */,
 				040B1B8C26148C0F00D88D4D /* Form2View.swift in Sources */,
 				04A7A16E25FA6ED0001339F8 /* Json3SwiftUIView.swift in Sources */,

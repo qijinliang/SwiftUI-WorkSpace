@@ -15,6 +15,9 @@ struct ProjectMainView: View {
                     NavigationLink(destination: WeatherApp()) {
                         Text("WeatherApp")
                     }
+                    NavigationLink(destination: RingGraph()) {
+                        Text("RingGraph")
+                    }
                 }
             }
             .navigationBarTitle(Text("Project"),displayMode: .inline)
