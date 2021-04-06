@@ -12,7 +12,7 @@ struct ListSwiftUIView: View {
         NavigationView {
             Form {
                 //MARK: View
-                Section(header: Text("Example").font(.title3).fontWeight(.heavy)) {
+                Section(header: Text("Section1").font(.title3).fontWeight(.heavy)) {
                     VStackMainView()
                     //MARK: Navigation
                     NavigationShowView()
@@ -33,23 +33,22 @@ struct ListSwiftUIView: View {
                     //MARK: DatePicker
                     DatePickerMainView()
                 }
-                //MARK: Segmented
-                Section(header: Text("Segmented").font(.title3).fontWeight(.heavy)) {
+                Section(header: Text("Section2").font(.title3).fontWeight(.heavy)) {
+                    //MARK: Segmented
                     SegmentedMainView()
                 }
                 
-                //MARK: Math
-                Section(header: Text("Math").font(.title3).fontWeight(.heavy)) {
+                Section(header: Text("Section3").font(.title3).fontWeight(.heavy)) {
+                    //MARK: Segmented
+                    SegmentedMainView()
+                    //MARK: Math
                     MathMainView()
-                }
-                //MARK: Gesture
-                Section(header: Text("Gesture").font(.title3).fontWeight(.heavy)) {
+                    //MARK: Gesture
                     GestureMainView()
-                }
-                //MARK: GemoetryReader
-                Section(header: Text("GemoetryReader").font(.title3).fontWeight(.heavy)) {
+                    //MARK: GemoetryReader
                     GemoetryReaderMainView()
                 }
+
             }
             
             .navigationBarTitle("SwiftUI示例",displayMode: .inline)
