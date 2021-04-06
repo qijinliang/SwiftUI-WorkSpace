@@ -55,6 +55,9 @@ struct VStackShowView: View {
                     Text("HStack6")
                 }
                 
+                NavigationLink(destination: HStack7View()) {
+                    Text("HStack7")
+                }
             }
             
             //MARK: ZStack
@@ -62,8 +65,21 @@ struct VStackShowView: View {
                 NavigationLink(destination: ZStackSwiftUIView()) {
                     Text("ZStack")
                 }
+
+                NavigationLink(destination: ZStack2SwiftUIView()) {
+                    Text("ZStack2")
+                }
                 
+                NavigationLink(destination: ZStack3View()) {
+                    Text("ZStack3")
+                }
+                
+                
+                NavigationLink(destination: ZStack5SwiftUIView()) {
+                    Text("ZStack5")
+                }
             }
+            
             
             //MARK: Layout
             Section(header: Text("Layout").font(.title3).fontWeight(.heavy)) {

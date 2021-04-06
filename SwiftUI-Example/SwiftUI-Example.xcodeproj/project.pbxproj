@@ -28,6 +28,8 @@
 		0414C7F4260DF69200F351BF /* ButtonShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F3260DF69200F351BF /* ButtonShowView.swift */; };
 		0414C7F7260DF84200F351BF /* ScrollMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F6260DF84200F351BF /* ScrollMainView.swift */; };
 		0414C7FA260DF85400F351BF /* ScrollShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F9260DF85400F351BF /* ScrollShowView.swift */; };
+		04331FD0261747A600E8306E /* HStack7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FCF261747A600E8306E /* HStack7View.swift */; };
+		04331FDC261752EE00E8306E /* ZStack3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FDB261752EE00E8306E /* ZStack3View.swift */; };
 		043803B2260F4BF700722A01 /* GemoetryReaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803B1260F4BF700722A01 /* GemoetryReaderMainView.swift */; };
 		043803B5260F4C0300722A01 /* GemoetryReaderShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803B4260F4C0300722A01 /* GemoetryReaderShowView.swift */; };
 		043803BB260F4D9D00722A01 /* LayoutShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803BA260F4D9D00722A01 /* LayoutShowView.swift */; };
@@ -112,6 +114,8 @@
 		0414C7F3260DF69200F351BF /* ButtonShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShowView.swift; sourceTree = "<group>"; };
 		0414C7F6260DF84200F351BF /* ScrollMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollMainView.swift; sourceTree = "<group>"; };
 		0414C7F9260DF85400F351BF /* ScrollShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollShowView.swift; sourceTree = "<group>"; };
+		04331FCF261747A600E8306E /* HStack7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack7View.swift; sourceTree = "<group>"; };
+		04331FDB261752EE00E8306E /* ZStack3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStack3View.swift; sourceTree = "<group>"; };
 		043803B1260F4BF700722A01 /* GemoetryReaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemoetryReaderMainView.swift; sourceTree = "<group>"; };
 		043803B4260F4C0300722A01 /* GemoetryReaderShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemoetryReaderShowView.swift; sourceTree = "<group>"; };
 		043803BA260F4D9D00722A01 /* LayoutShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutShowView.swift; sourceTree = "<group>"; };
@@ -322,6 +326,7 @@
 				047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */,
 				5BF813CC2606FA270076F4C4 /* HStack5SwiftUIView.swift */,
 				5BF813CF2606FD030076F4C4 /* HStack6SwiftUIView.swift */,
+				04331FCF261747A600E8306E /* HStack7View.swift */,
 			);
 			path = HStack;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 				04A7A11825F8A1A3001339F8 /* ZStackSwiftUIView.swift */,
 				5BEA707726108CE60007B55C /* ZStack2SwiftUIView.swift */,
 				5BEA707A26108E470007B55C /* ZStack5SwiftUIView.swift */,
+				04331FDB261752EE00E8306E /* ZStack3View.swift */,
 			);
 			path = ZStack;
 			sourceTree = "<group>";
@@ -524,6 +530,7 @@
 			files = (
 				0414C7E5260DEBD600F351BF /* AnimationShowView.swift in Sources */,
 				0414C7F1260DF60300F351BF /* ButtonMainView.swift in Sources */,
+				04331FD0261747A600E8306E /* HStack7View.swift in Sources */,
 				0414C7F4260DF69200F351BF /* ButtonShowView.swift in Sources */,
 				5BDED08726023B44005AAEE7 /* LayoutSwiftUIView.swift in Sources */,
 				04A7A12025F8E4C3001339F8 /* VStack3SwiftUIView.swift in Sources */,
@@ -547,6 +554,7 @@
 				04B7E68025FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift in Sources */,
 				043803B5260F4C0300722A01 /* GemoetryReaderShowView.swift in Sources */,
 				047C9F02260608640009A5A1 /* GeometryReaderSwiftUIView.swift in Sources */,
+				04331FDC261752EE00E8306E /* ZStack3View.swift in Sources */,
 				04DA97D4260DA0CB005DDF21 /* NavigationShowView.swift in Sources */,
 				04A7A16A25FA69C4001339F8 /* ScrollViewSwiftUIView.swift in Sources */,
 				04A7A14725FA4220001339F8 /* ButtonSwiftUIView.swift in Sources */,
@@ -668,7 +676,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -723,7 +731,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
