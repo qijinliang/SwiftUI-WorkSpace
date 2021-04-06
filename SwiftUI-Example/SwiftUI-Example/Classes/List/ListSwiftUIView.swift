@@ -33,6 +33,11 @@ struct ListSwiftUIView: View {
                     //MARK: DatePicker
                     DatePickerMainView()
                 }
+                //MARK: Segmented
+                Section(header: Text("Segmented").font(.title3).fontWeight(.heavy)) {
+                    SegmentedMainView()
+                }
+                
                 //MARK: Math
                 Section(header: Text("Math").font(.title3).fontWeight(.heavy)) {
                     MathMainView()
