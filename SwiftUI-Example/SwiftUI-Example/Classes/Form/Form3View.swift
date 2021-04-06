@@ -12,21 +12,28 @@ struct Form3View: View {
         Form() {
             Section(header: Text("Form").font(.largeTitle)) {
                 Text("List Row Background")
-                    .font(.title2)
                     .foregroundColor(.gray)
                 Text("Forms and Lists allow you to seet a background view with a function called \"listRowBackground(view:)\".")
-                    .font(.title2)
                     //MARK: horizontal: true 就不会换行
                     .fixedSize(horizontal: false, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                 
                 Text("You can call this modifier function on just one row, list this.")
                     .frame(maxWidth: .infinity)
-                    .font(.title)
                     .foregroundColor(.white)
                     //MARK: list铺满颜色需要使用listRowBackground，而不是background
                     .listRowBackground(Color.purple)
-                    .fixedSize()
+                    .fixedSize(horizontal: false, vertical: true)
             }
+            .font(.title2)
+            
+            Section(header: Text("Whloe Section").font(.largeTitle).foregroundColor(.gray)) {
+                Text("Or you can set a view or color for a whole section.")
+                Image.init(systemName: "smiley.fill").frame(maxWidth: .infinity, alignment: .center).font(.largeTitle)
+                Text("Note, even though the color is set on the Section, the color of the section header is not affected.")
+            }
+            .listRowBackground(Color.purple)
+            .foregroundColor(.white)
+            .font(.title2)
         }
     }
 }

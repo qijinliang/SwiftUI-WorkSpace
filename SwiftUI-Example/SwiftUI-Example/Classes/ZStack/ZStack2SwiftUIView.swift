@@ -10,7 +10,7 @@ import SwiftUI
 struct ZStack2SwiftUIView: View {
     var body: some View {
         ZStack {
-            Color.gray
+            Color.gray.edgesIgnoringSafeArea(.all)
             VStack(spacing: 20) {
                 Text("ZStack")
                     .font(.largeTitle).foregroundColor(.black)
@@ -24,8 +24,9 @@ struct ZStack2SwiftUIView: View {
                 .padding()
                 .frame(maxWidth: .infinity)
                 .background(Color.green)
+                Spacer()
             }
-        }.edgesIgnoringSafeArea(.all)
+        }
     }
 }
 
