@@ -30,6 +30,17 @@
 		0414C7FA260DF85400F351BF /* ScrollShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F9260DF85400F351BF /* ScrollShowView.swift */; };
 		04331FD0261747A600E8306E /* HStack7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FCF261747A600E8306E /* HStack7View.swift */; };
 		04331FDC261752EE00E8306E /* ZStack3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FDB261752EE00E8306E /* ZStack3View.swift */; };
+		04331FE4261C1FC600E8306E /* SegmentedMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FE3261C1FC600E8306E /* SegmentedMainView.swift */; };
+		04331FE7261C1FDE00E8306E /* SegmentedShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FE6261C1FDE00E8306E /* SegmentedShowView.swift */; };
+		04331FEA261C208700E8306E /* Segmented1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FE9261C208700E8306E /* Segmented1View.swift */; };
+		04331FED261C209400E8306E /* Segmented2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEC261C209400E8306E /* Segmented2View.swift */; };
+		04331FF0261C20DE00E8306E /* Segmented3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FEF261C20DE00E8306E /* Segmented3View.swift */; };
+		04331FF4261C215900E8306E /* TextFieldMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FF3261C215900E8306E /* TextFieldMainView.swift */; };
+		04331FF9261C217500E8306E /* TextFieldShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FF8261C217500E8306E /* TextFieldShowView.swift */; };
+		04331FFC261C218200E8306E /* TextField2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FFB261C218200E8306E /* TextField2View.swift */; };
+		04331FFF261C219D00E8306E /* SliderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FFE261C219D00E8306E /* SliderMainView.swift */; };
+		04332003261C21A600E8306E /* SliderShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04332002261C21A600E8306E /* SliderShowView.swift */; };
+		04332006261C21B000E8306E /* Slider1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04332005261C21B000E8306E /* Slider1View.swift */; };
 		043803B2260F4BF700722A01 /* GemoetryReaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803B1260F4BF700722A01 /* GemoetryReaderMainView.swift */; };
 		043803B5260F4C0300722A01 /* GemoetryReaderShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803B4260F4C0300722A01 /* GemoetryReaderShowView.swift */; };
 		043803BB260F4D9D00722A01 /* LayoutShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803BA260F4D9D00722A01 /* LayoutShowView.swift */; };
@@ -106,6 +117,7 @@
 		5B0904B3261AEC6300CDC5E6 /* MainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904AE261AEC6300CDC5E6 /* MainCardView.swift */; };
 		5B0904B6261AEC8200CDC5E6 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904B5261AEC8200CDC5E6 /* WeatherApp.swift */; };
 		5B0904C0261AF1D100CDC5E6 /* ProjectMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904BF261AF1D100CDC5E6 /* ProjectMainView.swift */; };
+		5B2FB856261DDDA000CD65A2 /* LayoutMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */; };
 		5BB0DA4F261AF9A800F09642 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4C261AF9A800F09642 /* Ring.swift */; };
 		5BB0DA50261AF9A800F09642 /* RingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4D261AF9A800F09642 /* RingGraph.swift */; };
 		5BB0DA51261AF9A800F09642 /* RingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4E261AF9A800F09642 /* RingShape.swift */; };
@@ -149,6 +161,17 @@
 		0414C7F9260DF85400F351BF /* ScrollShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollShowView.swift; sourceTree = "<group>"; };
 		04331FCF261747A600E8306E /* HStack7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack7View.swift; sourceTree = "<group>"; };
 		04331FDB261752EE00E8306E /* ZStack3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStack3View.swift; sourceTree = "<group>"; };
+		04331FE3261C1FC600E8306E /* SegmentedMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedMainView.swift; sourceTree = "<group>"; };
+		04331FE6261C1FDE00E8306E /* SegmentedShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedShowView.swift; sourceTree = "<group>"; };
+		04331FE9261C208700E8306E /* Segmented1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segmented1View.swift; sourceTree = "<group>"; };
+		04331FEC261C209400E8306E /* Segmented2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segmented2View.swift; sourceTree = "<group>"; };
+		04331FEF261C20DE00E8306E /* Segmented3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segmented3View.swift; sourceTree = "<group>"; };
+		04331FF3261C215900E8306E /* TextFieldMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldMainView.swift; sourceTree = "<group>"; };
+		04331FF8261C217500E8306E /* TextFieldShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldShowView.swift; sourceTree = "<group>"; };
+		04331FFB261C218200E8306E /* TextField2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField2View.swift; sourceTree = "<group>"; };
+		04331FFE261C219D00E8306E /* SliderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderMainView.swift; sourceTree = "<group>"; };
+		04332002261C21A600E8306E /* SliderShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderShowView.swift; sourceTree = "<group>"; };
+		04332005261C21B000E8306E /* Slider1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider1View.swift; sourceTree = "<group>"; };
 		043803B1260F4BF700722A01 /* GemoetryReaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemoetryReaderMainView.swift; sourceTree = "<group>"; };
 		043803B4260F4C0300722A01 /* GemoetryReaderShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemoetryReaderShowView.swift; sourceTree = "<group>"; };
 		043803BA260F4D9D00722A01 /* LayoutShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutShowView.swift; sourceTree = "<group>"; };
@@ -227,6 +250,7 @@
 		5B0904AE261AEC6300CDC5E6 /* MainCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCardView.swift; sourceTree = "<group>"; };
 		5B0904B5261AEC8200CDC5E6 /* WeatherApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		5B0904BF261AF1D100CDC5E6 /* ProjectMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectMainView.swift; sourceTree = "<group>"; };
+		5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutMainView.swift; sourceTree = "<group>"; };
 		5BB0DA4C261AF9A800F09642 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
 		5BB0DA4D261AF9A800F09642 /* RingGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingGraph.swift; sourceTree = "<group>"; };
 		5BB0DA4E261AF9A800F09642 /* RingShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingShape.swift; sourceTree = "<group>"; };
@@ -285,6 +309,8 @@
 		040C67D9260C44B700A01500 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				04331FF2261C212800E8306E /* Slider */,
+				04331FE2261C1FAB00E8306E /* Segment */,
 				5B09047F2618B8A800CDC5E6 /* Text */,
 				040B1B8026148B6000D88D4D /* Form */,
 				040B1B6F2614821600D88D4D /* DataPicker */,
@@ -319,6 +345,28 @@
 				5B090466261846D600CDC5E6 /* CustomerView.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		04331FE2261C1FAB00E8306E /* Segment */ = {
+			isa = PBXGroup;
+			children = (
+				04331FE3261C1FC600E8306E /* SegmentedMainView.swift */,
+				04331FE6261C1FDE00E8306E /* SegmentedShowView.swift */,
+				04331FE9261C208700E8306E /* Segmented1View.swift */,
+				04331FEC261C209400E8306E /* Segmented2View.swift */,
+				04331FEF261C20DE00E8306E /* Segmented3View.swift */,
+			);
+			path = Segment;
+			sourceTree = "<group>";
+		};
+		04331FF2261C212800E8306E /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				04331FFE261C219D00E8306E /* SliderMainView.swift */,
+				04332002261C21A600E8306E /* SliderShowView.swift */,
+				04332005261C21B000E8306E /* Slider1View.swift */,
+			);
+			path = Slider;
 			sourceTree = "<group>";
 		};
 		047C9EC82604E1470009A5A1 /* Spacer */ = {
@@ -473,6 +521,9 @@
 			isa = PBXGroup;
 			children = (
 				04A7A15725FA61F3001339F8 /* TextFieldSwiftUIView.swift */,
+				04331FF3261C215900E8306E /* TextFieldMainView.swift */,
+				04331FF8261C217500E8306E /* TextFieldShowView.swift */,
+				04331FFB261C218200E8306E /* TextField2View.swift */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -609,6 +660,7 @@
 				5BDED08626023B44005AAEE7 /* LayoutSwiftUIView.swift */,
 				5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */,
 				043803BA260F4D9D00722A01 /* LayoutShowView.swift */,
+				5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -712,6 +764,7 @@
 				5BDED08B26023F2C005AAEE7 /* Layout2SwiftUIView.swift in Sources */,
 				043803B2260F4BF700722A01 /* GemoetryReaderMainView.swift in Sources */,
 				04DA97C6260D9597005DDF21 /* VStackMainView.swift in Sources */,
+				04332003261C21A600E8306E /* SliderShowView.swift in Sources */,
 				5B0904732618893B00CDC5E6 /* Button4View.swift in Sources */,
 				04B7E68025FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift in Sources */,
 				043803B5260F4C0300722A01 /* GemoetryReaderShowView.swift in Sources */,
@@ -719,6 +772,8 @@
 				04331FDC261752EE00E8306E /* ZStack3View.swift in Sources */,
 				04DA97D4260DA0CB005DDF21 /* NavigationShowView.swift in Sources */,
 				5B09045E26183E1800CDC5E6 /* ListView.swift in Sources */,
+				04331FF4261C215900E8306E /* TextFieldMainView.swift in Sources */,
+				5B2FB856261DDDA000CD65A2 /* LayoutMainView.swift in Sources */,
 				04A7A16A25FA69C4001339F8 /* ScrollViewSwiftUIView.swift in Sources */,
 				04A7A14725FA4220001339F8 /* ButtonSwiftUIView.swift in Sources */,
 				5B0904972618BA9B00CDC5E6 /* Text6View.swift in Sources */,
@@ -738,6 +793,7 @@
 				5B0904642618433800CDC5E6 /* ListGroupedView.swift in Sources */,
 				5B0904852618B8C500CDC5E6 /* TextShowView.swift in Sources */,
 				04A7A16525FA66A4001339F8 /* NavigationSwiftUIView.swift in Sources */,
+				04331FEA261C208700E8306E /* Segmented1View.swift in Sources */,
 				5BF813D02606FD030076F4C4 /* HStack6SwiftUIView.swift in Sources */,
 				047C9EED2605F3540009A5A1 /* Spacer3SwiftUIView.swift in Sources */,
 				5BEA707826108CE60007B55C /* ZStack2SwiftUIView.swift in Sources */,
@@ -746,21 +802,27 @@
 				047C9EB026020E470009A5A1 /* HStack3SwiftUIView.swift in Sources */,
 				04A7A13C25FA3638001339F8 /* ShadowSwiftUIView.swift in Sources */,
 				5B0904B6261AEC8200CDC5E6 /* WeatherApp.swift in Sources */,
+				04331FFC261C218200E8306E /* TextField2View.swift in Sources */,
+				04332006261C21B000E8306E /* Slider1View.swift in Sources */,
 				5BF813DB260700F20076F4C4 /* GeometryReader3SwiftUIView.swift in Sources */,
 				5B09049D261AE8F300CDC5E6 /* Text8View.swift in Sources */,
 				0414C7E8260DF23800F351BF /* MathMainView.swift in Sources */,
 				047C9ECA2604E1620009A5A1 /* SpacerSwiftUIView.swift in Sources */,
 				0414C7EB260DF24300F351BF /* MathShowView.swift in Sources */,
 				5B0904882618B98D00CDC5E6 /* Text1View.swift in Sources */,
+				04331FED261C209400E8306E /* Segmented2View.swift in Sources */,
 				04A7A17225FAFF32001339F8 /* DefinedSwiftUIView.swift in Sources */,
 				5B0904A3261AE90200CDC5E6 /* Text10View.swift in Sources */,
+				04331FE7261C1FDE00E8306E /* SegmentedShowView.swift in Sources */,
 				5BEA708D2610A0E60007B55C /* ListShowView.swift in Sources */,
 				5B09047D2618944C00CDC5E6 /* Button8View.swift in Sources */,
 				04A7A0F825F7B30B001339F8 /* AppDelegate.swift in Sources */,
 				040B1B782614831700D88D4D /* DatePickerView.swift in Sources */,
 				5BEA70892610A0C80007B55C /* ListMainSwiftUIView.swift in Sources */,
+				04331FF0261C20DE00E8306E /* Segmented3View.swift in Sources */,
 				040B1B712614828F00D88D4D /* DatePickerMainView.swift in Sources */,
 				04A7A17A25FB9244001339F8 /* VStack4SwiftUIView.swift in Sources */,
+				04331FFF261C219D00E8306E /* SliderMainView.swift in Sources */,
 				047C9EAD26020BE90009A5A1 /* HStack2SwiftUIView.swift in Sources */,
 				04A7A14D25FA5774001339F8 /* FanshapedSwiftUIView.swift in Sources */,
 				040B1BB22616DE7F00D88D4D /* Form5View.swift in Sources */,
@@ -773,6 +835,7 @@
 				5B09048B2618B99A00CDC5E6 /* Text2View.swift in Sources */,
 				0414C7F7260DF84200F351BF /* ScrollMainView.swift in Sources */,
 				040B1B8626148B7E00D88D4D /* FormMainView.swift in Sources */,
+				04331FF9261C217500E8306E /* TextFieldShowView.swift in Sources */,
 				5B0904812618B8BA00CDC5E6 /* TextMainView.swift in Sources */,
 				0414C7FA260DF85400F351BF /* ScrollShowView.swift in Sources */,
 				5B090470261882E300CDC5E6 /* Button5View.swift in Sources */,
@@ -783,6 +846,7 @@
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
 				5BEA708326109B6A0007B55C /* ContentView.swift in Sources */,
 				5BB0DA4F261AF9A800F09642 /* Ring.swift in Sources */,
+				04331FE4261C1FC600E8306E /* SegmentedMainView.swift in Sources */,
 				0414C7E2260DEBC900F351BF /* AnimationMainView.swift in Sources */,
 				040B1B8C26148C0F00D88D4D /* Form2View.swift in Sources */,
 				04A7A16E25FA6ED0001339F8 /* Json3SwiftUIView.swift in Sources */,
