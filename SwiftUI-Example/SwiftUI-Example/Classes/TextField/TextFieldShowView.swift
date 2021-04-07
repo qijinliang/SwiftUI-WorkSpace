@@ -9,7 +9,17 @@ import SwiftUI
 
 struct TextFieldShowView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form() {
+            Section() {
+                NavigationLink(destination: TextFieldSwiftUIView()) {
+                    Text("TextField1")
+                }
+                NavigationLink(destination: TextField2View()) {
+                    Text("TextField2")
+                }
+            }
+        }
+
     }
 }
 

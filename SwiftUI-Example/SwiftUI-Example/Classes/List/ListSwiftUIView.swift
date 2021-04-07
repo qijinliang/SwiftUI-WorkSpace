@@ -34,13 +34,17 @@ struct ListSwiftUIView: View {
                     DatePickerMainView()
                 }
                 Section(header: Text("Section2").font(.title3).fontWeight(.heavy)) {
+                    //MARK: Layout
+                    LayoutMainView()
                     //MARK: Segmented
                     SegmentedMainView()
+                    //MARK: Slider
+                    SliderMainView()
+                    //MARK: TextField
+                    TextFieldMainView()
                 }
                 
                 Section(header: Text("Section3").font(.title3).fontWeight(.heavy)) {
-                    //MARK: Segmented
-                    SegmentedMainView()
                     //MARK: Math
                     MathMainView()
                     //MARK: Gesture
