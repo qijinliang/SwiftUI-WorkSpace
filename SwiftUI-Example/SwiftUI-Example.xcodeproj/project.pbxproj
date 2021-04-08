@@ -118,6 +118,7 @@
 		5B0904B6261AEC8200CDC5E6 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904B5261AEC8200CDC5E6 /* WeatherApp.swift */; };
 		5B0904C0261AF1D100CDC5E6 /* ProjectMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904BF261AF1D100CDC5E6 /* ProjectMainView.swift */; };
 		5B2FB856261DDDA000CD65A2 /* LayoutMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */; };
+		5B41DD1A261F2FE400BC7589 /* ScrollView3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD19261F2FE400BC7589 /* ScrollView3View.swift */; };
 		5BB0DA4F261AF9A800F09642 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4C261AF9A800F09642 /* Ring.swift */; };
 		5BB0DA50261AF9A800F09642 /* RingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4D261AF9A800F09642 /* RingGraph.swift */; };
 		5BB0DA51261AF9A800F09642 /* RingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4E261AF9A800F09642 /* RingShape.swift */; };
@@ -251,6 +252,7 @@
 		5B0904B5261AEC8200CDC5E6 /* WeatherApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		5B0904BF261AF1D100CDC5E6 /* ProjectMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectMainView.swift; sourceTree = "<group>"; };
 		5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutMainView.swift; sourceTree = "<group>"; };
+		5B41DD19261F2FE400BC7589 /* ScrollView3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView3View.swift; sourceTree = "<group>"; };
 		5BB0DA4C261AF9A800F09642 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
 		5BB0DA4D261AF9A800F09642 /* RingGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingGraph.swift; sourceTree = "<group>"; };
 		5BB0DA4E261AF9A800F09642 /* RingShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingShape.swift; sourceTree = "<group>"; };
@@ -553,6 +555,7 @@
 				04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */,
 				0414C7F6260DF84200F351BF /* ScrollMainView.swift */,
 				0414C7F9260DF85400F351BF /* ScrollShowView.swift */,
+				5B41DD19261F2FE400BC7589 /* ScrollView3View.swift */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
@@ -753,6 +756,7 @@
 				5BEA7072261089110007B55C /* SpaceMainView.swift in Sources */,
 				5B0904C0261AF1D100CDC5E6 /* ProjectMainView.swift in Sources */,
 				5B0904612618413A00CDC5E6 /* ListWithDataView.swift in Sources */,
+				5B41DD1A261F2FE400BC7589 /* ScrollView3View.swift in Sources */,
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
 				5B090467261846D600CDC5E6 /* CustomerView.swift in Sources */,
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
