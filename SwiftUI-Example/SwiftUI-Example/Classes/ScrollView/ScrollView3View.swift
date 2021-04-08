@@ -14,7 +14,8 @@ struct ScrollView3View: View {
         GeometryReader() { geometry in
             VStack() {
                 ScrollViewReader() { scrollView in
-                    ScrollView(.horizontal) {
+                    //MARK: showsIndicators: false 去掉下划线
+                    ScrollView(.horizontal, showsIndicators: false) {
                         HStack(alignment: .center) {
                             ForEach(photos.indices) { index in
                                 Image.init(photos[index])
