@@ -18,6 +18,10 @@ struct ScrollShowView: View {
                 NavigationLink(destination: ScrollView2SwiftUIView(colors: [.blue, .red,.orange,.pink])) {
                     Text("ScrollView2")
                 }
+                
+                NavigationLink(destination: ScrollView3View()) {
+                    Text("ScrollView3")
+                }
             }
         }
     }

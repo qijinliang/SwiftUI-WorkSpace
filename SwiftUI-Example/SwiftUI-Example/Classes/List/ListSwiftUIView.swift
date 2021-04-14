@@ -16,8 +16,6 @@ struct ListSwiftUIView: View {
                     VStackMainView()
                     //MARK: Navigation
                     NavigationShowView()
-                    //MARK: Json
-                    JsonMainView()
                     //MARK: Text
                     TextMainView()
                     //MARK: Button
@@ -32,6 +30,8 @@ struct ListSwiftUIView: View {
                     ListMainSwiftUIView()
                     //MARK: DatePicker
                     DatePickerMainView()
+                    //MARK: Map
+                    MapMainView()
                 }
                 Section(header: Text("Section2").font(.title3).fontWeight(.heavy)) {
                     //MARK: Layout
@@ -51,6 +51,8 @@ struct ListSwiftUIView: View {
                     GestureMainView()
                     //MARK: GemoetryReader
                     GemoetryReaderMainView()
+                    //MARK: Json
+                    JsonMainView()
                 }
 
             }

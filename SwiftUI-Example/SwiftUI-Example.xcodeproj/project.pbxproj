@@ -118,6 +118,10 @@
 		5B0904B6261AEC8200CDC5E6 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904B5261AEC8200CDC5E6 /* WeatherApp.swift */; };
 		5B0904C0261AF1D100CDC5E6 /* ProjectMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904BF261AF1D100CDC5E6 /* ProjectMainView.swift */; };
 		5B2FB856261DDDA000CD65A2 /* LayoutMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */; };
+		5B41DD1A261F2FE400BC7589 /* ScrollView3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD19261F2FE400BC7589 /* ScrollView3View.swift */; };
+		5B41DD1E261F3FE400BC7589 /* MapMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD1D261F3FE400BC7589 /* MapMainView.swift */; };
+		5B41DD22261F3FF100BC7589 /* MapShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD21261F3FF100BC7589 /* MapShowView.swift */; };
+		5B41DD25261F405800BC7589 /* Map1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD24261F405800BC7589 /* Map1View.swift */; };
 		5BB0DA4F261AF9A800F09642 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4C261AF9A800F09642 /* Ring.swift */; };
 		5BB0DA50261AF9A800F09642 /* RingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4D261AF9A800F09642 /* RingGraph.swift */; };
 		5BB0DA51261AF9A800F09642 /* RingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4E261AF9A800F09642 /* RingShape.swift */; };
@@ -251,6 +255,10 @@
 		5B0904B5261AEC8200CDC5E6 /* WeatherApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		5B0904BF261AF1D100CDC5E6 /* ProjectMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectMainView.swift; sourceTree = "<group>"; };
 		5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutMainView.swift; sourceTree = "<group>"; };
+		5B41DD19261F2FE400BC7589 /* ScrollView3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView3View.swift; sourceTree = "<group>"; };
+		5B41DD1D261F3FE400BC7589 /* MapMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMainView.swift; sourceTree = "<group>"; };
+		5B41DD21261F3FF100BC7589 /* MapShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapShowView.swift; sourceTree = "<group>"; };
+		5B41DD24261F405800BC7589 /* Map1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map1View.swift; sourceTree = "<group>"; };
 		5BB0DA4C261AF9A800F09642 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
 		5BB0DA4D261AF9A800F09642 /* RingGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingGraph.swift; sourceTree = "<group>"; };
 		5BB0DA4E261AF9A800F09642 /* RingShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingShape.swift; sourceTree = "<group>"; };
@@ -309,6 +317,7 @@
 		040C67D9260C44B700A01500 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5B41DD1C261F3FD100BC7589 /* Map */,
 				04331FF2261C212800E8306E /* Slider */,
 				04331FE2261C1FAB00E8306E /* Segment */,
 				5B09047F2618B8A800CDC5E6 /* Text */,
@@ -553,6 +562,7 @@
 				04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */,
 				0414C7F6260DF84200F351BF /* ScrollMainView.swift */,
 				0414C7F9260DF85400F351BF /* ScrollShowView.swift */,
+				5B41DD19261F2FE400BC7589 /* ScrollView3View.swift */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
@@ -642,6 +652,16 @@
 				0414C7E4260DEBD600F351BF /* AnimationShowView.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		5B41DD1C261F3FD100BC7589 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5B41DD1D261F3FE400BC7589 /* MapMainView.swift */,
+				5B41DD21261F3FF100BC7589 /* MapShowView.swift */,
+				5B41DD24261F405800BC7589 /* Map1View.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		5BB0DA4B261AF9A800F09642 /* RingGraph */ = {
@@ -744,6 +764,7 @@
 				04A7A14025FA3FF2001339F8 /* FoldSwiftUIView.swift in Sources */,
 				0414C7EE260DF42000F351BF /* GestureMainView.swift in Sources */,
 				04DA97CF260D9E91005DDF21 /* VStackShowView.swift in Sources */,
+				5B41DD1E261F3FE400BC7589 /* MapMainView.swift in Sources */,
 				5BF813CD2606FA270076F4C4 /* HStack5SwiftUIView.swift in Sources */,
 				5B09049A261AE8EB00CDC5E6 /* Text7View.swift in Sources */,
 				5BF813DF2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift in Sources */,
@@ -753,6 +774,7 @@
 				5BEA7072261089110007B55C /* SpaceMainView.swift in Sources */,
 				5B0904C0261AF1D100CDC5E6 /* ProjectMainView.swift in Sources */,
 				5B0904612618413A00CDC5E6 /* ListWithDataView.swift in Sources */,
+				5B41DD1A261F2FE400BC7589 /* ScrollView3View.swift in Sources */,
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
 				5B090467261846D600CDC5E6 /* CustomerView.swift in Sources */,
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
@@ -803,8 +825,10 @@
 				04A7A13C25FA3638001339F8 /* ShadowSwiftUIView.swift in Sources */,
 				5B0904B6261AEC8200CDC5E6 /* WeatherApp.swift in Sources */,
 				04331FFC261C218200E8306E /* TextField2View.swift in Sources */,
+				5B41DD22261F3FF100BC7589 /* MapShowView.swift in Sources */,
 				04332006261C21B000E8306E /* Slider1View.swift in Sources */,
 				5BF813DB260700F20076F4C4 /* GeometryReader3SwiftUIView.swift in Sources */,
+				5B41DD25261F405800BC7589 /* Map1View.swift in Sources */,
 				5B09049D261AE8F300CDC5E6 /* Text8View.swift in Sources */,
 				0414C7E8260DF23800F351BF /* MathMainView.swift in Sources */,
 				047C9ECA2604E1620009A5A1 /* SpacerSwiftUIView.swift in Sources */,
