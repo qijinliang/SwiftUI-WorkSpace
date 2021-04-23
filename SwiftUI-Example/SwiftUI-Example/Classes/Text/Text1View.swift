@@ -24,7 +24,9 @@ struct Text1View: View {
             }
             .padding()
             .frame(maxWidth: .infinity)
-            .background(Color.green)
+//            .background(Color.green)
+            //MARK: 扩展SwfitUI颜色写法
+            .background(Color(hex: "#FF6D5D"))
             
             Text("We built the App Store to make it easy for everyone — from individuals to large teams — to distribute apps in the thriving app economy and successfully run and grow a global business.")
                 .font(.title)
