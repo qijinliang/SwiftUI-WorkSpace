@@ -44,6 +44,7 @@
 		043803B2260F4BF700722A01 /* GemoetryReaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803B1260F4BF700722A01 /* GemoetryReaderMainView.swift */; };
 		043803B5260F4C0300722A01 /* GemoetryReaderShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803B4260F4C0300722A01 /* GemoetryReaderShowView.swift */; };
 		043803BB260F4D9D00722A01 /* LayoutShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803BA260F4D9D00722A01 /* LayoutShowView.swift */; };
+		0454AD122632F1EB00AEB98D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454AD112632F1EB00AEB98D /* Color+Extension.swift */; };
 		047C9EAD26020BE90009A5A1 /* HStack2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */; };
 		047C9EB026020E470009A5A1 /* HStack3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EAF26020E470009A5A1 /* HStack3SwiftUIView.swift */; };
 		047C9EB82602F2130009A5A1 /* HStack4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */; };
@@ -179,6 +180,7 @@
 		043803B1260F4BF700722A01 /* GemoetryReaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemoetryReaderMainView.swift; sourceTree = "<group>"; };
 		043803B4260F4C0300722A01 /* GemoetryReaderShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemoetryReaderShowView.swift; sourceTree = "<group>"; };
 		043803BA260F4D9D00722A01 /* LayoutShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutShowView.swift; sourceTree = "<group>"; };
+		0454AD112632F1EB00AEB98D /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack2SwiftUIView.swift; sourceTree = "<group>"; };
 		047C9EAF26020E470009A5A1 /* HStack3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack3SwiftUIView.swift; sourceTree = "<group>"; };
 		047C9EB72602F2130009A5A1 /* HStack4SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HStack4SwiftUIView.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 		040C67D9260C44B700A01500 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0454AD0C2632F13D00AEB98D /* Other */,
 				5B41DD1C261F3FD100BC7589 /* Map */,
 				04331FF2261C212800E8306E /* Slider */,
 				04331FE2261C1FAB00E8306E /* Segment */,
@@ -376,6 +379,14 @@
 				04332005261C21B000E8306E /* Slider1View.swift */,
 			);
 			path = Slider;
+			sourceTree = "<group>";
+		};
+		0454AD0C2632F13D00AEB98D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0454AD112632F1EB00AEB98D /* Color+Extension.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		047C9EC82604E1470009A5A1 /* Spacer */ = {
@@ -820,6 +831,7 @@
 				047C9EED2605F3540009A5A1 /* Spacer3SwiftUIView.swift in Sources */,
 				5BEA707826108CE60007B55C /* ZStack2SwiftUIView.swift in Sources */,
 				5B0904B3261AEC6300CDC5E6 /* MainCardView.swift in Sources */,
+				0454AD122632F1EB00AEB98D /* Color+Extension.swift in Sources */,
 				5B0904AF261AEC6300CDC5E6 /* Weather.swift in Sources */,
 				047C9EB026020E470009A5A1 /* HStack3SwiftUIView.swift in Sources */,
 				04A7A13C25FA3638001339F8 /* ShadowSwiftUIView.swift in Sources */,
