@@ -44,6 +44,7 @@
 		043803B2260F4BF700722A01 /* GemoetryReaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803B1260F4BF700722A01 /* GemoetryReaderMainView.swift */; };
 		043803B5260F4C0300722A01 /* GemoetryReaderShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803B4260F4C0300722A01 /* GemoetryReaderShowView.swift */; };
 		043803BB260F4D9D00722A01 /* LayoutShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043803BA260F4D9D00722A01 /* LayoutShowView.swift */; };
+		0438AEF326397BEB007D49F5 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438AEF226397BEB007D49F5 /* HTTPClient.swift */; };
 		0454AD122632F1EB00AEB98D /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454AD112632F1EB00AEB98D /* Color+Extension.swift */; };
 		0454AD1B26330E9900AEB98D /* SwiftUI+HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0454AD1A26330E9900AEB98D /* SwiftUI+HUD.swift */; };
 		047C9EAD26020BE90009A5A1 /* HStack2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */; };
@@ -181,6 +182,7 @@
 		043803B1260F4BF700722A01 /* GemoetryReaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemoetryReaderMainView.swift; sourceTree = "<group>"; };
 		043803B4260F4C0300722A01 /* GemoetryReaderShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GemoetryReaderShowView.swift; sourceTree = "<group>"; };
 		043803BA260F4D9D00722A01 /* LayoutShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutShowView.swift; sourceTree = "<group>"; };
+		0438AEF226397BEB007D49F5 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		0454AD112632F1EB00AEB98D /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		0454AD1A26330E9900AEB98D /* SwiftUI+HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+HUD.swift"; sourceTree = "<group>"; };
 		047C9EAC26020BE90009A5A1 /* HStack2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack2SwiftUIView.swift; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 			children = (
 				0454AD112632F1EB00AEB98D /* Color+Extension.swift */,
 				0454AD1A26330E9900AEB98D /* SwiftUI+HUD.swift */,
+				0438AEF226397BEB007D49F5 /* HTTPClient.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -819,6 +822,7 @@
 				04DA97D7260DAEED005DDF21 /* JsonShowView.swift in Sources */,
 				047C9EB82602F2130009A5A1 /* HStack4SwiftUIView.swift in Sources */,
 				04A7A12C25FA0962001339F8 /* Json2SwiftUIView.swift in Sources */,
+				0438AEF326397BEB007D49F5 /* HTTPClient.swift in Sources */,
 				5BB0DA51261AF9A800F09642 /* RingShape.swift in Sources */,
 				5B0904912618BA8A00CDC5E6 /* Text4View.swift in Sources */,
 				040B1B7B2614836100D88D4D /* DatePicker2View.swift in Sources */,
@@ -1038,7 +1042,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Example/Preview Content\"";
 				DEVELOPMENT_TEAM = 96XUY94B27;
@@ -1051,7 +1055,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.pokemon.pokemonunite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "nishiki_adhoc‗20201225";
+				PROVISIONING_PROFILE_SPECIFIER = "nishiki_development‗20201225";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1062,7 +1066,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Example/Preview Content\"";
 				DEVELOPMENT_TEAM = 96XUY94B27;
@@ -1075,7 +1079,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.pokemon.pokemonunite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "nishiki_adhoc‗20201225";
+				PROVISIONING_PROFILE_SPECIFIER = "nishiki_development‗20201225";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

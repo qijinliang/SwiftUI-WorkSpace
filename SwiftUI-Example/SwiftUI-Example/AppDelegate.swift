@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         if #available(iOS 14, *) {
             ATTrackingManager.requestTrackingAuthorization { (status) in
+                print("statue--->\(status)")
                 if status == .authorized {
                     print("statue--->\(status)")
                 } else if status == .denied {
@@ -26,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 } else if status == .restricted {
                     print("statue--->\(status)")
                 }
+                
             }
         }
         
