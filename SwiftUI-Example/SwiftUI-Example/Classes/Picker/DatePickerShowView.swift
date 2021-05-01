@@ -18,6 +18,11 @@ struct DatePickerShowView: View {
                 NavigationLink(destination: DatePicker2View()) {
                     Text("DatePicker2")
                 }
+                
+                NavigationLink(
+                    destination: Picker3View()) {
+                    Text("Picker3")
+                }
             }
         }
     }
