@@ -123,6 +123,7 @@
 		5B41DD1E261F3FE400BC7589 /* MapMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD1D261F3FE400BC7589 /* MapMainView.swift */; };
 		5B41DD22261F3FF100BC7589 /* MapShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD21261F3FF100BC7589 /* MapShowView.swift */; };
 		5B41DD25261F405800BC7589 /* Map1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD24261F405800BC7589 /* Map1View.swift */; };
+		5B76BD29263D223C0071716D /* Picker3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76BD28263D223C0071716D /* Picker3View.swift */; };
 		5BB0DA4F261AF9A800F09642 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4C261AF9A800F09642 /* Ring.swift */; };
 		5BB0DA50261AF9A800F09642 /* RingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4D261AF9A800F09642 /* RingGraph.swift */; };
 		5BB0DA51261AF9A800F09642 /* RingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4E261AF9A800F09642 /* RingShape.swift */; };
@@ -140,6 +141,7 @@
 		5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813D7260700D80076F4C4 /* GeometryReader4SwiftUIView.swift */; };
 		5BF813DB260700F20076F4C4 /* GeometryReader3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813DA260700F20076F4C4 /* GeometryReader3SwiftUIView.swift */; };
 		5BF813DF2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813DE2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift */; };
+		F723937FCEBCDDE392F28B18 /* Pods_SwiftUI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A434A40D2C0A01BCCBE6EE2A /* Pods_SwiftUI_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -261,6 +263,7 @@
 		5B41DD1D261F3FE400BC7589 /* MapMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMainView.swift; sourceTree = "<group>"; };
 		5B41DD21261F3FF100BC7589 /* MapShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapShowView.swift; sourceTree = "<group>"; };
 		5B41DD24261F405800BC7589 /* Map1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map1View.swift; sourceTree = "<group>"; };
+		5B76BD28263D223C0071716D /* Picker3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker3View.swift; sourceTree = "<group>"; };
 		5BB0DA4C261AF9A800F09642 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
 		5BB0DA4D261AF9A800F09642 /* RingGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingGraph.swift; sourceTree = "<group>"; };
 		5BB0DA4E261AF9A800F09642 /* RingShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingShape.swift; sourceTree = "<group>"; };
@@ -278,6 +281,9 @@
 		5BF813D7260700D80076F4C4 /* GeometryReader4SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader4SwiftUIView.swift; sourceTree = "<group>"; };
 		5BF813DA260700F20076F4C4 /* GeometryReader3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader3SwiftUIView.swift; sourceTree = "<group>"; };
 		5BF813DE2607478B0076F4C4 /* GeometryReader5SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader5SwiftUIView.swift; sourceTree = "<group>"; };
+		A434A40D2C0A01BCCBE6EE2A /* Pods_SwiftUI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB69E575CE94AABC978E2CC2 /* Pods-SwiftUI-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Example.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Example/Pods-SwiftUI-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EE769E5EDD3F275523F9B5E3 /* Pods-SwiftUI-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Example/Pods-SwiftUI-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,21 +291,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F723937FCEBCDDE392F28B18 /* Pods_SwiftUI_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		040B1B6F2614821600D88D4D /* DataPicker */ = {
+		040B1B6F2614821600D88D4D /* Picker */ = {
 			isa = PBXGroup;
 			children = (
 				040B1B702614828F00D88D4D /* DatePickerMainView.swift */,
 				040B1B74261482BC00D88D4D /* DatePickerShowView.swift */,
 				040B1B772614831700D88D4D /* DatePickerView.swift */,
 				040B1B7A2614836100D88D4D /* DatePicker2View.swift */,
+				5B76BD28263D223C0071716D /* Picker3View.swift */,
 			);
-			path = DataPicker;
+			path = Picker;
 			sourceTree = "<group>";
 		};
 		040B1B8026148B6000D88D4D /* Form */ = {
@@ -325,7 +333,7 @@
 				04331FE2261C1FAB00E8306E /* Segment */,
 				5B09047F2618B8A800CDC5E6 /* Text */,
 				040B1B8026148B6000D88D4D /* Form */,
-				040B1B6F2614821600D88D4D /* DataPicker */,
+				040B1B6F2614821600D88D4D /* Picker */,
 				047C9F002606084F0009A5A1 /* GemoetryReader */,
 				047C9EC82604E1470009A5A1 /* Spacer */,
 				5BDED08526023B14005AAEE7 /* Layout */,
@@ -421,6 +429,8 @@
 			children = (
 				04A7A0F625F7B30B001339F8 /* SwiftUI-Example */,
 				04A7A0F525F7B30B001339F8 /* Products */,
+				3927873D8F1731A7533172D3 /* Pods */,
+				0B4DADEBBA1155FA9599E803 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -586,6 +596,24 @@
 			path = Defined;
 			sourceTree = "<group>";
 		};
+		0B4DADEBBA1155FA9599E803 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A434A40D2C0A01BCCBE6EE2A /* Pods_SwiftUI_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3927873D8F1731A7533172D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB69E575CE94AABC978E2CC2 /* Pods-SwiftUI-Example.debug.xcconfig */,
+				EE769E5EDD3F275523F9B5E3 /* Pods-SwiftUI-Example.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5B09047F2618B8A800CDC5E6 /* Text */ = {
 			isa = PBXGroup;
 			children = (
@@ -703,6 +731,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A7A10825F7B30D001339F8 /* Build configuration list for PBXNativeTarget "SwiftUI-Example" */;
 			buildPhases = (
+				91AA510A0C7FDFAFAE312DCD /* [CP] Check Pods Manifest.lock */,
 				04A7A0F025F7B30B001339F8 /* Sources */,
 				04A7A0F125F7B30B001339F8 /* Frameworks */,
 				04A7A0F225F7B30B001339F8 /* Resources */,
@@ -761,6 +790,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		91AA510A0C7FDFAFAE312DCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUI-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04A7A0F025F7B30B001339F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -817,6 +871,7 @@
 				047C9EB82602F2130009A5A1 /* HStack4SwiftUIView.swift in Sources */,
 				04A7A12C25FA0962001339F8 /* Json2SwiftUIView.swift in Sources */,
 				5BB0DA51261AF9A800F09642 /* RingShape.swift in Sources */,
+				5B76BD29263D223C0071716D /* Picker3View.swift in Sources */,
 				5B0904912618BA8A00CDC5E6 /* Text4View.swift in Sources */,
 				040B1B7B2614836100D88D4D /* DatePicker2View.swift in Sources */,
 				047C9EEA2605ED820009A5A1 /* Spacer2SwiftUIView.swift in Sources */,
@@ -1031,6 +1086,7 @@
 		};
 		04A7A10925F7B30D001339F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB69E575CE94AABC978E2CC2 /* Pods-SwiftUI-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1055,6 +1111,7 @@
 		};
 		04A7A10A25F7B30D001339F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE769E5EDD3F275523F9B5E3 /* Pods-SwiftUI-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
