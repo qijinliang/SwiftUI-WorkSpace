@@ -1,0 +1,6 @@
+framework module Parma {
+  umbrella header "Parma-umbrella.h"
+
+  export *
+  module * { export * }
+}

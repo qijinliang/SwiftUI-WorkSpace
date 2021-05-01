@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -118,6 +118,9 @@
 		5B0904B3261AEC6300CDC5E6 /* MainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904AE261AEC6300CDC5E6 /* MainCardView.swift */; };
 		5B0904B6261AEC8200CDC5E6 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904B5261AEC8200CDC5E6 /* WeatherApp.swift */; };
 		5B0904C0261AF1D100CDC5E6 /* ProjectMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904BF261AF1D100CDC5E6 /* ProjectMainView.swift */; };
+		5B1B2809263D8BB200EF549D /* MarkDownTestReader.md in Resources */ = {isa = PBXBuildFile; fileRef = 5B1B2808263D8BB200EF549D /* MarkDownTestReader.md */; };
+		5B1B280B263D8CA700EF549D /* MarkDownTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B280A263D8CA700EF549D /* MarkDownTestView.swift */; };
+		5B1B280D263D8D5400EF549D /* MarkReaderMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B280C263D8D5400EF549D /* MarkReaderMainView.swift */; };
 		5B2FB856261DDDA000CD65A2 /* LayoutMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */; };
 		5B41DD1A261F2FE400BC7589 /* ScrollView3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD19261F2FE400BC7589 /* ScrollView3View.swift */; };
 		5B41DD1E261F3FE400BC7589 /* MapMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD1D261F3FE400BC7589 /* MapMainView.swift */; };
@@ -258,6 +261,9 @@
 		5B0904AE261AEC6300CDC5E6 /* MainCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCardView.swift; sourceTree = "<group>"; };
 		5B0904B5261AEC8200CDC5E6 /* WeatherApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		5B0904BF261AF1D100CDC5E6 /* ProjectMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectMainView.swift; sourceTree = "<group>"; };
+		5B1B2808263D8BB200EF549D /* MarkDownTestReader.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MarkDownTestReader.md; sourceTree = "<group>"; };
+		5B1B280A263D8CA700EF549D /* MarkDownTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownTestView.swift; sourceTree = "<group>"; };
+		5B1B280C263D8D5400EF549D /* MarkReaderMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkReaderMainView.swift; sourceTree = "<group>"; };
 		5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutMainView.swift; sourceTree = "<group>"; };
 		5B41DD19261F2FE400BC7589 /* ScrollView3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView3View.swift; sourceTree = "<group>"; };
 		5B41DD1D261F3FE400BC7589 /* MapMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMainView.swift; sourceTree = "<group>"; };
@@ -445,6 +451,7 @@
 		04A7A0F625F7B30B001339F8 /* SwiftUI-Example */ = {
 			isa = PBXGroup;
 			children = (
+				5B1B2807263D8B7F00EF549D /* MarkDown */,
 				5B0904C3261AF3D500CDC5E6 /* Animation */,
 				5B0904A6261AEC0D00CDC5E6 /* Project */,
 				040C67D9260C44B700A01500 /* Classes */,
@@ -610,7 +617,6 @@
 				DB69E575CE94AABC978E2CC2 /* Pods-SwiftUI-Example.debug.xcconfig */,
 				EE769E5EDD3F275523F9B5E3 /* Pods-SwiftUI-Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -693,6 +699,16 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
+		5B1B2807263D8B7F00EF549D /* MarkDown */ = {
+			isa = PBXGroup;
+			children = (
+				5B1B2808263D8BB200EF549D /* MarkDownTestReader.md */,
+				5B1B280A263D8CA700EF549D /* MarkDownTestView.swift */,
+				5B1B280C263D8D5400EF549D /* MarkReaderMainView.swift */,
+			);
+			path = MarkDown;
+			sourceTree = "<group>";
+		};
 		5B41DD1C261F3FD100BC7589 /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -735,6 +751,7 @@
 				04A7A0F025F7B30B001339F8 /* Sources */,
 				04A7A0F125F7B30B001339F8 /* Frameworks */,
 				04A7A0F225F7B30B001339F8 /* Resources */,
+				4FB3B370CC23C318291E87DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -784,6 +801,7 @@
 			files = (
 				04A7A10425F7B30D001339F8 /* LaunchScreen.storyboard in Resources */,
 				04A7A10125F7B30D001339F8 /* Preview Assets.xcassets in Resources */,
+				5B1B2809263D8BB200EF549D /* MarkDownTestReader.md in Resources */,
 				04A7A0FE25F7B30D001339F8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -791,6 +809,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4FB3B370CC23C318291E87DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-Example/Pods-SwiftUI-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-Example/Pods-SwiftUI-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUI-Example/Pods-SwiftUI-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		91AA510A0C7FDFAFAE312DCD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -839,7 +874,9 @@
 				5BEA7072261089110007B55C /* SpaceMainView.swift in Sources */,
 				5B0904C0261AF1D100CDC5E6 /* ProjectMainView.swift in Sources */,
 				5B0904612618413A00CDC5E6 /* ListWithDataView.swift in Sources */,
+				5B1B280B263D8CA700EF549D /* MarkDownTestView.swift in Sources */,
 				5B41DD1A261F2FE400BC7589 /* ScrollView3View.swift in Sources */,
+				5B1B280D263D8D5400EF549D /* MarkReaderMainView.swift in Sources */,
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
 				5B090467261846D600CDC5E6 /* CustomerView.swift in Sources */,
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
