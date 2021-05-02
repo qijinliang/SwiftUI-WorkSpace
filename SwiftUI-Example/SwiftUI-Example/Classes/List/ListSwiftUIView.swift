@@ -54,12 +54,6 @@ struct ListSwiftUIView: View {
                     //MARK: Json
                     JsonMainView()
                 }
-                
-                Section(header: Text("MarkDownTest").font(.title3).fontWeight(.heavy)) {
-                    //MARK: MarkDownTest
-                    MarkReaderMainView()
-                }
-
             }
             
             .navigationBarTitle("SwiftUI示例",displayMode: .inline)
