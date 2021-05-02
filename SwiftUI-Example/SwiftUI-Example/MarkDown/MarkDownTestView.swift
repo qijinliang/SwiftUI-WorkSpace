@@ -6,18 +6,22 @@
 //
 
 import SwiftUI
-import Parma
+import MarkdownUI
 
 struct MarkDownTestView: View {
     @State var markdown: String = ""
+    
+    private var markdownDocument: Document? {
+        guard let path = Bundle.main.path(forResource: "MarkDownTestReader", ofType: "md") else {
+            return nil
+        }
+        
+        return try? Document(contentsOfFile: path)
+    }
+    
     var body: some View {
         ScrollView {
-            Parma(markdown)
-                .padding(.horizontal, 24)
-        }
-        .onAppear {
-            let url = Bundle.main.url(forResource: "MarkDownTestReader", withExtension: "md")!
-            markdown = try! String(contentsOf: url)
+            Markdown.init(markdownDocument!)
         }
     }
 }

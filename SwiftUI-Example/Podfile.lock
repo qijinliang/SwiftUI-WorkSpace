@@ -1,20 +1,3 @@
-PODS:
-  - Down (0.9.5)
-  - Parma (0.2.0):
-    - Down (~> 0.9.3)
-
-DEPENDENCIES:
-  - Parma
-
-SPEC REPOS:
-  trunk:
-    - Down
-    - Parma
-
-SPEC CHECKSUMS:
-  Down: 7321a72d0747ed0061dce948bcff518fcb6df2bd
-  Parma: 1aeb735f87f274b4bc4607f5ffe54c84119fd301
-
-PODFILE CHECKSUM: 17fe9c0dba5f45331c47a816d3aec1ad15e01019
+PODFILE CHECKSUM: ccc3543cf6353886bc7003a832ef2c24e2f31f16
 
 COCOAPODS: 1.10.1
