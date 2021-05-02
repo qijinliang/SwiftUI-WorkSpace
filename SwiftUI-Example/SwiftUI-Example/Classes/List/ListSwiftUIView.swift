@@ -54,7 +54,6 @@ struct ListSwiftUIView: View {
                     //MARK: Json
                     JsonMainView()
                 }
-
             }
             
             .navigationBarTitle("SwiftUI示例",displayMode: .inline)

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -120,6 +120,9 @@
 		5B0904B3261AEC6300CDC5E6 /* MainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904AE261AEC6300CDC5E6 /* MainCardView.swift */; };
 		5B0904B6261AEC8200CDC5E6 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904B5261AEC8200CDC5E6 /* WeatherApp.swift */; };
 		5B0904C0261AF1D100CDC5E6 /* ProjectMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0904BF261AF1D100CDC5E6 /* ProjectMainView.swift */; };
+		5B1B280F263D8F7400EF549D /* 高仿天气.md in Resources */ = {isa = PBXBuildFile; fileRef = 5B1B280E263D8F7400EF549D /* 高仿天气.md */; };
+		5B1B2811263D8FA500EF549D /* 仿iWatch运动.md in Resources */ = {isa = PBXBuildFile; fileRef = 5B1B2810263D8FA500EF549D /* 仿iWatch运动.md */; };
+		5B1B2813263D8FDE00EF549D /* WeatherAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B2812263D8FDE00EF549D /* WeatherAboutView.swift */; };
 		5B2FB856261DDDA000CD65A2 /* LayoutMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */; };
 		5B41DD1A261F2FE400BC7589 /* ScrollView3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD19261F2FE400BC7589 /* ScrollView3View.swift */; };
 		5B41DD1E261F3FE400BC7589 /* MapMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD1D261F3FE400BC7589 /* MapMainView.swift */; };
@@ -138,6 +141,7 @@
 		5BEA708326109B6A0007B55C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA708226109B6A0007B55C /* ContentView.swift */; };
 		5BEA70892610A0C80007B55C /* ListMainSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA70882610A0C80007B55C /* ListMainSwiftUIView.swift */; };
 		5BEA708D2610A0E60007B55C /* ListShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEA708C2610A0E60007B55C /* ListShowView.swift */; };
+		5BF2100C263EBD5D001557B9 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5BF2100B263EBD5D001557B9 /* MarkdownUI */; };
 		5BF813CD2606FA270076F4C4 /* HStack5SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813CC2606FA270076F4C4 /* HStack5SwiftUIView.swift */; };
 		5BF813D02606FD030076F4C4 /* HStack6SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813CF2606FD030076F4C4 /* HStack6SwiftUIView.swift */; };
 		5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF813D7260700D80076F4C4 /* GeometryReader4SwiftUIView.swift */; };
@@ -262,6 +266,9 @@
 		5B0904AE261AEC6300CDC5E6 /* MainCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCardView.swift; sourceTree = "<group>"; };
 		5B0904B5261AEC8200CDC5E6 /* WeatherApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		5B0904BF261AF1D100CDC5E6 /* ProjectMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectMainView.swift; sourceTree = "<group>"; };
+		5B1B280E263D8F7400EF549D /* 高仿天气.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "高仿天气.md"; sourceTree = "<group>"; };
+		5B1B2810263D8FA500EF549D /* 仿iWatch运动.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "仿iWatch运动.md"; sourceTree = "<group>"; };
+		5B1B2812263D8FDE00EF549D /* WeatherAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAboutView.swift; sourceTree = "<group>"; };
 		5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutMainView.swift; sourceTree = "<group>"; };
 		5B41DD19261F2FE400BC7589 /* ScrollView3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView3View.swift; sourceTree = "<group>"; };
 		5B41DD1D261F3FE400BC7589 /* MapMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMainView.swift; sourceTree = "<group>"; };
@@ -296,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F723937FCEBCDDE392F28B18 /* Pods_SwiftUI_Example.framework in Frameworks */,
+				5BF2100C263EBD5D001557B9 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,7 +624,6 @@
 				DB69E575CE94AABC978E2CC2 /* Pods-SwiftUI-Example.debug.xcconfig */,
 				EE769E5EDD3F275523F9B5E3 /* Pods-SwiftUI-Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -652,9 +659,11 @@
 		5B0904A7261AEC1400CDC5E6 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				5B1B280E263D8F7400EF549D /* 高仿天气.md */,
 				5B0904B5261AEC8200CDC5E6 /* WeatherApp.swift */,
 				5B0904A8261AEC6300CDC5E6 /* Model */,
 				5B0904AA261AEC6300CDC5E6 /* Views */,
+				5B1B2812263D8FDE00EF549D /* WeatherAboutView.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -712,6 +721,7 @@
 		5BB0DA4B261AF9A800F09642 /* RingGraph */ = {
 			isa = PBXGroup;
 			children = (
+				5B1B2810263D8FA500EF549D /* 仿iWatch运动.md */,
 				5BB0DA4C261AF9A800F09642 /* Ring.swift */,
 				5BB0DA4D261AF9A800F09642 /* RingGraph.swift */,
 				5BB0DA4E261AF9A800F09642 /* RingShape.swift */,
@@ -747,6 +757,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-Example";
+			packageProductDependencies = (
+				5BF2100B263EBD5D001557B9 /* MarkdownUI */,
+			);
 			productName = "SwiftUI-Example";
 			productReference = 04A7A0F425F7B30B001339F8 /* SwiftUI-Example.app */;
 			productType = "com.apple.product-type.application";
@@ -774,6 +787,9 @@
 				Base,
 			);
 			mainGroup = 04A7A0EB25F7B30B001339F8;
+			packageReferences = (
+				5BF2100A263EBD5D001557B9 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+			);
 			productRefGroup = 04A7A0F525F7B30B001339F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -789,7 +805,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04A7A10425F7B30D001339F8 /* LaunchScreen.storyboard in Resources */,
+				5B1B280F263D8F7400EF549D /* 高仿天气.md in Resources */,
 				04A7A10125F7B30D001339F8 /* Preview Assets.xcassets in Resources */,
+				5B1B2811263D8FA500EF549D /* 仿iWatch运动.md in Resources */,
 				04A7A0FE25F7B30D001339F8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -944,6 +962,7 @@
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
 				5BEA708326109B6A0007B55C /* ContentView.swift in Sources */,
 				5BB0DA4F261AF9A800F09642 /* Ring.swift in Sources */,
+				5B1B2813263D8FDE00EF549D /* WeatherAboutView.swift in Sources */,
 				04331FE4261C1FC600E8306E /* SegmentedMainView.swift in Sources */,
 				0414C7E2260DEBC900F351BF /* AnimationMainView.swift in Sources */,
 				040B1B8C26148C0F00D88D4D /* Form2View.swift in Sources */,
@@ -1164,6 +1183,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5BF2100A263EBD5D001557B9 /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5BF2100B263EBD5D001557B9 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BF2100A263EBD5D001557B9 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04A7A0EC25F7B30B001339F8 /* Project object */;
 }

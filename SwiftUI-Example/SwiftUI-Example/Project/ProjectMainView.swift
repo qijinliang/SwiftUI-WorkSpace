@@ -15,6 +15,11 @@ struct ProjectMainView: View {
                     NavigationLink(destination: WeatherApp()) {
                         Text("WeatherApp")
                     }
+                    NavigationLink(
+                        destination: WeatherAboutView(),
+                        label: {
+                            Text("高仿天气说明")
+                        })
                     NavigationLink(destination: RingGraph()) {
                         Text("RingGraph")
                     }
