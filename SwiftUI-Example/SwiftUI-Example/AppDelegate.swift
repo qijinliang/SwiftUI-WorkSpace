@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AppTrackingTransparency
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,21 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        if #available(iOS 14, *) {
-            ATTrackingManager.requestTrackingAuthorization { (status) in
-                print("statue--->\(status)")
-                if status == .authorized {
-                    print("statue--->\(status)")
-                } else if status == .denied {
-                    print("statue--->\(status)")
-                } else if status == .notDetermined {
-                    print("statue--->\(status)")
-                } else if status == .restricted {
-                    print("statue--->\(status)")
-                }
-                
-            }
-        }
         
         return true
     }
