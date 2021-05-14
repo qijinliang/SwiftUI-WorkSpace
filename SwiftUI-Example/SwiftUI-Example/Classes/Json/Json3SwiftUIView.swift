@@ -83,7 +83,7 @@ struct Json3URLImage: View {
     let url: String
     let placeholder: String
     
-    @ObservedObject var imageLoader = Json3ImageLoader()
+    @ObservedObject var imageLoader = ImageLoader()
     
     //String = "placeholder" 加载失败需要替换的图片
     init(url: String, placehloder: String = "") {
@@ -101,28 +101,6 @@ struct Json3URLImage: View {
     }
 }
 
-class Json3ImageLoader: ObservableObject {
-    
-    @Published var downloadedData: Data?
-    
-    func downloadImgae(url: String) {
-        
-        guard let imageURL = URL(string: url) else {
-            return
-        }
-        
-        URLSession.shared.dataTask(with: imageURL) { data, _, error in
-            
-            guard let data = data, error == nil else {
-                return
-            }
-            
-            DispatchQueue.main.async {
-                self.downloadedData = data
-            }
-        }.resume()
-    }
-}
 struct Json3SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         Json3SwiftUIView()

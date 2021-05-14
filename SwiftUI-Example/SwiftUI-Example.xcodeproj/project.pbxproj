@@ -48,6 +48,8 @@
 		04622A06264E0EC10092CA5A /* SpacerExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622A05264E0EC10092CA5A /* SpacerExampleView.swift */; };
 		04622A0A264E22CB0092CA5A /* ShapesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622A09264E22CB0092CA5A /* ShapesView.swift */; };
 		04622A0E264E25310092CA5A /* FameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622A0D264E25310092CA5A /* FameModifierView.swift */; };
+		04622A12264E91390092CA5A /* LazyHGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622A11264E91390092CA5A /* LazyHGridView.swift */; };
+		04622A16264EB2360092CA5A /* Neworkingimage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622A15264EB2360092CA5A /* Neworkingimage.swift */; };
 		0478521C2646A7FD00B4971D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0478521B2646A7FD00B4971D /* WidgetKit.framework */; };
 		0478521E2646A7FD00B4971D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0478521D2646A7FD00B4971D /* SwiftUI.framework */; };
 		047852212646A7FD00B4971D /* SwiftUIExampleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047852202646A7FD00B4971D /* SwiftUIExampleWidget.swift */; };
@@ -224,6 +226,8 @@
 		04622A05264E0EC10092CA5A /* SpacerExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerExampleView.swift; sourceTree = "<group>"; };
 		04622A09264E22CB0092CA5A /* ShapesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesView.swift; sourceTree = "<group>"; };
 		04622A0D264E25310092CA5A /* FameModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FameModifierView.swift; sourceTree = "<group>"; };
+		04622A11264E91390092CA5A /* LazyHGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridView.swift; sourceTree = "<group>"; };
+		04622A15264EB2360092CA5A /* Neworkingimage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neworkingimage.swift; sourceTree = "<group>"; };
 		0478521A2646A7FD00B4971D /* SwiftUIExampleWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftUIExampleWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0478521B2646A7FD00B4971D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		0478521D2646A7FD00B4971D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -454,6 +458,7 @@
 			isa = PBXGroup;
 			children = (
 				0454AD112632F1EB00AEB98D /* Color+Extension.swift */,
+				04622A15264EB2360092CA5A /* Neworkingimage.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -554,6 +559,7 @@
 				5BF813CC2606FA270076F4C4 /* HStack5SwiftUIView.swift */,
 				5BF813CF2606FD030076F4C4 /* HStack6SwiftUIView.swift */,
 				04331FCF261747A600E8306E /* HStack7View.swift */,
+				04622A11264E91390092CA5A /* LazyHGridView.swift */,
 			);
 			path = HStack;
 			sourceTree = "<group>";
@@ -1031,6 +1037,7 @@
 				5B09049D261AE8F300CDC5E6 /* Text8View.swift in Sources */,
 				0414C7E8260DF23800F351BF /* MathMainView.swift in Sources */,
 				047C9ECA2604E1620009A5A1 /* SpacerSwiftUIView.swift in Sources */,
+				04622A16264EB2360092CA5A /* Neworkingimage.swift in Sources */,
 				0414C7EB260DF24300F351BF /* MathShowView.swift in Sources */,
 				5B0904882618B98D00CDC5E6 /* Text1View.swift in Sources */,
 				04331FED261C209400E8306E /* Segmented2View.swift in Sources */,
@@ -1070,6 +1077,7 @@
 				04A7A10F25F8A17F001339F8 /* HStackSwiftUIView.swift in Sources */,
 				5BEA708326109B6A0007B55C /* ContentView.swift in Sources */,
 				5BB0DA4F261AF9A800F09642 /* Ring.swift in Sources */,
+				04622A12264E91390092CA5A /* LazyHGridView.swift in Sources */,
 				5B1B2813263D8FDE00EF549D /* WeatherAboutView.swift in Sources */,
 				04331FE4261C1FC600E8306E /* SegmentedMainView.swift in Sources */,
 				0414C7E2260DEBC900F351BF /* AnimationMainView.swift in Sources */,

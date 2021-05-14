@@ -90,7 +90,7 @@ struct URLImage2: View {
     let url: String
     let placeholder: String
     
-    @ObservedObject var imageLoader = ImageLoader2()
+    @ObservedObject var imageLoader = ImageLoader()
     
     init(url: String, placehloder: String = "placeholder") {
         self.url = url
@@ -107,28 +107,6 @@ struct URLImage2: View {
     }
 }
 
-class ImageLoader2: ObservableObject {
-    
-    @Published var downloadedData: Data?
-    
-    func downloadImgae(url: String) {
-        
-        guard let imageURL = URL(string: url) else {
-            return
-        }
-        
-        URLSession.shared.dataTask(with: imageURL) { data, _, error in
-            
-            guard let data = data, error == nil else {
-                return
-            }
-            
-            DispatchQueue.main.async {
-                self.downloadedData = data
-            }
-        }.resume()
-    }
-}
 
 
 struct Json2SwiftUIView_Previews: PreviewProvider {
