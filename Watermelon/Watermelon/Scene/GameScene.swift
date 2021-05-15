@@ -13,7 +13,7 @@ class GameScene: SKScene {
     
     var nowFruit: SKSpriteNode!
     var scoreNode: SKSpriteNode!
-    
+    var fruitUtil: FruitUtil!
     var groundFruits: [SKSpriteNode] = []
 }
 

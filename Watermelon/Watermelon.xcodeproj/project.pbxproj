@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B91435B264FB8780021A767 /* GameScene+LoadUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B91435A264FB8780021A767 /* GameScene+LoadUI.swift */; };
 		5B91435D264FB8D00021A767 /* GameScene+Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B91435C264FB8D00021A767 /* GameScene+Touches.swift */; };
+		5B914362264FBBD90021A767 /* FruitTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B914361264FBBD90021A767 /* FruitTexture.swift */; };
 		5BB20CAD263ED54C00810C08 /* WatermelonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB20CAC263ED54C00810C08 /* WatermelonApp.swift */; };
 		5BB20CAF263ED54C00810C08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB20CAE263ED54C00810C08 /* ContentView.swift */; };
 		5BB20CB1263ED54D00810C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB20CB0263ED54D00810C08 /* Assets.xcassets */; };
@@ -50,12 +51,13 @@
 		5BB20D09263ED85A00810C08 /* redpiece.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB20CE8263ED85A00810C08 /* redpiece.png */; };
 		5BB20D0A263ED85A00810C08 /* purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB20CE9263ED85A00810C08 /* purple.png */; };
 		5BB20D0B263ED85A00810C08 /* purplepiece.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB20CEA263ED85A00810C08 /* purplepiece.png */; };
-		5BB20D0D263EDFE200810C08 /* FruiteUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB20D0C263EDFE200810C08 /* FruiteUtil.swift */; };
+		5BB20D0D263EDFE200810C08 /* FruitUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB20D0C263EDFE200810C08 /* FruitUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B91435A264FB8780021A767 /* GameScene+LoadUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+LoadUI.swift"; sourceTree = "<group>"; };
 		5B91435C264FB8D00021A767 /* GameScene+Touches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Touches.swift"; sourceTree = "<group>"; };
+		5B914361264FBBD90021A767 /* FruitTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTexture.swift; sourceTree = "<group>"; };
 		5BB20CA9263ED54C00810C08 /* Watermelon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watermelon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB20CAC263ED54C00810C08 /* WatermelonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermelonApp.swift; sourceTree = "<group>"; };
 		5BB20CAE263ED54C00810C08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,7 +101,7 @@
 		5BB20CE8263ED85A00810C08 /* redpiece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redpiece.png; sourceTree = "<group>"; };
 		5BB20CE9263ED85A00810C08 /* purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purple.png; sourceTree = "<group>"; };
 		5BB20CEA263ED85A00810C08 /* purplepiece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purplepiece.png; sourceTree = "<group>"; };
-		5BB20D0C263EDFE200810C08 /* FruiteUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruiteUtil.swift; sourceTree = "<group>"; };
+		5BB20D0C263EDFE200810C08 /* FruitUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,10 +131,18 @@
 				5BB20CB5263ED54D00810C08 /* Info.plist */,
 				5BB20CAC263ED54C00810C08 /* WatermelonApp.swift */,
 				5BB20CAE263ED54C00810C08 /* ContentView.swift */,
-				5BB20D0C263EDFE200810C08 /* FruiteUtil.swift */,
 				5BB20CB0263ED54D00810C08 /* Assets.xcassets */,
 			);
 			path = Bootsstrap;
+			sourceTree = "<group>";
+		};
+		5B914360264FBBC90021A767 /* Fruit */ = {
+			isa = PBXGroup;
+			children = (
+				5BB20D0C263EDFE200810C08 /* FruitUtil.swift */,
+				5B914361264FBBD90021A767 /* FruitTexture.swift */,
+			);
+			path = Fruit;
 			sourceTree = "<group>";
 		};
 		5BB20CA0263ED54C00810C08 = {
@@ -154,6 +164,7 @@
 		5BB20CAB263ED54C00810C08 /* Watermelon */ = {
 			isa = PBXGroup;
 			children = (
+				5B914360264FBBC90021A767 /* Fruit */,
 				5B91435E264FB8F80021A767 /* Scene */,
 				5BB20CC6263ED85A00810C08 /* Data Assets */,
 				5BB20CBD263ED80200810C08 /* Sounds */,
@@ -352,8 +363,9 @@
 			files = (
 				5B91435D264FB8D00021A767 /* GameScene+Touches.swift in Sources */,
 				5BB20CBC263ED5CC00810C08 /* GameScene.swift in Sources */,
-				5BB20D0D263EDFE200810C08 /* FruiteUtil.swift in Sources */,
+				5BB20D0D263EDFE200810C08 /* FruitUtil.swift in Sources */,
 				5BB20CAF263ED54C00810C08 /* ContentView.swift in Sources */,
+				5B914362264FBBD90021A767 /* FruitTexture.swift in Sources */,
 				5BB20CAD263ED54C00810C08 /* WatermelonApp.swift in Sources */,
 				5B91435B264FB8780021A767 /* GameScene+LoadUI.swift in Sources */,
 			);

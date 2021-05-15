@@ -22,11 +22,14 @@ extension GameScene {
             .moveTo(x: location.x, duration: 0.1),
             .run {
                 self.nowFruit.physicsBody = SKPhysicsBody(circleOfRadius: self.nowFruit.size.height / 2)
+                let bitmask = self.fruitUtil.getFruitTextureByName(fruitName: self.nowFruit.name!).bitmask
+                self.nowFruit.physicsBody?.categoryBitMask = bitmask
+                self.nowFruit.physicsBody?.contactTestBitMask = bitmask
             },
             .wait(forDuration: 0.5),
             .run {
                 self.groundFruits.append(self.nowFruit)
-                self.nowFruit = FruiteFactory.randomFruit()
+                self.nowFruit = self.fruitUtil.randomFruit()
                 self.addChild(self.nowFruit)
                 self.nowFruit.setScale(0)
                 self.nowFruit.run(.scale(to: 0.5, duration: 0.1))
@@ -40,5 +43,11 @@ extension GameScene {
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
+    }
+}
+
+struct GameSceneTouches_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }

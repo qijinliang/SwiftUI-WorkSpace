@@ -8,11 +8,16 @@
 import Foundation
 import SpriteKit
 
-class FruiteFactory {
-    static func randomFruit() ->SKSpriteNode  {
+class FruitUtil {
+    func randomFruit() ->SKSpriteNode  {
         let fruit = SKSpriteNode(imageNamed: "kiwi")
         fruit.position = CGPoint(x: screen.width / 2, y: screen.height - 50)
         fruit.setScale(0.5)
+        fruit.name = "kiwi"
         return fruit
+    }
+    
+    func getFruitTextureByName(fruitName: String) -> FruitTexture {
+        FruitTexture.allCases.first{ $0.name == fruitName }!
     }
 }
