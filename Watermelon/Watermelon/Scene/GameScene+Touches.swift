@@ -12,11 +12,24 @@ import SwiftUI
 extension GameScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        guard let touch = touches.first  else {
+        guard let touch = touches.first else { return }
+        let location = touch.location(in: self)
+        
+        if gameover {
+            if atPoint(location) == restart {
+                groundCollision = false
+                isShowingRedline = false
+                gameover = false
+                score = 0
+                groundFruits = []
+                removeAllChildren()
+                print(111)
+                
+                print(gameover)
+                initGame()
+            }
             return
         }
-        
-        let location = touch.location(in: self)
         
         nowFruit.run(.sequence([
             .moveTo(x: location.x, duration: 0.1),

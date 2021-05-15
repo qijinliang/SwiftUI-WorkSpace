@@ -9,12 +9,46 @@ import Foundation
 import SpriteKit
 import SwiftUI
 
-class GameScene: SKScene {
+class GameScene: SKScene,SKPhysicsContactDelegate {
     
     var nowFruit: SKSpriteNode!
     var scoreNode: SKSpriteNode!
-    var fruitUtil: FruitUtil!
+    
+    var score: Int = 0 {
+        didSet {
+            updateScore()
+        }
+    }
+    
     var groundFruits: [SKSpriteNode] = []
+    
+    var fruitUtil: FruitUtil!
+    
+    var ground: SKSpriteNode!
+    
+    let falldownAudio = AudioUtil(resourceName: "falldown")
+    let winAudio = AudioUtil(resourceName: "win")
+    let bombAudio = AudioUtil(resourceName: "bomb")
+    
+    
+    var groundCollision = false
+    
+    
+    var redline: SKSpriteNode!
+    var isShowingRedline = false
+    
+    var gameover = false
+    var gameoverNode: SKSpriteNode!
+    var restart: SKSpriteNode!
+    
+    func initGame() {
+        fruitUtil = FruitUtil()
+        
+        makeUI()
+        makeNowFruit()
+        makeScoreNode()
+        makeRedline()
+    }
 }
 
 

@@ -11,28 +11,50 @@ import SwiftUI
 //MARK: - Load UI
 extension GameScene {
     override func didMove(to view: SKView) {
-        
+
+        self.physicsWorld.contactDelegate = self
         self.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         
-        makeUI()
-        makeNowFruit()
-        makeScoreNode()
-        
+        initGame()
     }
     
     func makeNowFruit() {
-        nowFruit = SKSpriteNode(imageNamed: "grape")
-        nowFruit.position = CGPoint(x: screen.width / 2, y: screen.height - 50)
-        nowFruit.setScale(0.5)
-        nowFruit.physicsBody = SKPhysicsBody(circleOfRadius: nowFruit.size.height / 2)
+        nowFruit = fruitUtil.randomFruit()
         addChild(nowFruit)
     }
     
     func makeScoreNode() {
-        scoreNode = SKSpriteNode(imageNamed: "number/0")
+        scoreNode = SKSpriteNode()
         scoreNode.position = CGPoint(x: 30, y: screen.height - 50)
         scoreNode.setScale(0.5)
         addChild(scoreNode)
+        
+        updateScore()
+    }
+    
+    func updateScore() {
+        scoreNode.removeAllChildren()
+        
+        var scoreCopy = score
+        var arr: [Int] = []
+        
+        if scoreCopy == 0 {
+            arr.append(0)
+        } else {
+            while scoreCopy != 0 {
+                arr.append(scoreCopy % 10)
+                scoreCopy /= 10
+            }
+        }
+        
+        var cnt = 0
+        while arr.count != 0 {
+            let last = arr.popLast()!
+            let node = SKSpriteNode(imageNamed: "number/\(last)")
+            node.position = CGPoint(x: cnt * 70, y: 0)
+            cnt += 1
+            scoreNode.addChild(node)
+        }
     }
     
     func makeUI() {

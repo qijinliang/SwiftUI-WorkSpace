@@ -10,6 +10,9 @@
 		5B91435B264FB8780021A767 /* GameScene+LoadUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B91435A264FB8780021A767 /* GameScene+LoadUI.swift */; };
 		5B91435D264FB8D00021A767 /* GameScene+Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B91435C264FB8D00021A767 /* GameScene+Touches.swift */; };
 		5B914362264FBBD90021A767 /* FruitTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B914361264FBBD90021A767 /* FruitTexture.swift */; };
+		5B914364264FBFE00021A767 /* GameScene+RedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B914363264FBFE00021A767 /* GameScene+RedLine.swift */; };
+		5B914366264FC0CF0021A767 /* AudioUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B914365264FC0CF0021A767 /* AudioUtil.swift */; };
+		5B914368264FC20A0021A767 /* GameScene+Collisions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B914367264FC20A0021A767 /* GameScene+Collisions.swift */; };
 		5BB20CAD263ED54C00810C08 /* WatermelonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB20CAC263ED54C00810C08 /* WatermelonApp.swift */; };
 		5BB20CAF263ED54C00810C08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB20CAE263ED54C00810C08 /* ContentView.swift */; };
 		5BB20CB1263ED54D00810C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB20CB0263ED54D00810C08 /* Assets.xcassets */; };
@@ -58,6 +61,9 @@
 		5B91435A264FB8780021A767 /* GameScene+LoadUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+LoadUI.swift"; sourceTree = "<group>"; };
 		5B91435C264FB8D00021A767 /* GameScene+Touches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Touches.swift"; sourceTree = "<group>"; };
 		5B914361264FBBD90021A767 /* FruitTexture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitTexture.swift; sourceTree = "<group>"; };
+		5B914363264FBFE00021A767 /* GameScene+RedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+RedLine.swift"; sourceTree = "<group>"; };
+		5B914365264FC0CF0021A767 /* AudioUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUtil.swift; sourceTree = "<group>"; };
+		5B914367264FC20A0021A767 /* GameScene+Collisions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene+Collisions.swift"; sourceTree = "<group>"; };
 		5BB20CA9263ED54C00810C08 /* Watermelon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watermelon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB20CAC263ED54C00810C08 /* WatermelonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatermelonApp.swift; sourceTree = "<group>"; };
 		5BB20CAE263ED54C00810C08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +127,8 @@
 				5BB20CBB263ED5CC00810C08 /* GameScene.swift */,
 				5B91435A264FB8780021A767 /* GameScene+LoadUI.swift */,
 				5B91435C264FB8D00021A767 /* GameScene+Touches.swift */,
+				5B914363264FBFE00021A767 /* GameScene+RedLine.swift */,
+				5B914367264FC20A0021A767 /* GameScene+Collisions.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -136,13 +144,14 @@
 			path = Bootsstrap;
 			sourceTree = "<group>";
 		};
-		5B914360264FBBC90021A767 /* Fruit */ = {
+		5B914360264FBBC90021A767 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				5BB20D0C263EDFE200810C08 /* FruitUtil.swift */,
 				5B914361264FBBD90021A767 /* FruitTexture.swift */,
+				5B914365264FC0CF0021A767 /* AudioUtil.swift */,
 			);
-			path = Fruit;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		5BB20CA0263ED54C00810C08 = {
@@ -164,7 +173,7 @@
 		5BB20CAB263ED54C00810C08 /* Watermelon */ = {
 			isa = PBXGroup;
 			children = (
-				5B914360264FBBC90021A767 /* Fruit */,
+				5B914360264FBBC90021A767 /* Utils */,
 				5B91435E264FB8F80021A767 /* Scene */,
 				5BB20CC6263ED85A00810C08 /* Data Assets */,
 				5BB20CBD263ED80200810C08 /* Sounds */,
@@ -361,9 +370,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B914366264FC0CF0021A767 /* AudioUtil.swift in Sources */,
+				5B914364264FBFE00021A767 /* GameScene+RedLine.swift in Sources */,
 				5B91435D264FB8D00021A767 /* GameScene+Touches.swift in Sources */,
 				5BB20CBC263ED5CC00810C08 /* GameScene.swift in Sources */,
 				5BB20D0D263EDFE200810C08 /* FruitUtil.swift in Sources */,
+				5B914368264FC20A0021A767 /* GameScene+Collisions.swift in Sources */,
 				5BB20CAF263ED54C00810C08 /* ContentView.swift in Sources */,
 				5B914362264FBBD90021A767 /* FruitTexture.swift in Sources */,
 				5BB20CAD263ED54C00810C08 /* WatermelonApp.swift in Sources */,
