@@ -140,6 +140,7 @@
 		5B41DD25261F405800BC7589 /* Map1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD24261F405800BC7589 /* Map1View.swift */; };
 		5B76BD29263D223C0071716D /* Picker3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76BD28263D223C0071716D /* Picker3View.swift */; };
 		5B914357264F88C60021A767 /* HUDSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B914356264F88C60021A767 /* HUDSwiftUIView.swift */; };
+		5B914359264FABA20021A767 /* TreeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B914358264FABA20021A767 /* TreeListView.swift */; };
 		5BB0DA4F261AF9A800F09642 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4C261AF9A800F09642 /* Ring.swift */; };
 		5BB0DA50261AF9A800F09642 /* RingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4D261AF9A800F09642 /* RingGraph.swift */; };
 		5BB0DA51261AF9A800F09642 /* RingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4E261AF9A800F09642 /* RingShape.swift */; };
@@ -321,6 +322,7 @@
 		5B41DD24261F405800BC7589 /* Map1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map1View.swift; sourceTree = "<group>"; };
 		5B76BD28263D223C0071716D /* Picker3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker3View.swift; sourceTree = "<group>"; };
 		5B914356264F88C60021A767 /* HUDSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDSwiftUIView.swift; sourceTree = "<group>"; };
+		5B914358264FABA20021A767 /* TreeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeListView.swift; sourceTree = "<group>"; };
 		5BB0DA4C261AF9A800F09642 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
 		5BB0DA4D261AF9A800F09642 /* RingGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingGraph.swift; sourceTree = "<group>"; };
 		5BB0DA4E261AF9A800F09642 /* RingShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingShape.swift; sourceTree = "<group>"; };
@@ -430,6 +432,7 @@
 				5B0904602618413A00CDC5E6 /* ListWithDataView.swift */,
 				5B0904632618433800CDC5E6 /* ListGroupedView.swift */,
 				5B090466261846D600CDC5E6 /* CustomerView.swift */,
+				5B914358264FABA20021A767 /* TreeListView.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -1054,6 +1057,7 @@
 				040B1B782614831700D88D4D /* DatePickerView.swift in Sources */,
 				5BEA70892610A0C80007B55C /* ListMainSwiftUIView.swift in Sources */,
 				04331FF0261C20DE00E8306E /* Segmented3View.swift in Sources */,
+				5B914359264FABA20021A767 /* TreeListView.swift in Sources */,
 				040B1B712614828F00D88D4D /* DatePickerMainView.swift in Sources */,
 				04A7A17A25FB9244001339F8 /* VStack4SwiftUIView.swift in Sources */,
 				04331FFF261C219D00E8306E /* SliderMainView.swift in Sources */,
