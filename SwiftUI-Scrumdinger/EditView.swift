@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EditView: View {
-    @State private var scrumData: DailyScrum.Data = DailyScrum.Data()
+    @Binding var scrumData: DailyScrum.Data
     @State private var newAttendee = ""
     var body: some View {
         List {
@@ -34,6 +34,20 @@ struct EditView: View {
                 }.onDelete(perform: { indices in
                     scrumData.attendees.remove(atOffsets: indices)
                 })
+                
+                HStack() {
+                    TextField("New Attendee", text: $newAttendee)
+                    Button.init(action: {
+                        withAnimation {
+                            scrumData.attendees.append(newAttendee)
+                        }
+                        newAttendee = ""
+                    }, label: {
+                        Image.init(systemName: "plus.circle.fill")
+                            .accessibilityLabel(Text("add attendee"))
+                    })
+                    .disabled(newAttendee.isEmpty)
+                }
             }
         }
         .listStyle(InsetGroupedListStyle())
@@ -42,6 +56,6 @@ struct EditView: View {
 
 struct EditView_Previews: PreviewProvider {
     static var previews: some View {
-        EditView()
+        EditView(scrumData: .constant(DailyScrum.data[0].data))
     }
 }
