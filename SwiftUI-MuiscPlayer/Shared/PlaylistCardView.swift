@@ -11,22 +11,34 @@ import MediaPlayer
 struct PlaylistCardView: View {
     
     let playlist: MPMediaItemCollection
-
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 0) {
+            
             Spacer()
             
             HStack {
-                Text("\(playlist.value(forProperty: MPMediaPlaylistPropertyName) as? String ?? "NA")")
-                Text("\(playlist.value(forProperty: MPMediaPlaylistPropertyDescriptionText ) as? String ?? "NA")")
-                
-                Spacer()
+                VStack(alignment: .leading) {
+                    Text("\(playlist.value(forProperty: MPMediaPlaylistPropertyName) as? String ?? "NA")")
+                    Text("\(playlist.value(forProperty: MPMediaPlaylistPropertyDescriptionText ) as? String ?? "")")
+                        .font(.caption)
+                        .lineLimit(2)
+                }
+                .foregroundColor(.white)
+                Spacer(minLength: 0)
             }
             .padding(10)
-            .frame(height: 50) 
+            .frame(height: 50)
             .background(
-                BlurView(style: .prominent)
-                    .cornerRadius(10, corners: [.topLeft, .topRight])
+                Image(uiImage: playlist.representativeItem?.artwork?.image(at: CGSize(width: 500, height: 500)) ?? UIImage(named: "music_background") ?? UIImage())
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(height: 50)
+                    .blur(radius: 50, opaque: true)
+                    .cornerRadius(10, corners: [.bottomLeft, .bottomRight])
+
+//                BlurView(style: .systemUltraThinMaterial )
+//                    .cornerRadius(10, corners: [.bottomLeft, .bottomRight])
             )
         }
         .background(

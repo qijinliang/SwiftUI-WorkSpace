@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct LibraryView: View {
+    
     @EnvironmentObject var model: Model
+    
     var body: some View {
         NavigationView {
             List {
@@ -17,6 +19,7 @@ struct LibraryView: View {
                    SongCardView(song: song)
                 }
             }
+            .navigationBarTitle(Text("Library"),displayMode: .automatic)
         }
     }
 }

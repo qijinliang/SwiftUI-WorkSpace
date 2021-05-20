@@ -21,9 +21,11 @@ struct SongCardView: View {
                 .frame(width: 120, height: 120)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
             
-            Text(song.title ?? "NA")
-            Text(song.artist ?? "NA")
-            
+            VStack(alignment: .leading) {
+                Text(song.title ?? "NA")
+                Text(song.artist ?? "NA")
+                    .font(.caption)
+            }
             Spacer()
         }
         .padding(10)
