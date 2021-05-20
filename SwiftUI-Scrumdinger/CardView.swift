@@ -8,19 +8,20 @@
 import SwiftUI
 
 struct CardView: View {
-    var scrum: DailyScrum
+    let scrum: DailyScrum
     var body: some View {
         VStack(alignment: .leading) {
             Text(scrum.title)
                 .font(.headline)
             Spacer()
-            HStack() {
-                Label("\(scrum.attendees.count)",systemImage:"person.3")
+            HStack {
+                Label("\(scrum.attendees.count)", systemImage: "person.3")
                     .accessibilityElement(children: .ignore)
                     .accessibilityLabel(Text("Attendees"))
                     .accessibilityValue(Text("\(scrum.attendees.count)"))
                 Spacer()
-                Label("\(scrum.attendees.count)",systemImage:"clock")
+                Label("\(scrum.lengthInMinutes)", systemImage: "clock")
+                    .padding(.trailing, 20)
                     .accessibilityElement(children: .ignore)
                     .accessibilityLabel(Text("Meeting length"))
                     .accessibilityValue(Text("\(scrum.lengthInMinutes) minutes"))
@@ -28,8 +29,7 @@ struct CardView: View {
             .font(.caption)
         }
         .padding()
-        .foregroundColor(scrum.textColor)
-        .background(scrum.color)
+        .foregroundColor(scrum.color.accessibleFontColor)
     }
 }
 

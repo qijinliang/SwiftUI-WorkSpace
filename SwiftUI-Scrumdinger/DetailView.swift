@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DetailView: View {
-    var scrum: DailyScrum
+    @Binding var scrum: DailyScrum
     @State private var data: DailyScrum.Data = DailyScrum.Data()
     @State private var isPresented = false
     var body: some View {
@@ -59,7 +59,7 @@ struct DetailView: View {
                         isPresented = false
                     },trailing: Button("Done"){
                         isPresented = false
-//                        scrum.update(from: data)
+                        scrum.update(from: data)
                     })
             }
         }
@@ -68,6 +68,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(scrum: DailyScrum.data[0])
+        DetailView(scrum: .constant(DailyScrum.data[0]))
     }
 }
