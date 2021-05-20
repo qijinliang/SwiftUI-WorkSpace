@@ -25,6 +25,8 @@
 		04AE7BAB265688D100058DDD /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE7BA9265688D100058DDD /* BlurView.swift */; };
 		04AE7BB1265688F400058DDD /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE7BB0265688F400058DDD /* CornerRadius.swift */; };
 		04AE7BB2265688F400058DDD /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE7BB0265688F400058DDD /* CornerRadius.swift */; };
+		04AE7BB6265691C800058DDD /* SongCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE7BB5265691C800058DDD /* SongCardView.swift */; };
+		04AE7BB7265691C800058DDD /* SongCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE7BB5265691C800058DDD /* SongCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,7 @@
 		04AE7B972656854900058DDD /* PlaylistCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCardView.swift; sourceTree = "<group>"; };
 		04AE7BA9265688D100058DDD /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		04AE7BB0265688F400058DDD /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		04AE7BB5265691C800058DDD /* SongCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 				04AE7B8D265683FE00058DDD /* PlaylistView.swift */,
 				04AE7B922656840B00058DDD /* LibraryView.swift */,
 				04AE7B972656854900058DDD /* PlaylistCardView.swift */,
+				04AE7BB5265691C800058DDD /* SongCardView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -226,6 +230,7 @@
 				04AE7B8E265683FE00058DDD /* PlaylistView.swift in Sources */,
 				04AE7B932656840B00058DDD /* LibraryView.swift in Sources */,
 				04AE7BB1265688F400058DDD /* CornerRadius.swift in Sources */,
+				04AE7BB6265691C800058DDD /* SongCardView.swift in Sources */,
 				04AE7B782656815400058DDD /* SwiftUI_MuiscPlayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +246,7 @@
 				04AE7B8F265683FE00058DDD /* PlaylistView.swift in Sources */,
 				04AE7B942656840B00058DDD /* LibraryView.swift in Sources */,
 				04AE7BB2265688F400058DDD /* CornerRadius.swift in Sources */,
+				04AE7BB7265691C800058DDD /* SongCardView.swift in Sources */,
 				04AE7B792656815400058DDD /* SwiftUI_MuiscPlayerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
