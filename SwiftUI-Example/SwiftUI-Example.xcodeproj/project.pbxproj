@@ -50,6 +50,7 @@
 		04622A0E264E25310092CA5A /* FameModifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622A0D264E25310092CA5A /* FameModifierView.swift */; };
 		04622A12264E91390092CA5A /* LazyHGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622A11264E91390092CA5A /* LazyHGridView.swift */; };
 		04622A16264EB2360092CA5A /* Neworkingimage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622A15264EB2360092CA5A /* Neworkingimage.swift */; };
+		04622A232653AD6E0092CA5A /* Layout3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04622A222653AD6E0092CA5A /* Layout3View.swift */; };
 		0478521C2646A7FD00B4971D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0478521B2646A7FD00B4971D /* WidgetKit.framework */; };
 		0478521E2646A7FD00B4971D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0478521D2646A7FD00B4971D /* SwiftUI.framework */; };
 		047852212646A7FD00B4971D /* SwiftUIExampleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047852202646A7FD00B4971D /* SwiftUIExampleWidget.swift */; };
@@ -230,6 +231,7 @@
 		04622A0D264E25310092CA5A /* FameModifierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FameModifierView.swift; sourceTree = "<group>"; };
 		04622A11264E91390092CA5A /* LazyHGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridView.swift; sourceTree = "<group>"; };
 		04622A15264EB2360092CA5A /* Neworkingimage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neworkingimage.swift; sourceTree = "<group>"; };
+		04622A222653AD6E0092CA5A /* Layout3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout3View.swift; sourceTree = "<group>"; };
 		0478521A2646A7FD00B4971D /* SwiftUIExampleWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftUIExampleWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0478521B2646A7FD00B4971D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		0478521D2646A7FD00B4971D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -813,6 +815,7 @@
 				5BDED08A26023F2C005AAEE7 /* Layout2SwiftUIView.swift */,
 				043803BA260F4D9D00722A01 /* LayoutShowView.swift */,
 				5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */,
+				04622A222653AD6E0092CA5A /* Layout3View.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -1001,6 +1004,7 @@
 				047C9F02260608640009A5A1 /* GeometryReaderSwiftUIView.swift in Sources */,
 				04331FDC261752EE00E8306E /* ZStack3View.swift in Sources */,
 				04DA97D4260DA0CB005DDF21 /* NavigationShowView.swift in Sources */,
+				04622A232653AD6E0092CA5A /* Layout3View.swift in Sources */,
 				5B09045E26183E1800CDC5E6 /* ListView.swift in Sources */,
 				04331FF4261C215900E8306E /* TextFieldMainView.swift in Sources */,
 				5B2FB856261DDDA000CD65A2 /* LayoutMainView.swift in Sources */,

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+/*
 struct HUDSwiftUIView: View {
     
     @State private var showingHUD = false
@@ -73,3 +73,4 @@ struct HUDSwiftUIView_Previews: PreviewProvider {
         HUDSwiftUIView()
     }
 }
+ */

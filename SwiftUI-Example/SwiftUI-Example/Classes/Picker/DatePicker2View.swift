@@ -21,17 +21,18 @@ struct DatePicker2View: View {
                 Text("Third").tag(2)
             }.pickerStyle(SegmentedPickerStyle())
             
-            
+            /*
             //MARK: - 自定义使用
             FSPicker.init(selection: $selection) {
                 Text("First").tag(0)
                 Text("Second").tag(1)
                 Text("Third").tag(2)
             }
+                */
         }
     }
 }
-
+/*
 //MARK: - 这是系统自带的Picker使用方法
 //public struct Picker<Label, SelectionValue, Content> : View where Label : View, SelectionValue : Hashable, Content : View {
 
@@ -72,7 +73,7 @@ public struct FSPicker<SelectionValue: Hashable, Content: View>: View {
     }
 }
 
-
+*/
 struct DatePicker2View_Previews: PreviewProvider {
     static var previews: some View {
         DatePicker2View()
