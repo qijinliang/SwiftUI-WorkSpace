@@ -21,8 +21,6 @@ extension Color: Codable {
         case blue
         case alpha
     }
-
-    /// A new random color.
     static var random: Color {
         let red = Double.random(in: 0...1)
         let green = Double.random(in: 0...1)
@@ -64,8 +62,6 @@ extension Color: Codable {
         try container.encode(components.alpha, forKey: .alpha)
     }
 
-    // MARK: - font colors
-    /// This color is either black or white, whichever is more accessible when viewed against the scrum color.
     var accessibleFontColor: Color {
         var red: CGFloat = 0
         var green: CGFloat = 0
