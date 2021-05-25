@@ -27,6 +27,7 @@ struct ProjectMainView: View {
             }
             .navigationBarTitle(Text("Project"),displayMode: .inline)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

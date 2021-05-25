@@ -58,6 +58,7 @@ struct ListSwiftUIView: View {
             
             .navigationBarTitle("SwiftUI示例",displayMode: .inline)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 struct ListSwiftUIView_Previews: PreviewProvider {
