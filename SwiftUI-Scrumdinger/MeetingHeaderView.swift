@@ -15,15 +15,37 @@ struct MeetingHeaderView: View {
         guard secondsRemaining > 0 else {
             return 1
         }
-        
         let totalSeconds = Double(secondsElapsed + secondsRemaining)
-        
         return Double(secondsElapsed) / totalSeconds
     }
+    
+    private var minutesRemaining: Int {
+        secondsRemaining / 60
+    }
+    
+    private var minutesRemainingMetric: String {
+        minutesRemaining == 1 ? "minute" : "minutes"
+    }
+    
     var body: some View {
         VStack() {
             ProgressView(value: progress)
+            HStack() {
+                VStack(alignment: .leading) {
+                    Text("Seconds Elapsed").font(.caption)
+                    Label("\(secondsElapsed)", systemImage: "hourglass.bottomhalf.fill")
+                }
+                Spacer()
+                
+                VStack(alignment: .trailing) {
+                    Text("Seconds Elapsed").font(.caption)
+                    Label("\(secondsElapsed)", systemImage: "hourglass.tophalf.fill")
+                }
+            }
         }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(Text("Time remaining"))
+        .accessibilityValue(Text("\(minutesRemaining) \(minutesRemainingMetric)"))
     }
 }
 
