@@ -93,8 +93,8 @@
 		04A7A16525FA66A4001339F8 /* NavigationSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A16425FA66A4001339F8 /* NavigationSwiftUIView.swift */; };
 		04A7A16A25FA69C4001339F8 /* ScrollViewSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A16925FA69C4001339F8 /* ScrollViewSwiftUIView.swift */; };
 		04A7A16E25FA6ED0001339F8 /* Json3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A16D25FA6ED0001339F8 /* Json3SwiftUIView.swift */; };
-		04A7A17225FAFF32001339F8 /* DefinedSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A17125FAFF32001339F8 /* DefinedSwiftUIView.swift */; };
 		04A7A17A25FB9244001339F8 /* VStack4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A17925FB9244001339F8 /* VStack4SwiftUIView.swift */; };
+		04AE7D1F265E04C000058DDD /* Path1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE7D1E265E04C000058DDD /* Path1.swift */; };
 		04B7E68025FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */; };
 		04DA97C6260D9597005DDF21 /* VStackMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97C5260D9597005DDF21 /* VStackMainView.swift */; };
 		04DA97CF260D9E91005DDF21 /* VStackShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97CE260D9E91005DDF21 /* VStackShowView.swift */; };
@@ -276,8 +276,8 @@
 		04A7A16425FA66A4001339F8 /* NavigationSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A16925FA69C4001339F8 /* ScrollViewSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewSwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A16D25FA6ED0001339F8 /* Json3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json3SwiftUIView.swift; sourceTree = "<group>"; };
-		04A7A17125FAFF32001339F8 /* DefinedSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinedSwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A17925FB9244001339F8 /* VStack4SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack4SwiftUIView.swift; sourceTree = "<group>"; };
+		04AE7D1E265E04C000058DDD /* Path1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path1.swift; sourceTree = "<group>"; };
 		04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView2SwiftUIView.swift; sourceTree = "<group>"; };
 		04DA97C5260D9597005DDF21 /* VStackMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackMainView.swift; sourceTree = "<group>"; };
 		04DA97CE260D9E91005DDF21 /* VStackShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackShowView.swift; sourceTree = "<group>"; };
@@ -398,6 +398,7 @@
 		040C67D9260C44B700A01500 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				04AE7D13265E047400058DDD /* Path */,
 				0454AD0C2632F13D00AEB98D /* Other */,
 				5B41DD1C261F3FD100BC7589 /* Map */,
 				04331FF2261C212800E8306E /* Slider */,
@@ -408,7 +409,6 @@
 				047C9F002606084F0009A5A1 /* GemoetryReader */,
 				047C9EC82604E1470009A5A1 /* Spacer */,
 				5BDED08526023B14005AAEE7 /* Layout */,
-				04A7A17025FAFF1F001339F8 /* Defined */,
 				04A7A16825FA69BC001339F8 /* ScrollView */,
 				04A7A16325FA668F001339F8 /* NavigationView */,
 				04A7A15E25FA63D7001339F8 /* Gesture */,
@@ -679,12 +679,12 @@
 			path = ScrollView;
 			sourceTree = "<group>";
 		};
-		04A7A17025FAFF1F001339F8 /* Defined */ = {
+		04AE7D13265E047400058DDD /* Path */ = {
 			isa = PBXGroup;
 			children = (
-				04A7A17125FAFF32001339F8 /* DefinedSwiftUIView.swift */,
+				04AE7D1E265E04C000058DDD /* Path1.swift */,
 			);
-			path = Defined;
+			path = Path;
 			sourceTree = "<group>";
 		};
 		0B4DADEBBA1155FA9599E803 /* Frameworks */ = {
@@ -1020,6 +1020,7 @@
 				5BB0DA51261AF9A800F09642 /* RingShape.swift in Sources */,
 				5B76BD29263D223C0071716D /* Picker3View.swift in Sources */,
 				5B0904912618BA8A00CDC5E6 /* Text4View.swift in Sources */,
+				04AE7D1F265E04C000058DDD /* Path1.swift in Sources */,
 				040B1B7B2614836100D88D4D /* DatePicker2View.swift in Sources */,
 				047C9EEA2605ED820009A5A1 /* Spacer2SwiftUIView.swift in Sources */,
 				04DA97DA260DB0A4005DDF21 /* JsonMainView.swift in Sources */,
@@ -1051,7 +1052,6 @@
 				0414C7EB260DF24300F351BF /* MathShowView.swift in Sources */,
 				5B0904882618B98D00CDC5E6 /* Text1View.swift in Sources */,
 				04331FED261C209400E8306E /* Segmented2View.swift in Sources */,
-				04A7A17225FAFF32001339F8 /* DefinedSwiftUIView.swift in Sources */,
 				047852272646A7FE00B4971D /* SwiftUIExampleWidget.intentdefinition in Sources */,
 				5B0904A3261AE90200CDC5E6 /* Text10View.swift in Sources */,
 				04331FE7261C1FDE00E8306E /* SegmentedShowView.swift in Sources */,
