@@ -18,12 +18,12 @@ struct Update: Identifiable {
 }
 
 let updateData = [
-    Update(image: #imageLiteral(resourceName: "赵小臭1"), title: "赵小臭", text: "赵小臭是一名主播，兼具娱乐和游戏功底。赵小臭清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "1月17号"),
+    Update(image: #imageLiteral(resourceName: "张妍1"), title: "张妍", text: "张妍是一名主播，兼具娱乐和游戏功底。张妍清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "1月17号"),
     Update(image: #imageLiteral(resourceName: "胡歌3"), title: "胡歌", text: "胡歌，1982年9月20日出生于上海市徐汇区，中国内地影视男演员、流行乐歌手", date: "8月9号"),
-    Update(image: #imageLiteral(resourceName: "赵小臭2"), title: "赵小臭", text: "赵小臭是一名主播，兼具娱乐和游戏功底。赵小臭清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
-    Update(image: #imageLiteral(resourceName: "赵小臭4"), title: "赵小臭", text: "赵小臭是一名主播，兼具娱乐和游戏功底。赵小臭清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
-    Update(image: #imageLiteral(resourceName: "赵小臭6"), title: "赵小臭", text: "赵小臭是一名主播，兼具娱乐和游戏功底。赵小臭清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
-    Update(image: #imageLiteral(resourceName: "赵小臭3"), title: "赵小臭", text: "赵小臭是一名主播，兼具娱乐和游戏功底。赵小臭清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号")
+    Update(image: #imageLiteral(resourceName: "张妍2"), title: "张妍", text: "张妍是一名主播，兼具娱乐和游戏功底。张妍清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
+    Update(image: #imageLiteral(resourceName: "张妍4"), title: "张妍", text: "张妍是一名主播，兼具娱乐和游戏功底。张妍清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
+    Update(image: #imageLiteral(resourceName: "张妍6"), title: "张妍", text: "张妍是一名主播，兼具娱乐和游戏功底。张妍清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
+    Update(image: #imageLiteral(resourceName: "张妍3"), title: "张妍", text: "张妍是一名主播，兼具娱乐和游戏功底。张妍清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号")
 ]
 
 
@@ -36,7 +36,7 @@ struct NavigationSwiftUIView: View {
     @ObservedObject var store = UpdateStore()
     
     func addUpdate() {
-        store.updates.append(Update(image: #imageLiteral(resourceName: "赵小臭5"), title: "赵小臭", text: "赵小臭是一名主播，兼具娱乐和游戏功底。赵小臭清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"))
+        store.updates.append(Update(image: #imageLiteral(resourceName: "张妍5"), title: "张妍", text: "张妍是一名主播，兼具娱乐和游戏功底。张妍清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"))
     }
     
     var body: some View {
