@@ -7,7 +7,11 @@
 		<key>Pods-SwiftUI-Example.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>0</integer>
+=======
+			<integer>6</integer>
+>>>>>>> origin/master
 		</dict>
 	</dict>
 </dict>

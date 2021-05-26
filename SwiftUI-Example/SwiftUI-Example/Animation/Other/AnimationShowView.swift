@@ -31,6 +31,7 @@ struct AnimationShowView: View {
             }
             .navigationBarTitle(Text("动画"),displayMode: .inline)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
