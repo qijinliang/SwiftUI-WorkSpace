@@ -7,15 +7,29 @@
 
 import SwiftUI
 
+let width = UIScreen.main.bounds.size.width
+let height = UIScreen.main.bounds.size.height
+
 struct Path1: View {
     var body: some View {
-        Path { path in
-            path.move(to: CGPoint(x: 20, y: 20))
-            path.addLine(to: CGPoint(x: 300, y: 200))
-            path.addLine(to: CGPoint(x: 200, y: 300))
-            path.addLine(to: CGPoint(x: 20, y: 10 ))
+        ZStack {
+            Path { path in
+                path.move(to: CGPoint(x: 10, y: 10))
+                path.addLine(to: CGPoint(x: width - 10, y: 10))
+                path.addLine(to: CGPoint(x: width - 10, y: height - 10))
+                path.addLine(to: CGPoint(x: 10, y: height - 10 ))
+            }
+            .fill(Color(#colorLiteral(red: 0.4685096145, green: 0.8186606765, blue: 0.9855954051, alpha: 1)))
+            
+            Path { path in
+                path.move(to: CGPoint(x: 30, y: 30))
+                path.addLine(to: CGPoint(x: width - 30, y: 30))
+                path.addLine(to: CGPoint(x: width - 30, y: height - 30))
+                path.addLine(to: CGPoint(x: 30, y: height - 30 ))
+            }
+            .fill(Color(#colorLiteral(red: 0.3133516014, green: 0.1172527149, blue: 0.5996462107, alpha: 1)))
         }
-        .fill(Color.green)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
