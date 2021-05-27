@@ -11,9 +11,10 @@ struct ListWithDataView: View {
     @State private var ArrayText = ["This is the simplest List", "Evans","Lemuel James Guerrero", "Mark", "Durtschi","Chase","Adam","Rodrigo","Notice the automatic wrapping","When the text is longer"]
     var body: some View {
         List(ArrayText, id: \.self) { text in
-         Text(text)
+         Text(text).font(.title)
         }
-        .font(.title)
+        //MARK: 去掉分割线
+        .listStyle(SidebarListStyle())
     }
 }
 
