@@ -95,6 +95,9 @@
 		04A7A16E25FA6ED0001339F8 /* Json3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A16D25FA6ED0001339F8 /* Json3SwiftUIView.swift */; };
 		04A7A17A25FB9244001339F8 /* VStack4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7A17925FB9244001339F8 /* VStack4SwiftUIView.swift */; };
 		04AE7D1F265E04C000058DDD /* Path1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE7D1E265E04C000058DDD /* Path1.swift */; };
+		04AE820E265F59F000058DDD /* Conmmon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE820D265F59F000058DDD /* Conmmon.swift */; };
+		04AE8212265F5A4800058DDD /* Path2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8211265F5A4800058DDD /* Path2.swift */; };
+		04AE8216265F5A5300058DDD /* Path3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8215265F5A5300058DDD /* Path3.swift */; };
 		04B7E68025FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */; };
 		04DA97C6260D9597005DDF21 /* VStackMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97C5260D9597005DDF21 /* VStackMainView.swift */; };
 		04DA97CF260D9E91005DDF21 /* VStackShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97CE260D9E91005DDF21 /* VStackShowView.swift */; };
@@ -278,6 +281,9 @@
 		04A7A16D25FA6ED0001339F8 /* Json3SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json3SwiftUIView.swift; sourceTree = "<group>"; };
 		04A7A17925FB9244001339F8 /* VStack4SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStack4SwiftUIView.swift; sourceTree = "<group>"; };
 		04AE7D1E265E04C000058DDD /* Path1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path1.swift; sourceTree = "<group>"; };
+		04AE820D265F59F000058DDD /* Conmmon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conmmon.swift; sourceTree = "<group>"; };
+		04AE8211265F5A4800058DDD /* Path2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path2.swift; sourceTree = "<group>"; };
+		04AE8215265F5A5300058DDD /* Path3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path3.swift; sourceTree = "<group>"; };
 		04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView2SwiftUIView.swift; sourceTree = "<group>"; };
 		04DA97C5260D9597005DDF21 /* VStackMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackMainView.swift; sourceTree = "<group>"; };
 		04DA97CE260D9E91005DDF21 /* VStackShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackShowView.swift; sourceTree = "<group>"; };
@@ -467,6 +473,7 @@
 				0454AD112632F1EB00AEB98D /* Color+Extension.swift */,
 				04622A15264EB2360092CA5A /* Neworkingimage.swift */,
 				5B914356264F88C60021A767 /* HUDSwiftUIView.swift */,
+				04AE820D265F59F000058DDD /* Conmmon.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -683,6 +690,8 @@
 			isa = PBXGroup;
 			children = (
 				04AE7D1E265E04C000058DDD /* Path1.swift */,
+				04AE8211265F5A4800058DDD /* Path2.swift */,
+				04AE8215265F5A5300058DDD /* Path3.swift */,
 			);
 			path = Path;
 			sourceTree = "<group>";
@@ -968,6 +977,7 @@
 				0414C7F1260DF60300F351BF /* ButtonMainView.swift in Sources */,
 				04331FD0261747A600E8306E /* HStack7View.swift in Sources */,
 				0414C7F4260DF69200F351BF /* ButtonShowView.swift in Sources */,
+				04AE8212265F5A4800058DDD /* Path2.swift in Sources */,
 				5BDED08726023B44005AAEE7 /* LayoutSwiftUIView.swift in Sources */,
 				04A7A12025F8E4C3001339F8 /* VStack3SwiftUIView.swift in Sources */,
 				04A7A14025FA3FF2001339F8 /* FoldSwiftUIView.swift in Sources */,
@@ -1001,6 +1011,7 @@
 				04622A06264E0EC10092CA5A /* SpacerExampleView.swift in Sources */,
 				04B7E68025FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift in Sources */,
 				043803B5260F4C0300722A01 /* GemoetryReaderShowView.swift in Sources */,
+				04AE8216265F5A5300058DDD /* Path3.swift in Sources */,
 				047C9F02260608640009A5A1 /* GeometryReaderSwiftUIView.swift in Sources */,
 				04331FDC261752EE00E8306E /* ZStack3View.swift in Sources */,
 				04DA97D4260DA0CB005DDF21 /* NavigationShowView.swift in Sources */,
@@ -1031,6 +1042,7 @@
 				04A7A16525FA66A4001339F8 /* NavigationSwiftUIView.swift in Sources */,
 				04331FEA261C208700E8306E /* Segmented1View.swift in Sources */,
 				5BF813D02606FD030076F4C4 /* HStack6SwiftUIView.swift in Sources */,
+				04AE820E265F59F000058DDD /* Conmmon.swift in Sources */,
 				047C9EED2605F3540009A5A1 /* Spacer3SwiftUIView.swift in Sources */,
 				5BEA707826108CE60007B55C /* ZStack2SwiftUIView.swift in Sources */,
 				5B0904B3261AEC6300CDC5E6 /* MainCardView.swift in Sources */,
