@@ -33,6 +33,7 @@ struct PlaylistView: View {
             }
             .navigationBarTitle(Text("Playlists"),displayMode: .automatic)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

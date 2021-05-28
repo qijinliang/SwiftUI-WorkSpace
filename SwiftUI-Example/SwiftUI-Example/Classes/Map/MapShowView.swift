@@ -14,6 +14,7 @@ struct MapShowView: View {
                 NavigationLink(destination: Map1View()) {
                     Text("Map1")
                 }
+                
             }
         }
     }

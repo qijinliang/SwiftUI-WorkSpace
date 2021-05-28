@@ -11,7 +11,7 @@ struct MathMainView: View {
     var body: some View {
         Section {
             NavigationLink(destination: MathShowView()){
-                Text("Fanshaped")
+                Text("Mathematics")
             }
         }
     }

@@ -16,9 +16,6 @@ struct AnimationShowView: View {
                         Text("POP")
                     }
                     
-                    NavigationLink(destination: ShadowSwiftUIView()) {
-                        Text("Shadow")
-                    }
                     
                     NavigationLink(destination: AnimationSwiftUIView()) {
                         Text("Animation")
@@ -26,6 +23,14 @@ struct AnimationShowView: View {
                     
                     NavigationLink(destination: FoldSwiftUIView()) {
                         Text("Flod")
+                    }
+                }
+                
+                //MARK: Path
+                Section(header: Text("Path").font(.title3).fontWeight(.heavy)) {
+                    
+                    NavigationLink(destination: PathShowVIew()) {
+                        Text("Path")
                     }
                 }
             }
