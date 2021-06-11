@@ -17,7 +17,7 @@ struct Path1: View {
                 path.addLine(to: CGPoint(x: 20, y: height - 20 ))
             }
             .fill(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-
+            
             Path() { path in
                 path.move(to: CGPoint(x: 40, y: 40))
                 path.addLine(to: CGPoint(x: width - 40, y: 40))
@@ -49,7 +49,6 @@ struct Path1: View {
                 path.addLine(to: CGPoint(x: 100, y: height - 100 ))
             }
             .fill(Color(#colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)))
-            
         }
         .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
         .edgesIgnoringSafeArea(.all)
