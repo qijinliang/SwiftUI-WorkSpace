@@ -144,7 +144,6 @@
 		5B41DD22261F3FF100BC7589 /* MapShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD21261F3FF100BC7589 /* MapShowView.swift */; };
 		5B41DD25261F405800BC7589 /* Map1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD24261F405800BC7589 /* Map1View.swift */; };
 		5B76BD29263D223C0071716D /* Picker3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76BD28263D223C0071716D /* Picker3View.swift */; };
-		5B914357264F88C60021A767 /* HUDSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B914356264F88C60021A767 /* HUDSwiftUIView.swift */; };
 		5BB0DA4F261AF9A800F09642 /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4C261AF9A800F09642 /* Ring.swift */; };
 		5BB0DA50261AF9A800F09642 /* RingGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4D261AF9A800F09642 /* RingGraph.swift */; };
 		5BB0DA51261AF9A800F09642 /* RingShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DA4E261AF9A800F09642 /* RingShape.swift */; };
@@ -330,7 +329,6 @@
 		5B41DD21261F3FF100BC7589 /* MapShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapShowView.swift; sourceTree = "<group>"; };
 		5B41DD24261F405800BC7589 /* Map1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map1View.swift; sourceTree = "<group>"; };
 		5B76BD28263D223C0071716D /* Picker3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker3View.swift; sourceTree = "<group>"; };
-		5B914356264F88C60021A767 /* HUDSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDSwiftUIView.swift; sourceTree = "<group>"; };
 		5BB0DA4C261AF9A800F09642 /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
 		5BB0DA4D261AF9A800F09642 /* RingGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingGraph.swift; sourceTree = "<group>"; };
 		5BB0DA4E261AF9A800F09642 /* RingShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingShape.swift; sourceTree = "<group>"; };
@@ -470,7 +468,6 @@
 			children = (
 				0454AD112632F1EB00AEB98D /* Color+Extension.swift */,
 				04622A15264EB2360092CA5A /* Neworkingimage.swift */,
-				5B914356264F88C60021A767 /* HUDSwiftUIView.swift */,
 				04AE820D265F59F000058DDD /* Conmmon.swift */,
 			);
 			path = Other;
@@ -1093,7 +1090,6 @@
 				0414C7FA260DF85400F351BF /* ScrollShowView.swift in Sources */,
 				5B090470261882E300CDC5E6 /* Button5View.swift in Sources */,
 				04A7A13725FA35F7001339F8 /* PopSwiftUIView.swift in Sources */,
-				5B914357264F88C60021A767 /* HUDSwiftUIView.swift in Sources */,
 				5B09046D2618581D00CDC5E6 /* Button3View.swift in Sources */,
 				5B0904B2261AEC6300CDC5E6 /* NavBarView.swift in Sources */,
 				5BF813D8260700D80076F4C4 /* GeometryReader4SwiftUIView.swift in Sources */,

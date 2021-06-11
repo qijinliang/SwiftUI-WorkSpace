@@ -81,10 +81,10 @@ struct VStackShowView: View {
             }
             
             
-            //MARK: Layout
-            Section(header: Text("Layout").font(.title3).fontWeight(.heavy)) {
-                NavigationLink(destination: LayoutShowView()) {
-                    Text("Layout")
+            //MARK: LazyHGrid
+            Section(header: Text("LazyHGrid").font(.title3).fontWeight(.heavy)) {
+                NavigationLink(destination: LazyHGridView()) {
+                    Text("LazyHGridView")
                 }
             }
         }
