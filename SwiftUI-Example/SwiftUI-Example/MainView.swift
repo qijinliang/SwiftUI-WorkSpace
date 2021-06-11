@@ -7,25 +7,29 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     var body: some View {
         TabView {
             //MARK: 基本常用的控件示例
             ListSwiftUIView().tabItem {
-                Image.init(systemName: "list.bullet")
-                Text("SwiftUI")
+                Label.init(
+                    title: { Text("SwiftUI") },
+                    icon: { Image(systemName: "list.bullet") }
+                )
             }
             //MARK: 动画示例
             AnimationShowView().tabItem {
-                Image.init(systemName: "rectangle.fill.on.rectangle.fill")
-                Text("Animation")
-                    .foregroundColor(Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
+                Label.init(
+                    title: { Text("Animation")},
+                    icon: { Image(systemName: "rectangle.fill.on.rectangle.fill") }
+                )
             }
             //MARK: 小型综合示例
             ProjectMainView().tabItem {
-                Image.init(systemName: "swift")
-                Text("Project")
-                    .foregroundColor(Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
+                Label.init(
+                    title: { Text("Project") },
+                    icon: { Image(systemName: "swift") }
+                )
             }
         }
         .edgesIgnoringSafeArea(.all)
@@ -33,8 +37,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }
