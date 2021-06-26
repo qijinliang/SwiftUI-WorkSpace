@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ScrollView3View: View {
-    @State private var photos = ["头像5","头像2","张妍4","头像4"]
+    @State private var photos = ["头像5","头像2","未来的人4","头像4"]
     @State private var currentIndex = 0
     var body: some View {
         GeometryReader() { geometry in

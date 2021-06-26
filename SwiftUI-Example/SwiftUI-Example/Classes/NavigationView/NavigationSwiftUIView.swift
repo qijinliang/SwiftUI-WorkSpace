@@ -18,12 +18,12 @@ struct Update: Identifiable {
 }
 
 let updateData = [
-    Update(image: #imageLiteral(resourceName: "张妍1"), title: "张妍", text: "张妍是一名主播，兼具娱乐和游戏功底。张妍清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "1月17号"),
+    Update(image: #imageLiteral(resourceName: "美食2"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "1月17号"),
     Update(image: #imageLiteral(resourceName: "胡歌3"), title: "胡歌", text: "胡歌，1982年9月20日出生于上海市徐汇区，中国内地影视男演员、流行乐歌手", date: "8月9号"),
-    Update(image: #imageLiteral(resourceName: "张妍2"), title: "张妍", text: "张妍是一名主播，兼具娱乐和游戏功底。张妍清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
-    Update(image: #imageLiteral(resourceName: "张妍4"), title: "张妍", text: "张妍是一名主播，兼具娱乐和游戏功底。张妍清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
-    Update(image: #imageLiteral(resourceName: "张妍6"), title: "张妍", text: "张妍是一名主播，兼具娱乐和游戏功底。张妍清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
-    Update(image: #imageLiteral(resourceName: "张妍3"), title: "张妍", text: "张妍是一名主播，兼具娱乐和游戏功底。张妍清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号")
+    Update(image: #imageLiteral(resourceName: "placeholder"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
+    Update(image: #imageLiteral(resourceName: "美食3"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
+    Update(image: #imageLiteral(resourceName: "美食2"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
+    Update(image: #imageLiteral(resourceName: "美食1"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号")
 ]
 
 
@@ -36,7 +36,7 @@ struct NavigationSwiftUIView: View {
     @ObservedObject var store = UpdateStore()
     
     func addUpdate() {
-        store.updates.append(Update(image: #imageLiteral(resourceName: "张妍5"), title: "张妍", text: "张妍是一名主播，兼具娱乐和游戏功底。张妍清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"))
+        store.updates.append(Update(image: #imageLiteral(resourceName: "未来的人5"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"))
     }
     
     var body: some View {

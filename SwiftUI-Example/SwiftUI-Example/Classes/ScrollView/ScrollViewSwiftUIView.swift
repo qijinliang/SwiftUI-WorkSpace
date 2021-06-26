@@ -18,11 +18,11 @@ struct Movie: Identifiable, Hashable {
 struct ScrollViewSwiftUIView: View {
     
     let movies: [[Movie]] = [
-        [.init(name: "张妍", imageName: #imageLiteral(resourceName: "张妍2")),
-         .init(name:"张妍", imageName: #imageLiteral(resourceName: "张妍1"))],
-        [.init(name: "张妍",imageName: #imageLiteral(resourceName: "胡歌2")),
-         .init(name: "张妍",imageName: #imageLiteral(resourceName: "胡歌1"))],
-        [.init(name: "张妍",imageName: #imageLiteral(resourceName: "胡歌3"))]
+        [.init(name: "未来的人", imageName: #imageLiteral(resourceName: "placeholder")),
+         .init(name:"未来的人", imageName: #imageLiteral(resourceName: "美食3"))],
+        [.init(name: "未来的人",imageName: #imageLiteral(resourceName: "胡歌2")),
+         .init(name: "未来的人",imageName: #imageLiteral(resourceName: "胡歌1"))],
+        [.init(name: "未来的人",imageName: #imageLiteral(resourceName: "胡歌3"))]
     ]
     
     
