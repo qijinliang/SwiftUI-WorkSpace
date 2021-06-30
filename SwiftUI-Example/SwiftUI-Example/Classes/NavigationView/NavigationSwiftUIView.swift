@@ -36,7 +36,7 @@ struct NavigationSwiftUIView: View {
     @ObservedObject var store = UpdateStore()
     
     func addUpdate() {
-        store.updates.append(Update(image: #imageLiteral(resourceName: "未来的人5"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"))
+        store.updates.append(Update(image: #imageLiteral(resourceName: "胡歌2"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"))
     }
     
     var body: some View {
