@@ -48,9 +48,7 @@ struct Json2SwiftUIView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: [
-                GridItem(.flexible(minimum: 50, maximum: 200), spacing: 16, alignment: .top),
-                GridItem(.flexible(minimum: 50, maximum: 200), spacing: 16, alignment: .top),
-                GridItem(.flexible(minimum: 50, maximum: 200), spacing: 16),
+                GridItem(.adaptive(minimum: 160), spacing: 16)
             ], alignment: .leading ,spacing: 16, content: {
                 ForEach(vm.results, id: \.self) { app in
                     AppInfo(app: app)
@@ -84,30 +82,6 @@ struct AppInfo: View {
         }
     }
 }
-
-struct URLImage2: View {
-    
-    let url: String
-    let placeholder: String
-    
-    @ObservedObject var imageLoader = ImageLoader()
-    
-    init(url: String, placehloder: String = "placeholder") {
-        self.url = url
-        self.placeholder = placehloder
-        self.imageLoader.downloadImgae(url: self.url)
-    }
-    
-    var body: some View {
-        if let data = self.imageLoader.downloadedData {
-            return Image(uiImage: UIImage(data: data)!).renderingMode(.original).resizable()
-        } else{
-            return Image("placeholder").renderingMode(.original).resizable()
-        }
-    }
-}
-
-
 
 struct Json2SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {

@@ -78,29 +78,6 @@ struct Json3SwiftUIView: View {
     }
 }
 
-struct Json3URLImage: View {
-    
-    let url: String
-    let placeholder: String
-    
-    @ObservedObject var imageLoader = ImageLoader()
-    
-    //String = "placeholder" 加载失败需要替换的图片
-    init(url: String, placehloder: String = "") {
-        self.url = url
-        self.placeholder = placehloder
-        self.imageLoader.downloadImgae(url: self.url)
-    }
-    
-    var body: some View {
-        if let data = self.imageLoader.downloadedData {
-            return Image(uiImage: UIImage(data: data)!).renderingMode(.original).resizable()
-        } else{
-            return Image("placeholder").renderingMode(.original).resizable()
-        }
-    }
-}
-
 struct Json3SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         Json3SwiftUIView()

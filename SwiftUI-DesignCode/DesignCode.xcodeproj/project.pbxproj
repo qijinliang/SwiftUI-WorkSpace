@@ -449,7 +449,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"DesignCode/Preview Content\"";
-				DEVELOPMENT_TEAM = 96XUY94B27;
+				DEVELOPMENT_TEAM = 9TV4ZYSS4J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DesignCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -457,9 +457,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.pokemon.pokemonunite;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.pokemonunite.cn;
 				PRODUCT_NAME = "Design+Code";
-				PROVISIONING_PROFILE_SPECIFIER = "nishiki_development‗20201225";
+				PROVISIONING_PROFILE_SPECIFIER = com.tencent.pokemonunite.cn_Development_SignProvision;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -472,7 +472,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"DesignCode/Preview Content\"";
-				DEVELOPMENT_TEAM = 96XUY94B27;
+				DEVELOPMENT_TEAM = 9TV4ZYSS4J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DesignCode/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -480,9 +480,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.pokemon.pokemonunite;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.pokemonunite.cn;
 				PRODUCT_NAME = "Design+Code";
-				PROVISIONING_PROFILE_SPECIFIER = "nishiki_development‗20201225";
+				PROVISIONING_PROFILE_SPECIFIER = com.tencent.pokemonunite.cn_Development_SignProvision;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

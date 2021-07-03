@@ -159,28 +159,6 @@ struct JsonSwiftUIView: View {
     }
 }
 
-struct URLImage: View {
-    
-    let url: String
-    let placeholder: String
-    
-    @ObservedObject var imageLoader = ImageLoader()
-    
-    init(url: String, placehloder: String = "placeholder") {
-        self.url = url
-        self.placeholder = placehloder
-        self.imageLoader.downloadImgae(url: self.url)
-    }
-    
-    var body: some View {
-        if let data = self.imageLoader.downloadedData {
-            return Image(uiImage: UIImage(data: data)!).renderingMode(.original).resizable()
-        } else{
-            return Image("placeholder").renderingMode(.original).resizable()
-        }
-    }
-}
-
 struct JsonSwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         JsonSwiftUIView()
