@@ -28,6 +28,11 @@
 		0414C7F4260DF69200F351BF /* ButtonShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F3260DF69200F351BF /* ButtonShowView.swift */; };
 		0414C7F7260DF84200F351BF /* ScrollMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F6260DF84200F351BF /* ScrollMainView.swift */; };
 		0414C7FA260DF85400F351BF /* ScrollShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0414C7F9260DF85400F351BF /* ScrollShowView.swift */; };
+		041B5EA8269F0C4800578EF4 /* SheetMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B5EA7269F0C4800578EF4 /* SheetMainView.swift */; };
+		041B5EAA269F0D2C00578EF4 /* SheetShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B5EA9269F0D2C00578EF4 /* SheetShowView.swift */; };
+		041B5EAD269F0DA600578EF4 /* AVPlayerMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B5EAC269F0DA600578EF4 /* AVPlayerMainView.swift */; };
+		041B5EAF269F0DB300578EF4 /* AVPlayerShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B5EAE269F0DB300578EF4 /* AVPlayerShowView.swift */; };
+		041B5EB1269F0E7A00578EF4 /* AVPlayerView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041B5EB0269F0E7A00578EF4 /* AVPlayerView1.swift */; };
 		04331FD0261747A600E8306E /* HStack7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FCF261747A600E8306E /* HStack7View.swift */; };
 		04331FDC261752EE00E8306E /* ZStack3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FDB261752EE00E8306E /* ZStack3View.swift */; };
 		04331FE4261C1FC600E8306E /* SegmentedMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04331FE3261C1FC600E8306E /* SegmentedMainView.swift */; };
@@ -100,6 +105,7 @@
 		04AE8295265FBEA100058DDD /* PathMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8294265FBEA100058DDD /* PathMainView.swift */; };
 		04AE8299265FBEB700058DDD /* PathShowVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE8298265FBEB700058DDD /* PathShowVIew.swift */; };
 		04B7E68025FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */; };
+		04BD1AE42692EE7400820439 /* SheetJsonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BD1AE32692EE7400820439 /* SheetJsonView.swift */; };
 		04DA97C6260D9597005DDF21 /* VStackMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97C5260D9597005DDF21 /* VStackMainView.swift */; };
 		04DA97CF260D9E91005DDF21 /* VStackShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97CE260D9E91005DDF21 /* VStackShowView.swift */; };
 		04DA97D4260DA0CB005DDF21 /* NavigationShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA97D3260DA0CB005DDF21 /* NavigationShowView.swift */; };
@@ -139,7 +145,6 @@
 		5B1B2811263D8FA500EF549D /* 仿iWatch运动.md in Resources */ = {isa = PBXBuildFile; fileRef = 5B1B2810263D8FA500EF549D /* 仿iWatch运动.md */; };
 		5B1B2813263D8FDE00EF549D /* WeatherAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B2812263D8FDE00EF549D /* WeatherAboutView.swift */; };
 		5B2FB856261DDDA000CD65A2 /* LayoutMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */; };
-		5B41DD1A261F2FE400BC7589 /* ScrollView3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD19261F2FE400BC7589 /* ScrollView3View.swift */; };
 		5B41DD1E261F3FE400BC7589 /* MapMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD1D261F3FE400BC7589 /* MapMainView.swift */; };
 		5B41DD22261F3FF100BC7589 /* MapShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD21261F3FF100BC7589 /* MapShowView.swift */; };
 		5B41DD25261F405800BC7589 /* Map1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B41DD24261F405800BC7589 /* Map1View.swift */; };
@@ -211,6 +216,11 @@
 		0414C7F3260DF69200F351BF /* ButtonShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonShowView.swift; sourceTree = "<group>"; };
 		0414C7F6260DF84200F351BF /* ScrollMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollMainView.swift; sourceTree = "<group>"; };
 		0414C7F9260DF85400F351BF /* ScrollShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollShowView.swift; sourceTree = "<group>"; };
+		041B5EA7269F0C4800578EF4 /* SheetMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetMainView.swift; sourceTree = "<group>"; };
+		041B5EA9269F0D2C00578EF4 /* SheetShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetShowView.swift; sourceTree = "<group>"; };
+		041B5EAC269F0DA600578EF4 /* AVPlayerMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerMainView.swift; sourceTree = "<group>"; };
+		041B5EAE269F0DB300578EF4 /* AVPlayerShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerShowView.swift; sourceTree = "<group>"; };
+		041B5EB0269F0E7A00578EF4 /* AVPlayerView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView1.swift; sourceTree = "<group>"; };
 		04331FCF261747A600E8306E /* HStack7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStack7View.swift; sourceTree = "<group>"; };
 		04331FDB261752EE00E8306E /* ZStack3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStack3View.swift; sourceTree = "<group>"; };
 		04331FE3261C1FC600E8306E /* SegmentedMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedMainView.swift; sourceTree = "<group>"; };
@@ -285,6 +295,7 @@
 		04AE8294265FBEA100058DDD /* PathMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathMainView.swift; sourceTree = "<group>"; };
 		04AE8298265FBEB700058DDD /* PathShowVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathShowVIew.swift; sourceTree = "<group>"; };
 		04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView2SwiftUIView.swift; sourceTree = "<group>"; };
+		04BD1AE32692EE7400820439 /* SheetJsonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetJsonView.swift; sourceTree = "<group>"; };
 		04DA97C5260D9597005DDF21 /* VStackMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackMainView.swift; sourceTree = "<group>"; };
 		04DA97CE260D9E91005DDF21 /* VStackShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackShowView.swift; sourceTree = "<group>"; };
 		04DA97D3260DA0CB005DDF21 /* NavigationShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationShowView.swift; sourceTree = "<group>"; };
@@ -324,7 +335,6 @@
 		5B1B2810263D8FA500EF549D /* 仿iWatch运动.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "仿iWatch运动.md"; sourceTree = "<group>"; };
 		5B1B2812263D8FDE00EF549D /* WeatherAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAboutView.swift; sourceTree = "<group>"; };
 		5B2FB855261DDDA000CD65A2 /* LayoutMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutMainView.swift; sourceTree = "<group>"; };
-		5B41DD19261F2FE400BC7589 /* ScrollView3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView3View.swift; sourceTree = "<group>"; };
 		5B41DD1D261F3FE400BC7589 /* MapMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapMainView.swift; sourceTree = "<group>"; };
 		5B41DD21261F3FF100BC7589 /* MapShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapShowView.swift; sourceTree = "<group>"; };
 		5B41DD24261F405800BC7589 /* Map1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map1View.swift; sourceTree = "<group>"; };
@@ -402,6 +412,8 @@
 		040C67D9260C44B700A01500 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				041B5EAB269F0D9100578EF4 /* AVPlayer */,
+				04BD1AE22692EE6200820439 /* Sheet */,
 				0454AD0C2632F13D00AEB98D /* Other */,
 				5B41DD1C261F3FD100BC7589 /* Map */,
 				04331FF2261C212800E8306E /* Slider */,
@@ -439,6 +451,16 @@
 				5B090466261846D600CDC5E6 /* CustomerView.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		041B5EAB269F0D9100578EF4 /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				041B5EAC269F0DA600578EF4 /* AVPlayerMainView.swift */,
+				041B5EAE269F0DB300578EF4 /* AVPlayerShowView.swift */,
+				041B5EB0269F0E7A00578EF4 /* AVPlayerView1.swift */,
+			);
+			path = AVPlayer;
 			sourceTree = "<group>";
 		};
 		04331FE2261C1FAB00E8306E /* Segment */ = {
@@ -676,7 +698,6 @@
 				04B7E67F25FCE0FA00EBA041 /* ScrollView2SwiftUIView.swift */,
 				0414C7F6260DF84200F351BF /* ScrollMainView.swift */,
 				0414C7F9260DF85400F351BF /* ScrollShowView.swift */,
-				5B41DD19261F2FE400BC7589 /* ScrollView3View.swift */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
@@ -691,6 +712,16 @@
 				04AE8298265FBEB700058DDD /* PathShowVIew.swift */,
 			);
 			path = Path;
+			sourceTree = "<group>";
+		};
+		04BD1AE22692EE6200820439 /* Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				04BD1AE32692EE7400820439 /* SheetJsonView.swift */,
+				041B5EA7269F0C4800578EF4 /* SheetMainView.swift */,
+				041B5EA9269F0D2C00578EF4 /* SheetShowView.swift */,
+			);
+			path = Sheet;
 			sourceTree = "<group>";
 		};
 		0B4DADEBBA1155FA9599E803 /* Frameworks */ = {
@@ -990,9 +1021,9 @@
 				5BEA7072261089110007B55C /* SpaceMainView.swift in Sources */,
 				5B0904C0261AF1D100CDC5E6 /* ProjectMainView.swift in Sources */,
 				5B0904612618413A00CDC5E6 /* ListWithDataView.swift in Sources */,
-				5B41DD1A261F2FE400BC7589 /* ScrollView3View.swift in Sources */,
 				04A7A11D25F8E042001339F8 /* VStack2SwiftUIView.swift in Sources */,
 				5B090467261846D600CDC5E6 /* CustomerView.swift in Sources */,
+				041B5EB1269F0E7A00578EF4 /* AVPlayerView1.swift in Sources */,
 				04A7A16025FA63E3001339F8 /* GestureSwiftUIView.swift in Sources */,
 				04622A0A264E22CB0092CA5A /* ShapesView.swift in Sources */,
 				04A7A15825FA61F3001339F8 /* TextFieldSwiftUIView.swift in Sources */,
@@ -1010,9 +1041,11 @@
 				043803B5260F4C0300722A01 /* GemoetryReaderShowView.swift in Sources */,
 				04AE8216265F5A5300058DDD /* Path3.swift in Sources */,
 				047C9F02260608640009A5A1 /* GeometryReaderSwiftUIView.swift in Sources */,
+				041B5EA8269F0C4800578EF4 /* SheetMainView.swift in Sources */,
 				04331FDC261752EE00E8306E /* ZStack3View.swift in Sources */,
 				04DA97D4260DA0CB005DDF21 /* NavigationShowView.swift in Sources */,
 				04622A232653AD6E0092CA5A /* Layout3View.swift in Sources */,
+				041B5EAA269F0D2C00578EF4 /* SheetShowView.swift in Sources */,
 				5B09045E26183E1800CDC5E6 /* ListView.swift in Sources */,
 				04331FF4261C215900E8306E /* TextFieldMainView.swift in Sources */,
 				5B2FB856261DDDA000CD65A2 /* LayoutMainView.swift in Sources */,
@@ -1048,6 +1081,7 @@
 				5B0904AF261AEC6300CDC5E6 /* Weather.swift in Sources */,
 				047C9EB026020E470009A5A1 /* HStack3SwiftUIView.swift in Sources */,
 				5B0904B6261AEC8200CDC5E6 /* WeatherApp.swift in Sources */,
+				041B5EAD269F0DA600578EF4 /* AVPlayerMainView.swift in Sources */,
 				04331FFC261C218200E8306E /* TextField2View.swift in Sources */,
 				5B41DD22261F3FF100BC7589 /* MapShowView.swift in Sources */,
 				04332006261C21B000E8306E /* Slider1View.swift in Sources */,
@@ -1062,6 +1096,7 @@
 				04331FED261C209400E8306E /* Segmented2View.swift in Sources */,
 				047852272646A7FE00B4971D /* SwiftUIExampleWidget.intentdefinition in Sources */,
 				5B0904A3261AE90200CDC5E6 /* Text10View.swift in Sources */,
+				04BD1AE42692EE7400820439 /* SheetJsonView.swift in Sources */,
 				04331FE7261C1FDE00E8306E /* SegmentedShowView.swift in Sources */,
 				5BEA708D2610A0E60007B55C /* ListShowView.swift in Sources */,
 				5B09047D2618944C00CDC5E6 /* Button8View.swift in Sources */,
@@ -1072,6 +1107,7 @@
 				040B1B712614828F00D88D4D /* DatePickerMainView.swift in Sources */,
 				04A7A17A25FB9244001339F8 /* VStack4SwiftUIView.swift in Sources */,
 				04331FFF261C219D00E8306E /* SliderMainView.swift in Sources */,
+				041B5EAF269F0DB300578EF4 /* AVPlayerShowView.swift in Sources */,
 				047C9EAD26020BE90009A5A1 /* HStack2SwiftUIView.swift in Sources */,
 				04A7A14D25FA5774001339F8 /* FanshapedSwiftUIView.swift in Sources */,
 				040B1BB22616DE7F00D88D4D /* Form5View.swift in Sources */,

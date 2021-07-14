@@ -19,9 +19,6 @@ struct ScrollShowView: View {
                     Text("ScrollViewFoodView")
                 }
                 
-                NavigationLink(destination: ScrollView3View()) {
-                    Text("ScrollView3")
-                }
             }
         }
     }

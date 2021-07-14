@@ -15,6 +15,7 @@ struct JsonShowView: View {
                     Text("Json")
                 }
                 
+                
                 NavigationLink(destination: Json2SwiftUIView()) {
                     Text("Json2")
                 }
@@ -26,6 +27,7 @@ struct JsonShowView: View {
         }
     }
 }
+
 
 struct JsonShowView_Previews: PreviewProvider {
     static var previews: some View {

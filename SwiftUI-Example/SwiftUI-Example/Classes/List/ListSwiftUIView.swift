@@ -42,6 +42,8 @@ struct ListSwiftUIView: View {
                     SliderMainView()
                     //MARK: TextField
                     TextFieldMainView()
+                    //MARK: Sheet
+                    SheetMainView()
                 }
                 
                 Section(header: Text("Section3").font(.title3).fontWeight(.heavy)) {
@@ -53,6 +55,8 @@ struct ListSwiftUIView: View {
                     GemoetryReaderMainView()
                     //MARK: Json
                     JsonMainView()
+                    //MARK: AVPlayer
+                    AVPlayerMainView()
                 }
             }
             
