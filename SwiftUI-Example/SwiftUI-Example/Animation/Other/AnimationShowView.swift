@@ -11,7 +11,7 @@ struct AnimationShowView: View {
     var body: some View {
         NavigationView() {
             Form {
-                Section {
+                Section(header: Text("Animation").font(.title3).fontWeight(.heavy)) {
                     NavigationLink(destination: PopSwiftUIView()) {
                         Text("POP")
                     }

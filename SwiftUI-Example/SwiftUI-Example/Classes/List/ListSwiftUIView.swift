@@ -58,6 +58,13 @@ struct ListSwiftUIView: View {
                     //MARK: AVPlayer
                     AVPlayerMainView()
                 }
+                
+                
+                Section(header: Text("Binding").font(.title3).fontWeight(.heavy)) {
+                    //MARK: Binding
+                    BingdingMainView()
+
+                }
             }
             
             .navigationBarTitle("SwiftUI示例",displayMode: .inline)
