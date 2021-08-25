@@ -35,6 +35,9 @@ struct ButtonShowView: View {
                 NavigationLink(destination: Button8View()) {
                     Text("Button8")
                 }
+                NavigationLink(destination: Button9View()) {
+                    Text("Button9")
+                }
             }
         }
     }

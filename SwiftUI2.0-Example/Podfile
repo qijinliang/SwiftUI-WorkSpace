@@ -6,5 +6,6 @@ target 'SwiftUI2.0-Example' do
   use_frameworks!
 
   # Pods for SwiftUI2.0-Example
+  pod 'WaterfallGrid', '~> 1.0.0'
 
 end
