@@ -18,10 +18,6 @@ struct PathShowVIew: View {
                 NavigationLink(destination: Path2()) {
                     Text("Path2")
                 }
-                
-                NavigationLink(destination: Path3()) {
-                    Text("Path3")
-                }
             }
         }
     }

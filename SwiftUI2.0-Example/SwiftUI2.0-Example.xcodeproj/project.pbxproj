@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044108D426E71605000302F5 /* ChangeShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044108D126E71605000302F5 /* ChangeShowView.swift */; };
+		044108D526E71605000302F5 /* ChangeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044108D226E71605000302F5 /* ChangeColor.swift */; };
+		044108D626E71606000302F5 /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044108D326E71605000302F5 /* Change.swift */; };
 		04DD2CF126C25762002ABA40 /* Button9View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD2CF026C25762002ABA40 /* Button9View.swift */; };
 		04DD2CF326C25BA6002ABA40 /* Pods_SwiftUI2_0_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD4243E4111E6D804628F8C /* Pods_SwiftUI2_0_Example.framework */; };
 		04DD2CF426C25BA6002ABA40 /* Pods_SwiftUI2_0_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD4243E4111E6D804628F8C /* Pods_SwiftUI2_0_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -144,8 +147,6 @@
 		5B52FE9C26A8893800A025CF /* Path2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1226A8893700A025CF /* Path2.swift */; };
 		5B52FE9D26A8893800A025CF /* PathShowVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1326A8893700A025CF /* PathShowVIew.swift */; };
 		5B52FE9E26A8893800A025CF /* Path1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1426A8893700A025CF /* Path1.swift */; };
-		5B52FE9F26A8893800A025CF /* Path3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1526A8893700A025CF /* Path3.swift */; };
-		5B52FEA026A8893800A025CF /* PathMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1626A8893700A025CF /* PathMainView.swift */; };
 		5B52FEA126A8893800A025CF /* AnimationSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1826A8893700A025CF /* AnimationSwiftUIView.swift */; };
 		5B52FEA226A8893800A025CF /* AnimationShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1926A8893700A025CF /* AnimationShowView.swift */; };
 		5B52FEA326A8893800A025CF /* PopSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1A26A8893700A025CF /* PopSwiftUIView.swift */; };
@@ -168,6 +169,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		044108D126E71605000302F5 /* ChangeShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeShowView.swift; sourceTree = "<group>"; };
+		044108D226E71605000302F5 /* ChangeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeColor.swift; sourceTree = "<group>"; };
+		044108D326E71605000302F5 /* Change.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
 		04DD2CEE26C256DE002ABA40 /* SwiftUI2.0-Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI2.0-Example.entitlements"; sourceTree = "<group>"; };
 		04DD2CF026C25762002ABA40 /* Button9View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button9View.swift; sourceTree = "<group>"; };
 		4BD4243E4111E6D804628F8C /* Pods_SwiftUI2_0_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI2_0_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -307,8 +311,6 @@
 		5B52FE1226A8893700A025CF /* Path2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path2.swift; sourceTree = "<group>"; };
 		5B52FE1326A8893700A025CF /* PathShowVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathShowVIew.swift; sourceTree = "<group>"; };
 		5B52FE1426A8893700A025CF /* Path1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path1.swift; sourceTree = "<group>"; };
-		5B52FE1526A8893700A025CF /* Path3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path3.swift; sourceTree = "<group>"; };
-		5B52FE1626A8893700A025CF /* PathMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathMainView.swift; sourceTree = "<group>"; };
 		5B52FE1826A8893700A025CF /* AnimationSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationSwiftUIView.swift; sourceTree = "<group>"; };
 		5B52FE1926A8893700A025CF /* AnimationShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationShowView.swift; sourceTree = "<group>"; };
 		5B52FE1A26A8893700A025CF /* PopSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopSwiftUIView.swift; sourceTree = "<group>"; };
@@ -330,6 +332,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044108D026E71605000302F5 /* Change */ = {
+			isa = PBXGroup;
+			children = (
+				044108D126E71605000302F5 /* ChangeShowView.swift */,
+				044108D226E71605000302F5 /* ChangeColor.swift */,
+				044108D326E71605000302F5 /* Change.swift */,
+			);
+			path = Change;
+			sourceTree = "<group>";
+		};
 		5B52FD5D26A888C400A025CF = {
 			isa = PBXGroup;
 			children = (
@@ -701,6 +713,7 @@
 		5B52FE1026A8893700A025CF /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				044108D026E71605000302F5 /* Change */,
 				5B52FE1126A8893700A025CF /* Path */,
 				5B52FE1726A8893700A025CF /* Other */,
 			);
@@ -713,8 +726,6 @@
 				5B52FE1226A8893700A025CF /* Path2.swift */,
 				5B52FE1326A8893700A025CF /* PathShowVIew.swift */,
 				5B52FE1426A8893700A025CF /* Path1.swift */,
-				5B52FE1526A8893700A025CF /* Path3.swift */,
-				5B52FE1626A8893700A025CF /* PathMainView.swift */,
 			);
 			path = Path;
 			sourceTree = "<group>";
@@ -864,6 +875,7 @@
 			files = (
 				5B52FE4F26A8893700A025CF /* AVPlayerMainView.swift in Sources */,
 				5B52FE6726A8893700A025CF /* JsonMainView.swift in Sources */,
+				044108D626E71606000302F5 /* Change.swift in Sources */,
 				5B52FE8026A8893700A025CF /* CustomerView.swift in Sources */,
 				5B52FE1D26A8893700A025CF /* ScrollMainView.swift in Sources */,
 				5B52FE4526A8893700A025CF /* Chart SwiftUIView.swift in Sources */,
@@ -953,11 +965,11 @@
 				5B52FE5326A8893700A025CF /* SpacerExampleView.swift in Sources */,
 				5B52FE3926A8893700A025CF /* SegmentedMainView.swift in Sources */,
 				5B52FE7D26A8893700A025CF /* ListGroupedView.swift in Sources */,
+				044108D426E71605000302F5 /* ChangeShowView.swift in Sources */,
 				5B52FE3E26A8893700A025CF /* Neworkingimage.swift in Sources */,
 				5B52FE5C26A8893700A025CF /* HStack3SwiftUIView.swift in Sources */,
 				5B52FE3D26A8893700A025CF /* Conmmon.swift in Sources */,
 				5B52FE5A26A8893700A025CF /* HStack4SwiftUIView.swift in Sources */,
-				5B52FEA026A8893800A025CF /* PathMainView.swift in Sources */,
 				5B52FE7426A8893700A025CF /* GestureMainView.swift in Sources */,
 				5B52FE6F26A8893700A025CF /* Button3View.swift in Sources */,
 				5B52FE2526A8893700A025CF /* Form3View.swift in Sources */,
@@ -973,7 +985,6 @@
 				04DD2CF126C25762002ABA40 /* Button9View.swift in Sources */,
 				5B52FE4726A8893700A025CF /* TextFieldShowView.swift in Sources */,
 				5B52FE7626A8893700A025CF /* GeometryReader3SwiftUIView.swift in Sources */,
-				5B52FE9F26A8893800A025CF /* Path3.swift in Sources */,
 				5B52FE9D26A8893800A025CF /* PathShowVIew.swift in Sources */,
 				5B52FE8126A8893700A025CF /* ListMainSwiftUIView.swift in Sources */,
 				5B52FE6326A8893700A025CF /* MapShowView.swift in Sources */,
@@ -988,6 +999,7 @@
 				5B52FE8F26A8893700A025CF /* SheetMainView.swift in Sources */,
 				5B52FE8B26A8893700A025CF /* Text9View.swift in Sources */,
 				5B52FE4B26A8893700A025CF /* SliderMainView.swift in Sources */,
+				044108D526E71605000302F5 /* ChangeColor.swift in Sources */,
 				5B52FE5B26A8893700A025CF /* HStack7View.swift in Sources */,
 				5B52FE8726A8893700A025CF /* Text7View.swift in Sources */,
 				5B52FE5826A8893700A025CF /* FameModifierView.swift in Sources */,
@@ -1133,15 +1145,17 @@
 				CODE_SIGN_ENTITLEMENTS = "SwiftUI2.0-Example/SwiftUI2.0-Example.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = string;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI2.0-Example/Preview Content\"";
 				DEVELOPMENT_TEAM = A3JAKUCNSA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI2.0-Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.StudySwiftUI.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1159,15 +1173,17 @@
 				CODE_SIGN_ENTITLEMENTS = "SwiftUI2.0-Example/SwiftUI2.0-Example.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = string;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI2.0-Example/Preview Content\"";
 				DEVELOPMENT_TEAM = A3JAKUCNSA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "SwiftUI2.0-Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.StudySwiftUI.cn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

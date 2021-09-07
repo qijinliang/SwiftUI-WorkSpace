@@ -33,6 +33,14 @@ struct AnimationShowView: View {
                         Text("Path")
                     }
                 }
+                
+                //MARK: Move
+                Section(header: Text("Change").font(.title3).fontWeight(.heavy)) {
+                    
+                    NavigationLink(destination: ChangeShowView()) {
+                        Text("Change")
+                    }
+                }
             }
             .navigationBarTitle(Text("动画"),displayMode: .inline)
         }
