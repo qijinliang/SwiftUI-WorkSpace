@@ -14,6 +14,22 @@ struct ChangeShowView: View {
                 NavigationLink(destination: Change()) {
                     Text("Change")
                 }
+                
+                NavigationLink(destination: ChangeColor()) {
+                    Text("ChangeColor")
+                }
+                
+                NavigationLink(destination: ChangeOffset()) {
+                    Text("ChangeOffset")
+                }
+                
+                NavigationLink(destination: ChangeShow()) {
+                    Text("ChangeShow")
+                }
+                
+                NavigationLink(destination: ChangePoint()) {
+                    Text("ChangePoint")
+                }
             }
         }
     }

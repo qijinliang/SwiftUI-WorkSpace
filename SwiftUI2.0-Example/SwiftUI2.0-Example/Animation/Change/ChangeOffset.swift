@@ -17,11 +17,10 @@ struct ChangeOffset: View {
             VStack(spacing: 20) {
                 Text("点击移动正方形位置")
                     .font(.system(size: 30, weight: .heavy))
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
             }
             .padding()
             .frame(maxWidth: .infinity)
-            .background(Color.blue)
             RoundedRectangle(cornerRadius: 20)
                 .foregroundColor(Change ? .red : .blue)
                 .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)

@@ -10,9 +10,7 @@ import SwiftUI
 struct Text4View: View {
     var body: some View {
         VStack(spacing: 20) {
-            Text("Text")
-                .font(.largeTitle)
-            Text("Weights & Tezt Style")
+            Text("文本和粗体一起使用")
                 .font(.title)
                 .foregroundColor(.gray)
             HStack(spacing: 0) {

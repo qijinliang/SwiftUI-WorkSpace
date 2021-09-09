@@ -10,26 +10,21 @@ import SwiftUI
 struct Text2View: View {
     var body: some View {
         VStack(spacing: 20) {
-            Text("Text")
-                .font(.largeTitle)
-            Text("Text Style")
+            Text("文本样式")
                 .font(.title)
                 .foregroundColor(.gray)
             Image.init(systemName: "f.square.fill")
                 .font(.system(size: 40))
                 .foregroundColor(Color(#colorLiteral(red: 0.3964672983, green: 0.1600626409, blue: 0.03812957183, alpha: 1)))
             VStack() {
-                Text("You can add a TextStyle to the Text view by calling.fong(Font.<Text Style>).")
+                Text("文本的大小这里.font(.xxxx)")
                     .font(.title)
                     .foregroundColor(.white)
             }
             .padding()
             .frame(maxWidth: .infinity)
             .background(Color.green)
-            
-            Text("Avaliable Text Style")
-                .font(.title)
-                .foregroundColor(.gray)
+
             Divider()
             
             Group() {

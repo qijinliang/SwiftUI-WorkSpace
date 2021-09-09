@@ -11,6 +11,9 @@
 		044108D526E71605000302F5 /* ChangeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044108D226E71605000302F5 /* ChangeColor.swift */; };
 		044108D626E71606000302F5 /* Change.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044108D326E71605000302F5 /* Change.swift */; };
 		044108D826E781E2000302F5 /* ChangeOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044108D726E781E2000302F5 /* ChangeOffset.swift */; };
+		044108DA26E8D400000302F5 /* ChangeShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044108D926E8D400000302F5 /* ChangeShow.swift */; };
+		044108DC26E8D780000302F5 /* ChangePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044108DB26E8D780000302F5 /* ChangePoint.swift */; };
+		044108DE26E8E723000302F5 /* ChangeAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044108DD26E8E723000302F5 /* ChangeAngle.swift */; };
 		04DD2CF126C25762002ABA40 /* Button9View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD2CF026C25762002ABA40 /* Button9View.swift */; };
 		04DD2CF326C25BA6002ABA40 /* Pods_SwiftUI2_0_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD4243E4111E6D804628F8C /* Pods_SwiftUI2_0_Example.framework */; };
 		04DD2CF426C25BA6002ABA40 /* Pods_SwiftUI2_0_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD4243E4111E6D804628F8C /* Pods_SwiftUI2_0_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -174,6 +177,9 @@
 		044108D226E71605000302F5 /* ChangeColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeColor.swift; sourceTree = "<group>"; };
 		044108D326E71605000302F5 /* Change.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Change.swift; sourceTree = "<group>"; };
 		044108D726E781E2000302F5 /* ChangeOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeOffset.swift; sourceTree = "<group>"; };
+		044108D926E8D400000302F5 /* ChangeShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeShow.swift; sourceTree = "<group>"; };
+		044108DB26E8D780000302F5 /* ChangePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePoint.swift; sourceTree = "<group>"; };
+		044108DD26E8E723000302F5 /* ChangeAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAngle.swift; sourceTree = "<group>"; };
 		04DD2CEE26C256DE002ABA40 /* SwiftUI2.0-Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI2.0-Example.entitlements"; sourceTree = "<group>"; };
 		04DD2CF026C25762002ABA40 /* Button9View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button9View.swift; sourceTree = "<group>"; };
 		4BD4243E4111E6D804628F8C /* Pods_SwiftUI2_0_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI2_0_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -341,6 +347,9 @@
 				044108D226E71605000302F5 /* ChangeColor.swift */,
 				044108D326E71605000302F5 /* Change.swift */,
 				044108D726E781E2000302F5 /* ChangeOffset.swift */,
+				044108D926E8D400000302F5 /* ChangeShow.swift */,
+				044108DB26E8D780000302F5 /* ChangePoint.swift */,
+				044108DD26E8E723000302F5 /* ChangeAngle.swift */,
 			);
 			path = Change;
 			sourceTree = "<group>";
@@ -913,6 +922,7 @@
 				5B52FE7126A8893700A025CF /* ButtonMainView.swift in Sources */,
 				5B52FE6E26A8893700A025CF /* Button8View.swift in Sources */,
 				5B52FE7326A8893700A025CF /* GestureSwiftUIView.swift in Sources */,
+				044108DA26E8D400000302F5 /* ChangeShow.swift in Sources */,
 				5B52FE3226A8893700A025CF /* BingdingMainView.swift in Sources */,
 				5B52FE8326A8893700A025CF /* Text6View.swift in Sources */,
 				5B52FEA526A8893800A025CF /* FoldSwiftUIView.swift in Sources */,
@@ -951,6 +961,7 @@
 				5B52FE6A26A8893700A025CF /* Button4View.swift in Sources */,
 				5B52FE2126A8893700A025CF /* NavigationSwiftUIView.swift in Sources */,
 				5B52FE6D26A8893700A025CF /* Button5View.swift in Sources */,
+				044108DC26E8D780000302F5 /* ChangePoint.swift in Sources */,
 				5B52FE6826A8893700A025CF /* Json3SwiftUIView.swift in Sources */,
 				5B52FE4626A8893700A025CF /* TextField2View.swift in Sources */,
 				5B52FE2D26A8893700A025CF /* DatePickerView.swift in Sources */,
@@ -962,6 +973,7 @@
 				5B52FE7826A8893700A025CF /* GeometryReader2SwiftUIView.swift in Sources */,
 				5B52FE2726A8893700A025CF /* FormMainView.swift in Sources */,
 				5B52FE9526A8893700A025CF /* ZStack5SwiftUIView.swift in Sources */,
+				044108DE26E8E723000302F5 /* ChangeAngle.swift in Sources */,
 				5B52FE5D26A8893700A025CF /* HStackSwiftUIView.swift in Sources */,
 				5B52FE9E26A8893800A025CF /* Path1.swift in Sources */,
 				5B52FE9726A8893800A025CF /* VStackMainView.swift in Sources */,

@@ -10,16 +10,14 @@ import SwiftUI
 struct Text3View: View {
     var body: some View {
         VStack(spacing: 20) {
-            Text("Text")
-                .font(.largeTitle)
-            Text("Font Weights")
+            Text("文本粗体")
                 .font(.title)
                 .foregroundColor(.gray)
             Image.init(systemName: "w.square.fill")
                 .font(.system(size: 40))
                 .foregroundColor(Color(#colorLiteral(red: 0.3964672983, green: 0.1600626409, blue: 0.03812957183, alpha: 1)))
             VStack() {
-                Text("You can apply a variety of font weights to the Text view.")
+                Text("可以设置文本粗体方法.fontWeight(.xxxx)")
                     .font(.title)
                     .foregroundColor(.white)
             }

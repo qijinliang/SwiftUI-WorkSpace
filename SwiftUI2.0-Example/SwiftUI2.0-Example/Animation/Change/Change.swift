@@ -13,18 +13,12 @@ struct Change: View {
     
     var body: some View {
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20) {
-            Text("动画下滑")
-                .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                .font(.system(size: 30))
             
-            VStack() {
-                Text("点击按钮Change，对圆形进行上下移动").font(.title)
-                    .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                
-            }
-            .padding()
-            .frame(maxWidth: .infinity)
-            .background(Color(hex: "#FF6D5D"))
+            Text("点击按钮Change，对圆形进行上下移动")
+                .padding()
+                .font(.title)
+                .foregroundColor(Color(hex: "#FF6D5D"))
+            
             
             Circle()
                 .foregroundColor(.orange)
