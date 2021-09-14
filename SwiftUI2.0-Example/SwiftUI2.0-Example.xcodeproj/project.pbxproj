@@ -14,6 +14,8 @@
 		044108DA26E8D400000302F5 /* ChangeShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044108D926E8D400000302F5 /* ChangeShow.swift */; };
 		044108DC26E8D780000302F5 /* ChangePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044108DB26E8D780000302F5 /* ChangePoint.swift */; };
 		044108DE26E8E723000302F5 /* ChangeAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044108DD26E8E723000302F5 /* ChangeAngle.swift */; };
+		049E350126F0D5CC00BD4494 /* AnimationShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E34FF26F0D5CB00BD4494 /* AnimationShowView.swift */; };
+		049E350226F0D5CC00BD4494 /* AnimationMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049E350026F0D5CB00BD4494 /* AnimationMainView.swift */; };
 		04DD2CF126C25762002ABA40 /* Button9View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DD2CF026C25762002ABA40 /* Button9View.swift */; };
 		04DD2CF326C25BA6002ABA40 /* Pods_SwiftUI2_0_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD4243E4111E6D804628F8C /* Pods_SwiftUI2_0_Example.framework */; };
 		04DD2CF426C25BA6002ABA40 /* Pods_SwiftUI2_0_Example.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD4243E4111E6D804628F8C /* Pods_SwiftUI2_0_Example.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -151,11 +153,6 @@
 		5B52FE9C26A8893800A025CF /* Path2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1226A8893700A025CF /* Path2.swift */; };
 		5B52FE9D26A8893800A025CF /* PathShowVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1326A8893700A025CF /* PathShowVIew.swift */; };
 		5B52FE9E26A8893800A025CF /* Path1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1426A8893700A025CF /* Path1.swift */; };
-		5B52FEA126A8893800A025CF /* AnimationSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1826A8893700A025CF /* AnimationSwiftUIView.swift */; };
-		5B52FEA226A8893800A025CF /* AnimationShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1926A8893700A025CF /* AnimationShowView.swift */; };
-		5B52FEA326A8893800A025CF /* PopSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1A26A8893700A025CF /* PopSwiftUIView.swift */; };
-		5B52FEA426A8893800A025CF /* AnimationMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1B26A8893700A025CF /* AnimationMainView.swift */; };
-		5B52FEA526A8893800A025CF /* FoldSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B52FE1C26A8893700A025CF /* FoldSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -180,6 +177,8 @@
 		044108D926E8D400000302F5 /* ChangeShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeShow.swift; sourceTree = "<group>"; };
 		044108DB26E8D780000302F5 /* ChangePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePoint.swift; sourceTree = "<group>"; };
 		044108DD26E8E723000302F5 /* ChangeAngle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAngle.swift; sourceTree = "<group>"; };
+		049E34FF26F0D5CB00BD4494 /* AnimationShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationShowView.swift; sourceTree = "<group>"; };
+		049E350026F0D5CB00BD4494 /* AnimationMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationMainView.swift; sourceTree = "<group>"; };
 		04DD2CEE26C256DE002ABA40 /* SwiftUI2.0-Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI2.0-Example.entitlements"; sourceTree = "<group>"; };
 		04DD2CF026C25762002ABA40 /* Button9View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button9View.swift; sourceTree = "<group>"; };
 		4BD4243E4111E6D804628F8C /* Pods_SwiftUI2_0_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI2_0_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -319,11 +318,6 @@
 		5B52FE1226A8893700A025CF /* Path2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path2.swift; sourceTree = "<group>"; };
 		5B52FE1326A8893700A025CF /* PathShowVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathShowVIew.swift; sourceTree = "<group>"; };
 		5B52FE1426A8893700A025CF /* Path1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path1.swift; sourceTree = "<group>"; };
-		5B52FE1826A8893700A025CF /* AnimationSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationSwiftUIView.swift; sourceTree = "<group>"; };
-		5B52FE1926A8893700A025CF /* AnimationShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationShowView.swift; sourceTree = "<group>"; };
-		5B52FE1A26A8893700A025CF /* PopSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopSwiftUIView.swift; sourceTree = "<group>"; };
-		5B52FE1B26A8893700A025CF /* AnimationMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationMainView.swift; sourceTree = "<group>"; };
-		5B52FE1C26A8893700A025CF /* FoldSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldSwiftUIView.swift; sourceTree = "<group>"; };
 		64AF8754FA084D2D1592F24A /* Pods-SwiftUI2.0-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI2.0-Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI2.0-Example/Pods-SwiftUI2.0-Example.release.xcconfig"; sourceTree = "<group>"; };
 		962C744E0510F98697CA7215 /* Pods-SwiftUI2.0-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI2.0-Example.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI2.0-Example/Pods-SwiftUI2.0-Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -352,6 +346,15 @@
 				044108DD26E8E723000302F5 /* ChangeAngle.swift */,
 			);
 			path = Change;
+			sourceTree = "<group>";
+		};
+		049E34FE26F0D5CB00BD4494 /* AnimationMain */ = {
+			isa = PBXGroup;
+			children = (
+				049E34FF26F0D5CB00BD4494 /* AnimationShowView.swift */,
+				049E350026F0D5CB00BD4494 /* AnimationMainView.swift */,
+			);
+			path = AnimationMain;
 			sourceTree = "<group>";
 		};
 		5B52FD5D26A888C400A025CF = {
@@ -725,9 +728,9 @@
 		5B52FE1026A8893700A025CF /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				049E34FE26F0D5CB00BD4494 /* AnimationMain */,
 				044108D026E71605000302F5 /* Change */,
 				5B52FE1126A8893700A025CF /* Path */,
-				5B52FE1726A8893700A025CF /* Other */,
 			);
 			path = Animation;
 			sourceTree = "<group>";
@@ -740,18 +743,6 @@
 				5B52FE1426A8893700A025CF /* Path1.swift */,
 			);
 			path = Path;
-			sourceTree = "<group>";
-		};
-		5B52FE1726A8893700A025CF /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				5B52FE1826A8893700A025CF /* AnimationSwiftUIView.swift */,
-				5B52FE1926A8893700A025CF /* AnimationShowView.swift */,
-				5B52FE1A26A8893700A025CF /* PopSwiftUIView.swift */,
-				5B52FE1B26A8893700A025CF /* AnimationMainView.swift */,
-				5B52FE1C26A8893700A025CF /* FoldSwiftUIView.swift */,
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		A398204F27E299C008BE23BB /* Pods */ = {
@@ -892,7 +883,6 @@
 				5B52FE1D26A8893700A025CF /* ScrollMainView.swift in Sources */,
 				5B52FE4526A8893700A025CF /* Chart SwiftUIView.swift in Sources */,
 				5B52FE7526A8893700A025CF /* GeometryReaderSwiftUIView.swift in Sources */,
-				5B52FEA126A8893800A025CF /* AnimationSwiftUIView.swift in Sources */,
 				5B52FE9426A8893700A025CF /* ZStack3View.swift in Sources */,
 				5B52FE6426A8893700A025CF /* JsonShowView.swift in Sources */,
 				5B52FE7026A8893700A025CF /* Button6View.swift in Sources */,
@@ -910,7 +900,6 @@
 				5B52FE8C26A8893700A025CF /* Text3View.swift in Sources */,
 				5B52FE1E26A8893700A025CF /* ScrollView2SwiftUIView.swift in Sources */,
 				5B52FE3C26A8893700A025CF /* Segmented2View.swift in Sources */,
-				5B52FEA426A8893800A025CF /* AnimationMainView.swift in Sources */,
 				5B52FE5426A8893700A025CF /* Spacer3SwiftUIView.swift in Sources */,
 				5B52FE4226A8893700A025CF /* FanshapedSwiftUIView.swift in Sources */,
 				044108D826E781E2000302F5 /* ChangeOffset.swift in Sources */,
@@ -918,14 +907,12 @@
 				5B52FE3726A8893700A025CF /* Layout3View.swift in Sources */,
 				5B52FE6526A8893700A025CF /* JsonSwiftUIView.swift in Sources */,
 				5B52FE7926A8893700A025CF /* GeometryReader5SwiftUIView.swift in Sources */,
-				5B52FEA226A8893800A025CF /* AnimationShowView.swift in Sources */,
 				5B52FE7126A8893700A025CF /* ButtonMainView.swift in Sources */,
 				5B52FE6E26A8893700A025CF /* Button8View.swift in Sources */,
 				5B52FE7326A8893700A025CF /* GestureSwiftUIView.swift in Sources */,
 				044108DA26E8D400000302F5 /* ChangeShow.swift in Sources */,
 				5B52FE3226A8893700A025CF /* BingdingMainView.swift in Sources */,
 				5B52FE8326A8893700A025CF /* Text6View.swift in Sources */,
-				5B52FEA526A8893800A025CF /* FoldSwiftUIView.swift in Sources */,
 				5B52FE4C26A8893700A025CF /* Slider1View.swift in Sources */,
 				5B52FE6126A8893700A025CF /* MapMainView.swift in Sources */,
 				5B52FE2E26A8893700A025CF /* DatePickerShowView.swift in Sources */,
@@ -967,7 +954,6 @@
 				5B52FE2D26A8893700A025CF /* DatePickerView.swift in Sources */,
 				5B52FE5126A8893700A025CF /* SpacerSwiftUIView.swift in Sources */,
 				5B52FE4026A8893700A025CF /* MathMainView.swift in Sources */,
-				5B52FEA326A8893800A025CF /* PopSwiftUIView.swift in Sources */,
 				5B52FE7726A8893700A025CF /* GemoetryReaderMainView.swift in Sources */,
 				5B52FD6C26A888C400A025CF /* ContentView.swift in Sources */,
 				5B52FE7826A8893700A025CF /* GeometryReader2SwiftUIView.swift in Sources */,
@@ -1006,9 +992,11 @@
 				5B52FE6326A8893700A025CF /* MapShowView.swift in Sources */,
 				5B52FE8D26A8893700A025CF /* Text5View.swift in Sources */,
 				5B52FE6926A8893700A025CF /* ButtonSwiftUIView.swift in Sources */,
+				049E350226F0D5CC00BD4494 /* AnimationMainView.swift in Sources */,
 				5B52FE9226A8893700A025CF /* ZStack2SwiftUIView.swift in Sources */,
 				5B52FE5F26A8893700A025CF /* LazyHGridView.swift in Sources */,
 				5B52FE3A26A8893700A025CF /* Segmented3View.swift in Sources */,
+				049E350126F0D5CC00BD4494 /* AnimationShowView.swift in Sources */,
 				5B52FE2B26A8893700A025CF /* Picker3View.swift in Sources */,
 				5B52FE2C26A8893700A025CF /* DatePicker2View.swift in Sources */,
 				5B52FE2326A8893700A025CF /* Form1View.swift in Sources */,

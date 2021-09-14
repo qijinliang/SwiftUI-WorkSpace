@@ -11,21 +11,7 @@ struct AnimationShowView: View {
     var body: some View {
         NavigationView() {
             Form {
-                Section(header: Text("Animation").font(.title3).fontWeight(.heavy)) {
-                    NavigationLink(destination: PopSwiftUIView()) {
-                        Text("POP")
-                    }
-                    
-                    
-                    NavigationLink(destination: AnimationSwiftUIView()) {
-                        Text("Animation")
-                    }
-                    
-                    NavigationLink(destination: FoldSwiftUIView()) {
-                        Text("Flod")
-                    }
-                }
-                
+
                 //MARK: Path
                 Section(header: Text("Path").font(.title3).fontWeight(.heavy)) {
                     
