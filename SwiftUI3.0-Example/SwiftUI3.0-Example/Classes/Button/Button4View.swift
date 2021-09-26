@@ -9,55 +9,66 @@ import SwiftUI
 
 struct Button4View: View {
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Button")
-                .font(.largeTitle)
-            Text("With Borders")
-                .font(.title)
-                .foregroundColor(.gray)
-            
-            VStack() {
-                Text("Applying borders can add a nice effeect to your buttons.Here are some options.")
-                    .font(.title)
-            }
-            .padding()
-            .frame(maxWidth: .infinity)
-            .background(Color.purple)
-            
+        VStack(spacing: 40) {
             Button(action: {
-                
-            }) {
-                Text("Border Button")
+                print("Delete tapped")
+            }){
+                Label(
+                    title: {Text("Delete")
+                            .fontWeight(.semibold)
+                            .font(.title)
+                    }, icon: {
+                        Image.init(systemName: "trash")
+                            .font(.title)
+                    }
+                )
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     .padding()
-                    .border(Color.purple, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.white)
+                    .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.5786082745, green: 0.8915666938, blue: 0.994461596, alpha: 1.0)), Color(#colorLiteral(red: 0.0, green: 0.7790542245, blue: 0.9885957837, alpha: 1.0))]), startPoint: .leading, endPoint: .trailing))
+                    .cornerRadius(40)
+                    .shadow(radius: 5.0)
             }
             
             Button(action: {
-                
-            }) {
-                Text("Border Button")
+                print("Delete tapped")
+            }){
+                Label(
+                    title: {Text("Share")
+                            .fontWeight(.semibold)
+                            .font(.title)
+                    }, icon: {
+                        Image.init(systemName: "square.and.arrow.up")
+                            .font(.title)
+                    }
+                )
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     .padding()
-                    .border(Color.purple)
-                    .cornerRadius(10)
+                    .foregroundColor(.white)
+                    .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.3681973815, green: 0.186875701, blue: 0.9226484895, alpha: 1.0)), Color(#colorLiteral(red: 0.2168135047, green: 0.1025053188, blue: 0.5823028088, alpha: 1.0))]), startPoint: .leading, endPoint: .trailing))
+                    .cornerRadius(40)
+                    .shadow(radius: 5.0)
             }
-            
-            VStack() {
-                Text("Look what happened when I tried to add a corner radius to the border. It is clipping the corners. Here is a different way you can accomplish this:")
-                    .font(.title)
-            }
-            .padding()
-            .frame(maxWidth: .infinity)
-            .background(Color.purple)
             
             Button(action: {
-                
-            }) {
-                Text("Border Button")
+                print("Delete tapped")
+            }){
+                Label(
+                    title: {Text("Delete")
+                            .fontWeight(.semibold)
+                            .font(.title)
+                    }, icon: {
+                        Image.init(systemName: "square.and.pencil")
+                            .font(.title)
+                    }
+                )
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     .padding()
-                    .background(
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.purple,lineWidth: 1)
-                    )
+                    .foregroundColor(.white)
+                    .background(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.0, green: 0.7790542245, blue: 0.9885957837, alpha: 1.0)), Color(#colorLiteral(red: 0.2168135047, green: 0.1025053188, blue: 0.5823028088, alpha: 1.0))]), startPoint: .leading, endPoint: .trailing))
+                    .cornerRadius(40)
+                    .shadow(radius: 5.0)
+                    .shadow(color: Color(#colorLiteral(red: 0.0, green: 0.6385222077, blue: 0.8448928595, alpha: 1.0)), radius: 20.0, x: 20, y: 10)
             }
         }
     }

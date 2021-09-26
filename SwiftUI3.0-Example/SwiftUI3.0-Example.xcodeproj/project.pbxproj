@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040A286B2700AC4E00020D01 /* ImplicitShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A286A2700AC4E00020D01 /* ImplicitShowView.swift */; };
+		040A286D2700AC7A00020D01 /* Implicit1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A286C2700AC7A00020D01 /* Implicit1.swift */; };
 		5B0D077926F9CF5E00F5D7E6 /* SwiftUI3_0_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D077826F9CF5E00F5D7E6 /* SwiftUI3_0_ExampleApp.swift */; };
 		5B0D077B26F9CF5E00F5D7E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D077A26F9CF5E00F5D7E6 /* ContentView.swift */; };
 		5B0D077D26F9CF5F00F5D7E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D077C26F9CF5F00F5D7E6 /* Assets.xcassets */; };
@@ -154,6 +156,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040A286A2700AC4E00020D01 /* ImplicitShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitShowView.swift; sourceTree = "<group>"; };
+		040A286C2700AC7A00020D01 /* Implicit1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Implicit1.swift; sourceTree = "<group>"; };
 		5B0D077526F9CF5E00F5D7E6 /* SwiftUI3.0-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI3.0-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0D077826F9CF5E00F5D7E6 /* SwiftUI3_0_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI3_0_ExampleApp.swift; sourceTree = "<group>"; };
 		5B0D077A26F9CF5E00F5D7E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -312,6 +316,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040A28692700AC3D00020D01 /* Implicit */ = {
+			isa = PBXGroup;
+			children = (
+				040A286A2700AC4E00020D01 /* ImplicitShowView.swift */,
+				040A286C2700AC7A00020D01 /* Implicit1.swift */,
+			);
+			path = Implicit;
+			sourceTree = "<group>";
+		};
 		5B0D076C26F9CF5E00F5D7E6 = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +365,7 @@
 		5B0D078626F9CF9000F5D7E6 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				040A28692700AC3D00020D01 /* Implicit */,
 				5B0D078726F9CF9000F5D7E6 /* Change */,
 				5B0D078F26F9CF9000F5D7E6 /* Path */,
 				5B0D079326F9CF9000F5D7E6 /* AnimationMain */,
@@ -614,17 +628,17 @@
 		5B0D07F326F9CF9000F5D7E6 /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				5B0D07F426F9CF9000F5D7E6 /* ButtonSwiftUIView.swift */,
-				5B0D07F526F9CF9000F5D7E6 /* Button4View.swift */,
-				5B0D07F626F9CF9000F5D7E6 /* Button9View.swift */,
-				5B0D07F726F9CF9000F5D7E6 /* ButtonShowView.swift */,
 				5B0D07F826F9CF9000F5D7E6 /* Button2View.swift */,
-				5B0D07F926F9CF9000F5D7E6 /* Button5View.swift */,
-				5B0D07FA26F9CF9000F5D7E6 /* Button8View.swift */,
 				5B0D07FB26F9CF9000F5D7E6 /* Button3View.swift */,
+				5B0D07F526F9CF9000F5D7E6 /* Button4View.swift */,
+				5B0D07F926F9CF9000F5D7E6 /* Button5View.swift */,
 				5B0D07FC26F9CF9000F5D7E6 /* Button6View.swift */,
-				5B0D07FD26F9CF9000F5D7E6 /* ButtonMainView.swift */,
 				5B0D07FE26F9CF9000F5D7E6 /* Button7View.swift */,
+				5B0D07FA26F9CF9000F5D7E6 /* Button8View.swift */,
+				5B0D07F626F9CF9000F5D7E6 /* Button9View.swift */,
+				5B0D07FD26F9CF9000F5D7E6 /* ButtonMainView.swift */,
+				5B0D07F726F9CF9000F5D7E6 /* ButtonShowView.swift */,
+				5B0D07F426F9CF9000F5D7E6 /* ButtonSwiftUIView.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -843,6 +857,7 @@
 				5B0D08AF26F9CF9000F5D7E6 /* SheetJsonView.swift in Sources */,
 				5B0D088826F9CF9000F5D7E6 /* Button4View.swift in Sources */,
 				5B0D086D26F9CF9000F5D7E6 /* AVPlayerMainView.swift in Sources */,
+				040A286D2700AC7A00020D01 /* Implicit1.swift in Sources */,
 				5B0D089F26F9CF9000F5D7E6 /* CustomerView.swift in Sources */,
 				5B0D084C26F9CF9000F5D7E6 /* DatePickerShowView.swift in Sources */,
 				5B0D088A26F9CF9000F5D7E6 /* ButtonShowView.swift in Sources */,
@@ -865,6 +880,7 @@
 				5B0D083426F9CF9000F5D7E6 /* ChangePoint.swift in Sources */,
 				5B0D08B726F9CF9000F5D7E6 /* VStackSwiftUIView.swift in Sources */,
 				5B0D08A826F9CF9000F5D7E6 /* TextShowView.swift in Sources */,
+				040A286B2700AC4E00020D01 /* ImplicitShowView.swift in Sources */,
 				5B0D087426F9CF9000F5D7E6 /* SpaceShowView.swift in Sources */,
 				5B0D089126F9CF9000F5D7E6 /* Button7View.swift in Sources */,
 				5B0D085F26F9CF9000F5D7E6 /* LineGraphSwiftUIView.swift in Sources */,

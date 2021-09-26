@@ -26,6 +26,10 @@ struct AnimationShowView: View {
                     NavigationLink(destination: ChangeShowView()) {
                         Text("Change")
                     }
+                    
+                    NavigationLink(destination: ImplicitShowView()) {
+                        Text("隐式动画")
+                    }
                 }
             }
             .navigationBarTitle(Text("动画"),displayMode: .inline)
