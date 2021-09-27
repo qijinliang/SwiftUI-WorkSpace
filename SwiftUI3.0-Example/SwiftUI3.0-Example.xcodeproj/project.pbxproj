@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		040A286B2700AC4E00020D01 /* ImplicitShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A286A2700AC4E00020D01 /* ImplicitShowView.swift */; };
 		040A286D2700AC7A00020D01 /* Implicit1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A286C2700AC7A00020D01 /* Implicit1.swift */; };
+		040A286F2700B04400020D01 /* Implicit2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A286E2700B04400020D01 /* Implicit2.swift */; };
+		040A28712700B1A500020D01 /* Implicit3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A28702700B1A500020D01 /* Implicit3.swift */; };
 		5B0D077926F9CF5E00F5D7E6 /* SwiftUI3_0_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D077826F9CF5E00F5D7E6 /* SwiftUI3_0_ExampleApp.swift */; };
 		5B0D077B26F9CF5E00F5D7E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D077A26F9CF5E00F5D7E6 /* ContentView.swift */; };
 		5B0D077D26F9CF5F00F5D7E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D077C26F9CF5F00F5D7E6 /* Assets.xcassets */; };
@@ -158,6 +160,8 @@
 /* Begin PBXFileReference section */
 		040A286A2700AC4E00020D01 /* ImplicitShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplicitShowView.swift; sourceTree = "<group>"; };
 		040A286C2700AC7A00020D01 /* Implicit1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Implicit1.swift; sourceTree = "<group>"; };
+		040A286E2700B04400020D01 /* Implicit2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Implicit2.swift; sourceTree = "<group>"; };
+		040A28702700B1A500020D01 /* Implicit3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Implicit3.swift; sourceTree = "<group>"; };
 		5B0D077526F9CF5E00F5D7E6 /* SwiftUI3.0-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI3.0-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0D077826F9CF5E00F5D7E6 /* SwiftUI3_0_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI3_0_ExampleApp.swift; sourceTree = "<group>"; };
 		5B0D077A26F9CF5E00F5D7E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -321,6 +325,8 @@
 			children = (
 				040A286A2700AC4E00020D01 /* ImplicitShowView.swift */,
 				040A286C2700AC7A00020D01 /* Implicit1.swift */,
+				040A286E2700B04400020D01 /* Implicit2.swift */,
+				040A28702700B1A500020D01 /* Implicit3.swift */,
 			);
 			path = Implicit;
 			sourceTree = "<group>";
@@ -891,6 +897,7 @@
 				5B0D084426F9CF9000F5D7E6 /* Form5View.swift in Sources */,
 				5B0D084326F9CF9000F5D7E6 /* Form3View.swift in Sources */,
 				5B0D086226F9CF9000F5D7E6 /* RectangleSwiftUIView.swift in Sources */,
+				040A28712700B1A500020D01 /* Implicit3.swift in Sources */,
 				5B0D08AA26F9CF9000F5D7E6 /* Text9View.swift in Sources */,
 				5B0D085226F9CF9000F5D7E6 /* Layout2SwiftUIView.swift in Sources */,
 				5B0D08B626F9CF9000F5D7E6 /* VStackMainView.swift in Sources */,
@@ -902,6 +909,7 @@
 				5B0D086E26F9CF9000F5D7E6 /* SpaceMainView.swift in Sources */,
 				5B0D088526F9CF9000F5D7E6 /* JsonMainView.swift in Sources */,
 				5B0D083A26F9CF9000F5D7E6 /* AnimationMainView.swift in Sources */,
+				040A286F2700B04400020D01 /* Implicit2.swift in Sources */,
 				5B0D087526F9CF9000F5D7E6 /* Spacer2SwiftUIView.swift in Sources */,
 				5B0D08AB26F9CF9000F5D7E6 /* Text3View.swift in Sources */,
 				5B0D086626F9CF9000F5D7E6 /* TextFieldSwiftUIView.swift in Sources */,

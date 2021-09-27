@@ -14,6 +14,14 @@ struct ImplicitShowView: View {
                 NavigationLink(destination: Implicit1()) {
                     Text("Implicit1")
                 }
+                
+                NavigationLink(destination: Implicit2()) {
+                    Text("Implicit2")
+                }
+                
+                NavigationLink(destination: Implicit3()) {
+                    Text("Implicit3")
+                }
             }
         }
     }
