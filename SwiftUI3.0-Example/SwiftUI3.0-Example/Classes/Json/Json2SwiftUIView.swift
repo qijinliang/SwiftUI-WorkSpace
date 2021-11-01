@@ -16,15 +16,16 @@ struct Feed: Decodable {
 }
 
 struct Result: Decodable,Hashable {
-    let copyright, name, artworkUrl100, releaseDate: String
+    let artistName, name, artworkUrl100, releaseDate: String
 }
 
 class GridViewModel: ObservableObject {
     @Published var results = [Result]()
     init() {
-        guard let url = URL(string: "https://rss.itunes.apple.com/api/v1/us/ios-apps/new-apps-we-love/all/50/explicit.json") else {
+        guard let url = URL(string: "https://rss.applemarketingtools.com/api/v2/cn/music/most-played/50/albums.json") else {
             return
         }
+        
         
         URLSession.shared.dataTask(with: url) {(data, resp, err) in
             guard let data = data else { return }
@@ -75,7 +76,7 @@ struct AppInfo: View {
                 .padding(.top, 4)
             Text(app.releaseDate)
                 .font(.system(size: 9, weight: .regular))
-            Text(app.copyright)
+            Text(app.artistName)
                 .font(.system(size: 9, weight: .regular))
                 .foregroundColor(.gray)
             Spacer()

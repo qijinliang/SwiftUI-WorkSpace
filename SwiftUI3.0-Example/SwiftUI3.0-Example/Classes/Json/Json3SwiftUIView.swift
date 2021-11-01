@@ -41,7 +41,7 @@ struct Json3SwiftUIView: View {
                 Text(item.rankingType).font(.title3).fontWeight(.bold)
                 Text(item.subTitle).font(.subheadline).foregroundColor(.gray)
                 URLImage(url: item.cover)
-                    .frame(width: 320, height: 200)
+                    .frame(maxWidth: .infinity)
                     .scaledToFill()
                     .shadow(radius: 8)
                     .cornerRadius(10)
