@@ -27,7 +27,7 @@ struct ContentView: View {
             }
         }
         .edgesIgnoringSafeArea(.all)
-        .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+//        .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
     }
 }
 

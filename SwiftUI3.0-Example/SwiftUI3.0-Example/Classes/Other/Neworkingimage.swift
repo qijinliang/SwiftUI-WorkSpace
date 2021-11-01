@@ -35,14 +35,14 @@ class ImageLoader: ObservableObject {
 struct URLImage: View {
     
     let url: String
-    let placeholder: String
+    let 栀宝5: String
     
     @ObservedObject var imageLoader = ImageLoader()
     
-    //String = "placeholder" 加载失败需要替换的图片
+    //String = "栀宝5" 加载失败需要替换的图片
     init(url: String, placehloder: String = "") {
         self.url = url
-        self.placeholder = placehloder
+        self.栀宝5 = placehloder
         self.imageLoader.downloadImgae(url: self.url)
     }
     
@@ -50,7 +50,7 @@ struct URLImage: View {
         if let data = self.imageLoader.downloadedData {
             return Image(uiImage: UIImage(data: data)!).renderingMode(.original).resizable()
         } else{
-            return Image("placeholder").renderingMode(.original).resizable()
+            return Image("栀宝5").renderingMode(.original).resizable()
         }
     }
 }

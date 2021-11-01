@@ -18,11 +18,14 @@ struct Movie: Identifiable, Hashable {
 struct ScrollViewSwiftUIView: View {
     
     let movies: [[Movie]] = [
-        [.init(name: "未来的人", imageName: #imageLiteral(resourceName: "placeholder")),
-         .init(name:"未来的人", imageName: #imageLiteral(resourceName: "美食3"))],
-        [.init(name: "未来的人",imageName: #imageLiteral(resourceName: "胡歌2")),
-         .init(name: "未来的人",imageName: #imageLiteral(resourceName: "胡歌1"))],
-        [.init(name: "未来的人",imageName: #imageLiteral(resourceName: "胡歌3"))]
+        [.init(name: "最爱的栀宝", imageName: #imageLiteral(resourceName: "栀宝5")),
+         .init(name:"最爱的栀宝", imageName: #imageLiteral(resourceName: "栀宝1"))],
+        [.init(name: "最爱的栀宝",imageName: #imageLiteral(resourceName: "栀宝2")),
+         .init(name: "最爱的栀宝",imageName: #imageLiteral(resourceName: "栀宝3"))],
+        [.init(name: "最爱的栀宝",imageName: #imageLiteral(resourceName: "栀宝4"))],
+        [.init(name: "最爱的栀宝",imageName: #imageLiteral(resourceName: "栀宝8")),
+         .init(name: "最爱的栀宝",imageName: #imageLiteral(resourceName: "栀宝6"))],
+        [.init(name: "最爱的栀宝",imageName: #imageLiteral(resourceName: "栀宝7"))]
     ]
     
     
@@ -84,6 +87,8 @@ struct MovieView: View {
 
 struct ScrollViewSwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ScrollViewSwiftUIView().preferredColorScheme(.dark)
+        Group {
+            ScrollViewSwiftUIView()
+        }
     }
 }

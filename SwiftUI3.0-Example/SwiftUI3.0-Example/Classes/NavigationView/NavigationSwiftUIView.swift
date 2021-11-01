@@ -14,16 +14,15 @@ struct Update: Identifiable {
     var image: UIImage
     var title: String
     var text: String
-    var date: String
 }
 
 let updateData = [
-    Update(image: #imageLiteral(resourceName: "美食2"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "1月17号"),
-    Update(image: #imageLiteral(resourceName: "胡歌3"), title: "胡歌", text: "胡歌，1982年9月20日出生于上海市徐汇区，中国内地影视男演员、流行乐歌手", date: "8月9号"),
-    Update(image: #imageLiteral(resourceName: "placeholder"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
-    Update(image: #imageLiteral(resourceName: "美食3"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
-    Update(image: #imageLiteral(resourceName: "美食2"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"),
-    Update(image: #imageLiteral(resourceName: "美食1"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号")
+    Update(image: #imageLiteral(resourceName: "栀宝2"), title: "写给我爱的栀宝", text: "栀宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
+    Update(image: #imageLiteral(resourceName: "栀宝7"), title: "我爱的栀宝", text: "栀宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
+    Update(image: #imageLiteral(resourceName: "栀宝5"), title: "写给我爱的栀宝", text: "栀宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
+    Update(image: #imageLiteral(resourceName: "栀宝6"), title: "我爱的栀宝", text: "栀宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
+    Update(image: #imageLiteral(resourceName: "栀宝4"), title: "写给我爱的栀宝", text: "栀宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
+    Update(image: #imageLiteral(resourceName: "栀宝1"), title: "我爱的栀宝", text: "栀宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你")
 ]
 
 
@@ -36,7 +35,7 @@ struct NavigationSwiftUIView: View {
     @ObservedObject var store = UpdateStore()
     
     func addUpdate() {
-        store.updates.append(Update(image: #imageLiteral(resourceName: "胡歌2"), title: "未来的人", text: "未来的人是一名主播，兼具娱乐和游戏功底。未来的人清纯的面容加上唱歌功底，邻家妹妹的形象受到观众的喜欢。", date: "12月27号"))
+        store.updates.append(Update(image: #imageLiteral(resourceName: "栀宝"), title: "最爱的栀宝", text: "栀宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"))
     }
     
     var body: some View {
@@ -59,11 +58,6 @@ struct NavigationSwiftUIView: View {
                                     .lineLimit(2)
                                     .font(.subheadline)
                                     .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
-                                
-                                Text(update.date)
-                                    .font(.caption)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(.secondary)
                             }
                         }
                         .padding(.vertical, 8)
@@ -76,7 +70,7 @@ struct NavigationSwiftUIView: View {
                     self.store.updates.move(fromOffsets: source, toOffset: destination)
                 }
             }
-            .navigationBarTitle(Text("明星介绍"))
+            .navigationBarTitle(Text("栀宝介绍"))
             .navigationBarItems(leading: Button(action: addUpdate) {
                 Text("添加")
             },trailing: EditButton())
@@ -107,6 +101,6 @@ struct UpdateDetail: View {
 
 struct NavigationSwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationSwiftUIView().preferredColorScheme(.dark)
+        NavigationSwiftUIView()
     }
 }

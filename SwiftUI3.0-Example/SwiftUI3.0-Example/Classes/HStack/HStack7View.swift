@@ -29,7 +29,7 @@ struct HStack7View: View {
             
             HStack() {
                 Text("Writing SwiftUI code is fun").lineLimit(1)
-                Image.init("placeholder")
+                Image.init("栀宝5")
                     .resizable()
                     .frame(width: 80, height: 80)
                     .cornerRadius(40)
@@ -40,7 +40,7 @@ struct HStack7View: View {
             
             HStack() {
                 Text("SwiftUI").layoutPriority(1)
-                Image.init("placeholder")
+                Image.init("栀宝5")
                     .resizable()
                     .frame(width: 80, height: 80)
                     .cornerRadius(40)

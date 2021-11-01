@@ -307,6 +307,7 @@
 		5B0D082C26F9CF9000F5D7E6 /* VStack2SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VStack2SwiftUIView.swift; sourceTree = "<group>"; };
 		5B0D082D26F9CF9000F5D7E6 /* VStack4SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VStack4SwiftUIView.swift; sourceTree = "<group>"; };
 		5B0D082E26F9CF9000F5D7E6 /* VStackShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VStackShowView.swift; sourceTree = "<group>"; };
+		5BFCB2C02730402B0065D312 /* SwiftUI3-0-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI3-0-Example-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,6 +351,7 @@
 		5B0D077726F9CF5E00F5D7E6 /* SwiftUI3.0-Example */ = {
 			isa = PBXGroup;
 			children = (
+				5BFCB2C02730402B0065D312 /* SwiftUI3-0-Example-Info.plist */,
 				5B0D078626F9CF9000F5D7E6 /* Animation */,
 				5B0D079626F9CF9000F5D7E6 /* Classes */,
 				5B0D077826F9CF5E00F5D7E6 /* SwiftUI3_0_ExampleApp.swift */,
@@ -1087,6 +1089,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI3.0-Example/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI3-0-Example-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1116,6 +1119,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI3.0-Example/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI3-0-Example-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
