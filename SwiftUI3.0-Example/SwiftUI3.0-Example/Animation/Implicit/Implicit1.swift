@@ -32,6 +32,7 @@ struct Implicit1: View {
     }
 }
 
+
 struct Implicit1_Previews: PreviewProvider {
     static var previews: some View {
         Implicit1()
