@@ -12,10 +12,10 @@ struct PopularRestaurantsView: View {
     var body: some View {
         VStack() {
             HStack {
-                Text("Popular Places to eat")
+                Text("当地美食")
                     .font(.system(size: 14, weight: .semibold))
                 Spacer()
-                Text("Sell All")
+                Text("查看所有")
                     .font(.system(size: 13, weight: .semibold))
             }
             .padding(.horizontal)

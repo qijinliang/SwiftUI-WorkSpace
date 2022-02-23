@@ -16,7 +16,7 @@ struct ContentView: View {
                 PopularDestinationsView()
                 PopularRestaurantsView()
                 TrendingCreatorsView()
-            }.navigationTitle("Discover")
+            }.navigationTitle("旅游")
         }
     }
 }
