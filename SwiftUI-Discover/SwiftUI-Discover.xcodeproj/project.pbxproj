@@ -19,6 +19,7 @@
 		045B978427C4FB5800F3B606 /* PopularDestinationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B978327C4FB5800F3B606 /* PopularDestinationsView.swift */; };
 		045B978627C4FD0D00F3B606 /* PopularRestaurantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B978527C4FD0D00F3B606 /* PopularRestaurantsView.swift */; };
 		045B978827C4FFAC00F3B606 /* TrendingCreatorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B978727C4FFAC00F3B606 /* TrendingCreatorsView.swift */; };
+		5B83138F27C7A307000126D2 /* TileModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B83138E27C7A307000126D2 /* TileModifier.swift */; };
 		665354641760A155A1210D31 /* Pods_SwiftUI_Discover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631995480CFF0F1FE3FA25E6 /* Pods_SwiftUI_Discover.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		045B978527C4FD0D00F3B606 /* PopularRestaurantsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopularRestaurantsView.swift; sourceTree = "<group>"; };
 		045B978727C4FFAC00F3B606 /* TrendingCreatorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCreatorsView.swift; sourceTree = "<group>"; };
 		396836B8757C72E540CB8AAA /* Pods-SwiftUI-Discover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Discover.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Discover/Pods-SwiftUI-Discover.debug.xcconfig"; sourceTree = "<group>"; };
+		5B83138E27C7A307000126D2 /* TileModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileModifier.swift; sourceTree = "<group>"; };
 		631995480CFF0F1FE3FA25E6 /* Pods_SwiftUI_Discover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_Discover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F649BE2364081B6FAA1B0388 /* Pods-SwiftUI-Discover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Discover.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Discover/Pods-SwiftUI-Discover.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 		045B977127C4F98000F3B606 /* SwiftUI-Discover */ = {
 			isa = PBXGroup;
 			children = (
+				5B83139027C7A30B000126D2 /* Utils */,
 				041525DE27C73BD400F9D819 /* Model */,
 				045B978027C4F9AE00F3B606 /* View */,
 				045B977227C4F98000F3B606 /* SwiftUI_DiscoverApp.swift */,
@@ -112,6 +115,14 @@
 				045B978727C4FFAC00F3B606 /* TrendingCreatorsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5B83139027C7A30B000126D2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5B83138E27C7A307000126D2 /* TileModifier.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F14836C0CE81D51CEFA142AE /* Frameworks */ = {
@@ -246,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045B977527C4F98000F3B606 /* ContentView.swift in Sources */,
+				5B83138F27C7A307000126D2 /* TileModifier.swift in Sources */,
 				045B977327C4F98000F3B606 /* SwiftUI_DiscoverApp.swift in Sources */,
 				045B978827C4FFAC00F3B606 /* TrendingCreatorsView.swift in Sources */,
 				041525E027C73BE700F9D819 /* Restaurant.swift in Sources */,

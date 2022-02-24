@@ -46,11 +46,8 @@ struct PopularDestinationsView: View {
                                 .font(.system(size: 12, weight: .semibold))
                                 .padding(.horizontal,12)
                                 .padding(.bottom,8)
-                        }
-                        .background(Color.white)
-                        .cornerRadius(5)
-                        .shadow(color: .init(.sRGB, white: 0.8,opacity:1), radius: 4, x: 0.0, y: 2)
-                        .padding(.bottom)
+                        }.asTitle()
+                            .padding(.bottom)
                     }
                 }
                 .padding(.horizontal)
