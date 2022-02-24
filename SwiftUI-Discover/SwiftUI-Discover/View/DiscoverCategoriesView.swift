@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-struct Category: Hashable {
-    let name,imageName: String
-}
 
 struct DiscoverCategoriesView: View {
     
@@ -28,14 +25,14 @@ struct DiscoverCategoriesView: View {
                     VStack(spacing: 8) {
                         Image(systemName: category.imageName)
                             .font(.system(size: 20))
-                            .foregroundColor(.white)
+                            .foregroundColor(Color(#colorLiteral(red: 0.9882131219, green: 0.6823856831, blue: 0.2509839535, alpha: 1)))
                             .frame(width: 64, height: 64)
-                            .background(Color.gray)
+                            .background(Color.white)
                             .cornerRadius(64)
-                            .shadow(color: .gray, radius: 4, x: 0.0, y: 2)
                         Text(category.name)
                             .font(.system(size: 12, weight: .semibold))
                             .multilineTextAlignment(.center)
+                            .foregroundColor(.white)
                     }.frame(width: 68)
                 }
             }  .padding(.horizontal)

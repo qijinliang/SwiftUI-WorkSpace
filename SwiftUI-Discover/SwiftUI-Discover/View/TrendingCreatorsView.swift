@@ -8,9 +8,6 @@
 import SwiftUI
 
 
-struct User: Hashable {
-    let name,imageName: String
-}
 
 
 struct TrendingCreatorsView: View {

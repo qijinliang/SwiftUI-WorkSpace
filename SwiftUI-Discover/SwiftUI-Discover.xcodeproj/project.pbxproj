@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041525E027C73BE700F9D819 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041525DF27C73BE700F9D819 /* Restaurant.swift */; };
+		041525E227C73C0100F9D819 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041525E127C73C0100F9D819 /* Destination.swift */; };
+		041525E427C73C0F00F9D819 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041525E327C73C0F00F9D819 /* Category.swift */; };
+		041525E627C73C1E00F9D819 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041525E527C73C1E00F9D819 /* User.swift */; };
 		045B977327C4F98000F3B606 /* SwiftUI_DiscoverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B977227C4F98000F3B606 /* SwiftUI_DiscoverApp.swift */; };
 		045B977527C4F98000F3B606 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B977427C4F98000F3B606 /* ContentView.swift */; };
 		045B977727C4F98200F3B606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045B977627C4F98200F3B606 /* Assets.xcassets */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041525DF27C73BE700F9D819 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		041525E127C73C0100F9D819 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		041525E327C73C0F00F9D819 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		041525E527C73C1E00F9D819 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		045B976F27C4F98000F3B606 /* SwiftUI-Discover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Discover.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		045B977227C4F98000F3B606 /* SwiftUI_DiscoverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_DiscoverApp.swift; sourceTree = "<group>"; };
 		045B977427C4F98000F3B606 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +53,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		041525DE27C73BD400F9D819 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				041525DF27C73BE700F9D819 /* Restaurant.swift */,
+				041525E127C73C0100F9D819 /* Destination.swift */,
+				041525E327C73C0F00F9D819 /* Category.swift */,
+				041525E527C73C1E00F9D819 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		045B976627C4F98000F3B606 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +85,7 @@
 		045B977127C4F98000F3B606 /* SwiftUI-Discover */ = {
 			isa = PBXGroup;
 			children = (
+				041525DE27C73BD400F9D819 /* Model */,
 				045B978027C4F9AE00F3B606 /* View */,
 				045B977227C4F98000F3B606 /* SwiftUI_DiscoverApp.swift */,
 				045B977427C4F98000F3B606 /* ContentView.swift */,
@@ -108,7 +128,6 @@
 				396836B8757C72E540CB8AAA /* Pods-SwiftUI-Discover.debug.xcconfig */,
 				F649BE2364081B6FAA1B0388 /* Pods-SwiftUI-Discover.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -229,8 +248,12 @@
 				045B977527C4F98000F3B606 /* ContentView.swift in Sources */,
 				045B977327C4F98000F3B606 /* SwiftUI_DiscoverApp.swift in Sources */,
 				045B978827C4FFAC00F3B606 /* TrendingCreatorsView.swift in Sources */,
+				041525E027C73BE700F9D819 /* Restaurant.swift in Sources */,
 				045B978627C4FD0D00F3B606 /* PopularRestaurantsView.swift in Sources */,
+				041525E427C73C0F00F9D819 /* Category.swift in Sources */,
 				045B978227C4F9C700F3B606 /* DiscoverCategoriesView.swift in Sources */,
+				041525E227C73C0100F9D819 /* Destination.swift in Sources */,
+				041525E627C73C1E00F9D819 /* User.swift in Sources */,
 				045B978427C4FB5800F3B606 /* PopularDestinationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
