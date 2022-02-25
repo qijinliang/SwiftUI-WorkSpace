@@ -45,18 +45,29 @@ struct DiscoverCategoriesView: View {
 class CategoryDetailsViewModel: ObservableObject {
     
     @Published var isLoading = true
-    @Published var places = [Int]()
+    @Published var places = [Place]()
     
     init() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.isLoading = false
-            self.places = [1,2,3,4,5,6,7]
-        }
+        
+        guard let url = URL(string: "https://travel.letsbuildthatapp.com/travel_discovery/category?name=art") else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, resp, err) in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                guard let data = data else { return }
+                do {
+                    self.places = try JSONDecoder().decode([Place].self, from: data)
+                    print("",self.places)
+                }catch {
+                    
+                }
+                self.isLoading = false
+                
+            }
+        }.resume()
     }
 }
 
 
-//https://travel.letsbuildthatapp.com/travel_discovery/category?name=art
 
 struct ActivityIndicatorView: UIViewRepresentable {
     func makeUIView(context: Context) -> UIActivityIndicatorView {
@@ -69,7 +80,7 @@ struct ActivityIndicatorView: UIViewRepresentable {
     typealias UIViewType = UIActivityIndicatorView
     
     func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {
-         
+        
     }
 }
 
