@@ -11,10 +11,10 @@ import SwiftUI
 struct DiscoverCategoriesView: View {
     
     let categories: [Category] = [
-        .init(name: "艺术", imageName: "paintpalette.fill"),
-        .init(name: "运动", imageName: "sportscourt.fill"),
-        .init(name: "现场活动", imageName: "music.mic"),
-        .init(name: "美食", imageName: "music.mic"),
+        .init(name: "Art", imageName: "paintpalette.fill"),
+        .init(name: "Sports", imageName: "sportscourt.fill"),
+        .init(name: "Live Events", imageName: "music.mic"),
+        .init(name: "Food", imageName: "music.mic"),
         .init(name: "历史记录", imageName: "music.mic"),
     ]
     
@@ -22,7 +22,7 @@ struct DiscoverCategoriesView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment:.top,spacing: 14) {
                 ForEach(categories, id: \.self) { category in
-                    NavigationLink(destination: CategoryDetailsView(), label: {
+                    NavigationLink(destination: CategoryDetailsView(name: category.name), label: {
                         VStack(spacing: 8) {
                             Image(systemName: category.imageName)
                                 .font(.system(size: 20))
