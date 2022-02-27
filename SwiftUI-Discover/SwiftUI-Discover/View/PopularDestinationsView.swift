@@ -58,12 +58,32 @@ struct PopularDestinationDetailsView: View {
         self._region = State(initialValue: MKCoordinateRegion(center: .init(latitude: destination.latitude, longitude: destination.longitude), span: .init(latitudeDelta: 0.1, longitudeDelta: 0.1)))
     }
     
+    struct Container: UIViewControllerRepresentable {
+        func makeUIViewController(context: Context) -> UIViewController {
+            let revVC = UIViewController()
+            revVC.view.backgroundColor = .red
+            return revVC
+        }
+        
+        typealias UIViewControllerType = UIViewController
+        
+        func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+            
+        }
+    }
+    
     var body: some View {
         ScrollView {
+            
+            Container()
+                .scaledToFill()
+                .frame(height: 250)
+                .clipped()
+            
             Image(destination.imageName)
                 .resizable()
                 .scaledToFill()
-                .frame(height: 200)
+                .frame(height: 250)
                 .clipped()
             VStack(alignment: .leading) {
                 Text(destination.name)
@@ -87,18 +107,31 @@ struct PopularDestinationDetailsView: View {
             HStack {
                 Text("Location").font(.system(size: 18, weight: .semibold))
                 Spacer()
+                
+                Button(action: {
+                    isShowingAttractions.toggle()
+                }, label: {
+                    Text("\(isShowingAttractions ? "Hide" : "Show") Attractions")
+                        .font(.system(size: 12, weight: .semibold))
+                })
+                Toggle("",isOn: $isShowingAttractions)
+                    .labelsHidden()
             }.padding(.horizontal)
             
             
-            
+            Map(coordinateRegion: $region, annotationItems: isShowingAttractions ? attractions : []) { attraction in
+                MapAnnotation(coordinate: .init(latitude: attraction.latitude, longitude: attraction.longitude)) {
+                    CustomMapAnnotation(attraction: attraction)
+                }
+            }.frame(height: 300)
             
         }.navigationBarTitle(destination.name, displayMode: .inline)
     }
     
     let attractions: [Attraction] = [
-        .init(name: "Eiffel Tower", latitude: 48.858605, longitude: 2.2946),
-        .init(name: "Champs-Elysees", latitude: 48.866867, longitude: 2.311780),
-        .init(name: "Louvre Museum", latitude: 48.860288, longitude: 2.337789)
+        .init(name: "Eiffel Tower",imageName: "eiffel_tower", latitude: 48.858605, longitude: 2.2946),
+        .init(name: "Champs-Elysees",imageName: "new_york", latitude: 48.866867, longitude: 2.311780),
+        .init(name: "Louvre Museum", imageName: "art2",latitude: 48.860288, longitude: 2.337789)
     ]
     
 }
@@ -106,6 +139,32 @@ struct PopularDestinationDetailsView: View {
 struct Attraction: Identifiable {
     let id = UUID().uuidString
     
-    let name: String
+    let name,imageName: String
     let latitude, longitude: Double
+}
+
+
+struct CustomMapAnnotation: View {
+    
+    let attraction: Attraction
+    
+    var body: some View {
+        VStack {
+            Image(attraction.imageName)
+                .resizable()
+                .frame(width: 80, height: 60)
+                .cornerRadius(4)
+            Text(attraction.name)
+                .font(.system(size: 12, weight: .semibold))
+                .padding(.horizontal, 6)
+                .padding(.vertical,4)
+                .background(LinearGradient(gradient: Gradient(colors: [Color.red,Color.blue]), startPoint: .leading, endPoint: .trailing))
+                .foregroundColor(.white)
+                .cornerRadius(4)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 4)
+                        .stroke(Color(.init(white: 0, alpha: 0.5)))
+                )
+        }.shadow(radius: 5)
+    }
 }
