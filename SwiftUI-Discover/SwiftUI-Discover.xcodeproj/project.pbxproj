@@ -24,6 +24,7 @@
 		5B17096A27C9E44F00BCCB68 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17096927C9E44F00BCCB68 /* ActivityIndicatorView.swift */; };
 		5B17096C27C9EEA200BCCB68 /* PopularDestinationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B17096B27C9EEA200BCCB68 /* PopularDestinationTitle.swift */; };
 		5B83138F27C7A307000126D2 /* TileModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B83138E27C7A307000126D2 /* TileModifier.swift */; };
+		5BAA67CD27CCAA66004FA913 /* DestionationHeaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAA67CC27CCAA66004FA913 /* DestionationHeaderContainer.swift */; };
 		665354641760A155A1210D31 /* Pods_SwiftUI_Discover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631995480CFF0F1FE3FA25E6 /* Pods_SwiftUI_Discover.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		5B17096927C9E44F00BCCB68 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		5B17096B27C9EEA200BCCB68 /* PopularDestinationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDestinationTitle.swift; sourceTree = "<group>"; };
 		5B83138E27C7A307000126D2 /* TileModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileModifier.swift; sourceTree = "<group>"; };
+		5BAA67CC27CCAA66004FA913 /* DestionationHeaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestionationHeaderContainer.swift; sourceTree = "<group>"; };
 		631995480CFF0F1FE3FA25E6 /* Pods_SwiftUI_Discover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUI_Discover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F649BE2364081B6FAA1B0388 /* Pods-SwiftUI-Discover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUI-Discover.release.xcconfig"; path = "Target Support Files/Pods-SwiftUI-Discover/Pods-SwiftUI-Discover.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +129,7 @@
 				5B17096727C9E3E100BCCB68 /* CategoryDetailsView.swift */,
 				5B17096927C9E44F00BCCB68 /* ActivityIndicatorView.swift */,
 				5B17096B27C9EEA200BCCB68 /* PopularDestinationTitle.swift */,
+				5BAA67CC27CCAA66004FA913 /* DestionationHeaderContainer.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				5B17096827C9E3E100BCCB68 /* CategoryDetailsView.swift in Sources */,
 				045B978227C4F9C700F3B606 /* DiscoverCategoriesView.swift in Sources */,
 				5B17096C27C9EEA200BCCB68 /* PopularDestinationTitle.swift in Sources */,
+				5BAA67CD27CCAA66004FA913 /* DestionationHeaderContainer.swift in Sources */,
 				041525E227C73C0100F9D819 /* Destination.swift in Sources */,
 				041525E627C73C1E00F9D819 /* User.swift in Sources */,
 				045B978427C4FB5800F3B606 /* PopularDestinationsView.swift in Sources */,

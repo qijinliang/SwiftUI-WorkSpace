@@ -58,27 +58,11 @@ struct PopularDestinationDetailsView: View {
         self._region = State(initialValue: MKCoordinateRegion(center: .init(latitude: destination.latitude, longitude: destination.longitude), span: .init(latitudeDelta: 0.1, longitudeDelta: 0.1)))
     }
     
-    struct Container: UIViewControllerRepresentable {
-        func makeUIViewController(context: Context) -> UIViewController {
-            let revVC = UIViewController()
-            revVC.view.backgroundColor = .red
-            return revVC
-        }
-        
-        typealias UIViewControllerType = UIViewController
-        
-        func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
-            
-        }
-    }
-    
     var body: some View {
         ScrollView {
             
-            Container()
-                .scaledToFill()
+            DestionationHeaderContainer()
                 .frame(height: 250)
-                .clipped()
             
             Image(destination.imageName)
                 .resizable()
