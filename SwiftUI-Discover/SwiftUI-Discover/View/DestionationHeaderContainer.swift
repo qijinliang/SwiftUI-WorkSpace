@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct DestionationHeaderContainer: UIViewControllerRepresentable {
+    
+    let imageNames: [String]
+    
     func makeUIViewController(context: Context) -> UIViewController {
-        let revVC = CustomPageViewController()
+        let revVC = CustomPageViewController(imageNames: imageNames)
         return revVC
     }
     
@@ -42,24 +46,26 @@ class CustomPageViewController: UIPageViewController, UIPageViewControllerDataSo
         return allControllers[index + 1]
     }
  
-    let firstVC = UIHostingController(rootView: Text("First View Controller"))
-    let secondVC = UIHostingController(rootView: Text("secondVC View Controller"))
-    let thirdVC = UIHostingController(rootView: Text("thirdVC View Controller"))
+    var allControllers: [UIViewController] = []
     
-    lazy var allControllers: [UIViewController] = [
-        firstVC,secondVC,thirdVC
-    ]
-    
-    init() {
+    init(imageNames: [String]) {
         
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.systemGray5
         UIPageControl.appearance().currentPageIndicatorTintColor = .blue
         
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
-        setViewControllers([firstVC], direction: .forward, animated: true, completion: nil)
+        
+        allControllers = imageNames.map({ imageName in
+            let hostingController = UIHostingController(rootView: WebImage(url: URL(string: imageName)).resizable().scaledToFill())
+            hostingController.view.clipsToBounds = true
+            return hostingController
+        })
+        
+        setViewControllers([allControllers.first!], direction: .forward, animated: true, completion: nil)
         self.dataSource = self
         self.delegate = self
     }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -67,8 +73,3 @@ class CustomPageViewController: UIPageViewController, UIPageViewControllerDataSo
     
 }
 
-struct DestionationHeaderContainer_Previews: PreviewProvider {
-    static var previews: some View {
-        DestionationHeaderContainer()
-    }
-}

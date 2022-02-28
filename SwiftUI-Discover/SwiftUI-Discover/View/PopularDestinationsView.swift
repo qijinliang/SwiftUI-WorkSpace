@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import SDWebImageSwiftUI
 
 struct PopularDestinationsView: View {
     
@@ -58,17 +58,19 @@ struct PopularDestinationDetailsView: View {
         self._region = State(initialValue: MKCoordinateRegion(center: .init(latitude: destination.latitude, longitude: destination.longitude), span: .init(latitudeDelta: 0.1, longitudeDelta: 0.1)))
     }
     
+    
+        let imageUrlStrings = [
+            "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/2240d474-2237-4cd3-9919-562cd1bb439e",
+            "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/b1642068-5624-41cf-83f1-3f6dff8c1702",
+            "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/6982cc9d-3104-4a54-98d7-45ee5d117531"
+        ]
+    
     var body: some View {
         ScrollView {
             
-            DestionationHeaderContainer()
+            DestionationHeaderContainer(imageNames: imageUrlStrings)
                 .frame(height: 250)
             
-            Image(destination.imageName)
-                .resizable()
-                .scaledToFill()
-                .frame(height: 250)
-                .clipped()
             VStack(alignment: .leading) {
                 Text(destination.name)
                     .font(.system(size: 18, weight: .bold))
