@@ -11,6 +11,7 @@
 		0415B0ED27D454C20011716F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415B0EC27D454C20011716F /* ContentView.swift */; };
 		0415B0EF27D454C40011716F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0415B0EE27D454C40011716F /* Assets.xcassets */; };
 		0415B0F227D454C40011716F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0415B0F127D454C40011716F /* Preview Assets.xcassets */; };
+		0415B0FA27D4A34B0011716F /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415B0F927D4A34B0011716F /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		0415B0EC27D454C20011716F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0415B0EE27D454C40011716F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0415B0F127D454C40011716F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0415B0F927D4A34B0011716F /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		0415B0E927D454C20011716F /* SwiftUI-iOS15 */ = {
 			isa = PBXGroup;
 			children = (
+				0415B0EC27D454C20011716F /* ContentView.swift */,
 				0415B0F827D45F630011716F /* View */,
 				0415B0EA27D454C20011716F /* SwiftUI_iOS15App.swift */,
 				0415B0EE27D454C40011716F /* Assets.xcassets */,
@@ -70,7 +73,7 @@
 		0415B0F827D45F630011716F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0415B0EC27D454C20011716F /* ContentView.swift */,
+				0415B0F927D4A34B0011716F /* AccountView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0415B0FA27D4A34B0011716F /* AccountView.swift in Sources */,
 				0415B0ED27D454C20011716F /* ContentView.swift in Sources */,
 				0415B0EB27D454C20011716F /* SwiftUI_iOS15App.swift in Sources */,
 			);
