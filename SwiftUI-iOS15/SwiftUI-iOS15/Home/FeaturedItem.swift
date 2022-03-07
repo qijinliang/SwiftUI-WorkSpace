@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  FeaturedItem.swift
 //  SwiftUI-iOS15
 //
-//  Created by 醉看红尘这场梦 on 2022/3/6.
+//  Created by Cheney on 2022/3/7.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct FeaturedItem: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8.0) {
             Spacer()
@@ -56,9 +56,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct FeaturedItem_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .preferredColorScheme(.light)
+        FeaturedItem()
     }
 }
