@@ -20,6 +20,7 @@
 		0417560327D5DC520021D4F4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417560227D5DC520021D4F4 /* HomeView.swift */; };
 		0417560727D5DFB00021D4F4 /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417560627D5DFB00021D4F4 /* FeaturedItem.swift */; };
 		0417560927D5E0160021D4F4 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417560827D5E0160021D4F4 /* NavigationBar.swift */; };
+		0417560B27D613810021D4F4 /* PreferencenKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417560A27D613810021D4F4 /* PreferencenKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		0417560227D5DC520021D4F4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0417560627D5DFB00021D4F4 /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
 		0417560827D5E0160021D4F4 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		0417560A27D613810021D4F4 /* PreferencenKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencenKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				0415B0FC27D4A8800011716F /* StrokeStyles.swift */,
+				0417560A27D613810021D4F4 /* PreferencenKey.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				0415B0FD27D4A8800011716F /* StrokeStyles.swift in Sources */,
 				0417560727D5DFB00021D4F4 /* FeaturedItem.swift in Sources */,
 				0415B10127D4B5190011716F /* HexagonView.swift in Sources */,
+				0417560B27D613810021D4F4 /* PreferencenKey.swift in Sources */,
 				0415B10627D4BDDD0011716F /* TabItem.swift in Sources */,
 				0415B10427D4B9B20011716F /* TabBar.swift in Sources */,
 			);
