@@ -2,7 +2,7 @@
 //  AccountView.swift
 //  SwiftUI-iOS15
 //
-//  Created by Cheney on 2022/3/6.
+//  Created by 醉看红尘这场梦 on 2022/3/6.
 //
 
 import SwiftUI
@@ -21,7 +21,7 @@ struct AccountView: View {
                 
             }
             .listStyle(.insetGrouped)
-            .navigationTitle("Account")
+            .navigationTitle("个人中心")
         }
     }
     
@@ -43,12 +43,12 @@ struct AccountView: View {
                         .offset(x: 200, y: 0)
                         .scaleEffect(0.6)
                 )
-            Text("Meng To")
+            Text("金亮")
                 .font(.title.weight(.semibold))
             HStack {
                 Image(systemName: "location")
                     .imageScale(.large)
-                Text("Canada")
+                Text("深圳市")
                     .foregroundColor(.secondary)
             }
         }
@@ -60,15 +60,15 @@ struct AccountView: View {
         
         Section {
             NavigationLink(destination: ContentView()) {
-                Label("Settings",systemImage: "gear")
+                Label("设置",systemImage: "gear")
             }
             
             NavigationLink(destination: ContentView()) {
-                Label("Billing",systemImage: "creditcard")
+                Label("钱包",systemImage: "creditcard")
             }
             
             NavigationLink(destination: ContentView()) {
-                Label("Help",systemImage: "questionmark")
+                Label("帮助中心",systemImage: "questionmark")
             }
         }
         .accentColor(.primary)
@@ -82,7 +82,7 @@ struct AccountView: View {
             if !isDelete {
                 Link(destination: URL(string: "https://apple.com")!) {
                     HStack {
-                        Label("Website",systemImage: "house")
+                        Label("地址",systemImage: "house")
                         Spacer()
                         Image(systemName: "link")
                             .foregroundColor(.secondary)
@@ -99,7 +99,7 @@ struct AccountView: View {
             
             Link(destination: URL(string: "https://youtube.com")!) {
                 HStack {
-                    Label("YouTube",systemImage: "tv")
+                    Label("视频",systemImage: "tv")
                     Spacer()
                     Image(systemName: "link")
                         .foregroundColor(.secondary)
@@ -128,5 +128,6 @@ struct AccountView: View {
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
         AccountView()
+            .preferredColorScheme(.dark)
     }
 }

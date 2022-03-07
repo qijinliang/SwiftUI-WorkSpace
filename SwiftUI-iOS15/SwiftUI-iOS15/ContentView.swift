@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  SwiftUI-iOS15
 //
-//  Created by Cheney on 2022/3/6.
+//  Created by 醉看红尘这场梦 on 2022/3/6.
 //
 
 import SwiftUI
@@ -19,16 +19,16 @@ struct ContentView: View {
                 .padding(9)
                 .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
                 .strokeStyle(cornerRadius: 16)
-            Text("SwiftUI for iOS15")
+            Text("SwiftUI学习中心")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundStyle(.linearGradient(colors: [.primary,.primary.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing))
                 .lineLimit(1)
-            Text("20 section - 3 hours")
+            Text("金亮编写")
                 .font(.footnote)
                 .fontWeight(.semibold)
                 .foregroundColor(.secondary)
-            Text("Build an iOS app for iOS15 with custom layouts, anmimations and ....")
+            Text("UI页面，动画，数据加载，手势等基础内容")
                 .font(.footnote)
                 .multilineTextAlignment(.leading)
                 .lineLimit(2)

@@ -15,6 +15,8 @@
 		0415B0FD27D4A8800011716F /* StrokeStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415B0FC27D4A8800011716F /* StrokeStyles.swift */; };
 		0415B0FF27D4B3760011716F /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415B0FE27D4B3760011716F /* BlobView.swift */; };
 		0415B10127D4B5190011716F /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415B10027D4B5190011716F /* HexagonView.swift */; };
+		0415B10427D4B9B20011716F /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415B10327D4B9B20011716F /* TabBar.swift */; };
+		0415B10627D4BDDD0011716F /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415B10527D4BDDD0011716F /* TabItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		0415B0FC27D4A8800011716F /* StrokeStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeStyles.swift; sourceTree = "<group>"; };
 		0415B0FE27D4B3760011716F /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
 		0415B10027D4B5190011716F /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
+		0415B10327D4B9B20011716F /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		0415B10527D4BDDD0011716F /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +63,10 @@
 		0415B0E927D454C20011716F /* SwiftUI-iOS15 */ = {
 			isa = PBXGroup;
 			children = (
+				0415B10227D4B9770011716F /* Main */,
 				0415B0FB27D4A8680011716F /* Extension */,
 				0415B0EC27D454C20011716F /* ContentView.swift */,
-				0415B0F827D45F630011716F /* View */,
+				0415B0F827D45F630011716F /* ProfileView */,
 				0415B0EA27D454C20011716F /* SwiftUI_iOS15App.swift */,
 				0415B0EE27D454C40011716F /* Assets.xcassets */,
 				0415B0F027D454C40011716F /* Preview Content */,
@@ -77,14 +82,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0415B0F827D45F630011716F /* View */ = {
+		0415B0F827D45F630011716F /* ProfileView */ = {
 			isa = PBXGroup;
 			children = (
 				0415B0F927D4A34B0011716F /* AccountView.swift */,
 				0415B0FE27D4B3760011716F /* BlobView.swift */,
 				0415B10027D4B5190011716F /* HexagonView.swift */,
 			);
-			path = View;
+			path = ProfileView;
 			sourceTree = "<group>";
 		};
 		0415B0FB27D4A8680011716F /* Extension */ = {
@@ -93,6 +98,15 @@
 				0415B0FC27D4A8800011716F /* StrokeStyles.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		0415B10227D4B9770011716F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0415B10327D4B9B20011716F /* TabBar.swift */,
+				0415B10527D4BDDD0011716F /* TabItem.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +185,8 @@
 				0415B0EB27D454C20011716F /* SwiftUI_iOS15App.swift in Sources */,
 				0415B0FD27D4A8800011716F /* StrokeStyles.swift in Sources */,
 				0415B10127D4B5190011716F /* HexagonView.swift in Sources */,
+				0415B10627D4BDDD0011716F /* TabItem.swift in Sources */,
+				0415B10427D4B9B20011716F /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
