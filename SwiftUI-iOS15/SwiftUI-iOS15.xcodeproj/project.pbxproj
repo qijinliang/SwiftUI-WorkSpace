@@ -23,6 +23,7 @@
 		0417560B27D613810021D4F4 /* PreferencenKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417560A27D613810021D4F4 /* PreferencenKey.swift */; };
 		0417560D27D61A0B0021D4F4 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417560C27D61A0B0021D4F4 /* AnimatableFontModifier.swift */; };
 		0417561027D6EA420021D4F4 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417560F27D6EA420021D4F4 /* Course.swift */; };
+		0417561227D72C040021D4F4 /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417561127D72C040021D4F4 /* MatchedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		0417560A27D613810021D4F4 /* PreferencenKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencenKey.swift; sourceTree = "<group>"; };
 		0417560C27D61A0B0021D4F4 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		0417560F27D6EA420021D4F4 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		0417561127D72C040021D4F4 /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				0417560227D5DC520021D4F4 /* HomeView.swift */,
 				0417560627D5DFB00021D4F4 /* FeaturedItem.swift */,
 				0417560827D5E0160021D4F4 /* NavigationBar.swift */,
+				0417561127D72C040021D4F4 /* MatchedView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				0415B0FF27D4B3760011716F /* BlobView.swift in Sources */,
 				0415B0FA27D4A34B0011716F /* AccountView.swift in Sources */,
 				0415B0ED27D454C20011716F /* ContentView.swift in Sources */,
+				0417561227D72C040021D4F4 /* MatchedView.swift in Sources */,
 				0415B0EB27D454C20011716F /* SwiftUI_iOS15App.swift in Sources */,
 				0417560927D5E0160021D4F4 /* NavigationBar.swift in Sources */,
 				0415B0FD27D4A8800011716F /* StrokeStyles.swift in Sources */,
