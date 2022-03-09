@@ -24,6 +24,8 @@
 		0417560D27D61A0B0021D4F4 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417560C27D61A0B0021D4F4 /* AnimatableFontModifier.swift */; };
 		0417561027D6EA420021D4F4 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417560F27D6EA420021D4F4 /* Course.swift */; };
 		0417561227D72C040021D4F4 /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417561127D72C040021D4F4 /* MatchedView.swift */; };
+		0417561427D7708A0021D4F4 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417561327D770890021D4F4 /* CourseItem.swift */; };
+		0457318127D77229000CA6BD /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457318027D77229000CA6BD /* CourseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		0417560C27D61A0B0021D4F4 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		0417560F27D6EA420021D4F4 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		0417561127D72C040021D4F4 /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
+		0417561327D770890021D4F4 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
+		0457318027D77229000CA6BD /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 				0417560627D5DFB00021D4F4 /* FeaturedItem.swift */,
 				0417560827D5E0160021D4F4 /* NavigationBar.swift */,
 				0417561127D72C040021D4F4 /* MatchedView.swift */,
+				0417561327D770890021D4F4 /* CourseItem.swift */,
+				0457318027D77229000CA6BD /* CourseView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 			files = (
 				0417560327D5DC520021D4F4 /* HomeView.swift in Sources */,
 				0415B0FF27D4B3760011716F /* BlobView.swift in Sources */,
+				0457318127D77229000CA6BD /* CourseView.swift in Sources */,
 				0415B0FA27D4A34B0011716F /* AccountView.swift in Sources */,
 				0415B0ED27D454C20011716F /* ContentView.swift in Sources */,
 				0417561227D72C040021D4F4 /* MatchedView.swift in Sources */,
@@ -227,6 +234,7 @@
 				0417560727D5DFB00021D4F4 /* FeaturedItem.swift in Sources */,
 				0417561027D6EA420021D4F4 /* Course.swift in Sources */,
 				0415B10127D4B5190011716F /* HexagonView.swift in Sources */,
+				0417561427D7708A0021D4F4 /* CourseItem.swift in Sources */,
 				0417560B27D613810021D4F4 /* PreferencenKey.swift in Sources */,
 				0415B10627D4BDDD0011716F /* TabItem.swift in Sources */,
 				0415B10427D4B9B20011716F /* TabBar.swift in Sources */,
