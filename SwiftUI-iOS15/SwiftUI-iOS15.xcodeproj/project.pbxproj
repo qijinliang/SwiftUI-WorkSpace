@@ -26,6 +26,7 @@
 		0417561227D72C040021D4F4 /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417561127D72C040021D4F4 /* MatchedView.swift */; };
 		0417561427D7708A0021D4F4 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417561327D770890021D4F4 /* CourseItem.swift */; };
 		0457318127D77229000CA6BD /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457318027D77229000CA6BD /* CourseView.swift */; };
+		0457318327D89A49000CA6BD /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457318227D89A49000CA6BD /* Animations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		0417561127D72C040021D4F4 /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
 		0417561327D770890021D4F4 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		0457318027D77229000CA6BD /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		0457318227D89A49000CA6BD /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				0415B0FC27D4A8800011716F /* StrokeStyles.swift */,
 				0417560A27D613810021D4F4 /* PreferencenKey.swift */,
 				0417560C27D61A0B0021D4F4 /* AnimatableFontModifier.swift */,
+				0457318227D89A49000CA6BD /* Animations.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				0415B10127D4B5190011716F /* HexagonView.swift in Sources */,
 				0417561427D7708A0021D4F4 /* CourseItem.swift in Sources */,
 				0417560B27D613810021D4F4 /* PreferencenKey.swift in Sources */,
+				0457318327D89A49000CA6BD /* Animations.swift in Sources */,
 				0415B10627D4BDDD0011716F /* TabItem.swift in Sources */,
 				0415B10427D4B9B20011716F /* TabBar.swift in Sources */,
 				0417560D27D61A0B0021D4F4 /* AnimatableFontModifier.swift in Sources */,
