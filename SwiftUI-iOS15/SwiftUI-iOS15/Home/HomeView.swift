@@ -12,6 +12,7 @@ struct HomeView: View {
     @Namespace var namespace
     @State var show = false
     @State var showStatusBar = false
+    @State var selectedID = UUID()
     
     var body: some View {
         ZStack {
@@ -28,13 +29,15 @@ struct HomeView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 20)
                 if !show {
-                    CourseItem(namespace: namespace, show: $show)
-                        .onTapGesture {
-                            withAnimation(.openCard) {
-                                show.toggle()
-                                showStatusBar = false
-                            }
+                    ForEach(courses) { course in
+                        CourseItem(namespace: namespace, show: $show, course:course)
+                            .onTapGesture {
+                                withAnimation(.openCard) {
+                                    show.toggle()
+                                    showStatusBar = false
+                                }
                         }
+                    }
                 }
             }
             .coordinateSpace(name: "scroll")
@@ -45,9 +48,11 @@ struct HomeView: View {
                 NavigationBar(title: "首页", hasScrolled: $hasScrolled)
             )
             if show {
-                CourseView(namespace: namespace, show: $show)
-                    .zIndex(1)
+                ForEach(courses) { course in
+                    CourseView(namespace: namespace,course:course, show: $show)
+                        .zIndex(1)
                     .transition(.asymmetric(insertion: .opacity.animation(.easeInOut(duration: 0.1)), removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
+                }
             }
         }
         
@@ -81,7 +86,7 @@ struct HomeView: View {
     
     var featured: some View {
         TabView {
-            ForEach(courses) { course in
+            ForEach(featuredcourses) { course in
                 GeometryReader { proxy in
                     let minX = proxy.frame(in: .global).minX
                     
