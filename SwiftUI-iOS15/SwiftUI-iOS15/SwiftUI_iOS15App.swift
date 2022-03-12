@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SwiftUI_iOS15App: App {
+    
+    @StateObject var model = Model()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView().preferredColorScheme(.dark)
+            ContentView().environmentObject(model)
         }
     }
 }
