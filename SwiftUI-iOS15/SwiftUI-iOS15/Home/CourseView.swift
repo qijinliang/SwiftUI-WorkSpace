@@ -14,6 +14,7 @@ struct CourseView: View {
     @State var appear = [false, false, false]
     @EnvironmentObject var model: Model
     @State var viewState: CGSize = .zero
+    @State var isDraggable = true
     
     var body: some View {
         ZStack {
@@ -26,6 +27,12 @@ struct CourseView: View {
                     .opacity(appear[2] ? 1 : 0)
             }
             .background(Color("Background"))
+            .mask(RoundedRectangle(cornerRadius: viewState.width / 3, style: .continuous))
+            .shadow(color: .black.opacity(0.3), radius: 30, x: 0, y: 10)
+            .scaleEffect(viewState.width / -500 + 1)
+            .background(.black.opacity(viewState.width / 500))
+            .background(.ultraThinMaterial)
+            .gesture(isDraggable ? drag : nil)
             .ignoresSafeArea()
             
             button
@@ -40,7 +47,6 @@ struct CourseView: View {
     
     var cover: some View {
         GeometryReader { proxy in
-            
             let scrollY = proxy.frame(in: .global).minY
             
             VStack {
@@ -64,7 +70,6 @@ struct CourseView: View {
                     .offset(y: scrollY > 0 ? -scrollY : 0)
                     .scaleEffect(scrollY > 0 ? scrollY / 1000 + 1 : 1)
                     .blur(radius: scrollY / 10)
-                    
             )
             .mask(
                 RoundedRectangle(cornerRadius: 30, style: .continuous)
@@ -151,6 +156,32 @@ struct CourseView: View {
             .padding(20)
     }
     
+    var drag: some Gesture {
+        DragGesture(minimumDistance: 30, coordinateSpace: .local)
+            .onChanged { value in
+                guard value.translation.width > 0 else { return }
+                
+                if value.startLocation.x < 100 {
+                    withAnimation(.closeCard) {
+                        viewState = value.translation
+                    }
+                }
+                
+                if viewState.width > 120 {
+                    close()
+                }
+            }
+            .onEnded { value in
+                if viewState.width > 80 {
+                    close()
+                } else {
+                    withAnimation(.closeCard) {
+                        viewState = .zero
+                    }
+                }
+            }
+    }
+    
     func fadeIn() {
         withAnimation(.easeOut.delay(0.3)) {
             appear[0] = true
@@ -168,6 +199,19 @@ struct CourseView: View {
         appear[1] = false
         appear[2] = false
     }
+    
+    func close() {
+        withAnimation(.closeCard.delay(0.3)) {
+            show.toggle()
+            model.showDetail.toggle()
+        }
+        
+        withAnimation(.closeCard) {
+            viewState = .zero
+        }
+        
+        isDraggable = false
+    }
 }
 
 struct CourseView_Previews: PreviewProvider {
@@ -175,5 +219,6 @@ struct CourseView_Previews: PreviewProvider {
     
     static var previews: some View {
         CourseView(namespace: namespace, show: .constant(true))
+            .environmentObject(Model())
     }
 }

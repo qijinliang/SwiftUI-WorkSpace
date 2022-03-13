@@ -11,7 +11,7 @@ struct HomeView: View {
     @State var hasScrolled = false
     @Namespace var namespace
     @State var show = false
-    @State var showStatusBar = false
+    @State var showStatusBar = true
     @State var selectedID = UUID()
     @EnvironmentObject var model: Model
     
@@ -24,22 +24,23 @@ struct HomeView: View {
                 
                 featured
                 
-                Text("个人中心".uppercased())
+                Text("课程".uppercased())
                     .font(.footnote.weight(.semibold))
                     .foregroundColor(.secondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 20)
+                
                 if !show {
                     cards
-                }else{
+                } else {
                     ForEach(courses) { course in
                         Rectangle()
                             .fill(.white)
                             .frame(height: 300)
                             .cornerRadius(30)
-                            .shadow(color: Color("shadow"), radius: 20, x: 0, y: 10)
+                            .shadow(color: Color("Shadow"), radius: 20, x: 0, y: 10)
                             .opacity(0.3)
-                            .padding(.horizontal, 30)
+                        .padding(.horizontal, 30)
                     }
                 }
             }
@@ -50,17 +51,17 @@ struct HomeView: View {
             .overlay(
                 NavigationBar(title: "首页", hasScrolled: $hasScrolled)
             )
+            
             if show {
                 detail
             }
         }
-        
         .statusBar(hidden: !showStatusBar)
         .onChange(of: show) { newValue in
             withAnimation(.closeCard) {
                 if newValue {
                     showStatusBar = false
-                }else{
+                } else {
                     showStatusBar = true
                 }
             }
@@ -85,7 +86,7 @@ struct HomeView: View {
     
     var featured: some View {
         TabView {
-            ForEach(featuredcourses) { course in
+            ForEach(featuredCourses) { course in
                 GeometryReader { proxy in
                     let minX = proxy.frame(in: .global).minX
                     
@@ -115,7 +116,7 @@ struct HomeView: View {
     
     var cards: some View {
         ForEach(courses) { course in
-            CourseItem(namespace: namespace, show: $show, course:course)
+            CourseItem(namespace: namespace, course: course, show: $show)
                 .onTapGesture {
                     withAnimation(.openCard) {
                         show.toggle()
@@ -130,9 +131,11 @@ struct HomeView: View {
     var detail: some View {
         ForEach(courses) { course in
             if course.id == selectedID {
-                CourseView(namespace: namespace,course:course, show: $show)
+                CourseView(namespace: namespace, course: course, show: $show)
                     .zIndex(1)
-                    .transition(.asymmetric(insertion: .opacity.animation(.easeInOut(duration: 0.1)), removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
+                    .transition(.asymmetric(
+                        insertion: .opacity.animation(.easeInOut(duration: 0.1)),
+                    removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
             }
         }
     }
@@ -140,7 +143,8 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView().colorScheme(.dark)
+        HomeView()
+            .environmentObject(Model())
     }
 }
 

@@ -28,13 +28,13 @@ struct ContentView: View {
         .safeAreaInset(edge: .bottom) {
             Color.clear.frame(height: 44)
         }
+        .preferredColorScheme(.dark)
     }
 }
 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .preferredColorScheme(.light)
+        ContentView().preferredColorScheme(.dark)
     }
 }
