@@ -11,6 +11,7 @@ struct AccountView: View {
     
     @State var isDelete = false
     @State var isPinned = false
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         NavigationView {
@@ -22,6 +23,11 @@ struct AccountView: View {
             }
             .listStyle(.insetGrouped)
             .navigationTitle("个人中心")
+            .navigationBarItems(trailing: Button {
+                presentationMode.wrappedValue.dismiss()
+            } label: {
+                Text("Done").bold()
+            })
         }
     }
     

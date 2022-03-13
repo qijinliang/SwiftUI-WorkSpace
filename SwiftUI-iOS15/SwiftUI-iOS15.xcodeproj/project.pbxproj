@@ -28,6 +28,8 @@
 		0457318127D77229000CA6BD /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457318027D77229000CA6BD /* CourseView.swift */; };
 		0457318327D89A49000CA6BD /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0457318227D89A49000CA6BD /* Animations.swift */; };
 		0471BAB627DC868C00D641FE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471BAB527DC868C00D641FE /* Model.swift */; };
+		0471BAB827DDFE7800D641FE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471BAB727DDFE7800D641FE /* SearchView.swift */; };
+		0471BABA27DE020500D641FE /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471BAB927DE020500D641FE /* Suggestion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		0457318027D77229000CA6BD /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		0457318227D89A49000CA6BD /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		0471BAB527DC868C00D641FE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0471BAB727DDFE7800D641FE /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0471BAB927DE020500D641FE /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 				0417561127D72C040021D4F4 /* MatchedView.swift */,
 				0417561327D770890021D4F4 /* CourseItem.swift */,
 				0457318027D77229000CA6BD /* CourseView.swift */,
+				0471BAB727DDFE7800D641FE /* SearchView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			children = (
 				0417560F27D6EA420021D4F4 /* Course.swift */,
 				0471BAB527DC868C00D641FE /* Model.swift */,
+				0471BAB927DE020500D641FE /* Suggestion.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,10 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0471BAB827DDFE7800D641FE /* SearchView.swift in Sources */,
 				0417560327D5DC520021D4F4 /* HomeView.swift in Sources */,
 				0415B0FF27D4B3760011716F /* BlobView.swift in Sources */,
 				0457318127D77229000CA6BD /* CourseView.swift in Sources */,
 				0415B0FA27D4A34B0011716F /* AccountView.swift in Sources */,
+				0471BABA27DE020500D641FE /* Suggestion.swift in Sources */,
 				0415B0ED27D454C20011716F /* ContentView.swift in Sources */,
 				0417561227D72C040021D4F4 /* MatchedView.swift in Sources */,
 				0415B0EB27D454C20011716F /* SwiftUI_iOS15App.swift in Sources */,
