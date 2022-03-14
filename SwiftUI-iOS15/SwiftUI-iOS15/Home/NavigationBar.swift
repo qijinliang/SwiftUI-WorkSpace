@@ -13,6 +13,7 @@ struct NavigationBar: View {
     @Binding var hasScrolled: Bool
     @State var showSearch = false
     @State var showAccount = false
+    @AppStorage("showModal") var showModal = false
     
     var body: some View {
         ZStack {
@@ -30,7 +31,9 @@ struct NavigationBar: View {
             HStack(spacing: 16) {
                 
                 Button {
-                    showSearch = true
+                    withAnimation {
+                        showModal = true
+                    }
                 } label: {
                     Image(systemName: "magnifyingglass")
                         .font(.body.weight(.bold))

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Suggestion: Identifiable {
-    let id = UUID
+    let id = UUID()
     var text: String
 }
 
