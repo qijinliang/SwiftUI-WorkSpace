@@ -18,6 +18,17 @@ struct SignUpView: View {
             Text("查看更多的内容")
                 .font(.headline)
             
+            TextField("邮件",text: $email)
+                .inputStyle(icon: "mail")
+                .textContentType(.emailAddress)
+                .keyboardType(.emailAddress)
+                .autocapitalization(.none)
+                .disableAutocorrection(true)
+            
+            SecureField("密码",text: $password)
+                .inputStyle(icon: "lock")
+                .textContentType(.password)
+            
             Button {} label: {
                 Text("创建用户")
                     .frame(maxWidth: .infinity)
