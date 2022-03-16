@@ -1,13 +1,13 @@
 //
-//  SignUpView.swift
+//  SwiftUIView.swift
 //  SwiftUI-iOS15
 //
-//  Created by 醉看红尘这场梦 on 2022/3/13.
+//  Created by 醉看红尘这场梦 on 2022/3/15.
 //
 
 import SwiftUI
 
-struct SignUpView: View {
+struct SignInView: View {
     enum Field: Hashable {
         case email
         case password
@@ -51,7 +51,7 @@ struct SignUpView: View {
                     passwordY =  value
                 }
             Button {} label: {
-                Text("创建账号")
+                Text("登录")
                     .frame(maxWidth: .infinity)
             }
             .font(.headline)
@@ -62,17 +62,15 @@ struct SignUpView: View {
             .shadow(color: Color("Shadow").opacity(0.2), radius: 30, x: 0, y: 30)
             
             Group {
-                Text("点击查看协议")
-                + Text("，**[禁止商业转载](https://github.com/qijinliang)**")
-
+                
                 Divider()
                 
                 HStack {
-                    Text("有账号?")
+                    Text("没有账号?")
                     Button {
-                        model.selectedModal = .signIn
+                        model.selectedModal = .signUp
                     } label: {
-                        Text("**登录**")
+                        Text("**注册**")
                     }
                 }
             }
@@ -110,11 +108,10 @@ struct SignUpView: View {
     }
 }
 
-struct SignUpView_Previews: PreviewProvider {
+struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
-            SignUpView()
-                .preferredColorScheme(.light)
+            SignInView()
                 .environmentObject(Model())
         }
     }

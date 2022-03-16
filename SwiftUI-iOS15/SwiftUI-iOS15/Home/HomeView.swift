@@ -26,13 +26,13 @@ struct HomeView: View {
                 
                 featured
                 
-                Text("课程".uppercased())
+                Text("Courses".uppercased())
                     .font(.footnote.weight(.semibold))
                     .foregroundColor(.secondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 20)
                 
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 300),spacing: 20)],spacing: 20) {
+                LazyVGrid(columns: [GridItem(.adaptive(minimum: 300), spacing: 20)], spacing: 20) {
                     if !show {
                         cards
                     } else {
@@ -43,7 +43,7 @@ struct HomeView: View {
                                 .cornerRadius(30)
                                 .shadow(color: Color("Shadow"), radius: 20, x: 0, y: 10)
                                 .opacity(0.3)
-                                .padding(.horizontal, 30)
+                            .padding(.horizontal, 30)
                         }
                     }
                 }
@@ -158,6 +158,7 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .preferredColorScheme(.dark)
             .environmentObject(Model())
     }
 }
