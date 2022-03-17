@@ -13,6 +13,7 @@ struct NavigationBar: View {
     @State var showSearch = false
     @State var showAccount = false
     @AppStorage("showModal") var showModal = false
+    @AppStorage("isLogged") var isLogged = false
     
     var body: some View {
         ZStack {
@@ -44,17 +45,16 @@ struct NavigationBar: View {
                 }
                 
                 Button {
-                    withAnimation {
-                        showModal = true
+                    if isLogged {
+                        showAccount = true
+                    } else {
+                        
+                        withAnimation {
+                            showModal = true
+                        }
                     }
                 } label: {
-                    Image("Avatar Default")
-                        .resizable()
-                        .frame(width: 26, height: 26)
-                        .cornerRadius(10)
-                        .padding(8)
-                        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-                    .strokeStyle(cornerRadius: 18)
+                    AvatarView()
                 }
                 .sheet(isPresented: $showAccount) {
                     AccountView()

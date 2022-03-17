@@ -13,6 +13,7 @@ struct ModalView: View {
     @State var viewState: CGSize = .zero
     @State var isDismissed = false
     @State var appear = [false,false,false]
+    @AppStorage("isLogged") var isLogged = false
     
     var body: some View {
         ZStack {
@@ -72,6 +73,11 @@ struct ModalView: View {
             
             withAnimation(.easeOut(duration: 1).delay(0.2)) {
                 appear[2] = true
+            }
+        }
+        .onChange(of: isLogged) { newValue in
+            if newValue {
+                dismissModal()
             }
         }
     }

@@ -22,6 +22,7 @@ struct SignInView: View {
     @State var circleColor: Color = .blue
     @State var appear = [false,false,false]
     @EnvironmentObject var model: Model
+    @AppStorage("isLogged") var isLogged = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -56,7 +57,9 @@ struct SignInView: View {
                     .onPreferenceChange(CirclePreferenceKey.self) { value in
                         passwordY =  value
                     }
-                Button {} label: {
+                Button {
+                    isLogged = true
+                } label: {
                     Text("登录")
                         .frame(maxWidth: .infinity)
                 }

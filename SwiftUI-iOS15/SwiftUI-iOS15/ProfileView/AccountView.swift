@@ -11,7 +11,8 @@ struct AccountView: View {
     
     @State var isDelete = false
     @State var isPinned = false
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) var dismiss
+    @AppStorage("isLogged") var isLogged = false
     
     var body: some View {
         NavigationView {
@@ -20,11 +21,18 @@ struct AccountView: View {
                 menu
                 links
                 
+                Button {
+                    isLogged = false
+                    dismiss()
+                } label: {
+                    Text("退出")
+                }
+                .tint(.red)
             }
             .listStyle(.insetGrouped)
             .navigationTitle("个人中心")
             .navigationBarItems(trailing: Button {
-                presentationMode.wrappedValue.dismiss()
+                dismiss()
             } label: {
                 Text("Done").bold()
             })

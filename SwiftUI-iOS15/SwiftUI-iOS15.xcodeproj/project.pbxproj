@@ -35,6 +35,7 @@
 		0471BAC027E0253B00D641FE /* InputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471BABF27E0253A00D641FE /* InputStyle.swift */; };
 		0471BAC227E0730800D641FE /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471BAC127E0730800D641FE /* ModalView.swift */; };
 		0471BAC427E0735B00D641FE /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471BAC327E0735B00D641FE /* SignInView.swift */; };
+		0471BAC627E2E3ED00D641FE /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471BAC527E2E3ED00D641FE /* AvatarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		0471BABF27E0253A00D641FE /* InputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStyle.swift; sourceTree = "<group>"; };
 		0471BAC127E0730800D641FE /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
 		0471BAC327E0735B00D641FE /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		0471BAC527E2E3ED00D641FE /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				0417560C27D61A0B0021D4F4 /* AnimatableFontModifier.swift */,
 				0457318227D89A49000CA6BD /* Animations.swift */,
 				0471BABF27E0253A00D641FE /* InputStyle.swift */,
+				0471BAC527E2E3ED00D641FE /* AvatarView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				0457318127D77229000CA6BD /* CourseView.swift in Sources */,
 				0415B0FA27D4A34B0011716F /* AccountView.swift in Sources */,
 				0471BABA27DE020500D641FE /* Suggestion.swift in Sources */,
+				0471BAC627E2E3ED00D641FE /* AvatarView.swift in Sources */,
 				0415B0ED27D454C20011716F /* ContentView.swift in Sources */,
 				0417561227D72C040021D4F4 /* MatchedView.swift in Sources */,
 				0415B0EB27D454C20011716F /* SwiftUI_iOS15App.swift in Sources */,
