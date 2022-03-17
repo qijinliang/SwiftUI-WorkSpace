@@ -19,11 +19,11 @@ struct ContentView: View {
             case .home:
                 HomeView()
             case .explore:
-                AccountView()
+                ExploreView()
             case .notifications:
-                AccountView()
+                NotificationsView()
             case .library:
-                AccountView()
+                LibraryView()
             }
             
             TabBar()
@@ -32,11 +32,13 @@ struct ContentView: View {
             if showModal {
                 ModalView()
                     .zIndex(1)
+                    .accessibilityAddTraits(.isModal)
             }
         }
         .safeAreaInset(edge: .bottom, spacing: 0) {
-            Color.clear.frame(height: 44)
-        }.preferredColorScheme(.dark)
+            Color.clear.frame(height: 88)
+        }
+        .dynamicTypeSize(.large ... .xxLarge)
     }
 }
 
@@ -44,6 +46,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
+                .environment(\.sizeCategory, .accessibilityLarge)
             ContentView()
                 .preferredColorScheme(.dark)
                 .previewDevice("iPhone 13 mini")
