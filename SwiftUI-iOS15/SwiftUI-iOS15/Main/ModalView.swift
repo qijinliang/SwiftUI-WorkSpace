@@ -12,7 +12,7 @@ struct ModalView: View {
     @AppStorage("showModal") var showModal = true
     @State var viewState: CGSize = .zero
     @State var isDismissed = false
-    @State var appear = [false,false,false]
+    @State var appear = [false, false, false]
     @AppStorage("isLogged") var isLogged = false
     
     var body: some View {
@@ -46,6 +46,7 @@ struct ModalView: View {
                     .offset(y: appear[2] ? 0 : 10)
                     .blur(radius: appear[2] ? 0 : 40)
                     .allowsHitTesting(false)
+                    .accessibility(hidden: true)
             )
             
             Button {
@@ -62,15 +63,13 @@ struct ModalView: View {
             .opacity(appear[1] ? 1 : 0)
             .offset(y: appear[1] ? 0 : -200)
         }
-        .onAppear() {
+        .onAppear {
             withAnimation(.easeOut) {
                 appear[0] = true
             }
-            
             withAnimation(.easeOut.delay(0.1)) {
                 appear[1] = true
             }
-            
             withAnimation(.easeOut(duration: 1).delay(0.2)) {
                 appear[2] = true
             }
@@ -90,7 +89,7 @@ struct ModalView: View {
             .onEnded { value in
                 if value.translation.height > 200 {
                     dismissModal()
-                }else{
+                } else {
                     withAnimation(.openCard) {
                         viewState = .zero
                     }
@@ -99,10 +98,9 @@ struct ModalView: View {
     }
     
     func dismissModal() {
-        withAnimation(.openCard) {
+        withAnimation {
             isDismissed = true
         }
-        
         withAnimation(.linear.delay(0.3)) {
             showModal = false
         }

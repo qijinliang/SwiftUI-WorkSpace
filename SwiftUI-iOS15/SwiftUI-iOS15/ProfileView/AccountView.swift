@@ -8,30 +8,41 @@
 import SwiftUI
 
 struct AccountView: View {
-    
-    @State var isDelete = false
+    @State var isDeleted = false
     @State var isPinned = false
     @State var address: Address = Address(id: 1, country: "深圳")
     @Environment(\.dismiss) var dismiss
     @AppStorage("isLogged") var isLogged = false
+    @AppStorage("isLiteMode") var isLiteMode = true
+    @ObservedObject var coinModel = CoinModel()
     
     func fetchAddress() async {
         do {
             let url = URL(string: "https://random-data-api.com/api/address/random_address")!
-            let (data, _) = try await  URLSession.shared.data(from: url)
+            let (data, _) = try await URLSession.shared.data(from: url)
             address = try JSONDecoder().decode(Address.self, from: data)
         } catch {
-            address = Address(id: 1, country: "深圳")
+            address = Address(id: 1, country: "Error fetching")
         }
-
     }
     
     var body: some View {
         NavigationView {
             List {
                 profile
+                
                 menu
+                
+                Section {
+                    Toggle(isOn: $isLiteMode) {
+                        Label("Lite Mode", systemImage: isLiteMode ? "tortoise" : "hare")
+                    }
+                }
+                .accentColor(.primary)
+                
                 links
+                
+                coins
                 
                 Button {
                     isLogged = false
@@ -43,17 +54,15 @@ struct AccountView: View {
             }
             .task {
                 await fetchAddress()
+                await coinModel.fetchCoins()
             }
             .refreshable {
                 await fetchAddress()
+                await coinModel.fetchCoins()
             }
             .listStyle(.insetGrouped)
-            .navigationTitle("个人中心")
-            .navigationBarItems(trailing: Button {
-                dismiss()
-            } label: {
-                Text("Done").bold()
-            })
+            .navigationTitle("Account")
+            .navigationBarItems(trailing: Button { dismiss() } label: { Text("Done").bold() })
         }
     }
     
@@ -63,7 +72,7 @@ struct AccountView: View {
                 .symbolVariant(.circle.fill)
                 .font(.system(size: 32))
                 .symbolRenderingMode(.palette)
-                .foregroundStyle(.blue,.blue.opacity(0.3))
+                .foregroundStyle(.blue, .blue.opacity(0.3))
                 .padding()
                 .background(Circle().fill(.ultraThinMaterial))
                 .background(
@@ -75,7 +84,7 @@ struct AccountView: View {
                         .offset(x: 200, y: 0)
                         .scaleEffect(0.6)
                 )
-            Text("金亮")
+            Text("醉看红尘这场梦")
                 .font(.title.weight(.semibold))
             HStack {
                 Image(systemName: "location")
@@ -89,18 +98,15 @@ struct AccountView: View {
     }
     
     var menu: some View {
-        
         Section {
-            NavigationLink(destination: ContentView()) {
-                Label("设置",systemImage: "gear")
+            NavigationLink(destination: HomeView()) {
+                Label("设置", systemImage: "gear")
             }
-            
-            NavigationLink(destination: ContentView()) {
-                Label("钱包",systemImage: "creditcard")
+            NavigationLink { Text("Billing") } label: {
+                Label("钱包", systemImage: "creditcard")
             }
-            
-            NavigationLink(destination: ContentView()) {
-                Label("帮助中心",systemImage: "questionmark")
+            NavigationLink { HomeView() } label: {
+                Label("帮助", systemImage: "questionmark")
             }
         }
         .accentColor(.primary)
@@ -110,28 +116,26 @@ struct AccountView: View {
     
     var links: some View {
         Section {
-            
-            if !isDelete {
+            if !isDeleted {
                 Link(destination: URL(string: "https://apple.com")!) {
                     HStack {
-                        Label("地址",systemImage: "house")
+                        Label("网页", systemImage: "house")
                         Spacer()
                         Image(systemName: "link")
                             .foregroundColor(.secondary)
                     }
                 }
                 .swipeActions(edge: .leading, allowsFullSwipe: true) {
-                    Button(action: { isDelete = true}) {
-                        Label("Delete",systemImage: "trash")
+                    Button(action: { isDeleted = true }) {
+                        Label("Delete", systemImage: "trash")
                     }
                     .tint(.red)
                     pinButton
                 }
             }
-            
             Link(destination: URL(string: "https://youtube.com")!) {
                 HStack {
-                    Label("视频",systemImage: "tv")
+                    Label("视频", systemImage: "tv")
                     Spacer()
                     Image(systemName: "link")
                         .foregroundColor(.secondary)
@@ -145,12 +149,35 @@ struct AccountView: View {
         .listRowSeparator(.hidden)
     }
     
+    var coins: some View {
+        Section(header: Text("其他")) {
+            ForEach(coinModel.coins) { coin in
+                HStack {
+                    AsyncImage(url: URL(string: coin.logo)) { image in
+                        image.resizable()
+                            .aspectRatio(contentMode: .fit)
+                    } placeholder: {
+                        ProgressView()
+                    }
+                    .frame(width: 32, height: 32)
+                    
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(coin.coin_name)
+                        Text(coin.acronym)
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }
+                }
+            }
+        }
+    }
+    
     var pinButton: some View {
         Button { isPinned.toggle() } label: {
             if isPinned {
-                Label("Unpin",systemImage: "pin.slash")
-            }else {
-                Label("Pin",systemImage: "pin")
+                Label("Unpin", systemImage: "pin.slash")
+            } else {
+                Label("Pin", systemImage: "pin")
             }
         }
         .tint(isPinned ? .gray : .yellow)

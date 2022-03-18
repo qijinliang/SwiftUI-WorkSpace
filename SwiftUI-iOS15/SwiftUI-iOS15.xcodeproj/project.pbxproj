@@ -49,6 +49,9 @@
 		0471BADC27E3624900D641FE /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471BADB27E3624900D641FE /* LibraryView.swift */; };
 		0471BADE27E3627200D641FE /* CertificateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471BADD27E3627200D641FE /* CertificateView.swift */; };
 		0471BAE027E3628B00D641FE /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471BADF27E3628B00D641FE /* ListRow.swift */; };
+		0471BAE227E3868A00D641FE /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471BAE127E3868A00D641FE /* Coin.swift */; };
+		0471BAE427E3874700D641FE /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471BAE327E3874700D641FE /* PlayView.swift */; };
+		0471BAE627E3876600D641FE /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471BAE527E3876600D641FE /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +98,9 @@
 		0471BADB27E3624900D641FE /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		0471BADD27E3627200D641FE /* CertificateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateView.swift; sourceTree = "<group>"; };
 		0471BADF27E3628B00D641FE /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		0471BAE127E3868A00D641FE /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		0471BAE327E3874700D641FE /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		0471BAE527E3876600D641FE /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,7 @@
 				0457318227D89A49000CA6BD /* Animations.swift */,
 				0471BABF27E0253A00D641FE /* InputStyle.swift */,
 				0471BAC527E2E3ED00D641FE /* AvatarView.swift */,
+				0471BAE327E3874700D641FE /* PlayView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -184,6 +191,7 @@
 				0471BACF27E361A100D641FE /* SmallCourseItem.swift */,
 				0471BADD27E3627200D641FE /* CertificateView.swift */,
 				0471BADF27E3628B00D641FE /* ListRow.swift */,
+				0471BAE527E3876600D641FE /* SectionView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -217,6 +225,7 @@
 				0471BACD27E3617600D641FE /* CourseSection.swift */,
 				0471BAD127E361C400D641FE /* Handbook.swift */,
 				0471BAD927E3622D00D641FE /* Topic.swift */,
+				0471BAE127E3868A00D641FE /* Coin.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,9 +310,11 @@
 				0415B0FA27D4A34B0011716F /* AccountView.swift in Sources */,
 				0471BABA27DE020500D641FE /* Suggestion.swift in Sources */,
 				0471BAD227E361C400D641FE /* Handbook.swift in Sources */,
+				0471BAE627E3876600D641FE /* SectionView.swift in Sources */,
 				0471BAC627E2E3ED00D641FE /* AvatarView.swift in Sources */,
 				0471BAD827E3621200D641FE /* HandbookItem.swift in Sources */,
 				0471BAD427E361E100D641FE /* SectionRow.swift in Sources */,
+				0471BAE227E3868A00D641FE /* Coin.swift in Sources */,
 				0471BAD027E361A100D641FE /* SmallCourseItem.swift in Sources */,
 				0415B0ED27D454C20011716F /* ContentView.swift in Sources */,
 				0471BADE27E3627200D641FE /* CertificateView.swift in Sources */,
@@ -314,6 +325,7 @@
 				0471BADA27E3622D00D641FE /* Topic.swift in Sources */,
 				0417561227D72C040021D4F4 /* MatchedView.swift in Sources */,
 				0415B0EB27D454C20011716F /* SwiftUI_iOS15App.swift in Sources */,
+				0471BAE427E3874700D641FE /* PlayView.swift in Sources */,
 				0417560927D5E0160021D4F4 /* NavigationBar.swift in Sources */,
 				0471BABE27DE34B900D641FE /* AngularButtonStyle.swift in Sources */,
 				0471BACE27E3617600D641FE /* CourseSection.swift in Sources */,
