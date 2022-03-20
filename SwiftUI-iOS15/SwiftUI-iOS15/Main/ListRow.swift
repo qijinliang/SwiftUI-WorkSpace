@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct ListRow: View {
-    var topic: Topic = topics[0]
+    var title = "iOS Development"
+    var icon = "iphone"
     
     var body: some View {
         HStack(spacing: 16) {
-            Image(systemName: topic.icon)
+            Image(systemName: icon)
                 .frame(width: 36, height: 36)
                 .background(.ultraThinMaterial)
                 .mask(Circle())
-            Text(topic.title)
+                .backgroundStyle(cornerRadius: 18)
+            Text(title)
                 .fontWeight(.semibold)
             Spacer()
         }

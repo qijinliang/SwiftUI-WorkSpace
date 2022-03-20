@@ -8,31 +8,23 @@
 import SwiftUI
 
 struct TabItem: Identifiable {
-    var id = UUID()
-    var text: String
+    let id = UUID()
+    var name: String
     var icon: String
-    var tab: Tab
     var color: Color
+    var selection: Tab
 }
 
 var tabItems = [
-    TabItem(text: "首页", icon: "house", tab: .home, color: .teal),
-    TabItem(text: "搜索", icon: "magnifyingglass", tab: .explore, color: .blue),
-    TabItem(text: "消息", icon: "bell", tab: .notifications, color: .red),
-    TabItem(text: "资料", icon: "rectangle.stack", tab: .library, color: .pink)
+    TabItem(name: "首页", icon: "house", color: .teal, selection: .home),
+    TabItem(name: "搜索", icon: "magnifyingglass", color: .blue, selection: .explore),
+    TabItem(name: "消息", icon: "bell", color: .red, selection: .notifications),
+    TabItem(name: "资料", icon: "rectangle.stack", color: .pink, selection: .library)
 ]
-
 
 enum Tab: String {
     case home
     case explore
     case notifications
     case library
-}
-
-struct TabPreferencenKey: PreferenceKey {
-    static var defaultValue: CGFloat = 0
-    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
-        value = nextValue()
-    }
 }

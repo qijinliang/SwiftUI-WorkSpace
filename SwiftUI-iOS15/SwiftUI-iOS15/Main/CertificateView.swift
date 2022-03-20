@@ -11,7 +11,7 @@ struct CertificateView: View {
     var body: some View {
         VStack(alignment: .leading) {
             VStack(alignment: .leading, spacing: 8) {
-                Text("SwiftUI 开发")
+                Text("SwiftUI学习中心")
                     .font(.title3.weight(.semibold))
                 Text("iOS程序员")
                     .font(.subheadline.weight(.medium))
@@ -19,28 +19,18 @@ struct CertificateView: View {
             }
             Spacer()
             VStack(alignment: .leading, spacing: 8) {
-                Text("2022年4月1号".uppercased())
+                Text("2022年3月22".uppercased())
                     .font(.footnote.weight(.semibold))
-                Text("作者: 金亮")
+                Text("作者: 醉看红尘这场梦")
                     .font(.footnote.weight(.medium))
             }
-            .foregroundStyle(.secondary)
+            .foregroundColor(.secondary)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .overlay(
-            Image("Logo 2")
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 26.0, height: 26.0)
-                .cornerRadius(10)
-                .padding(9)
-                .background(Color(UIColor.systemBackground).opacity(0.1), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-                .strokeStyle(cornerRadius: 16)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-        )
+        .overlay(LogoView().frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing))
         .padding(20)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
-        .strokeStyle(cornerRadius: 30)
+        .background(.ultraThinMaterial)
+        .backgroundStyle(cornerRadius: 30)
     }
 }
 

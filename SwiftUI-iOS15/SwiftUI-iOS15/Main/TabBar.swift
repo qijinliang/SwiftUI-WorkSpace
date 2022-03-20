@@ -8,114 +8,94 @@
 import SwiftUI
 
 struct TabBar: View {
-    @AppStorage("selectedTab") var selectedTab: Tab = .home
     @State var color: Color = .teal
-    @State var tabItemWidth: CGFloat = 0
+    @State var selectedX: CGFloat = 0
+    @State var x: [CGFloat] = [0, 0, 0, 0]
+    
+    @EnvironmentObject var model: Model
+    @AppStorage("selectedTab") var selectedTab: Tab = .home
+    
     var body: some View {
         GeometryReader { proxy in
-            
-            let hasHomeIndicator = proxy.safeAreaInsets.bottom > 20
+            let hasHomeIndicator = proxy.safeAreaInsets.bottom > 0
             
             HStack {
-                buttons
+                content
             }
-            .padding(.horizontal, 8)
-            .padding(.top, 14)
-            .frame(height: hasHomeIndicator ? 88 : 62, alignment: .top)
-            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: hasHomeIndicator ? 34 : 0,style: .continuous))
+            .padding(.bottom, hasHomeIndicator ? 16 : 0)
+            .frame(maxWidth: .infinity, maxHeight: hasHomeIndicator ? 88 : 49)
+            .background(.ultraThinMaterial)
             .background(
-                background
+                Circle()
+                    .fill(color)
+                    .offset(x: selectedX, y: -10)
+                    .frame(width: 88)
+                    .frame(maxWidth: .infinity, alignment: .leading)
             )
-            
             .overlay(
-                overlay
+                Rectangle()
+                    .frame(width: 28, height: 5)
+                    .cornerRadius(3)
+                    .frame(width: 88)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    .offset(x: selectedX)
+                    .blendMode(.overlay)
             )
-            
-            .strokeStyle(cornerRadius: hasHomeIndicator ? 34 : 0)
+            .backgroundStyle(cornerRadius: hasHomeIndicator ? 34 : 0)
             .frame(maxHeight: .infinity, alignment: .bottom)
-        .ignoresSafeArea()
+            .ignoresSafeArea()
+            .offset(y: model.showTab ? 0 : 200)
+            .accessibility(hidden: !model.showTab)
         }
     }
     
-    var buttons: some View {
-        ForEach(tabItems) { item in
+    var content: some View {
+        ForEach(Array(tabItems.enumerated()), id: \.offset) { index, tab in
+            if index == 0 { Spacer() }
+            
             Button {
-                withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
-                    selectedTab = item.tab
-                    color = item.color
+                selectedTab = tab.selection
+                withAnimation(.tabSelection) {
+                    selectedX = x[index]
+                    color = tab.color
                 }
             } label: {
                 VStack(spacing: 0) {
-                    Image(systemName: item.icon)
+                    Image(systemName: tab.icon)
                         .symbolVariant(.fill)
-                        .font(.body.bold())
+                        .font(.system(size: 17, weight: .bold))
                         .frame(width: 44, height: 29)
-                    Text(item.text)
-                        .font(.caption2)
+                    Text(tab.name).font(.caption2)
+                        .frame(width: 88)
                         .lineLimit(1)
                 }
-                .frame(maxWidth: .infinity)
+                .overlay(
+                    GeometryReader { proxy in
+                        let offset = proxy.frame(in: .global).minX
+                        Color.clear
+                            .preference(key: TabPreferenceKey.self, value: offset)
+                            .onPreferenceChange(TabPreferenceKey.self) { value in
+                                x[index] = value
+                                if selectedTab == tab.selection {
+                                    selectedX = x[index]
+                                }
+                            }
+                    }
+                )
             }
-            .foregroundStyle(selectedTab == item.tab ? .primary : .secondary)
-            .blendMode(selectedTab == item.tab ? .overlay : .normal)
-            .overlay(
-                GeometryReader { proxy in
-                    Color.clear.preference(key: TabPreferencenKey.self, value: proxy.size.width)
-                }
-            )
-            .onPreferenceChange(TabPreferencenKey.self) { value in
-                tabItemWidth = value
-            }
+            .frame(width: 44)
+            .foregroundColor(selectedTab == tab.selection ? .primary : .secondary)
+            .blendMode(selectedTab == tab.selection ? .overlay : .normal)
+            
+            Spacer()
         }
-    }
-    
-    var background: some View {
-        HStack {
-            if selectedTab == .library { Spacer() }
-            if selectedTab == .explore { Spacer() }
-            if selectedTab == .notifications {
-                Spacer()
-                Spacer()
-            }
-            Circle().fill(color).frame(width: tabItemWidth)
-            if selectedTab == .home { Spacer() }
-            if selectedTab == .explore {
-                Spacer()
-                Spacer()
-            }
-            if selectedTab == .notifications { Spacer() }
-        }
-        .padding(.horizontal,8)
-    }
-    
-    var overlay: some View {
-        HStack {
-            if selectedTab == .library { Spacer() }
-            if selectedTab == .explore { Spacer() }
-            if selectedTab == .notifications {
-                Spacer()
-                Spacer()
-            }
-            Rectangle()
-                .fill(color)
-                .frame(width: 28, height: 5)
-                .cornerRadius(3)
-                .frame(width: tabItemWidth)
-                .frame(maxHeight: .infinity, alignment: .top)
-            if selectedTab == .home { Spacer() }
-            if selectedTab == .explore {
-                Spacer()
-                Spacer()
-            }
-            if selectedTab == .notifications { Spacer() }
-        }
-            .padding(.horizontal,8)
     }
 }
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar()
-            
+            .environmentObject(Model())
     }
 }
+

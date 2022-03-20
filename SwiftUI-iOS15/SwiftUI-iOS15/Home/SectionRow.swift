@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct SectionRow: View {
-    var section: CourseSection = courseSections[0]
+    var section: CourseSection
+    
     var body: some View {
         HStack(alignment: .top, spacing: 16) {
             Image(section.logo)
@@ -32,13 +33,13 @@ struct SectionRow: View {
                     .accentColor(.white)
                     .frame(maxWidth: 132)
             }
+            Spacer()
         }
-        .padding(20)
     }
 }
 
 struct SectionRow_Previews: PreviewProvider {
     static var previews: some View {
-        SectionRow()
+        SectionRow(section: courseSections[0])
     }
 }

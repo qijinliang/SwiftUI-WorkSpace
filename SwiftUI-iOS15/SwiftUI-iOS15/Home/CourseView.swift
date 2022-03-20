@@ -6,47 +6,64 @@
 //
 
 import SwiftUI
-
 struct CourseView: View {
     var namespace: Namespace.ID
-    var course: Course = courses[0]
-    @Binding var show: Bool
-    @State var appear = [false, false, false]
-    @EnvironmentObject var model: Model
+    @Binding var course: Course
+    var isAnimated = true
+    
     @State var viewState: CGSize = .zero
-    @State var isDraggable = true
     @State var showSection = false
-    @State var selectedIndex = 0
+    @State var appear = [false, false, false]
+    @State var selectedSection = courseSections[0]
+    
+    @EnvironmentObject var model: Model
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         ZStack {
             ScrollView {
                 cover
-                
-                content
-                    .offset(y: 120)
-                    .padding(.bottom, 200)
+                sectionsSection
                     .opacity(appear[2] ? 1 : 0)
             }
             .coordinateSpace(name: "scroll")
-            .onAppear { model.showDetail = true }
-            .onDisappear { model.showDetail = false }
             .background(Color("Background"))
-            .mask(RoundedRectangle(cornerRadius: viewState.width / 3, style: .continuous))
-            .shadow(color: .black.opacity(0.3), radius: 30, x: 0, y: 10)
-            .scaleEffect(viewState.width / -500 + 1)
-            .background(.black.opacity(viewState.width / 500))
+            .mask(RoundedRectangle(cornerRadius: appear[0] ? 0 : 30))
+            .mask(RoundedRectangle(cornerRadius: viewState.width / 3))
+            .modifier(OutlineModifier(cornerRadius: viewState.width / 3))
+            .shadow(color: Color("Shadow").opacity(0.5), radius: 30, x: 0, y: 10)
+            .scaleEffect(-viewState.width/500 + 1)
+            .background(Color("Shadow").opacity(viewState.width / 500))
             .background(.ultraThinMaterial)
-            .gesture(isDraggable ? drag : nil)
+            .gesture(isAnimated ? drag : nil)
             .ignoresSafeArea()
             
-            button
+            Button {
+                isAnimated ?
+                withAnimation(.closeCard) {
+                    model.showDetail = false
+                    model.selectedCourse = 0
+                }
+                : presentationMode.wrappedValue.dismiss()
+            } label: {
+                CloseButton()
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+            .padding(20)
+            .ignoresSafeArea()
+            
+            LogoView(image: course.logo)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                .padding(20)
+                .matchedGeometryEffect(id: "logo\(course.index)", in: namespace)
+                .ignoresSafeArea()
+                .accessibility(hidden: true)
         }
-        .onAppear {
-            fadeIn()
-        }
-        .onChange(of: show) { newValue in
-            fadeOut()
+        .zIndex(1)
+        .onAppear { fadeIn() }
+        .onChange(of: model.showDetail) { show in
+           fadeOut()
         }
     }
     
@@ -59,113 +76,128 @@ struct CourseView: View {
             }
             .frame(maxWidth: .infinity)
             .frame(height: scrollY > 0 ? 500 + scrollY : 500)
-            .foregroundStyle(.black)
             .background(
                 Image(course.image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .padding(20)
-                    .frame(maxWidth: 500)
-                    .matchedGeometryEffect(id: "image\(course.id)", in: namespace)
-                    .offset(y: scrollY > 0 ? scrollY * -0.8 : 0)
-                    .accessibilityLabel("Cover Image")
+                    .matchedGeometryEffect(id: "image\(course.index)", in: namespace)
+                    .offset(y: scrollY > 0 ? -scrollY : 0)
+                    .accessibility(hidden: true)
             )
             .background(
                 Image(course.background)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .matchedGeometryEffect(id: "background\(course.id)", in: namespace)
+                    .matchedGeometryEffect(id: "background\(course.index)", in: namespace)
                     .offset(y: scrollY > 0 ? -scrollY : 0)
                     .scaleEffect(scrollY > 0 ? scrollY / 1000 + 1 : 1)
-                    .blur(radius: scrollY / 10)
+                    .blur(radius: scrollY > 0 ? scrollY / 10 : 0)
+                    .accessibility(hidden: true)
             )
             .mask(
-                RoundedRectangle(cornerRadius: appear[0] ? 0 : 30, style: .continuous)
-                    .matchedGeometryEffect(id: "mask\(course.id)", in: namespace)
+                RoundedRectangle(cornerRadius: appear[0] ? 0 : 30)
+                    .matchedGeometryEffect(id: "mask\(course.index)", in: namespace)
                     .offset(y: scrollY > 0 ? -scrollY : 0)
             )
             .overlay(
-                overlayContent
-                    .offset(y: scrollY > 0 ? scrollY * -0.6 : 0)
+                Image(horizontalSizeClass == .compact ? "Waves 1" : "Waves 2")
+                    .frame(maxHeight: .infinity, alignment: .bottom)
+                    .offset(y: scrollY > 0 ? -scrollY : 0)
+                    .scaleEffect(scrollY > 0 ? scrollY / 500 + 1 : 1)
+                    .opacity(1)
+                    .matchedGeometryEffect(id: "waves\(course.index)", in: namespace)
+                    .accessibility(hidden: true)
+            )
+            .overlay(
+                VStack(alignment: .leading, spacing: 16) {
+                    Text(course.title)
+                        .font(.title).bold()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .foregroundColor(.primary)
+                        .matchedGeometryEffect(id: "title\(course.index)", in: namespace)
+                    
+                    Text("Developer开发中心".uppercased())
+                        .font(.footnote).bold()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .foregroundColor(.primary.opacity(0.7))
+                        .matchedGeometryEffect(id: "subtitle\(course.index)", in: namespace)
+                    
+                    Text("借助 SwiftUI，您可以利用 Swift 的强大功能打造适合各个 Apple 平台的精美 app，而无需编写大量代码。SwiftUI 让您只需使用一套工具和 API，就能在任何 Apple 设备上为所有用户带来更加出色的体验。")
+                        .font(.footnote)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .foregroundColor(.primary.opacity(0.7))
+                        .matchedGeometryEffect(id: "description\(course.index)", in: namespace)
+                    
+                    Divider()
+                        .foregroundColor(.secondary)
+                        .opacity(appear[1] ? 1 : 0)
+                    
+                    HStack {
+                        LogoView(image: "Avatar 1")
+                        Text("醉看红尘这场梦")
+                            .font(.footnote.weight(.medium))
+                            .foregroundStyle(.secondary)
+                    }
+                    .opacity(appear[1] ? 1 : 0)
+                    .accessibilityElement(children: .combine)
+                }
+                .padding(20)
+                .padding(.vertical, 10)
+                .background(
+                    Rectangle()
+                        .fill(.ultraThinMaterial)
+                        .frame(maxHeight: .infinity, alignment: .bottom)
+                        .cornerRadius(30)
+                        .blur(radius: 30)
+                        .matchedGeometryEffect(id: "blur\(course.index)", in: namespace)
+                        .opacity(appear[0] ? 0 : 1)
+                )
+                .background(
+                    Rectangle()
+                        .fill(.ultraThinMaterial)
+                        .backgroundStyle(cornerRadius: 30)
+                        .opacity(appear[0] ? 1 : 0)
+                )
+                .offset(y: scrollY > 0 ? -scrollY * 1.8 : 0)
+                .frame(maxHeight: .infinity, alignment: .bottom)
+                .offset(y: 100)
+                .padding(20)
             )
         }
         .frame(height: 500)
     }
     
-    var content: some View {
-        VStack(alignment: .leading) {
+    var sectionsSection: some View {
+        VStack(spacing: 16) {
             ForEach(Array(courseSections.enumerated()), id: \.offset) { index, section in
                 if index != 0 { Divider() }
                 SectionRow(section: section)
                     .onTapGesture {
-                        selectedIndex = index
-                        showSection = true
+                        showSection.toggle()
+                        selectedSection = section
                     }
+                    .accessibilityElement(children: .combine)
             }
         }
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
-        .strokeStyle(cornerRadius: 30)
         .padding(20)
+        .background(.ultraThinMaterial)
+        .backgroundStyle(cornerRadius: 30)
+        .padding(20)
+        .padding(.vertical, 80)
         .sheet(isPresented: $showSection) {
-            SectionView(section: courseSections[selectedIndex])
+            SectionView(section: $selectedSection)
         }
     }
     
-    var button: some View {
-        Button {
-            withAnimation(.closeCard) {
-                show.toggle()
-                model.showDetail.toggle()
-            }
-        } label: {
-            Image(systemName: "xmark")
-                .font(.body.weight(.bold))
-                .foregroundColor(.secondary)
-                .padding(8)
-                .background(.ultraThinMaterial, in: Circle())
+    func close() {
+        withAnimation {
+            viewState = .zero
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-        .padding(20)
-        .ignoresSafeArea()
-    }
-    
-    var overlayContent: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text(course.title)
-                .font(.largeTitle.weight(.bold))
-                .matchedGeometryEffect(id: "title\(course.id)", in: namespace)
-                .frame(maxWidth: .infinity, alignment: .leading)
-            
-            Text(course.subtitle.uppercased())
-                .font(.footnote.weight(.semibold))
-                .matchedGeometryEffect(id: "subtitle\(course.id)", in: namespace)
-            Text(course.text)
-                .font(.footnote)
-                .matchedGeometryEffect(id: "text\(course.id)", in: namespace)
-            Divider()
-                .opacity(appear[0] ? 1 : 0)
-            HStack {
-                Image("Avatar Default")
-                    .resizable()
-                    .frame(width: 26, height: 26)
-                    .cornerRadius(10)
-                    .padding(8)
-                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-                    .strokeStyle(cornerRadius: 18)
-                Text("作者 醉看红尘这场梦")
-                    .font(.footnote)
-            }
-            .opacity(appear[1] ? 1 : 0)
+        withAnimation(.closeCard.delay(0.2)) {
+            model.showDetail = false
+            model.selectedCourse = 0
         }
-            .padding(20)
-            .background(
-                Rectangle()
-                    .fill(.ultraThinMaterial)
-                    .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                    .matchedGeometryEffect(id: "blur\(course.id)", in: namespace)
-            )
-            .offset(y: 250)
-            .padding(20)
     }
     
     var drag: some Gesture {
@@ -174,7 +206,7 @@ struct CourseView: View {
                 guard value.translation.width > 0 else { return }
                 
                 if value.startLocation.x < 100 {
-                    withAnimation(.closeCard) {
+                    withAnimation {
                         viewState = value.translation
                     }
                 }
@@ -187,7 +219,7 @@ struct CourseView: View {
                 if viewState.width > 80 {
                     close()
                 } else {
-                    withAnimation(.closeCard) {
+                    withAnimation(.openCard) {
                         viewState = .zero
                     }
                 }
@@ -207,22 +239,11 @@ struct CourseView: View {
     }
     
     func fadeOut() {
-        appear[0] = false
-        appear[1] = false
-        appear[2] = false
-    }
-    
-    func close() {
-        withAnimation(.closeCard.delay(0.3)) {
-            show.toggle()
-            model.showDetail.toggle()
+        withAnimation(.easeIn(duration: 0.1)) {
+            appear[0] = false
+            appear[1] = false
+            appear[2] = false
         }
-        
-        withAnimation(.closeCard) {
-            viewState = .zero
-        }
-        
-        isDraggable = false
     }
 }
 
@@ -230,8 +251,7 @@ struct CourseView_Previews: PreviewProvider {
     @Namespace static var namespace
     
     static var previews: some View {
-        CourseView(namespace: namespace, show: .constant(true))
+        CourseView(namespace: namespace, course: .constant(courses[0]))
             .environmentObject(Model())
     }
 }
-

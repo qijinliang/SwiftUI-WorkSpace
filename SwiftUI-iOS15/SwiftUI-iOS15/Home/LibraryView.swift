@@ -8,73 +8,104 @@
 import SwiftUI
 
 struct LibraryView: View {
+    @State var contentHasScrolled = false
+    @EnvironmentObject var model: Model
+    
     var body: some View {
         ZStack {
             Color("Background").ignoresSafeArea()
             
-            ScrollView {
-                
-                CertificateView()
-                    .frame(height: 220)
-                    .background(
-                        RoundedRectangle(cornerRadius: 30, style: .continuous)
-                            .fill(.linearGradient(colors: [.purple, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
-                            .padding(20)
-                            .offset(y: -30)
-                    )
-                    .background(
-                        RoundedRectangle(cornerRadius: 30, style: .continuous)
-                            .fill(.linearGradient(colors: [.teal, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
-                            .padding(40)
-                            .offset(y: -60)
-                    )
-                    .padding(20)
-                
-                Text("历史记录".uppercased())
-                    .titleStyle()
-                
-                coursesSection
-                
-                Text("目标".uppercased())
-                    .titleStyle()
-                
-                topicsSection
-            }
-            .safeAreaInset(edge: .top) {
-                Color.clear.frame(height: 70)
-            }
-            .overlay(NavigationBar(title: "资料", hasScrolled: .constant(true)))
-            .background(Image("Blob 1").offset(x: -100, y: -400))
+            content
+                .background(Image("Blob 1").offset(x: 100, y: -60))
         }
     }
     
-    var coursesSection: some View {
+    var content: some View {
+        ScrollView {
+            scrollDetection
+            
+            certificatesSection
+                .padding(.top, 100)
+            
+            Text("历史".uppercased())
+                .sectionTitleModifier()
+            
+            Group {
+                cardsSection
+                
+                menuSection
+                    .padding(.bottom, 50)
+            }
+            .offset(y: -30)
+        }
+        .coordinateSpace(name: "scroll")
+        .overlay(NavigationBar(title: "资料", contentHasScrolled: $contentHasScrolled))
+    }
+    
+    var cardsSection: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 16) {
-                ForEach(courses) { course in
-                    SmallCourseItem(course: course)
+                ForEach(courses) { item in
+                    SmallCourseItem(course: item)
                 }
             }
-            .padding(.horizontal, 20)
-            Spacer()
+            .padding(20)
+            .padding(.bottom, 40)
         }
     }
     
-    var topicsSection: some View {
+    var menuSection: some View {
         VStack {
-            ForEach(topics) { topic in
-                ListRow(topic: topic)
-            }
+            ListRow(title: "历史", icon: "clock.fill")
+            Divider()
+            ListRow(title: "收藏", icon: "star.fill")
+            Divider()
+            ListRow(title: "下载", icon: "square.and.arrow.down.fill")
         }
         .padding(20)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
-        .strokeStyle(cornerRadius: 30)
+        .background(.ultraThinMaterial)
+        .backgroundStyle(cornerRadius: 30)
         .padding(.horizontal, 20)
+    }
+    
+    var certificatesSection: some View {
+        CertificateView()
+            .frame(height: 220)
+            .background(
+                RoundedRectangle(cornerRadius: 30)
+                    .fill(.linearGradient(colors: [.purple, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .padding(.horizontal, 20)
+                    .offset(y: -20)
+            )
+            .background(
+                RoundedRectangle(cornerRadius: 30)
+                    .fill(.linearGradient(colors: [.teal, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .padding(.horizontal, 40)
+                    .offset(y: -40)
+            )
+            .padding(20)
+    }
+    
+    var scrollDetection: some View {
+        GeometryReader { proxy in
+            let offset = proxy.frame(in: .named("scroll")).minY
+            Color.clear.preference(key: ScrollPreferenceKey.self, value: offset)
+        }
+        .onPreferenceChange(ScrollPreferenceKey.self) { offset in
+            withAnimation(.easeInOut) {
+                if offset < 0 {
+                    contentHasScrolled = true
+                } else {
+                    contentHasScrolled = false
+                }
+            }
+        }
     }
 }
 
 struct LibraryView_Previews: PreviewProvider {
     static var previews: some View {
         LibraryView()
+            .environmentObject(Model())
     }
 }

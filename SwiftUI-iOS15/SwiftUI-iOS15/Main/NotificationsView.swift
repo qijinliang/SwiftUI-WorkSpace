@@ -8,36 +8,65 @@
 import SwiftUI
 
 struct NotificationsView: View {
+    @State var contentHasScrolled = false
+    @EnvironmentObject var model: Model
+    
     var body: some View {
         ZStack {
             Color("Background").ignoresSafeArea()
             
-            ScrollView {
-                sectionsSection
-            }
-            .safeAreaInset(edge: .top, content: {
-                Color.clear.frame(height: 70)
-            })
-            .overlay(NavigationBar(title: "消息", hasScrolled: .constant(true)))
-            .background(Image("Blob 1").offset(x: -180, y: 300))
+            content
+                .background(Image("Blob 1").offset(x: -180, y: 300))
         }
     }
     
+    var content: some View {
+        ScrollView {
+            scrollDetection
+            
+            sectionsSection
+                .padding(.vertical, 70)
+                .padding(.bottom, 50)
+        }
+        .coordinateSpace(name: "scroll")
+        .overlay(NavigationBar(title: "消息", contentHasScrolled: $contentHasScrolled))
+    }
+    
     var sectionsSection: some View {
-        VStack(alignment: .leading) {
+        VStack(spacing: 16) {
             ForEach(Array(courseSections.enumerated()), id: \.offset) { index, section in
-                if index != 0 { Divider() }
                 SectionRow(section: section)
+                if index != courseSections.count - 1 {
+                    Divider()
+                }
             }
         }
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
-        .strokeStyle(cornerRadius: 30)
         .padding(20)
+        .background(.ultraThinMaterial)
+        .backgroundStyle(cornerRadius: 30)
+        .padding(.horizontal, 20)
+    }
+    
+    var scrollDetection: some View {
+        GeometryReader { proxy in
+            let offset = proxy.frame(in: .named("scroll")).minY
+            Color.clear.preference(key: ScrollPreferenceKey.self, value: offset)
+        }
+        .onPreferenceChange(ScrollPreferenceKey.self) { offset in
+            withAnimation(.easeInOut) {
+                if offset < 0 {
+                    contentHasScrolled = true
+                } else {
+                    contentHasScrolled = false
+                }
+            }
+        }
     }
 }
 
 struct NotificationsView_Previews: PreviewProvider {
     static var previews: some View {
         NotificationsView()
+            .environmentObject(Model())
     }
 }

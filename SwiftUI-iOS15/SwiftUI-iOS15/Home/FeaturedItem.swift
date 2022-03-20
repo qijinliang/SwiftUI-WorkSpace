@@ -8,48 +8,47 @@
 import SwiftUI
 
 struct FeaturedItem: View {
-    
-    var course: Course = courses[0]
+    var course: Course
+    @Environment(\.sizeCategory) var sizeCategory
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 8.0) {
+        VStack(alignment: .leading, spacing: 8) {
             Spacer()
             Image(course.logo)
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 26.0, height: 26.0)
-                .cornerRadius(20.0)
-                .padding(9)
-                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-                .strokeStyle(cornerRadius: 16)
+                .resizable()
+                .frame(width: 26, height: 26)
+                .cornerRadius(10)
+                .padding(8)
+                .background(.ultraThinMaterial)
+                .cornerRadius(18)
+                .modifier(OutlineOverlay(cornerRadius: 18))
             Text(course.title)
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundStyle(.linearGradient(colors: [.primary,.primary.opacity(0.5)], startPoint: .topLeading, endPoint: .bottomTrailing))
-                .lineLimit(1)
+                .font(.title).bold()
+                .frame(maxWidth: .infinity, alignment: .leading)
             Text(course.subtitle.uppercased())
-                .font(.footnote)
-                .fontWeight(.semibold)
-                .foregroundColor(.secondary)
+                .font(.footnote.weight(.semibold))
+                .foregroundStyle(.secondary)
             Text(course.text)
                 .font(.footnote)
-                .multilineTextAlignment(.leading)
-                .lineLimit(2)
-                .frame(maxWidth: .infinity,alignment: .leading)
-                .foregroundColor(.secondary)
+                .foregroundStyle(.secondary)
+                .lineLimit(sizeCategory > .large ? 1 : 2)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .padding(.all, 20.0)
-        .padding(.vertical, 20)
-        .frame(height: 350.0)
+        .padding(.horizontal, 20)
+        .padding(.vertical, 40)
+        .frame(maxWidth: .infinity)
+        .frame(height: 350)
         .background(.ultraThinMaterial)
-        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
-        .strokeStyle()
-        .padding(.horizontal,20)
+        .backgroundColor(opacity: 0.5)
     }
 }
 
 struct FeaturedItem_Previews: PreviewProvider {
     static var previews: some View {
-        FeaturedItem()
+        Group {
+            FeaturedItem(course: courses[0])
+            FeaturedItem(course: courses[0])
+                .environment(\.sizeCategory, .accessibilityLarge)
+        }
     }
 }

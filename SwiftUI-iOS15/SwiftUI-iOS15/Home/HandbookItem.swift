@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct HandbookItem: View {
-    var handbook: Handbook = handbooks[0]
+    var handbook: Handbook
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             RoundedRectangle(cornerRadius: 20)
                 .fill(.black.opacity(0.2))
+                .blendMode(.overlay)
                 .frame(height: 90)
                 .overlay(
                     Image(handbook.image)
@@ -23,33 +24,35 @@ struct HandbookItem: View {
                 )
             Text(handbook.title)
                 .fontWeight(.semibold)
+                .padding(.top, 8)
                 .layoutPriority(1)
             Text(handbook.subtitle)
                 .font(.caption.weight(.medium))
                 .foregroundStyle(.secondary)
             Text(handbook.text)
-                .font(.caption)
+                .font(.caption.weight(.medium))
                 .foregroundStyle(.secondary)
                 .lineLimit(3)
             Spacer()
         }
-        .padding()
+        .padding(16)
         .frame(maxWidth: 200)
         .frame(height: 260)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
-        .strokeStyle(cornerRadius: 30)
+        .background(.ultraThinMaterial)
+        .backgroundStyle(cornerRadius: 30)
         .background(
-            RoundedRectangle(cornerRadius: 30, style: .continuous)
-                .fill(.linearGradient(colors: [handbook.color1, handbook.color2], startPoint: .topLeading, endPoint: .bottomTrailing))
+            RoundedRectangle(cornerRadius: 30)
+                .fill(LinearGradient(colors: [handbook.color1, handbook.color2], startPoint: .top, endPoint: .bottomTrailing))
                 .rotation3DEffect(.degrees(10), axis: (x: 0, y: 1, z: 0), anchor: .bottomTrailing)
                 .rotationEffect(.degrees(180))
                 .padding(.trailing, 40)
         )
+        .shadow(color: .clear, radius: 0, x: 0, y: 0)
     }
 }
 
 struct HandbookItem_Previews: PreviewProvider {
     static var previews: some View {
-        HandbookItem(handbook: handbooks[1])
+        HandbookItem(handbook: handbooks[0])
     }
 }

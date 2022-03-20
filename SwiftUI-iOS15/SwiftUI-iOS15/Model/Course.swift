@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Course: Identifiable {
     let id = UUID()
+    var index: Int
     var title: String
     var subtitle: String
     var text: String
@@ -17,17 +18,16 @@ struct Course: Identifiable {
     var logo: String
 }
 
-var featuredCourses = [
-    Course(title: "SwiftUI学习中心", subtitle: "20 课时 - 3 小时", text: "使用SwiftUI如何编译，动画，手势等", image: "Illustration 5", background: "Background 5", logo: "Logo 2"),
-    Course(title: "如何设计UI iOS15", subtitle: "20 课时 - 3 小时", text: "布局iOS15，制作UI", image: "Illustration 3", background: "Background 4", logo: "Logo 4"),
-    Course(title: "Flutter 学习中心", subtitle: "20 课时 - 3 小时", text: "使用Fultter跨平台开发", image: "Illustration 1", background: "Background 1", logo: "Logo 1"),
-    Course(title: "阅读", subtitle: "20 课时 - 3 小时", text: "阅读更多的书籍，帮助你快速入门", image: "Illustration 2", background: "Background 2", logo: "Logo 3"),
-]
-
 var courses = [
-    Course(title: "SwiftUI学习中心", subtitle: "20 课时 - 3 小时", text: "使用SwiftUI如何编译，动画，手势等", image: "Illustration 4", background: "Background 4", logo: "Logo 2"),
-    Course(title: "如何设计UI iOS15", subtitle: "20 课时 - 3 小时", text: "布局iOS15，制作UI", image: "Illustration 3", background: "Background 4", logo: "Logo 4"),
-    Course(title: "Flutter 学习中心", subtitle: "20 课时 - 3 小时", text: "使用Fultter跨平台开发", image: "Illustration 1", background: "Background 1", logo: "Logo 1"),
-    Course(title: "阅读", subtitle: "20 课时 - 3 小时", text: "阅读更多的书籍，帮助你快速入门", image: "Illustration 2", background: "Background 2", logo: "Logo 3"),
+    Course(index: 1, title: "学习SwiftUI", subtitle: "2学习SwiftUI", text: "学习SwiftUI", image: "Illustration 5", background: "Background 5", logo: "Logo 2"),
+    Course(index: 2, title: "学习SwiftUI", subtitle: "学习SwiftUI", text: "学习SwiftUI", image: "Illustration 3", background: "Background 4", logo: "Logo 4"),
+    Course(index: 3, title: "学习SwiftUI", subtitle: "学习SwiftUI", text: "学习SwiftUI", image: "Illustration 1", background: "Background 1", logo: "Logo 1"),
+    Course(index: 4, title: "学习SwiftUI", subtitle: "学习SwiftUI", text: "学习SwiftUI", image: "Illustration 2", background: "Background 2", logo: "Logo 3"),
 ]
 
+var featuredCourses = [
+    Course(index: 1, title: "学习SwiftUI", subtitle: "学习SwiftUI", text: "学习SwiftUI", image: "Illustration 9", background: "Background 5", logo: "Logo 2"),
+    Course(index: 2, title: "学习SwiftUI", subtitle: "学习SwiftUI", text: "学习SwiftUI", image: "Illustration 2", background: "Background 3", logo: "Logo 3"),
+    Course(index: 3, title: "学习SwiftUI", subtitle: "学习SwiftUI", text: "学习SwiftUI", image: "Illustration 3", background: "Background 4", logo: "Logo 4"),
+    Course(index: 4, title: "学习SwiftUI", subtitle: "学习SwiftUI", text: "学习SwiftUI", image: "Illustration 1", background: "Background 1", logo: "Logo 1"),
+]
