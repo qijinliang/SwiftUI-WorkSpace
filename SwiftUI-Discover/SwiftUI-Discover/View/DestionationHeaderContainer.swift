@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SDWebImageSwiftUI
 
 struct DestionationHeaderContainer: UIViewControllerRepresentable {
     
@@ -56,7 +55,14 @@ class CustomPageViewController: UIPageViewController, UIPageViewControllerDataSo
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
         allControllers = imageNames.map({ imageName in
-            let hostingController = UIHostingController(rootView: WebImage(url: URL(string: imageName)).resizable().scaledToFill())
+            
+            let hostingController = UIHostingController(rootView: AsyncImage(url: URL(string: imageName)) { image in
+                image
+                    .resizable()
+                    .scaledToFill()
+            } placeholder: {
+                ProgressView()
+            })
             hostingController.view.clipsToBounds = true
             return hostingController
         })

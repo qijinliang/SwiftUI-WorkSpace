@@ -44,6 +44,7 @@ struct ContentView: View {
         .sheet(isPresented: $showAccount) {
             AccountView()
         }
+        .preferredColorScheme(.dark)
     }
 }
 

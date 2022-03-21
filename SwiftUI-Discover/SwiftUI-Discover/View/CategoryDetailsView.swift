@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import SDWebImageSwiftUI
-
 
 class CategoryDetailsViewModel: ObservableObject {
     
@@ -86,11 +84,13 @@ struct CategoryDetailsView: View {
                     ScrollView {
                         ForEach(vm.places,id: \.self) { place in
                             VStack(alignment: .leading, spacing: 0) {
-                                WebImage(url: URL(string: place.thumbnail))
-                                    .resizable()
-                                    .indicator(.activity)
-                                    .transition(.fade(duration: 0.5))
-                                    .scaledToFill()
+                                AsyncImage(url: URL(string: place.thumbnail)) { image in
+                                    image
+                                        .resizable()
+                                        .scaledToFill()
+                                } placeholder: {
+                                    ProgressView()
+                                }
                                 Text(place.name)
                                     .font(.system(size: 12, weight: .semibold))
                                     .padding()
