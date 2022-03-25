@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-
-
-
 struct TrendingCreatorsView: View {
     
     let users: [User] = [
