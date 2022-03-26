@@ -57,12 +57,10 @@ class DestinationDetailsViewModel: ObservableObject {
     @Published var destinationDetails: DestinationDetails?
     
     init(name: String) {
-        // lets make a network call
-//        let name = "paris"
+
         let fixedUrlString = "https://travel.letsbuildthatapp.com/travel_discovery/destination?name=\(name.lowercased())".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         guard let url = URL(string: fixedUrlString) else { return }
         URLSession.shared.dataTask(with: url) { (data, resp, err) in
-            // make sure to check your err & resp
             
             DispatchQueue.main.async {
                 guard let data = data else { return }
@@ -122,12 +120,14 @@ struct PopularDestinationDetailsView: View {
                             .foregroundColor(.orange)
                     }
                 }.padding(.top, 2)
-                
-                Text(vm.destinationDetails?.description ?? "")
-                    .padding(.top, 4)
-                    .font(.system(size: 14))
-                
-                HStack{ Spacer() }
+
+                HStack{
+                    Text(vm.destinationDetails?.description ?? "")
+                        .padding(.top, 4)
+                        .font(.system(size: 14))
+                    Spacer()
+                    
+                }
             }
             .padding(.horizontal)
             
@@ -182,7 +182,6 @@ struct CustomMapAnnotation: View {
                 .padding(.vertical, 4)
                 .background(LinearGradient(gradient: /*@START_MENU_TOKEN@*/Gradient(colors: [Color.red, Color.blue])/*@END_MENU_TOKEN@*/, startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/))
                 .foregroundColor(.white)
-//                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                 .cornerRadius(4)
                 .overlay(
                     RoundedRectangle(cornerRadius: 4)
@@ -233,11 +232,8 @@ struct PopularDestinationTile: View {
 struct PopularDestinationsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            PopularDestinationDetailsView(destination: .init(name: "Paris", country: "France", imageName: "eiffel_tower", latitude: 48.859565, longitude: 2.353235))
-//            PopularDestinationDetailsView(destination: .init(name: "Tokyo", country: "Japan", imageName: "japan", latitude: 35.679693, longitude: 139.771913))
+            ContentView()
         }
-        ContentView()
-        PopularDestinationsView()
     }
 }
 

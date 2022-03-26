@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040C824C27EF070300A6BAC9 /* RestauranDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C824B27EF070300A6BAC9 /* RestauranDetailsView.swift */; };
 		041525E027C73BE700F9D819 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041525DF27C73BE700F9D819 /* Restaurant.swift */; };
 		041525E227C73C0100F9D819 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041525E127C73C0100F9D819 /* Destination.swift */; };
 		041525E427C73C0F00F9D819 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041525E327C73C0F00F9D819 /* Category.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040C824B27EF070300A6BAC9 /* RestauranDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranDetailsView.swift; sourceTree = "<group>"; };
 		041525DF27C73BE700F9D819 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		041525E127C73C0100F9D819 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		041525E327C73C0F00F9D819 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			children = (
 				045B978327C4FB5800F3B606 /* PopularDestinationsView.swift */,
 				045B978527C4FD0D00F3B606 /* PopularRestaurantsView.swift */,
+				040C824B27EF070300A6BAC9 /* RestauranDetailsView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				045B977327C4F98000F3B606 /* SwiftUI_DiscoverApp.swift in Sources */,
 				041525E827C8C04A00F9D819 /* Place.swift in Sources */,
 				045B978827C4FFAC00F3B606 /* TrendingCreatorsView.swift in Sources */,
+				040C824C27EF070300A6BAC9 /* RestauranDetailsView.swift in Sources */,
 				041525E027C73BE700F9D819 /* Restaurant.swift in Sources */,
 				045B978627C4FD0D00F3B606 /* PopularRestaurantsView.swift in Sources */,
 				041525E427C73C0F00F9D819 /* Category.swift in Sources */,
