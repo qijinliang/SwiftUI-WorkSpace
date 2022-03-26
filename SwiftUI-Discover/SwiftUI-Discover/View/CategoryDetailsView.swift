@@ -95,7 +95,7 @@ struct CategoryDetailsView: View {
                                     .font(.system(size: 12, weight: .semibold))
                                     .padding()
                             }
-                            .asTitle()
+                            .asTile()
                             .padding()
                         }
                     }

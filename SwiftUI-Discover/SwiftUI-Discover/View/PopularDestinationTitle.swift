@@ -31,7 +31,7 @@ struct PopularDestinationTitle: View {
                 .padding(.horizontal,12)
                 .padding(.bottom,8)
                 .foregroundColor(.gray)
-        }.asTitle()
+        }.asTile()
             .padding(.bottom)
     }
 }

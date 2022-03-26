@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct DestionationHeaderContainer: UIViewControllerRepresentable {
+struct DestinationHeaderContainer: UIViewControllerRepresentable {
     
-    let imageNames: [String]
+    let imageUrlStrings: [String]
     
     func makeUIViewController(context: Context) -> UIViewController {
-        let revVC = CustomPageViewController(imageNames: imageNames)
-        return revVC
+        let pvc = CustomPageViewController(imageUrlStrings: imageUrlStrings)
+        return pvc
     }
     
     typealias UIViewControllerType = UIViewController
@@ -47,14 +47,14 @@ class CustomPageViewController: UIPageViewController, UIPageViewControllerDataSo
  
     var allControllers: [UIViewController] = []
     
-    init(imageNames: [String]) {
+    init(imageUrlStrings: [String]) {
         
         UIPageControl.appearance().pageIndicatorTintColor = UIColor.systemGray5
         UIPageControl.appearance().currentPageIndicatorTintColor = .blue
         
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
-        allControllers = imageNames.map({ imageName in
+        allControllers = imageUrlStrings.map({ imageName in
             
             let hostingController = UIHostingController(rootView: AsyncImage(url: URL(string: imageName)) { image in
                 image
@@ -67,7 +67,9 @@ class CustomPageViewController: UIPageViewController, UIPageViewControllerDataSo
             return hostingController
         })
         
-        setViewControllers([allControllers.first!], direction: .forward, animated: true, completion: nil)
+        if let first = allControllers.first {
+            setViewControllers([first], direction: .forward, animated: true, completion: nil)
+        }
         self.dataSource = self
         self.delegate = self
     }

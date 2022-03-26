@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct PopularDestinationsView: View {
     
@@ -16,59 +17,99 @@ struct PopularDestinationsView: View {
     ]
     
     var body: some View {
-        VStack() {
+        VStack {
             HStack {
-                Text("打卡地点")
+                Text("Popular destinations")
                     .font(.system(size: 14, weight: .semibold))
                 Spacer()
-                Text("查看所有")
-                    .font(.system(size: 13, weight: .semibold))
-            }
-            .padding(.horizontal)
+                Text("See all")
+                    .font(.system(size: 12, weight: .semibold))
+            }.padding(.horizontal)
             .padding(.top)
+            
             ScrollView(.horizontal) {
-                HStack(spacing: 8) {
-                    ForEach(destinations,id: \.self) { destination in
-                        NavigationLink(destination: PopularDestinationDetailsView(destination: destination), label: {
-                            PopularDestinationTitle(destination: destination)
-                                .foregroundColor(.black)
-                                .padding(.bottom)
-                        })
+                HStack(spacing: 8.0) {
+                    ForEach(destinations, id: \.self) { destination in
+                        NavigationLink(
+                            destination:
+                                NavigationLazyView(PopularDestinationDetailsView(destination: destination))
+                                ,
+                            label: {
+                                PopularDestinationTile(destination: destination)
+                                    .padding(.bottom)
+                            })
+                       
                     }
-                }
-                .padding(.horizontal)
+                }.padding(.horizontal)
             }
         }
     }
 }
 
+struct DestinationDetails: Decodable {
+    let description: String
+    let photos: [String]
+}
 
-
-import MapKit
+class DestinationDetailsViewModel: ObservableObject {
+    
+    @Published var isLoading = true
+    @Published var destinationDetails: DestinationDetails?
+    
+    init(name: String) {
+        // lets make a network call
+//        let name = "paris"
+        let fixedUrlString = "https://travel.letsbuildthatapp.com/travel_discovery/destination?name=\(name.lowercased())".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        guard let url = URL(string: fixedUrlString) else { return }
+        URLSession.shared.dataTask(with: url) { (data, resp, err) in
+            // make sure to check your err & resp
+            
+            DispatchQueue.main.async {
+                guard let data = data else { return }
+                
+                do {
+                    
+                    self.destinationDetails = try JSONDecoder().decode(DestinationDetails.self, from: data)
+                    
+                } catch {
+                    print("Failed to decode JSON,", error)
+                }
+            }
+        }.resume()
+    }
+    
+}
 
 struct PopularDestinationDetailsView: View {
     
+    @ObservedObject var vm: DestinationDetailsViewModel
+    
     let destination: Destination
+    
     @State var region: MKCoordinateRegion
-    @State var isShowingAttractions = false
+    @State var isShowingAttractions = true
     
     init(destination: Destination) {
+        print("Hitting network unnecessarily")
         self.destination = destination
         self._region = State(initialValue: MKCoordinateRegion(center: .init(latitude: destination.latitude, longitude: destination.longitude), span: .init(latitudeDelta: 0.1, longitudeDelta: 0.1)))
+        
+        self.vm = .init(name: destination.name)
     }
     
-    
-        let imageUrlStrings = [
-            "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/2240d474-2237-4cd3-9919-562cd1bb439e",
-            "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/b1642068-5624-41cf-83f1-3f6dff8c1702",
-            "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/6982cc9d-3104-4a54-98d7-45ee5d117531"
-        ]
+    let imageUrlStrings = [
+        "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/2240d474-2237-4cd3-9919-562cd1bb439e",
+        "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/b1642068-5624-41cf-83f1-3f6dff8c1702",
+        "https://letsbuildthatapp-videos.s3-us-west-2.amazonaws.com/6982cc9d-3104-4a54-98d7-45ee5d117531"
+    ]
     
     var body: some View {
         ScrollView {
             
-            DestionationHeaderContainer(imageNames: imageUrlStrings)
-                .frame(height: 250)
+            if let photos = vm.destinationDetails?.photos {
+                DestinationHeaderContainer(imageUrlStrings: photos)
+                    .frame(height: 250)
+            }
             
             VStack(alignment: .leading) {
                 Text(destination.name)
@@ -80,54 +121,46 @@ struct PopularDestinationDetailsView: View {
                         Image(systemName: "star.fill")
                             .foregroundColor(.orange)
                     }
-                }.padding(.top,2)
+                }.padding(.top, 2)
                 
-                Text("巴黎（Paris），是法兰西共和国的首都和最大城市，也是法国的政治、经济、文化和商业中心，世界五个国际大都市之一（其余四个分别为纽约、伦敦、东京、香港），并被GaWC评为Alpha+级世界一线城市。 [1-2]巴黎位于法国北部巴黎盆地的中央，横跨塞纳河两岸，城市中心坐标为北纬48°52′、东经2°25′。广义的巴黎有小巴黎和大巴黎之分。小巴黎指大环城公路以内的巴黎城市内，面积105.4平方公里，人口224万；大巴黎包括城区周围的上塞纳省、瓦勒德马恩省、塞纳-圣但尼省、伊夫林省、瓦勒德瓦兹省、塞纳-马恩省和埃松省七个省，共同组成巴黎大区，这片地区在古代就已经被称作“法兰西岛”（ile-de-france），都会区人口约为1100万，占据全国人口的六分之一。 [3]巴黎建都已有1400多年的历史，它不仅是法国，也是西欧的政治、经济和文化中心。2017年8月1日，国际奥委会宣布，巴黎成为2024年奥运会主办城市。2018年1月20日，法国总理爱德华·菲利普正式向法国负责世博会申办工作的部际代表帕斯卡尔·拉米提出，出于财政预算方面的考虑，巴黎将退出申办2025年世博会。 [4")
-                    .padding(.top,4)
+                Text(vm.destinationDetails?.description ?? "")
+                    .padding(.top, 4)
+                    .font(.system(size: 14))
                 
-                HStack { Spacer() }
+                HStack{ Spacer() }
             }
             .padding(.horizontal)
             
             HStack {
-                Text("Location").font(.system(size: 18, weight: .semibold))
+                Text("Location")
+                    .font(.system(size: 18, weight: .semibold))
                 Spacer()
                 
-                Button(action: {
-                    isShowingAttractions.toggle()
-                }, label: {
+                Button(action: { isShowingAttractions.toggle() }, label: {
                     Text("\(isShowingAttractions ? "Hide" : "Show") Attractions")
                         .font(.system(size: 12, weight: .semibold))
                 })
-                Toggle("",isOn: $isShowingAttractions)
+                Toggle("", isOn: $isShowingAttractions)
                     .labelsHidden()
+                
             }.padding(.horizontal)
-            
             
             Map(coordinateRegion: $region, annotationItems: isShowingAttractions ? attractions : []) { attraction in
                 MapAnnotation(coordinate: .init(latitude: attraction.latitude, longitude: attraction.longitude)) {
                     CustomMapAnnotation(attraction: attraction)
                 }
-            }.frame(height: 300)
+            }
+            .frame(height: 300)
             
         }.navigationBarTitle(destination.name, displayMode: .inline)
     }
     
     let attractions: [Attraction] = [
-        .init(name: "Eiffel Tower",imageName: "eiffel_tower", latitude: 48.858605, longitude: 2.2946),
-        .init(name: "Champs-Elysees",imageName: "new_york", latitude: 48.866867, longitude: 2.311780),
-        .init(name: "Louvre Museum", imageName: "art2",latitude: 48.860288, longitude: 2.337789)
+        .init(name: "Eiffel Tower", imageName: "eiffel_tower", latitude: 48.858605, longitude: 2.2946),
+        .init(name: "Champs-Elysees", imageName: "new_york", latitude: 48.866867, longitude: 2.311780),
+        .init(name: "Louvre Museum", imageName: "art2", latitude: 48.860288, longitude: 2.337789)
     ]
-    
 }
-
-struct Attraction: Identifiable {
-    let id = UUID().uuidString
-    
-    let name,imageName: String
-    let latitude, longitude: Double
-}
-
 
 struct CustomMapAnnotation: View {
     
@@ -139,17 +172,72 @@ struct CustomMapAnnotation: View {
                 .resizable()
                 .frame(width: 80, height: 60)
                 .cornerRadius(4)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 4)
+                        .stroke(Color(.init(white: 0, alpha: 0.5)))
+                )
             Text(attraction.name)
                 .font(.system(size: 12, weight: .semibold))
                 .padding(.horizontal, 6)
-                .padding(.vertical,4)
-                .background(LinearGradient(gradient: Gradient(colors: [Color.red,Color.blue]), startPoint: .leading, endPoint: .trailing))
+                .padding(.vertical, 4)
+                .background(LinearGradient(gradient: /*@START_MENU_TOKEN@*/Gradient(colors: [Color.red, Color.blue])/*@END_MENU_TOKEN@*/, startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/))
                 .foregroundColor(.white)
+//                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
                 .cornerRadius(4)
                 .overlay(
                     RoundedRectangle(cornerRadius: 4)
                         .stroke(Color(.init(white: 0, alpha: 0.5)))
                 )
+            
         }.shadow(radius: 5)
     }
 }
+
+struct Attraction: Identifiable {
+    let id = UUID().uuidString
+    
+    let name, imageName: String
+    let latitude, longitude: Double
+}
+
+struct PopularDestinationTile: View {
+    
+    let destination: Destination
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            
+            Image(destination.imageName)
+                .resizable()
+                .scaledToFill()
+                .frame(width: 125, height: 125)
+                .cornerRadius(4)
+                .padding(.horizontal, 6)
+                .padding(.vertical, 6)
+            
+            Text(destination.name)
+                .font(.system(size: 12, weight: .semibold))
+                .padding(.horizontal, 12)
+                .foregroundColor(Color(.label))
+            
+            Text(destination.country)
+                .font(.system(size: 12, weight: .semibold))
+                .padding(.horizontal, 12)
+                .padding(.bottom, 8)
+                .foregroundColor(.gray)
+        }
+        .asTile()
+    }
+}
+
+struct PopularDestinationsView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView {
+            PopularDestinationDetailsView(destination: .init(name: "Paris", country: "France", imageName: "eiffel_tower", latitude: 48.859565, longitude: 2.353235))
+//            PopularDestinationDetailsView(destination: .init(name: "Tokyo", country: "Japan", imageName: "japan", latitude: 35.679693, longitude: 139.771913))
+        }
+        ContentView()
+        PopularDestinationsView()
+    }
+}
+
