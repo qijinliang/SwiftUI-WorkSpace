@@ -56,12 +56,16 @@ class CustomPageViewController: UIPageViewController, UIPageViewControllerDataSo
         
         allControllers = imageUrlStrings.map({ imageName in
             
-            let hostingController = UIHostingController(rootView: AsyncImage(url: URL(string: imageName)) { image in
-                image
-                    .resizable()
-                    .scaledToFill()
-            } placeholder: {
-                ProgressView()
+            let hostingController = UIHostingController(rootView:
+                                                            ZStack {
+                Color.black
+                AsyncImage(url: URL(string: imageName)) { image in
+                    image
+                        .resizable()
+                        .scaledToFit()
+                } placeholder: {
+                    ProgressView()
+                }
             })
             hostingController.view.clipsToBounds = true
             return hostingController

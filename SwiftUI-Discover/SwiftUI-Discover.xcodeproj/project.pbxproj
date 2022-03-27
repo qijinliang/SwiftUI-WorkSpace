@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		040C824C27EF070300A6BAC9 /* RestauranDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C824B27EF070300A6BAC9 /* RestauranDetailsView.swift */; };
+		040C824E27F0328600A6BAC9 /* RestaurantCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C824D27F0328600A6BAC9 /* RestaurantCarouselView.swift */; };
 		041525E027C73BE700F9D819 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041525DF27C73BE700F9D819 /* Restaurant.swift */; };
 		041525E227C73C0100F9D819 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041525E127C73C0100F9D819 /* Destination.swift */; };
 		041525E427C73C0F00F9D819 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041525E327C73C0F00F9D819 /* Category.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		040C824B27EF070300A6BAC9 /* RestauranDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauranDetailsView.swift; sourceTree = "<group>"; };
+		040C824D27F0328600A6BAC9 /* RestaurantCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCarouselView.swift; sourceTree = "<group>"; };
 		041525DF27C73BE700F9D819 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		041525E127C73C0100F9D819 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		041525E327C73C0F00F9D819 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				045B978727C4FFAC00F3B606 /* TrendingCreatorsView.swift */,
 				5B17096727C9E3E100BCCB68 /* CategoryDetailsView.swift */,
 				5B17096B27C9EEA200BCCB68 /* PopularDestinationTitle.swift */,
+				040C824D27F0328600A6BAC9 /* RestaurantCarouselView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				5BAA67CD27CCAA66004FA913 /* DestinationHeaderContainer.swift in Sources */,
 				041525E227C73C0100F9D819 /* Destination.swift in Sources */,
 				041525E627C73C1E00F9D819 /* User.swift in Sources */,
+				040C824E27F0328600A6BAC9 /* RestaurantCarouselView.swift in Sources */,
 				0471BB0727ECB31500D641FE /* RestaurantPhotosView.swift in Sources */,
 				045B978427C4FB5800F3B606 /* PopularDestinationsView.swift in Sources */,
 				5B17096A27C9E44F00BCCB68 /* ActivityIndicatorView.swift in Sources */,

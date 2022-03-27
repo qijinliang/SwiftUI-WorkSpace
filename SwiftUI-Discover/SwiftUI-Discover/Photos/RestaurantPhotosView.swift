@@ -40,24 +40,36 @@ struct RestaurantPhotosView: View {
     }
     
     
-    @State var shouldShowFullscreenMolda = false
+    @State var shouldShowFullscreenMoldal = false
     
     var body: some View {
         GeometryReader { proxy in
             ScrollView {
                 
                 
-                
-                
-                Button(action: {}, label: {
-                    Text("Show fullscreent modal")
-                })
-                
                 Picker("Test",selection: $mode) {
                     Text("Grid").tag("grid")
                     Text("List").tag("List")
                 }.pickerStyle(SegmentedPickerStyle())
                     .padding()
+                
+                Spacer().fullScreenCover(isPresented: $shouldShowFullscreenMoldal, content: {
+                    ZStack(alignment: .topLeading) {
+                        Color.black.ignoresSafeArea()
+                        
+                        DestinationHeaderContainer(imageUrlStrings: photoUrlStrings)
+                        
+                        Button(action: {
+                            shouldShowFullscreenMoldal.toggle()
+                        }, label: {
+                            Image(systemName: "xmark")
+
+                            .font(.system(size: 32, weight: .bold))
+                            .foregroundColor(.white)
+                            .padding()
+                        })
+                    }
+                })
                 if mode == "grid" {
                     LazyVGrid(columns: [
                         GridItem(.adaptive(minimum: proxy.size.width / 3 - 4, maximum: 300), spacing: 2)
@@ -65,15 +77,19 @@ struct RestaurantPhotosView: View {
                     ], spacing: 4, content:  {
                         ForEach(photoUrlStrings, id: \.self) { urlString in
                             
-                            AsyncImage(url: URL(string: urlString)) { image in
-                                image
-                                    .resizable()
-                                    .scaledToFill()
-                                    .frame(width: proxy.size.width / 3 - 3, height: proxy.size.width / 3 - 3)
-                                    .clipped()
-                            } placeholder: {
-                                ProgressView()
-                            }
+                            Button(action: {
+                                shouldShowFullscreenMoldal.toggle()
+                            }, label: {
+                                AsyncImage(url: URL(string: urlString)) { image in
+                                    image
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(width: proxy.size.width / 3 - 3, height: proxy.size.width / 3 - 3)
+                                        .clipped()
+                                } placeholder: {
+                                    ProgressView()
+                                }
+                            })
                         }
                     }).padding(.horizontal, 2)
                 }else{
