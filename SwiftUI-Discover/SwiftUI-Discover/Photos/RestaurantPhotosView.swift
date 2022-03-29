@@ -56,9 +56,7 @@ struct RestaurantPhotosView: View {
                 Spacer().fullScreenCover(isPresented: $shouldShowFullscreenMoldal, content: {
                     ZStack(alignment: .topLeading) {
                         Color.black.ignoresSafeArea()
-                        
-                        DestinationHeaderContainer(imageUrlStrings: photoUrlStrings)
-                        
+                        RestaurantCarouselContainer(imageUrlStrings: photoUrlStrings)
                         Button(action: {
                             shouldShowFullscreenMoldal.toggle()
                         }, label: {

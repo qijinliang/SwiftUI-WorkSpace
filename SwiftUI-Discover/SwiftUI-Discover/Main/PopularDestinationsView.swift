@@ -106,7 +106,7 @@ struct PopularDestinationDetailsView: View {
             
             if let photos = vm.destinationDetails?.photos {
                 DestinationHeaderContainer(imageUrlStrings: photos)
-//                    .frame(height: 350)
+                    .frame(height: 350)
             }
             
             VStack(alignment: .leading) {
