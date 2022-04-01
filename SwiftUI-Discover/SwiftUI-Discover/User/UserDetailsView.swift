@@ -8,9 +8,45 @@
 import SwiftUI
 
 
-//let urlString = "https://travel.letsbuildthatapp.com/travel_discovery/user?id=0"
+struct UserDetails: Decodable,Hashable {
+    let username, firstName, lastName, profileImage: String
+    let followers, following: Int
+    let posts: [Post]
+}
+
+struct Post: Decodable,Hashable {
+    let title, imageUrl, views: String
+    let hashtags: [String]
+}
+
+class UserDetailsViewModels: ObservableObject {
+    
+    @Published var userDeatails: UserDetails?
+    
+    init() {
+        guard let url = URL(string: "https://travel.letsbuildthatapp.com/travel_discovery/user?id=0") else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, resp, err) in
+            
+            DispatchQueue.main.async {
+                guard let data = data else {
+                    return
+                }
+
+                do {
+                    self.userDeatails = try JSONDecoder().decode(UserDetails.self, from: data)
+                } catch let jsonError {
+                    print("jsonError",jsonError)
+                }
+            }
+        }.resume()
+    }
+}
+
 
 struct UserDetailsView: View {
+    
+    @ObservedObject var vm = UserDetailsViewModels()
     
     let user: User
     
@@ -86,11 +122,17 @@ struct UserDetailsView: View {
                 }
                 .font(.system(size: 11, weight: .semibold))
                 
-                ForEach(0..<5, id: \.self) { num in
+                ForEach(vm.userDeatails?.posts ?? [], id: \.self) { post in
                     VStack(alignment: .leading) {
-                        Image("japan")
-                            .resizable()
-                            .scaledToFill()
+                        AsyncImage(url: URL(string: post.imageUrl)) { image in
+                            image
+                                .resizable()
+                                .scaledToFill()
+                                .frame(height: 200)
+                                .clipped()
+                        } placeholder: {
+                            ProgressView()
+                        }
                         
                         HStack {
                             Image("amy")
@@ -100,7 +142,7 @@ struct UserDetailsView: View {
                                 .clipShape(Circle())
                             
                             VStack(alignment: .leading) {
-                                Text("here is my post title")
+                                Text(post.title)
                                     .font(.system(size: 14, weight: .semibold))
                                 Text("500K views")
                                     .font(.system(size: 12, weight: .regular))
