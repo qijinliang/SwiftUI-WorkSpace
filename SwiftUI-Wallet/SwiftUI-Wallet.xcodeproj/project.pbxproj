@@ -7,22 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5BF3C7F027F8AE6500A31957 /* SwiftUI_WalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3C7EF27F8AE6500A31957 /* SwiftUI_WalletApp.swift */; };
-		5BF3C7F227F8AE6500A31957 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF3C7F127F8AE6500A31957 /* ContentView.swift */; };
-		5BF3C7F427F8AE6600A31957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF3C7F327F8AE6600A31957 /* Assets.xcassets */; };
-		5BF3C7F727F8AE6600A31957 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BF3C7F627F8AE6600A31957 /* Preview Assets.xcassets */; };
+		5BB58B6227FB196D00FB70C9 /* SwiftUI_WalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB58B6127FB196D00FB70C9 /* SwiftUI_WalletApp.swift */; };
+		5BB58B6427FB196D00FB70C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB58B6327FB196D00FB70C9 /* ContentView.swift */; };
+		5BB58B6627FB196E00FB70C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB58B6527FB196E00FB70C9 /* Assets.xcassets */; };
+		5BB58B6927FB196E00FB70C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB58B6827FB196E00FB70C9 /* Preview Assets.xcassets */; };
+		5BB58B6B27FB196E00FB70C9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB58B6A27FB196E00FB70C9 /* Persistence.swift */; };
+		5BB58B6E27FB196E00FB70C9 /* SwiftUI_Wallet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BB58B6C27FB196E00FB70C9 /* SwiftUI_Wallet.xcdatamodeld */; };
+		5BB58B7627FB19D500FB70C9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB58B7527FB19D500FB70C9 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5BF3C7EC27F8AE6500A31957 /* SwiftUI-Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5BF3C7EF27F8AE6500A31957 /* SwiftUI_WalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_WalletApp.swift; sourceTree = "<group>"; };
-		5BF3C7F127F8AE6500A31957 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5BF3C7F327F8AE6600A31957 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5BF3C7F627F8AE6600A31957 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BB58B5E27FB196D00FB70C9 /* SwiftUI-Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB58B6127FB196D00FB70C9 /* SwiftUI_WalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_WalletApp.swift; sourceTree = "<group>"; };
+		5BB58B6327FB196D00FB70C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5BB58B6527FB196E00FB70C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BB58B6827FB196E00FB70C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5BB58B6A27FB196E00FB70C9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5BB58B6D27FB196E00FB70C9 /* SwiftUI_Wallet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUI_Wallet.xcdatamodel; sourceTree = "<group>"; };
+		5BB58B7527FB19D500FB70C9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5BF3C7E927F8AE6500A31957 /* Frameworks */ = {
+		5BB58B5B27FB196D00FB70C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,51 +38,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5BF3C7E327F8AE6500A31957 = {
+		5BB58B5527FB196D00FB70C9 = {
 			isa = PBXGroup;
 			children = (
-				5BF3C7EE27F8AE6500A31957 /* SwiftUI-Wallet */,
-				5BF3C7ED27F8AE6500A31957 /* Products */,
+				5BB58B6027FB196D00FB70C9 /* SwiftUI-Wallet */,
+				5BB58B5F27FB196D00FB70C9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5BF3C7ED27F8AE6500A31957 /* Products */ = {
+		5BB58B5F27FB196D00FB70C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5BF3C7EC27F8AE6500A31957 /* SwiftUI-Wallet.app */,
+				5BB58B5E27FB196D00FB70C9 /* SwiftUI-Wallet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5BF3C7EE27F8AE6500A31957 /* SwiftUI-Wallet */ = {
+		5BB58B6027FB196D00FB70C9 /* SwiftUI-Wallet */ = {
 			isa = PBXGroup;
 			children = (
-				5BF3C7EF27F8AE6500A31957 /* SwiftUI_WalletApp.swift */,
-				5BF3C7F127F8AE6500A31957 /* ContentView.swift */,
-				5BF3C7F327F8AE6600A31957 /* Assets.xcassets */,
-				5BF3C7F527F8AE6600A31957 /* Preview Content */,
+				5BB58B7427FB19CA00FB70C9 /* Main */,
+				5BB58B6127FB196D00FB70C9 /* SwiftUI_WalletApp.swift */,
+				5BB58B6327FB196D00FB70C9 /* ContentView.swift */,
+				5BB58B6527FB196E00FB70C9 /* Assets.xcassets */,
+				5BB58B6A27FB196E00FB70C9 /* Persistence.swift */,
+				5BB58B6C27FB196E00FB70C9 /* SwiftUI_Wallet.xcdatamodeld */,
+				5BB58B6727FB196E00FB70C9 /* Preview Content */,
 			);
 			path = "SwiftUI-Wallet";
 			sourceTree = "<group>";
 		};
-		5BF3C7F527F8AE6600A31957 /* Preview Content */ = {
+		5BB58B6727FB196E00FB70C9 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5BF3C7F627F8AE6600A31957 /* Preview Assets.xcassets */,
+				5BB58B6827FB196E00FB70C9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5BB58B7427FB19CA00FB70C9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5BB58B7527FB19D500FB70C9 /* MainView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5BF3C7EB27F8AE6500A31957 /* SwiftUI-Wallet */ = {
+		5BB58B5D27FB196D00FB70C9 /* SwiftUI-Wallet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5BF3C7FA27F8AE6600A31957 /* Build configuration list for PBXNativeTarget "SwiftUI-Wallet" */;
+			buildConfigurationList = 5BB58B7127FB196E00FB70C9 /* Build configuration list for PBXNativeTarget "SwiftUI-Wallet" */;
 			buildPhases = (
-				5BF3C7E827F8AE6500A31957 /* Sources */,
-				5BF3C7E927F8AE6500A31957 /* Frameworks */,
-				5BF3C7EA27F8AE6500A31957 /* Resources */,
+				5BB58B5A27FB196D00FB70C9 /* Sources */,
+				5BB58B5B27FB196D00FB70C9 /* Frameworks */,
+				5BB58B5C27FB196D00FB70C9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +101,25 @@
 			);
 			name = "SwiftUI-Wallet";
 			productName = "SwiftUI-Wallet";
-			productReference = 5BF3C7EC27F8AE6500A31957 /* SwiftUI-Wallet.app */;
+			productReference = 5BB58B5E27FB196D00FB70C9 /* SwiftUI-Wallet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5BF3C7E427F8AE6500A31957 /* Project object */ = {
+		5BB58B5627FB196D00FB70C9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					5BF3C7EB27F8AE6500A31957 = {
+					5BB58B5D27FB196D00FB70C9 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 5BF3C7E727F8AE6500A31957 /* Build configuration list for PBXProject "SwiftUI-Wallet" */;
+			buildConfigurationList = 5BB58B5927FB196D00FB70C9 /* Build configuration list for PBXProject "SwiftUI-Wallet" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,42 +127,45 @@
 				en,
 				Base,
 			);
-			mainGroup = 5BF3C7E327F8AE6500A31957;
-			productRefGroup = 5BF3C7ED27F8AE6500A31957 /* Products */;
+			mainGroup = 5BB58B5527FB196D00FB70C9;
+			productRefGroup = 5BB58B5F27FB196D00FB70C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5BF3C7EB27F8AE6500A31957 /* SwiftUI-Wallet */,
+				5BB58B5D27FB196D00FB70C9 /* SwiftUI-Wallet */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5BF3C7EA27F8AE6500A31957 /* Resources */ = {
+		5BB58B5C27FB196D00FB70C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF3C7F727F8AE6600A31957 /* Preview Assets.xcassets in Resources */,
-				5BF3C7F427F8AE6600A31957 /* Assets.xcassets in Resources */,
+				5BB58B6927FB196E00FB70C9 /* Preview Assets.xcassets in Resources */,
+				5BB58B6627FB196E00FB70C9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5BF3C7E827F8AE6500A31957 /* Sources */ = {
+		5BB58B5A27FB196D00FB70C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BF3C7F227F8AE6500A31957 /* ContentView.swift in Sources */,
-				5BF3C7F027F8AE6500A31957 /* SwiftUI_WalletApp.swift in Sources */,
+				5BB58B6B27FB196E00FB70C9 /* Persistence.swift in Sources */,
+				5BB58B6427FB196D00FB70C9 /* ContentView.swift in Sources */,
+				5BB58B6E27FB196E00FB70C9 /* SwiftUI_Wallet.xcdatamodeld in Sources */,
+				5BB58B7627FB19D500FB70C9 /* MainView.swift in Sources */,
+				5BB58B6227FB196D00FB70C9 /* SwiftUI_WalletApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5BF3C7F827F8AE6600A31957 /* Debug */ = {
+		5BB58B6F27FB196E00FB70C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -206,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		5BF3C7F927F8AE6600A31957 /* Release */ = {
+		5BB58B7027FB196E00FB70C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -261,7 +281,7 @@
 			};
 			name = Release;
 		};
-		5BF3C7FB27F8AE6600A31957 /* Debug */ = {
+		5BB58B7227FB196E00FB70C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -289,7 +309,7 @@
 			};
 			name = Debug;
 		};
-		5BF3C7FC27F8AE6600A31957 /* Release */ = {
+		5BB58B7327FB196E00FB70C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -320,25 +340,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5BF3C7E727F8AE6500A31957 /* Build configuration list for PBXProject "SwiftUI-Wallet" */ = {
+		5BB58B5927FB196D00FB70C9 /* Build configuration list for PBXProject "SwiftUI-Wallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5BF3C7F827F8AE6600A31957 /* Debug */,
-				5BF3C7F927F8AE6600A31957 /* Release */,
+				5BB58B6F27FB196E00FB70C9 /* Debug */,
+				5BB58B7027FB196E00FB70C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5BF3C7FA27F8AE6600A31957 /* Build configuration list for PBXNativeTarget "SwiftUI-Wallet" */ = {
+		5BB58B7127FB196E00FB70C9 /* Build configuration list for PBXNativeTarget "SwiftUI-Wallet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5BF3C7FB27F8AE6600A31957 /* Debug */,
-				5BF3C7FC27F8AE6600A31957 /* Release */,
+				5BB58B7227FB196E00FB70C9 /* Debug */,
+				5BB58B7327FB196E00FB70C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5BB58B6C27FB196E00FB70C9 /* SwiftUI_Wallet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5BB58B6D27FB196E00FB70C9 /* SwiftUI_Wallet.xcdatamodel */,
+			);
+			currentVersion = 5BB58B6D27FB196E00FB70C9 /* SwiftUI_Wallet.xcdatamodel */;
+			path = SwiftUI_Wallet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 5BF3C7E427F8AE6500A31957 /* Project object */;
+	rootObject = 5BB58B5627FB196D00FB70C9 /* Project object */;
 }
