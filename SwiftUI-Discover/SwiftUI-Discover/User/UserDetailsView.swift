@@ -23,8 +23,8 @@ class UserDetailsViewModels: ObservableObject {
     
     @Published var userDeatails: UserDetails?
     
-    init() {
-        guard let url = URL(string: "https://travel.letsbuildthatapp.com/travel_discovery/user?id=0") else { return }
+    init(userId: Int) {
+        guard let url = URL(string: "https://travel.letsbuildthatapp.com/travel_discovery/user?id=\(userId)") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, resp, err) in
             
@@ -46,9 +46,14 @@ class UserDetailsViewModels: ObservableObject {
 
 struct UserDetailsView: View {
     
-    @ObservedObject var vm = UserDetailsViewModels()
+    @ObservedObject var vm: UserDetailsViewModels
     
     let user: User
+    
+    init(user: User) {
+        self.user = user
+        self.vm = .init(userId: user.id)
+    }
     
     var body: some View {
         ScrollView {
@@ -144,7 +149,7 @@ struct UserDetailsView: View {
                             VStack(alignment: .leading) {
                                 Text(post.title)
                                     .font(.system(size: 14, weight: .semibold))
-                                Text("500K views")
+                                Text("\(post.views) views")
                                     .font(.system(size: 12, weight: .regular))
                                     .foregroundColor(.gray)
                             }
@@ -152,8 +157,8 @@ struct UserDetailsView: View {
                         .padding(.horizontal, 8)
                         
                         HStack {
-                            ForEach(0..<3, id: \.self) { num in
-                             Text("Traveling")
+                            ForEach(post.hashtags, id: \.self) { hastags in
+                             Text("#\(hastags)")
                                     .foregroundColor(Color.blue)
                                     .font(.system(size: 14, weight: .semibold))
                                     .padding(.horizontal, 12)
@@ -179,7 +184,7 @@ struct UserDetailsView: View {
 struct UserDetailsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            UserDetailsView(user: .init(name: "用户名", imageName: "amy"))
+            UserDetailsView(user: .init(id: 0, name: "用户名", imageName: "amy"))
         }
     }
 }
