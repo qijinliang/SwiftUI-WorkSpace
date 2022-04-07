@@ -12,12 +12,14 @@ struct MainView: View {
         NavigationView {
             ScrollView {
                 TabView {
-                    Group {
+                    ForEach(0..<5) { num in
                         CreaditCardView()
-                    }.padding(.bottom, 40)
+                            .padding(.bottom, 40)
+                    }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
                 .frame(height: 280)
+                .indexViewStyle(.page(backgroundDisplayMode: .always))
             }
             .navigationTitle("Creadit Cards")
             .navigationBarItems(trailing: addCarButton)
@@ -49,7 +51,12 @@ struct MainView: View {
             }
             .foregroundColor(.white)
             .padding()
-            .background(Color.blue)
+            .background(
+                LinearGradient(colors: [Color.blue.opacity(0.6),Color.blue], startPoint: .center, endPoint: .bottom)
+            )
+            .overlay(RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.black.opacity(0.5),lineWidth: 1)
+            )
             .cornerRadius(8)
             .shadow(radius: 5)
             .padding(.horizontal)
