@@ -131,7 +131,7 @@ struct RestaurantPhotosView: View {
 struct RestaurantPhotosView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            RestaurantPhotosView()
+            RestaurantPhotosView().preferredColorScheme(.dark)
         }
     }
 }

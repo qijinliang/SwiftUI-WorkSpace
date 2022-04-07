@@ -10,6 +10,7 @@ import SwiftUI
 
 extension Color {
     static let discoverBackground = Color(.init(white: 0.95 ,alpha: 1))
+    static let defaultBackground = Color("defaultBackground")
 }
 
 struct ContentView: View {
@@ -19,6 +20,8 @@ struct ContentView: View {
             .foregroundColor: UIColor.white
         ]
     }
+    
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationView {
@@ -48,13 +51,13 @@ struct ContentView: View {
                         PopularRestaurantsView()
                         TrendingCreatorsView()
                     }
-                    .background(Color.discoverBackground)
+                    .background(Color.defaultBackground)
                     .cornerRadius(16)
                     .padding(.top, 32)
                 }
             }
             .navigationTitle("旅游")
-        }
+        }.preferredColorScheme(.dark)
     }
 }
 
