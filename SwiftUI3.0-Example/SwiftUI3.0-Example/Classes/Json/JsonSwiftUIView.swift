@@ -48,7 +48,6 @@ struct JsonSwiftUIView: View {
     @ObservedObject var vm = ContentViewMode()
     
     var body: some View {
-        NavigationView {
             ScrollView {
                 if vm.isFetching {
                     ProgressView()
@@ -70,7 +69,6 @@ struct JsonSwiftUIView: View {
                 await vm.fetchData()
             }
             .navigationBarItems(trailing: refreshButton)
-        }
     }
     
     private var refreshButton: some View {
