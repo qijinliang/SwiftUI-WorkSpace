@@ -18,7 +18,7 @@ struct ButtonSwiftUIView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
         .edgesIgnoringSafeArea(.all)
-        .animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0))
+        .animation(.spring(response: 0.5, dampingFraction: 0.5, blendDuration: 0), value: "")
     }
 }
 
@@ -35,7 +35,7 @@ struct PayButton: View {
             
             Image(systemName: "sun.max")
                 .clipShape(Rectangle().offset(y: tap ? 0 : 50))
-                .animation(.easeInOut)
+                .animation(.easeInOut, value: "")
                 .opacity(press ? 0 : 1)
                 .scaleEffect(press ? 0 : 1)
             

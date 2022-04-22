@@ -17,7 +17,7 @@ struct ChangeColor: View {
             RoundedRectangle(cornerRadius: 20)
                 .foregroundColor(Change ? .red : .blue)
                 .padding()
-                .animation(.easeInOut)
+                .animation(.easeInOut, value: Change)
                 .frame(maxWidth: .infinity, maxHeight: 300)
             
             RoundedRectangle(cornerRadius: 20)

@@ -21,7 +21,7 @@ struct ChangePoint: View {
                 //MARK: 这样做也是可以移动，采取的是position方式
                 .position(self.Change ? CGPoint(x: 100, y: 100) : CGPoint(x: 300, y: 300))
                 .foregroundColor(self.Change ? Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)) : Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
-                .animation(.easeInOut)
+                .animation(.easeInOut, value: Change)
             
             Button(action: {
                 self.Change.toggle()
@@ -35,7 +35,7 @@ struct ChangePoint: View {
             .padding()
             .foregroundColor(.white)
             .background(self.Change ? Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)) : Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
-            .animation(.easeInOut)
+            .animation(.easeInOut, value: Change)
             .cornerRadius(20)
         }
     }

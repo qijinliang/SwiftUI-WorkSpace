@@ -82,7 +82,7 @@ struct Chart_SwiftUIView: View{
                         StackedBarView(dataPoint: self.dataSet[self.selectedTime][4], width: (geometry.size.width - 8 * self.spacing) / 7)
                         StackedBarView(dataPoint: self.dataSet[self.selectedTime][5], width: (geometry.size.width - 8 * self.spacing) / 7)
                         StackedBarView(dataPoint: self.dataSet[self.selectedTime][6], width: (geometry.size.width - 8 * self.spacing) / 7)
-                    }.animation(.default)
+                    }.animation(.default, value: "")
                     Spacer()
                 }
             }

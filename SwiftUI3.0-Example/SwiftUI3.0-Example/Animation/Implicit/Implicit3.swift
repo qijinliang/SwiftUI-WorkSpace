@@ -26,7 +26,7 @@ struct Implicit3: View {
                 .stroke(Color(.green), lineWidth: 3)
                 .frame(width: 30, height: 3)
                 .offset(x: isLoading ? 110 : -110, y: 0)
-                .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false))
+                .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false), value: isLoading)
         }
         .onAppear() {
             self.isLoading = true

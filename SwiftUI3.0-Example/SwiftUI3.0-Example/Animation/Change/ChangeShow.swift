@@ -27,7 +27,7 @@ struct ChangeShow: View {
                 .padding()
                 //MARK: 这里才是设置是否显示或者的关键方法
                 .opacity(Show ? 1 : 0)
-                .animation(.easeInOut)
+                .animation(.easeInOut, value: Show)
         }
     }
 }

@@ -33,7 +33,7 @@ struct ChangeAngle: View {
                         .frame(maxWidth: .infinity, maxHeight: 300)
                         .overlay(Image(systemName: "arrow.right")).font(.system(size: 40))
                         .rotationEffect(Angle.degrees(Change ? 40 : 0),anchor: .topLeading)
-                        .animation(.easeInOut)
+                        .animation(.easeInOut, value: Change)
                     
                     RoundedRectangle(cornerRadius: 10)
                         .padding()
@@ -41,7 +41,7 @@ struct ChangeAngle: View {
                         .frame(maxWidth: .infinity, maxHeight: 300)
                         .overlay(Image(systemName: "arrow.left")).font(.system(size: 40))
                         .rotationEffect(Angle.degrees(Change ? -40 : 0),anchor: .topTrailing)
-                        .animation(.easeInOut)
+                        .animation(.easeInOut, value: Change)
                 }
                 HStack() {
                     RoundedRectangle(cornerRadius: 10)
@@ -50,7 +50,7 @@ struct ChangeAngle: View {
                         .frame(maxWidth: .infinity, maxHeight: 300)
                         .overlay(Image(systemName: "arrow.right")).font(.system(size: 40))
                         .rotationEffect(Angle.degrees(Change ? -40 : 0),anchor: .bottomLeading)
-                        .animation(.easeInOut)
+                        .animation(.easeInOut, value: Change)
                     
                     RoundedRectangle(cornerRadius: 10)
                         .padding()
@@ -58,7 +58,7 @@ struct ChangeAngle: View {
                         .frame(maxWidth: .infinity, maxHeight: 300)
                         .overlay(Image(systemName: "arrow.left")).font(.system(size: 40))
                         .rotationEffect(Angle.degrees(Change ? 40 : 0),anchor: .bottomTrailing)
-                        .animation(.easeInOut)
+                        .animation(.easeInOut, value: Change)
                 }
             }
             

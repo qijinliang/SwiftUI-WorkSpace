@@ -21,7 +21,7 @@ struct Implicit2: View {
                 .stroke(Color.green, lineWidth: 7)
                 .frame(width: 100, height: 100)
                 .rotationEffect(Angle(degrees: isLoading ? 360 : 0))
-                .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false))
+                .animation(Animation.linear(duration: 1).repeatForever(autoreverses: false), value: isLoading)
                 .onAppear(){
                     self.isLoading = true
                 }

@@ -26,7 +26,7 @@ struct Change: View {
                 //这里是变量，用来控制y的坐标，从而改变圆形的位置
                 .offset(x: 0, y: changes ? 300 : 0)
                 //这里加上动画的效果，更让圆形显示效果为下滑，从而不是瞬移
-                .animation(Animation.easeInOut)
+                .animation(Animation.easeInOut, value: changes)
             Spacer()
             
             Button("圆形下滑") {

@@ -26,7 +26,7 @@ struct GestureSwiftUIView: View{
                 .scaleEffect(0.9)
                 .rotationEffect(.degrees(show ? 0 : 10))
                 .rotation3DEffect(Angle(degrees: 10), axis: (x: 10.0, y: 0, z: 0))
-                .animation(.easeInOut(duration: 0.5))
+                .animation(.easeInOut(duration: 0.5), value: show)
             
             BackCardView()
             Image(uiImage: #imageLiteral(resourceName: "栀宝8"))
@@ -40,10 +40,10 @@ struct GestureSwiftUIView: View{
                 .scaleEffect(0.95)
                 .rotationEffect(Angle.degrees(show ? 0 : 5))
                 .rotation3DEffect(Angle(degrees: 5), axis: (x: 10.0, y: 0, z: 0))
-                .animation(.easeInOut(duration: 0.3))
+                .animation(.easeInOut(duration: 0.3), value: show)
             CardView()
                 .offset(x: viewState.width, y: viewState.height)
-                .animation(.spring(response: 0.3, dampingFraction: 0.6, blendDuration: 0))
+                .animation(.spring(response: 0.3, dampingFraction: 0.6, blendDuration: 0), value: show)
                 .onTapGesture {
                     self.show.toggle()
                 }
