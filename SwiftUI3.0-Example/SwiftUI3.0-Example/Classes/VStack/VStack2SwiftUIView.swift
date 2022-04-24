@@ -11,14 +11,14 @@ struct VStack2SwiftUIView: View {
     var body: some View {
         VStack(spacing: 20) {
             
-            HeadView(title: "VStack",subtitle: "Nesting",textColor: UIColor.white,Desc: "A VStack can be nested with in another VStack when laying out views.")
+            HeadView(title: "自定义传值",subtitle: "标题说明",textColor: UIColor.white,Desc: "可以封装自定义视图，进行简单的传值使用")
             
             VStack {
-                Text("VStack inside another VStack")
+                Text("Divider画线")
                 Divider()
-                Text("This can be helpful. Why")
+                Text("Divider画线")
                 Divider()
-                Text("More than 10 veiws creates an error.")
+                Text("Divider画线")
             }
             //字体相对蓝色区域的调整
             .padding()

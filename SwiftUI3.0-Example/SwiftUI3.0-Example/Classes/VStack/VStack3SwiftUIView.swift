@@ -10,13 +10,11 @@ import SwiftUI
 struct VStack3SwiftUIView: View {
     var body: some View {
         VStack(spacing: 80) {
-            Text("VStack")
-                .font(.largeTitle)
-            Text("Spacing")
+            Text("间距")
                 .font(.title)
                 .foregroundColor(.gray)
             VStack() {
-                Text("The VStack initialize allows you to set the spacing between all the views inside the VStack")
+                Text("使用spacing可以使得上下间距")
             }
             .padding()
             .frame(maxWidth: .infinity)
@@ -26,9 +24,6 @@ struct VStack3SwiftUIView: View {
             
             Image.init(systemName: "arrow.up.and.down.circle.fill")
                 .font(.system(size: 40))
-            
-            Text("The spacing here between all of these view is 80")
-                .font(.title)
         }
     }
 }

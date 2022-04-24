@@ -67,10 +67,15 @@ struct AppInfo: View {
         
         VStack(alignment: .leading) {
             
-            URLImage(url: app.artworkUrl100)
-                .scaledToFit()
-                .cornerRadius(22)
-            
+            let url = URL(string: app.artworkUrl100)
+            AsyncImage(url: url) { image in
+                image
+                    .resizable()
+                    .scaledToFit()
+                    .cornerRadius(22)
+            } placeholder: {
+                ProgressView()
+            }
             Text(app.name)
                 .font(.system(size: 10, weight: .semibold))
                 .padding(.top, 4)

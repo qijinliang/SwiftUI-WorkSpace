@@ -10,14 +10,12 @@ import SwiftUI
 struct VStack4SwiftUIView: View {
     var body: some View {
         VStack(spacing: 20) {
-            Text("VStack")
-                .font(.largeTitle)
-            Text("Alignment")
+            Text("对齐方式")
                 .font(.title)
                 .foregroundColor(.gray)
             
             VStack() {
-                Text("By default, views in a VStack are cneter aligned")
+                Text("左对齐，右对齐，中心对齐")
                     .font(.title)
                     .foregroundColor(.white)
             }

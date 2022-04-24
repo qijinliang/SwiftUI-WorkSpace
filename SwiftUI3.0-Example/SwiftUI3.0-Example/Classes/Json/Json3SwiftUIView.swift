@@ -40,12 +40,18 @@ struct Json3SwiftUIView: View {
                 
                 Text(item.rankingType).font(.title3).fontWeight(.bold)
                 Text(item.subTitle).font(.subheadline).foregroundColor(.gray)
-                URLImage(url: item.cover)
-                    .frame(maxWidth: .infinity)
-                    .scaledToFill()
-                    .shadow(radius: 8)
-                    .cornerRadius(10)
-                    .scaleEffect(0.95)
+                
+                let url = URL(string: item.cover)
+                AsyncImage(url: url) { image in
+                    image
+                        .resizable()
+                        .scaledToFill()
+                        .shadow(radius: 8)
+                        .cornerRadius(10)
+                        .scaleEffect(0.95)
+                } placeholder: {
+                    ProgressView()
+                }
                 
             }.padding()
             
