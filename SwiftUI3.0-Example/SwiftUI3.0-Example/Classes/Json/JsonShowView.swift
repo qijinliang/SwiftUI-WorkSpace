@@ -10,18 +10,18 @@ import SwiftUI
 struct JsonShowView: View {
     var body: some View {
         Form {
-            Section(header: Text("Json").font(.title3).fontWeight(.heavy)) {
+            Section(header: Text("数据解析").font(.title3).fontWeight(.heavy)) {
                 NavigationLink(destination: JsonSwiftUIView()) {
-                    Text("Json")
+                    Text("并发数据解")
                 }
                 
                 
                 NavigationLink(destination: Json2SwiftUIView()) {
-                    Text("Json2")
+                    Text("复杂模型嵌套模型解析")
                 }
                 
                 NavigationLink(destination: Json3SwiftUIView()) {
-                    Text("Json3")
+                    Text("基本简单模型解析")
                 }
             }
         }

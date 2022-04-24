@@ -11,7 +11,7 @@ struct SheetMainView: View {
     var body: some View {
         Section() {
             NavigationLink(destination: SheetShowView()) {
-                Text("Sheet")
+                Text("弹出视图")
             }
         }
     }

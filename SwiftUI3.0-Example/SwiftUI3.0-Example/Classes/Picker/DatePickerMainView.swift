@@ -11,7 +11,7 @@ struct DatePickerMainView: View {
     var body: some View {
         Section {
             NavigationLink(destination: DatePickerShowView()) {
-                Text("DatePicker")
+                Text("选择器")
             }
         }
     }

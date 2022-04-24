@@ -11,7 +11,7 @@ struct JsonMainView: View {
     var body: some View {
         Section() {
             NavigationLink(destination: JsonShowView()) {
-                Text("Json")
+                Text("数据解析")
             }
         }
     }

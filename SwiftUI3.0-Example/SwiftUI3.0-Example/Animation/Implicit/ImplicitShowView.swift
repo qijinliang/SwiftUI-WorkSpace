@@ -12,15 +12,15 @@ struct ImplicitShowView: View {
         Form() {
             Section() {
                 NavigationLink(destination: Implicit1()) {
-                    Text("Implicit1")
+                    Text("点击❤️")
                 }
                 
                 NavigationLink(destination: Implicit2()) {
-                    Text("Implicit2")
+                    Text("圆形动态加载")
                 }
                 
                 NavigationLink(destination: Implicit3()) {
-                    Text("Implicit3")
+                    Text("进度条loading动画")
                 }
             }
         }

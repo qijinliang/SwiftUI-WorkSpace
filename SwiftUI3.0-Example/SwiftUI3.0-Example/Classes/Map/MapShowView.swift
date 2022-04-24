@@ -12,7 +12,7 @@ struct MapShowView: View {
         Form() {
             Section() {
                 NavigationLink(destination: Map1View()) {
-                    Text("Map1")
+                    Text("基本地图")
                 }
                 
             }

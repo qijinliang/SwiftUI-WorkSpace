@@ -11,7 +11,7 @@ struct MapMainView: View {
     var body: some View {
         Section {
             NavigationLink(destination: MapShowView()) {
-                Text("Map")
+                Text("地图")
             }
         }
     }

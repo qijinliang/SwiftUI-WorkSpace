@@ -11,6 +11,9 @@
 		040A286D2700AC7A00020D01 /* Implicit1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A286C2700AC7A00020D01 /* Implicit1.swift */; };
 		040A286F2700B04400020D01 /* Implicit2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A286E2700B04400020D01 /* Implicit2.swift */; };
 		040A28712700B1A500020D01 /* Implicit3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A28702700B1A500020D01 /* Implicit3.swift */; };
+		04DDECB328128233007AB232 /* ChangeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDECB228128233007AB232 /* ChangeMenu.swift */; };
+		04DDECB528128F90007AB232 /* TabBarHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDECB428128F90007AB232 /* TabBarHidden.swift */; };
+		04DDECB728129BA6007AB232 /* ChangePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DDECB628129BA6007AB232 /* ChangePopup.swift */; };
 		5B0D077926F9CF5E00F5D7E6 /* SwiftUI3_0_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D077826F9CF5E00F5D7E6 /* SwiftUI3_0_ExampleApp.swift */; };
 		5B0D077B26F9CF5E00F5D7E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D077A26F9CF5E00F5D7E6 /* ContentView.swift */; };
 		5B0D077D26F9CF5F00F5D7E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D077C26F9CF5F00F5D7E6 /* Assets.xcassets */; };
@@ -162,6 +165,9 @@
 		040A286C2700AC7A00020D01 /* Implicit1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Implicit1.swift; sourceTree = "<group>"; };
 		040A286E2700B04400020D01 /* Implicit2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Implicit2.swift; sourceTree = "<group>"; };
 		040A28702700B1A500020D01 /* Implicit3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Implicit3.swift; sourceTree = "<group>"; };
+		04DDECB228128233007AB232 /* ChangeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeMenu.swift; sourceTree = "<group>"; };
+		04DDECB428128F90007AB232 /* TabBarHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHidden.swift; sourceTree = "<group>"; };
+		04DDECB628129BA6007AB232 /* ChangePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePopup.swift; sourceTree = "<group>"; };
 		5B0D077526F9CF5E00F5D7E6 /* SwiftUI3.0-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI3.0-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B0D077826F9CF5E00F5D7E6 /* SwiftUI3_0_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI3_0_ExampleApp.swift; sourceTree = "<group>"; };
 		5B0D077A26F9CF5E00F5D7E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -391,6 +397,8 @@
 				5B0D078C26F9CF9000F5D7E6 /* Change.swift */,
 				5B0D078D26F9CF9000F5D7E6 /* ChangePoint.swift */,
 				5B0D078E26F9CF9000F5D7E6 /* ChangeOffset.swift */,
+				04DDECB228128233007AB232 /* ChangeMenu.swift */,
+				04DDECB628129BA6007AB232 /* ChangePopup.swift */,
 			);
 			path = Change;
 			sourceTree = "<group>";
@@ -532,6 +540,7 @@
 				5B0D07BF26F9CF9000F5D7E6 /* Conmmon.swift */,
 				5B0D07C026F9CF9000F5D7E6 /* Neworkingimage.swift */,
 				5B0D07C126F9CF9000F5D7E6 /* Color+Extension.swift */,
+				04DDECB428128F90007AB232 /* TabBarHidden.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -856,6 +865,7 @@
 				5B0D089626F9CF9000F5D7E6 /* GemoetryReaderMainView.swift in Sources */,
 				5B0D087626F9CF9000F5D7E6 /* FameModifierView.swift in Sources */,
 				5B0D084726F9CF9000F5D7E6 /* Form4View.swift in Sources */,
+				04DDECB728129BA6007AB232 /* ChangePopup.swift in Sources */,
 				5B0D089D26F9CF9000F5D7E6 /* ListSwiftUIView.swift in Sources */,
 				5B0D085A26F9CF9000F5D7E6 /* Segmented2View.swift in Sources */,
 				5B0D08B226F9CF9000F5D7E6 /* ZStackSwiftUIView.swift in Sources */,
@@ -880,6 +890,7 @@
 				5B0D087726F9CF9000F5D7E6 /* HStack5SwiftUIView.swift in Sources */,
 				5B0D086326F9CF9000F5D7E6 /* Chart SwiftUIView.swift in Sources */,
 				5B0D085C26F9CF9000F5D7E6 /* Neworkingimage.swift in Sources */,
+				04DDECB528128F90007AB232 /* TabBarHidden.swift in Sources */,
 				5B0D08B026F9CF9000F5D7E6 /* SheetShowView.swift in Sources */,
 				5B0D083026F9CF9000F5D7E6 /* ChangeShowView.swift in Sources */,
 				5B0D083D26F9CF9000F5D7E6 /* ScrollViewSwiftUIView.swift in Sources */,
@@ -923,6 +934,7 @@
 				5B0D088626F9CF9000F5D7E6 /* Json3SwiftUIView.swift in Sources */,
 				5B0D08AC26F9CF9000F5D7E6 /* Text5View.swift in Sources */,
 				5B0D08B326F9CF9000F5D7E6 /* ZStack3View.swift in Sources */,
+				04DDECB328128233007AB232 /* ChangeMenu.swift in Sources */,
 				5B0D08A926F9CF9000F5D7E6 /* Text4View.swift in Sources */,
 				5B0D087226F9CF9000F5D7E6 /* Spacer3SwiftUIView.swift in Sources */,
 				5B0D077926F9CF5E00F5D7E6 /* SwiftUI3_0_ExampleApp.swift in Sources */,

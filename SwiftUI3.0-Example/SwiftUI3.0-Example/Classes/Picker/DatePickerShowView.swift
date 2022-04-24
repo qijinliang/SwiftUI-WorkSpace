@@ -12,16 +12,16 @@ struct DatePickerShowView: View {
         Form() {
             Section() {
                 NavigationLink(destination: DatePickerView()) {
-                    Text("DatePicker1")
+                    Text("日期选择器")
                 }
                 
                 NavigationLink(destination: DatePicker2View()) {
-                    Text("DatePicker2")
+                    Text("分页选择器")
                 }
                 
                 NavigationLink(
                     destination: Picker3View()) {
-                    Text("Picker3")
+                    Text("下来选择器")
                 }
             }
         }

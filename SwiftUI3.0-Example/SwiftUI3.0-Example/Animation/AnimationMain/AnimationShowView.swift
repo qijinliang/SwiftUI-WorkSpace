@@ -13,18 +13,18 @@ struct AnimationShowView: View {
             Form {
 
                 //MARK: Path
-                Section(header: Text("Path").font(.title3).fontWeight(.heavy)) {
+                Section(header: Text("画线").font(.title3).fontWeight(.heavy)) {
                     
                     NavigationLink(destination: PathShowVIew()) {
-                        Text("Path")
+                        Text("画线画图")
                     }
                 }
                 
                 //MARK: Move
-                Section(header: Text("Change").font(.title3).fontWeight(.heavy)) {
+                Section(header: Text("动画").font(.title3).fontWeight(.heavy)) {
                     
                     NavigationLink(destination: ChangeShowView()) {
-                        Text("Change")
+                        Text("动态动画")
                     }
                     
                     NavigationLink(destination: ImplicitShowView()) {

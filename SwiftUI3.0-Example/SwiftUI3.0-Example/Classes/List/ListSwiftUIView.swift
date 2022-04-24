@@ -12,7 +12,7 @@ struct ListSwiftUIView: View {
         NavigationView {
             Form {
                 //MARK: View
-                Section(header: Text("Section1").font(.title3).fontWeight(.heavy)) {
+                Section(header: Text("第一部分").font(.title3).fontWeight(.heavy)) {
                     VStackMainView()
                     //MARK: Navigation
                     NavigationShowView()
@@ -33,7 +33,7 @@ struct ListSwiftUIView: View {
                     //MARK: Map
                     MapMainView()
                 }
-                Section(header: Text("Section2").font(.title3).fontWeight(.heavy)) {
+                Section(header: Text("第二部分").font(.title3).fontWeight(.heavy)) {
                     //MARK: Layout
                     LayoutMainView()
                     //MARK: Segmented
@@ -46,7 +46,7 @@ struct ListSwiftUIView: View {
                     SheetMainView()
                 }
                 
-                Section(header: Text("Section3").font(.title3).fontWeight(.heavy)) {
+                Section(header: Text("第三部分").font(.title3).fontWeight(.heavy)) {
                     //MARK: Math
                     MathMainView()
                     //MARK: Gesture
@@ -60,7 +60,7 @@ struct ListSwiftUIView: View {
                 }
                 
                 
-                Section(header: Text("Binding").font(.title3).fontWeight(.heavy)) {
+                Section(header: Text("值绑定").font(.title3).fontWeight(.heavy)) {
                     //MARK: Binding
                     BingdingMainView()
 

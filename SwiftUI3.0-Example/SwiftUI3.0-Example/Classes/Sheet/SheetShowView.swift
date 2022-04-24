@@ -10,9 +10,9 @@ import SwiftUI
 struct SheetShowView: View {
     var body: some View {
         Form() {
-            Section(header: Text("Sheet").font(.title3).fontWeight(.heavy)) {
+            Section(header: Text("弹出").font(.title3).fontWeight(.heavy)) {
                 NavigationLink(destination: SheetJsonView()) {
-                    Text("Sheet")
+                    Text("弹出视图")
                 }
             }
         }
