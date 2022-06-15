@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  SwiftUI3.0-Example
+//  SwiftUI4.0-Example
 //
-//  Created by 金亮齐 on 2021/9/21.
+//  Created by Cheney on 2022/6/15.
 //
 
 import SwiftUI
