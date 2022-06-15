@@ -69,7 +69,6 @@
 		5B0D086026F9CF9000F5D7E6 /* FanshapedSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D07C526F9CF9000F5D7E6 /* FanshapedSwiftUIView.swift */; };
 		5B0D086126F9CF9000F5D7E6 /* MathShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D07C626F9CF9000F5D7E6 /* MathShowView.swift */; };
 		5B0D086226F9CF9000F5D7E6 /* RectangleSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D07C726F9CF9000F5D7E6 /* RectangleSwiftUIView.swift */; };
-		5B0D086326F9CF9000F5D7E6 /* Chart SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D07C826F9CF9000F5D7E6 /* Chart SwiftUIView.swift */; };
 		5B0D086426F9CF9000F5D7E6 /* TextField2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D07CA26F9CF9000F5D7E6 /* TextField2View.swift */; };
 		5B0D086526F9CF9000F5D7E6 /* TextFieldShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D07CB26F9CF9000F5D7E6 /* TextFieldShowView.swift */; };
 		5B0D086626F9CF9000F5D7E6 /* TextFieldSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0D07CC26F9CF9000F5D7E6 /* TextFieldSwiftUIView.swift */; };
@@ -223,7 +222,6 @@
 		5B0D07C526F9CF9000F5D7E6 /* FanshapedSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FanshapedSwiftUIView.swift; sourceTree = "<group>"; };
 		5B0D07C626F9CF9000F5D7E6 /* MathShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathShowView.swift; sourceTree = "<group>"; };
 		5B0D07C726F9CF9000F5D7E6 /* RectangleSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleSwiftUIView.swift; sourceTree = "<group>"; };
-		5B0D07C826F9CF9000F5D7E6 /* Chart SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Chart SwiftUIView.swift"; sourceTree = "<group>"; };
 		5B0D07CA26F9CF9000F5D7E6 /* TextField2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField2View.swift; sourceTree = "<group>"; };
 		5B0D07CB26F9CF9000F5D7E6 /* TextFieldShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldShowView.swift; sourceTree = "<group>"; };
 		5B0D07CC26F9CF9000F5D7E6 /* TextFieldSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldSwiftUIView.swift; sourceTree = "<group>"; };
@@ -550,7 +548,6 @@
 				5B0D07C526F9CF9000F5D7E6 /* FanshapedSwiftUIView.swift */,
 				5B0D07C626F9CF9000F5D7E6 /* MathShowView.swift */,
 				5B0D07C726F9CF9000F5D7E6 /* RectangleSwiftUIView.swift */,
-				5B0D07C826F9CF9000F5D7E6 /* Chart SwiftUIView.swift */,
 			);
 			path = Mathematics;
 			sourceTree = "<group>";
@@ -885,7 +882,6 @@
 				5B0D087926F9CF9000F5D7E6 /* HStack7View.swift in Sources */,
 				5B0D083F26F9CF9000F5D7E6 /* NavigationSwiftUIView.swift in Sources */,
 				5B0D087726F9CF9000F5D7E6 /* HStack5SwiftUIView.swift in Sources */,
-				5B0D086326F9CF9000F5D7E6 /* Chart SwiftUIView.swift in Sources */,
 				04DDECB528128F90007AB232 /* TabBarHidden.swift in Sources */,
 				5B0D08B026F9CF9000F5D7E6 /* SheetShowView.swift in Sources */,
 				5B0D083026F9CF9000F5D7E6 /* ChangeShowView.swift in Sources */,
@@ -1096,7 +1092,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI3.0-Example/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = A3JAKUCNSA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SwiftUI3-0-Example-Info.plist";
@@ -1105,7 +1101,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1129,7 +1125,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI3.0-Example/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = A3JAKUCNSA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SwiftUI3-0-Example-Info.plist";
@@ -1138,7 +1134,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
