@@ -26,7 +26,6 @@
 		0405FA932859731700B6BAB9 /* Form4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405F9E72859731700B6BAB9 /* Form4View.swift */; };
 		0405FA942859731700B6BAB9 /* DatePickerMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405F9E92859731700B6BAB9 /* DatePickerMainView.swift */; };
 		0405FA952859731700B6BAB9 /* Picker3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405F9EA2859731700B6BAB9 /* Picker3View.swift */; };
-		0405FA962859731700B6BAB9 /* DatePicker2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405F9EB2859731700B6BAB9 /* DatePicker2View.swift */; };
 		0405FA972859731700B6BAB9 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405F9EC2859731700B6BAB9 /* DatePickerView.swift */; };
 		0405FA982859731700B6BAB9 /* DatePickerShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405F9ED2859731700B6BAB9 /* DatePickerShowView.swift */; };
 		0405FA992859731700B6BAB9 /* BingdingView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405F9EF2859731700B6BAB9 /* BingdingView1.swift */; };
@@ -180,7 +179,6 @@
 		0405F9E72859731700B6BAB9 /* Form4View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form4View.swift; sourceTree = "<group>"; };
 		0405F9E92859731700B6BAB9 /* DatePickerMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerMainView.swift; sourceTree = "<group>"; };
 		0405F9EA2859731700B6BAB9 /* Picker3View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picker3View.swift; sourceTree = "<group>"; };
-		0405F9EB2859731700B6BAB9 /* DatePicker2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePicker2View.swift; sourceTree = "<group>"; };
 		0405F9EC2859731700B6BAB9 /* DatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		0405F9ED2859731700B6BAB9 /* DatePickerShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerShowView.swift; sourceTree = "<group>"; };
 		0405F9EF2859731700B6BAB9 /* BingdingView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BingdingView1.swift; sourceTree = "<group>"; };
@@ -431,7 +429,6 @@
 			children = (
 				0405F9E92859731700B6BAB9 /* DatePickerMainView.swift */,
 				0405F9EA2859731700B6BAB9 /* Picker3View.swift */,
-				0405F9EB2859731700B6BAB9 /* DatePicker2View.swift */,
 				0405F9EC2859731700B6BAB9 /* DatePickerView.swift */,
 				0405F9ED2859731700B6BAB9 /* DatePickerShowView.swift */,
 			);
@@ -947,7 +944,6 @@
 				0405FAC92859731700B6BAB9 /* LazyHGridView.swift in Sources */,
 				0405FAA42859731700B6BAB9 /* Segmented3View.swift in Sources */,
 				0405FA952859731700B6BAB9 /* Picker3View.swift in Sources */,
-				0405FA962859731700B6BAB9 /* DatePicker2View.swift in Sources */,
 				0405FA8D2859731700B6BAB9 /* Form1View.swift in Sources */,
 				0405FAB52859731700B6BAB9 /* SliderMainView.swift in Sources */,
 				0405FAC52859731700B6BAB9 /* HStack7View.swift in Sources */,

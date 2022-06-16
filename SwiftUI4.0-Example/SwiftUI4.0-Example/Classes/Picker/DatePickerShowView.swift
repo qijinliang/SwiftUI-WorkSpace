@@ -15,10 +15,6 @@ struct DatePickerShowView: View {
                     Text("日期选择器")
                 }
                 
-                NavigationLink(destination: DatePicker2View()) {
-                    Text("分页选择器")
-                }
-                
                 NavigationLink(
                     destination: Picker3View()) {
                     Text("下来选择器")
