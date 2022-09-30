@@ -307,6 +307,7 @@
 		0405FA832859731700B6BAB9 /* ImplicitShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImplicitShowView.swift; sourceTree = "<group>"; };
 		0405FA852859731700B6BAB9 /* AnimationShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationShowView.swift; sourceTree = "<group>"; };
 		0405FA862859731700B6BAB9 /* AnimationMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationMainView.swift; sourceTree = "<group>"; };
+		0405FB19285B23F100B6BAB9 /* SwiftUI4-0-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI4-0-Example-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +340,7 @@
 		0405F9C82859730200B6BAB9 /* SwiftUI4.0-Example */ = {
 			isa = PBXGroup;
 			children = (
+				0405FB19285B23F100B6BAB9 /* SwiftUI4-0-Example-Info.plist */,
 				0405FA702859731700B6BAB9 /* Animation */,
 				0405F9D72859731700B6BAB9 /* Classes */,
 				0405F9C92859730200B6BAB9 /* SwiftUI4_0_ExampleApp.swift */,
@@ -1085,6 +1087,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI4.0-Example/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI4-0-Example-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1113,6 +1116,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI4.0-Example/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI4-0-Example-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

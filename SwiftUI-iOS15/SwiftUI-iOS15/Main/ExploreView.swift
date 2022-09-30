@@ -36,7 +36,7 @@ struct ExploreView: View {
                 .sectionTitleModifier()
             
             handbooksSection
-                .padding(.bottom, 50)
+//                .padding(.bottom, 50)
             }
             .offset(y: -50)
         }
@@ -73,12 +73,15 @@ struct ExploreView: View {
     }
     
     var handbooksSection: some View {
-        HStack(alignment: .top, spacing: 16) {
-            ForEach(handbooks) { handbook in
-                HandbookItem(handbook: handbook)
+        
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 16) {
+                ForEach(handbooks) { handbook in
+                    HandbookItem(handbook: handbook)
+                }
             }
+            .padding(.horizontal, 20)
         }
-        .padding(.horizontal, 20)
     }
     
     var scrollDetection: some View {

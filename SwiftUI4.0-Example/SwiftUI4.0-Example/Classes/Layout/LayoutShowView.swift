@@ -19,6 +19,9 @@ struct LayoutShowView: View {
                     Text("Layout2")
                 }
                 
+                NavigationLink(destination: Layout3View()) {
+                    Text("Layout3")
+                }
             }
         }
     }

@@ -10,6 +10,7 @@ import SwiftUI
 struct HandbookItem: View {
     var handbook: Handbook
     
+    @Environment(\.sizeCategory) var sizeCategory
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             RoundedRectangle(cornerRadius: 20)
@@ -36,7 +37,8 @@ struct HandbookItem: View {
             Spacer()
         }
         .padding(16)
-        .frame(maxWidth: 200)
+//        .frame(maxWidth: 200)
+        .frame(width: 200, height: sizeCategory > .large ? 220 : 200)
         .frame(height: 260)
         .background(.ultraThinMaterial)
         .backgroundStyle(cornerRadius: 30)
@@ -53,6 +55,6 @@ struct HandbookItem: View {
 
 struct HandbookItem_Previews: PreviewProvider {
     static var previews: some View {
-        HandbookItem(handbook: handbooks[0])
+        HandbookItem(handbook: handbooks[2]).preferredColorScheme(.dark)
     }
 }
