@@ -29,6 +29,9 @@ struct ListShowView: View {
                 NavigationLink(destination: ListGroupedView()) {
                     Text("ListGrouped")
                 }
+                NavigationLink(destination: ListSetting()) {
+                    Text("ListSetting")
+                }
             }
         }
     }

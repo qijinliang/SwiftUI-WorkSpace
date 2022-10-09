@@ -155,6 +155,7 @@
 		0405FB162859731800B6BAB9 /* ImplicitShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405FA832859731700B6BAB9 /* ImplicitShowView.swift */; };
 		0405FB172859731800B6BAB9 /* AnimationShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405FA852859731700B6BAB9 /* AnimationShowView.swift */; };
 		0405FB182859731800B6BAB9 /* AnimationMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405FA862859731700B6BAB9 /* AnimationMainView.swift */; };
+		04E1BF6628E6DF930096257F /* ListSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BF6528E6DF930096257F /* ListSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -308,6 +309,7 @@
 		0405FA852859731700B6BAB9 /* AnimationShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationShowView.swift; sourceTree = "<group>"; };
 		0405FA862859731700B6BAB9 /* AnimationMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationMainView.swift; sourceTree = "<group>"; };
 		0405FB19285B23F100B6BAB9 /* SwiftUI4-0-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI4-0-Example-Info.plist"; sourceTree = SOURCE_ROOT; };
+		04E1BF6528E6DF930096257F /* ListSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -627,6 +629,7 @@
 				0405FA502859731700B6BAB9 /* CustomerView.swift */,
 				0405FA512859731700B6BAB9 /* ListMainSwiftUIView.swift */,
 				0405FA522859731700B6BAB9 /* ListWithDataView.swift */,
+				04E1BF6528E6DF930096257F /* ListSetting.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -941,6 +944,7 @@
 				0405FAD32859731700B6BAB9 /* ButtonSwiftUIView.swift in Sources */,
 				0405FAC92859731700B6BAB9 /* LazyHGridView.swift in Sources */,
 				0405FAA42859731700B6BAB9 /* Segmented3View.swift in Sources */,
+				04E1BF6628E6DF930096257F /* ListSetting.swift in Sources */,
 				0405FA952859731700B6BAB9 /* Picker3View.swift in Sources */,
 				0405FA8D2859731700B6BAB9 /* Form1View.swift in Sources */,
 				0405FAB52859731700B6BAB9 /* SliderMainView.swift in Sources */,
