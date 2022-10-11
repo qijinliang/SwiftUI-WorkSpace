@@ -156,6 +156,11 @@
 		0405FB172859731800B6BAB9 /* AnimationShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405FA852859731700B6BAB9 /* AnimationShowView.swift */; };
 		0405FB182859731800B6BAB9 /* AnimationMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0405FA862859731700B6BAB9 /* AnimationMainView.swift */; };
 		04E1BF6628E6DF930096257F /* ListSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BF6528E6DF930096257F /* ListSetting.swift */; };
+		04E1BFE728F58F470096257F /* ChartsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BFE628F58F470096257F /* ChartsMainView.swift */; };
+		04E1BFE928F58F7F0096257F /* ChartsShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BFE828F58F7F0096257F /* ChartsShowView.swift */; };
+		04E1BFEB28F590D40096257F /* ChartsShow2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BFEA28F590D40096257F /* ChartsShow2View.swift */; };
+		04E1BFED28F5936E0096257F /* ChartsShow3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BFEC28F5936E0096257F /* ChartsShow3View.swift */; };
+		04E1BFEF28F593CC0096257F /* ChartsShow4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BFEE28F593CC0096257F /* ChartsShow4View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -310,6 +315,11 @@
 		0405FA862859731700B6BAB9 /* AnimationMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationMainView.swift; sourceTree = "<group>"; };
 		0405FB19285B23F100B6BAB9 /* SwiftUI4-0-Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SwiftUI4-0-Example-Info.plist"; sourceTree = SOURCE_ROOT; };
 		04E1BF6528E6DF930096257F /* ListSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSetting.swift; sourceTree = "<group>"; };
+		04E1BFE628F58F470096257F /* ChartsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsMainView.swift; sourceTree = "<group>"; };
+		04E1BFE828F58F7F0096257F /* ChartsShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsShowView.swift; sourceTree = "<group>"; };
+		04E1BFEA28F590D40096257F /* ChartsShow2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsShow2View.swift; sourceTree = "<group>"; };
+		04E1BFEC28F5936E0096257F /* ChartsShow3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsShow3View.swift; sourceTree = "<group>"; };
+		04E1BFEE28F593CC0096257F /* ChartsShow4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsShow4View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,6 +374,7 @@
 		0405F9D72859731700B6BAB9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				04E1BFE528F58ED80096257F /* Chart */,
 				0405F9D82859731700B6BAB9 /* ScrollView */,
 				0405F9DD2859731700B6BAB9 /* NavigationView */,
 				0405F9E02859731700B6BAB9 /* Form */,
@@ -489,7 +500,6 @@
 				0405FA062859731700B6BAB9 /* FanshapedSwiftUIView.swift */,
 				0405FA072859731700B6BAB9 /* MathShowView.swift */,
 				0405FA082859731700B6BAB9 /* RectangleSwiftUIView.swift */,
-				0405FA092859731700B6BAB9 /* Chart SwiftUIView.swift */,
 			);
 			path = Mathematics;
 			sourceTree = "<group>";
@@ -744,6 +754,19 @@
 			path = AnimationMain;
 			sourceTree = "<group>";
 		};
+		04E1BFE528F58ED80096257F /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				0405FA092859731700B6BAB9 /* Chart SwiftUIView.swift */,
+				04E1BFE628F58F470096257F /* ChartsMainView.swift */,
+				04E1BFE828F58F7F0096257F /* ChartsShowView.swift */,
+				04E1BFEA28F590D40096257F /* ChartsShow2View.swift */,
+				04E1BFEC28F5936E0096257F /* ChartsShow3View.swift */,
+				04E1BFEE28F593CC0096257F /* ChartsShow4View.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -821,6 +844,7 @@
 				0405FB162859731800B6BAB9 /* ImplicitShowView.swift in Sources */,
 				0405FAAF2859731700B6BAB9 /* Chart SwiftUIView.swift in Sources */,
 				0405FAD82859731700B6BAB9 /* Button5View.swift in Sources */,
+				04E1BFEB28F590D40096257F /* ChartsShow2View.swift in Sources */,
 				0405FACE2859731700B6BAB9 /* JsonShowView.swift in Sources */,
 				0405FABC2859731700B6BAB9 /* Spacer4SwiftUIView.swift in Sources */,
 				0405FA932859731700B6BAB9 /* Form4View.swift in Sources */,
@@ -874,6 +898,7 @@
 				0405FAA92859731700B6BAB9 /* Color+Extension.swift in Sources */,
 				0405FAE42859731700B6BAB9 /* GeometryReader5SwiftUIView.swift in Sources */,
 				0405FB142859731800B6BAB9 /* Implicit3.swift in Sources */,
+				04E1BFE728F58F470096257F /* ChartsMainView.swift in Sources */,
 				0405FB052859731800B6BAB9 /* VStack4SwiftUIView.swift in Sources */,
 				0405FA8E2859731700B6BAB9 /* FormShowView.swift in Sources */,
 				0405FB072859731800B6BAB9 /* ChangeAngle.swift in Sources */,
@@ -912,6 +937,8 @@
 				0405FAC62859731700B6BAB9 /* HStack3SwiftUIView.swift in Sources */,
 				0405FAEA2859731700B6BAB9 /* ListShowView.swift in Sources */,
 				0405FB002859731800B6BAB9 /* ZStack5SwiftUIView.swift in Sources */,
+				04E1BFE928F58F7F0096257F /* ChartsShowView.swift in Sources */,
+				04E1BFEF28F593CC0096257F /* ChartsShow4View.swift in Sources */,
 				0405FB082859731800B6BAB9 /* ChangeShowView.swift in Sources */,
 				0405FAD52859731700B6BAB9 /* Button9View.swift in Sources */,
 				0405FADC2859731700B6BAB9 /* ButtonMainView.swift in Sources */,
@@ -923,6 +950,7 @@
 				0405FB092859731800B6BAB9 /* ChangeColor.swift in Sources */,
 				0405FB0B2859731800B6BAB9 /* ChangePopup.swift in Sources */,
 				0405FB012859731800B6BAB9 /* VStack3SwiftUIView.swift in Sources */,
+				04E1BFED28F5936E0096257F /* ChartsShow3View.swift in Sources */,
 				0405FA8F2859731700B6BAB9 /* Form3View.swift in Sources */,
 				0405FB172859731800B6BAB9 /* AnimationShowView.swift in Sources */,
 				0405FA892859731700B6BAB9 /* ScrollViewSwiftUIView.swift in Sources */,

@@ -57,6 +57,8 @@ struct ListSwiftUIView: View {
                     JsonMainView()
                     //MARK: AVPlayer
                     AVPlayerMainView()
+                    //MARK: ChartsMainView
+                    ChartsMainView()
                 }
                 
                 

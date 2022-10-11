@@ -19,10 +19,6 @@ struct MathShowView: View {
                     Text("Fanshaped")
                 }
                 
-                NavigationLink(destination: Chart_SwiftUIView()){
-                    Text("Chart")
-                }
-                
                 NavigationLink(destination: RectangleSwiftUIView()){
                     Text("Rectangle")
                 }
