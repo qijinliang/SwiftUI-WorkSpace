@@ -9,7 +9,14 @@ import SwiftUI
 
 struct DynamicIslandShowView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form() {
+            Section{
+                NavigationLink(destination: DynamicIslandShow2View()){
+                    Text("DynamicIslandShow2View")
+                }
+
+            }
+        }
     }
 }
 

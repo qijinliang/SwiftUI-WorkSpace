@@ -161,6 +161,9 @@
 		04E1BFEB28F590D40096257F /* ChartsShow2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BFEA28F590D40096257F /* ChartsShow2View.swift */; };
 		04E1BFED28F5936E0096257F /* ChartsShow3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BFEC28F5936E0096257F /* ChartsShow3View.swift */; };
 		04E1BFEF28F593CC0096257F /* ChartsShow4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BFEE28F593CC0096257F /* ChartsShow4View.swift */; };
+		04E1BFF228F595C90096257F /* DynamicIslandMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BFF128F595C90096257F /* DynamicIslandMainView.swift */; };
+		04E1BFF428F595E00096257F /* DynamicIslandShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BFF328F595E00096257F /* DynamicIslandShowView.swift */; };
+		04E1BFF628F596090096257F /* DynamicIslandShow2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E1BFF528F596090096257F /* DynamicIslandShow2View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -320,6 +323,9 @@
 		04E1BFEA28F590D40096257F /* ChartsShow2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsShow2View.swift; sourceTree = "<group>"; };
 		04E1BFEC28F5936E0096257F /* ChartsShow3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsShow3View.swift; sourceTree = "<group>"; };
 		04E1BFEE28F593CC0096257F /* ChartsShow4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsShow4View.swift; sourceTree = "<group>"; };
+		04E1BFF128F595C90096257F /* DynamicIslandMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandMainView.swift; sourceTree = "<group>"; };
+		04E1BFF328F595E00096257F /* DynamicIslandShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandShowView.swift; sourceTree = "<group>"; };
+		04E1BFF528F596090096257F /* DynamicIslandShow2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicIslandShow2View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +380,7 @@
 		0405F9D72859731700B6BAB9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				04E1BFF028F595B60096257F /* DynamicIslandView */,
 				04E1BFE528F58ED80096257F /* Chart */,
 				0405F9D82859731700B6BAB9 /* ScrollView */,
 				0405F9DD2859731700B6BAB9 /* NavigationView */,
@@ -767,6 +774,16 @@
 			path = Chart;
 			sourceTree = "<group>";
 		};
+		04E1BFF028F595B60096257F /* DynamicIslandView */ = {
+			isa = PBXGroup;
+			children = (
+				04E1BFF128F595C90096257F /* DynamicIslandMainView.swift */,
+				04E1BFF328F595E00096257F /* DynamicIslandShowView.swift */,
+				04E1BFF528F596090096257F /* DynamicIslandShow2View.swift */,
+			);
+			path = DynamicIslandView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -848,6 +865,7 @@
 				0405FACE2859731700B6BAB9 /* JsonShowView.swift in Sources */,
 				0405FABC2859731700B6BAB9 /* Spacer4SwiftUIView.swift in Sources */,
 				0405FA932859731700B6BAB9 /* Form4View.swift in Sources */,
+				04E1BFF628F596090096257F /* DynamicIslandShow2View.swift in Sources */,
 				0405FAE72859731700B6BAB9 /* ListView.swift in Sources */,
 				0405FAC82859731700B6BAB9 /* HStack2SwiftUIView.swift in Sources */,
 				0405FA9D2859731700B6BAB9 /* LayoutShowView.swift in Sources */,
@@ -923,6 +941,7 @@
 				0405FA912859731700B6BAB9 /* FormMainView.swift in Sources */,
 				0405FAC72859731700B6BAB9 /* HStackSwiftUIView.swift in Sources */,
 				0405FB0C2859731800B6BAB9 /* Change.swift in Sources */,
+				04E1BFF428F595E00096257F /* DynamicIslandShowView.swift in Sources */,
 				0405FADE2859731700B6BAB9 /* GestureSwiftUIView.swift in Sources */,
 				0405FAE92859731700B6BAB9 /* ListSwiftUIView.swift in Sources */,
 				0405F9CA2859730200B6BAB9 /* SwiftUI4_0_ExampleApp.swift in Sources */,
@@ -953,6 +972,7 @@
 				04E1BFED28F5936E0096257F /* ChartsShow3View.swift in Sources */,
 				0405FA8F2859731700B6BAB9 /* Form3View.swift in Sources */,
 				0405FB172859731800B6BAB9 /* AnimationShowView.swift in Sources */,
+				04E1BFF228F595C90096257F /* DynamicIslandMainView.swift in Sources */,
 				0405FA892859731700B6BAB9 /* ScrollViewSwiftUIView.swift in Sources */,
 				0405FADB2859731700B6BAB9 /* Button6View.swift in Sources */,
 				0405FA8C2859731700B6BAB9 /* NavigationShowView.swift in Sources */,

@@ -11,9 +11,8 @@ struct ChartsMainView: View {
     var body: some View {
         Section() {
             NavigationLink(destination: ChartsShowView()) {
-                Text("ChartView")
+                Text("图形")
             }
-            
         }
     }
 }
