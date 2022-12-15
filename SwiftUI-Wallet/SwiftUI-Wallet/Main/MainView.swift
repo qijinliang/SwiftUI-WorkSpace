@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @State private var shouldPresentAddCardForm = false
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -20,8 +23,13 @@ struct MainView: View {
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
                 .frame(height: 280)
                 .indexViewStyle(.page(backgroundDisplayMode: .always))
+                
+                Spacer()
+                    .fullScreenCover(isPresented: $shouldPresentAddCardForm, onDismiss: nil) {
+                        AddCardForm()
+                    }
             }
-            .navigationTitle("Creadit Cards")
+            .navigationTitle("卡包")
             .navigationBarItems(trailing: addCarButton)
         }
     }
@@ -29,7 +37,7 @@ struct MainView: View {
     struct CreaditCardView: View {
         var body: some View {
             VStack(alignment: .leading, spacing: 12) {
-                Text("Preview of our code eto far")
+                Text("信用卡信息")
                     .font(.system(size: 24, weight: .semibold))
                 
                 HStack {
@@ -40,12 +48,12 @@ struct MainView: View {
                         .clipped()
                     Spacer()
                     
-                    Text("Balacne: $5000")
+                    Text("额度: $5000")
                         .font(.system(size: 18, weight: .semibold))
                 }
                 
                 Text("123 123 123 123 123")
-                Text("Create Limie: $5000")
+                Text("剩余: $5000")
                 
                 HStack { Spacer() }
             }
@@ -55,7 +63,7 @@ struct MainView: View {
                 LinearGradient(colors: [Color.blue.opacity(0.6),Color.blue], startPoint: .center, endPoint: .bottom)
             )
             .overlay(RoundedRectangle(cornerRadius: 8)
-                        .stroke(Color.black.opacity(0.5),lineWidth: 1)
+                .stroke(Color.black.opacity(0.5),lineWidth: 1)
             )
             .cornerRadius(8)
             .shadow(radius: 5)
@@ -66,9 +74,9 @@ struct MainView: View {
     
     var addCarButton: some View {
         Button(action: {
-            
+            shouldPresentAddCardForm.toggle()
         }, label: {
-            Text("+ Card")
+            Text("添加卡")
                 .foregroundColor(.white)
                 .font(.system(size: 16, weight: .bold))
                 .padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))

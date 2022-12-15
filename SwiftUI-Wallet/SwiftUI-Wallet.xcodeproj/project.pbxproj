@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044947E92949EFD4007A1F6A /* AddCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044947E82949EFD4007A1F6A /* AddCardForm.swift */; };
 		5BB58B6227FB196D00FB70C9 /* SwiftUI_WalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB58B6127FB196D00FB70C9 /* SwiftUI_WalletApp.swift */; };
 		5BB58B6427FB196D00FB70C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB58B6327FB196D00FB70C9 /* ContentView.swift */; };
 		5BB58B6627FB196E00FB70C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB58B6527FB196E00FB70C9 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044947E82949EFD4007A1F6A /* AddCardForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardForm.swift; sourceTree = "<group>"; };
 		5BB58B5E27FB196D00FB70C9 /* SwiftUI-Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB58B6127FB196D00FB70C9 /* SwiftUI_WalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_WalletApp.swift; sourceTree = "<group>"; };
 		5BB58B6327FB196D00FB70C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				5BB58B7527FB19D500FB70C9 /* MainView.swift */,
+				044947E82949EFD4007A1F6A /* AddCardForm.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BB58B6B27FB196E00FB70C9 /* Persistence.swift in Sources */,
+				044947E92949EFD4007A1F6A /* AddCardForm.swift in Sources */,
 				5BB58B6427FB196D00FB70C9 /* ContentView.swift in Sources */,
 				5BB58B6E27FB196E00FB70C9 /* SwiftUI_Wallet.xcdatamodeld in Sources */,
 				5BB58B7627FB19D500FB70C9 /* MainView.swift in Sources */,
@@ -286,9 +290,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Wallet/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -304,6 +309,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qjl.cn.SwiftUI-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,9 +321,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Wallet/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -333,6 +340,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qjl.cn.SwiftUI-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
