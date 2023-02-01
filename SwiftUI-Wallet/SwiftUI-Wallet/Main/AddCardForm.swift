@@ -35,6 +35,18 @@ struct AddCardForm: View {
                         }
                     }
                 }
+                
+                Section(header: Text("到期")) {
+                    Picker("月份",selection: $year) {
+                        ForEach(currentYear..<currentYear + 20, id: \.self) { num in
+                            Text(String(num)).tag(String(num))
+                        }
+                    }
+                }
+                
+                Section(header: Text("颜色")) {
+                    ColorPicker("Color",selection: $color)
+                }
             }
             .navigationTitle("添加卡")
             .navigationBarItems(leading: Button(action: {
