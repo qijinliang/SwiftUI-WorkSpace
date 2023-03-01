@@ -107,7 +107,6 @@
 		044947AC294872AC007A1F6A /* JsonSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449471C294872AC007A1F6A /* JsonSwiftUIView.swift */; };
 		044947AD294872AC007A1F6A /* Json2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449471D294872AC007A1F6A /* Json2SwiftUIView.swift */; };
 		044947AE294872AC007A1F6A /* JsonMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449471E294872AC007A1F6A /* JsonMainView.swift */; };
-		044947AF294872AC007A1F6A /* Json3SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449471F294872AC007A1F6A /* Json3SwiftUIView.swift */; };
 		044947B0294872AC007A1F6A /* ButtonSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04494721294872AC007A1F6A /* ButtonSwiftUIView.swift */; };
 		044947B1294872AC007A1F6A /* Button4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04494722294872AC007A1F6A /* Button4View.swift */; };
 		044947B2294872AC007A1F6A /* Button9View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04494723294872AC007A1F6A /* Button9View.swift */; };
@@ -136,9 +135,6 @@
 		044947C9294872AC007A1F6A /* CustomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449473D294872AC007A1F6A /* CustomerView.swift */; };
 		044947CA294872AC007A1F6A /* ListMainSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449473E294872AC007A1F6A /* ListMainSwiftUIView.swift */; };
 		044947CB294872AC007A1F6A /* ListWithDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449473F294872AC007A1F6A /* ListWithDataView.swift */; };
-		044947CC294872AC007A1F6A /* DynamicIslandShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04494741294872AC007A1F6A /* DynamicIslandShowView.swift */; };
-		044947CD294872AC007A1F6A /* DynamicIslandMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04494742294872AC007A1F6A /* DynamicIslandMainView.swift */; };
-		044947CE294872AC007A1F6A /* DynamicIslandShow2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04494743294872AC007A1F6A /* DynamicIslandShow2View.swift */; };
 		044947CF294872AC007A1F6A /* Text6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04494745294872AC007A1F6A /* Text6View.swift */; };
 		044947D0294872AC007A1F6A /* TextMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04494746294872AC007A1F6A /* TextMainView.swift */; };
 		044947D1294872AD007A1F6A /* Text1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04494747294872AC007A1F6A /* Text1View.swift */; };
@@ -268,7 +264,6 @@
 		0449471C294872AC007A1F6A /* JsonSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSwiftUIView.swift; sourceTree = "<group>"; };
 		0449471D294872AC007A1F6A /* Json2SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json2SwiftUIView.swift; sourceTree = "<group>"; };
 		0449471E294872AC007A1F6A /* JsonMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonMainView.swift; sourceTree = "<group>"; };
-		0449471F294872AC007A1F6A /* Json3SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json3SwiftUIView.swift; sourceTree = "<group>"; };
 		04494721294872AC007A1F6A /* ButtonSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonSwiftUIView.swift; sourceTree = "<group>"; };
 		04494722294872AC007A1F6A /* Button4View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button4View.swift; sourceTree = "<group>"; };
 		04494723294872AC007A1F6A /* Button9View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button9View.swift; sourceTree = "<group>"; };
@@ -297,9 +292,6 @@
 		0449473D294872AC007A1F6A /* CustomerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerView.swift; sourceTree = "<group>"; };
 		0449473E294872AC007A1F6A /* ListMainSwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMainSwiftUIView.swift; sourceTree = "<group>"; };
 		0449473F294872AC007A1F6A /* ListWithDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListWithDataView.swift; sourceTree = "<group>"; };
-		04494741294872AC007A1F6A /* DynamicIslandShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicIslandShowView.swift; sourceTree = "<group>"; };
-		04494742294872AC007A1F6A /* DynamicIslandMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicIslandMainView.swift; sourceTree = "<group>"; };
-		04494743294872AC007A1F6A /* DynamicIslandShow2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicIslandShow2View.swift; sourceTree = "<group>"; };
 		04494745294872AC007A1F6A /* Text6View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text6View.swift; sourceTree = "<group>"; };
 		04494746294872AC007A1F6A /* TextMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextMainView.swift; sourceTree = "<group>"; };
 		04494747294872AC007A1F6A /* Text1View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text1View.swift; sourceTree = "<group>"; };
@@ -456,7 +448,6 @@
 				0449472C294872AC007A1F6A /* Gesture */,
 				0449472F294872AC007A1F6A /* GemoetryReader */,
 				04494737294872AC007A1F6A /* List */,
-				04494740294872AC007A1F6A /* DynamicIslandView */,
 				04494744294872AC007A1F6A /* Text */,
 				04494751294872AC007A1F6A /* Sheet */,
 				04494755294872AC007A1F6A /* ZStack */,
@@ -658,7 +649,6 @@
 				0449471C294872AC007A1F6A /* JsonSwiftUIView.swift */,
 				0449471D294872AC007A1F6A /* Json2SwiftUIView.swift */,
 				0449471E294872AC007A1F6A /* JsonMainView.swift */,
-				0449471F294872AC007A1F6A /* Json3SwiftUIView.swift */,
 			);
 			path = Json;
 			sourceTree = "<group>";
@@ -717,16 +707,6 @@
 				0449473F294872AC007A1F6A /* ListWithDataView.swift */,
 			);
 			path = List;
-			sourceTree = "<group>";
-		};
-		04494740294872AC007A1F6A /* DynamicIslandView */ = {
-			isa = PBXGroup;
-			children = (
-				04494741294872AC007A1F6A /* DynamicIslandShowView.swift */,
-				04494742294872AC007A1F6A /* DynamicIslandMainView.swift */,
-				04494743294872AC007A1F6A /* DynamicIslandShow2View.swift */,
-			);
-			path = DynamicIslandView;
 			sourceTree = "<group>";
 		};
 		04494744294872AC007A1F6A /* Text */ = {
@@ -951,7 +931,6 @@
 				044946B2294872A6007A1F6A /* Change.swift in Sources */,
 				0449476B294872AC007A1F6A /* FormMainView.swift in Sources */,
 				044947DC294872AD007A1F6A /* SheetJsonView.swift in Sources */,
-				044947CC294872AC007A1F6A /* DynamicIslandShowView.swift in Sources */,
 				0449476F294872AC007A1F6A /* Picker3View.swift in Sources */,
 				04494793294872AC007A1F6A /* Slider1View.swift in Sources */,
 				044947C2294872AC007A1F6A /* GeometryReader4SwiftUIView.swift in Sources */,
@@ -963,7 +942,6 @@
 				044947C0294872AC007A1F6A /* GeometryReader2SwiftUIView.swift in Sources */,
 				044947DF294872AD007A1F6A /* ZStackSwiftUIView.swift in Sources */,
 				044947BF294872AC007A1F6A /* GemoetryReaderMainView.swift in Sources */,
-				044947AF294872AC007A1F6A /* Json3SwiftUIView.swift in Sources */,
 				04494790294872AC007A1F6A /* TextFieldMainView.swift in Sources */,
 				044947B0294872AC007A1F6A /* ButtonSwiftUIView.swift in Sources */,
 				04494772294872AC007A1F6A /* BingdingView1.swift in Sources */,
@@ -985,7 +963,6 @@
 				044946BD294872A6007A1F6A /* AnimationShowView.swift in Sources */,
 				04494794294872AC007A1F6A /* AVPlayerShowView.swift in Sources */,
 				044947E1294872AD007A1F6A /* ZStack5SwiftUIView.swift in Sources */,
-				044947CE294872AC007A1F6A /* DynamicIslandShow2View.swift in Sources */,
 				04494785294872AC007A1F6A /* Segmented2View.swift in Sources */,
 				04494771294872AC007A1F6A /* DatePickerShowView.swift in Sources */,
 				044947E0294872AD007A1F6A /* ZStack3View.swift in Sources */,
@@ -995,7 +972,6 @@
 				04494786294872AC007A1F6A /* Conmmon.swift in Sources */,
 				04494788294872AC007A1F6A /* MathMainView.swift in Sources */,
 				04494783294872AC007A1F6A /* Segmented3View.swift in Sources */,
-				044947CD294872AC007A1F6A /* DynamicIslandMainView.swift in Sources */,
 				044947D3294872AD007A1F6A /* Text7View.swift in Sources */,
 				044947E2294872AD007A1F6A /* VStack3SwiftUIView.swift in Sources */,
 				044947CA294872AC007A1F6A /* ListMainSwiftUIView.swift in Sources */,

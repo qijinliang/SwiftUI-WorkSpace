@@ -44,8 +44,6 @@ struct ListSwiftUIView: View {
                     TextFieldMainView()
                     //MARK: Sheet
                     SheetMainView()
-                    //MARK: Dynamic Island
-                    DynamicIslandMainView()
                 }
                 
                 Section(header: Text("第三部分").font(.title3).fontWeight(.heavy)) {

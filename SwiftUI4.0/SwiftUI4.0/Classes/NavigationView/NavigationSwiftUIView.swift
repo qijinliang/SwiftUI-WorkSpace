@@ -17,12 +17,12 @@ struct Update: Identifiable {
 }
 
 let updateData = [
-    Update(image: #imageLiteral(resourceName: "宝7"), title: "写给我爱的宝", text: "宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
-    Update(image: #imageLiteral(resourceName: "宝9"), title: "我爱的宝", text: "宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
-    Update(image: #imageLiteral(resourceName: "宝9"), title: "写给我爱的宝", text: "宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
-    Update(image: #imageLiteral(resourceName: "宝6"), title: "我爱的宝", text: "宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
-    Update(image: #imageLiteral(resourceName: "宝2"), title: "写给我爱的宝", text: "宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
-    Update(image: #imageLiteral(resourceName: "宝9"), title: "我爱的宝", text: "宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你")
+    Update(image: #imageLiteral(resourceName: "美食7"), title: "写给我爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
+    Update(image: #imageLiteral(resourceName: "美食4"), title: "我爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
+    Update(image: #imageLiteral(resourceName: "美食3"), title: "写给我爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
+    Update(image: #imageLiteral(resourceName: "美食6"), title: "我爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
+    Update(image: #imageLiteral(resourceName: "美食2"), title: "写给我爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
+    Update(image: #imageLiteral(resourceName: "美食1"), title: "我爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你")
 ]
 
 
@@ -35,7 +35,7 @@ struct NavigationSwiftUIView: View {
     @ObservedObject var store = UpdateStore()
     
     func addUpdate() {
-        store.updates.append(Update(image: #imageLiteral(resourceName: "宝"), title: "最爱的宝", text: "宝，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"))
+        store.updates.append(Update(image: #imageLiteral(resourceName: "美食1"), title: "最爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"))
     }
     
     var body: some View {
@@ -70,7 +70,7 @@ struct NavigationSwiftUIView: View {
                     self.store.updates.move(fromOffsets: source, toOffset: destination)
                 }
             }
-            .navigationBarTitle(Text("宝介绍"))
+            .navigationBarTitle(Text("美食介绍"))
             .navigationBarItems(leading: Button(action: addUpdate) {
                 Text("添加")
             },trailing: EditButton())

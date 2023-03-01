@@ -18,14 +18,14 @@ struct Movie: Identifiable, Hashable {
 struct ScrollViewSwiftUIView: View {
     
     let movies: [[Movie]] = [
-        [.init(name: "最爱的宝", imageName: #imageLiteral(resourceName: "宝5")),
-         .init(name:"最爱的宝", imageName: #imageLiteral(resourceName: "宝8"))],
-        [.init(name: "最爱的宝",imageName: #imageLiteral(resourceName: "宝2")),
-         .init(name: "最爱的宝",imageName: #imageLiteral(resourceName: "宝3"))],
-        [.init(name: "最爱的宝",imageName: #imageLiteral(resourceName: "宝4"))],
-        [.init(name: "最爱的宝",imageName: #imageLiteral(resourceName: "宝8")),
-         .init(name: "最爱的宝",imageName: #imageLiteral(resourceName: "宝6"))],
-        [.init(name: "最爱的宝",imageName: #imageLiteral(resourceName: "宝7"))]
+        [.init(name: "最爱的美食", imageName: #imageLiteral(resourceName: "美食5")),
+         .init(name:"最爱的美食", imageName: #imageLiteral(resourceName: "美食8"))],
+        [.init(name: "最爱的美食",imageName: #imageLiteral(resourceName: "美食2")),
+         .init(name: "最爱的美食",imageName: #imageLiteral(resourceName: "美食3"))],
+        [.init(name: "最爱的美食",imageName: #imageLiteral(resourceName: "美食4"))],
+        [.init(name: "最爱的美食",imageName: #imageLiteral(resourceName: "美食8")),
+         .init(name: "最爱的美食",imageName: #imageLiteral(resourceName: "美食6"))],
+        [.init(name: "最爱的美食",imageName: #imageLiteral(resourceName: "美食7"))]
     ]
     
     

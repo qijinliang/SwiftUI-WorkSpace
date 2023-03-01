@@ -15,7 +15,7 @@ struct GestureSwiftUIView: View{
     var body: some View {
         ZStack{
             BackCardView()
-            Image(uiImage: #imageLiteral(resourceName: "宝6"))
+            Image(uiImage: #imageLiteral(resourceName: "美食6"))
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 340, height: 220, alignment: .center)
@@ -29,7 +29,7 @@ struct GestureSwiftUIView: View{
                 .animation(.easeInOut(duration: 0.5), value: show)
             
             BackCardView()
-            Image(uiImage: #imageLiteral(resourceName: "宝8"))
+            Image(uiImage: #imageLiteral(resourceName: "美食8"))
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 340, height: 220, alignment: .center)
@@ -66,7 +66,7 @@ struct CardView: View {
         VStack {
             HStack {
                 VStack(alignment: .leading) {
-                    Image(uiImage: #imageLiteral(resourceName: "宝5"))
+                    Image(uiImage: #imageLiteral(resourceName: "美食5"))
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 340, height: 220)

@@ -42,7 +42,7 @@ struct Button7View: View {
             Button(action: {
                 
             }){
-                Image.init("最爱的宝5")
+                Image.init("最爱的美食5")
                     .resizable()
                     .renderingMode(.original)
                     .aspectRatio(contentMode: .fill)

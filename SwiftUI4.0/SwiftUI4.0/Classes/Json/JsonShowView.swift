@@ -19,10 +19,6 @@ struct JsonShowView: View {
                 NavigationLink(destination: Json2SwiftUIView()) {
                     Text("复杂模型嵌套模型解析")
                 }
-                
-                NavigationLink(destination: Json3SwiftUIView()) {
-                    Text("基本简单模型解析")
-                }
             }
         }
     }
