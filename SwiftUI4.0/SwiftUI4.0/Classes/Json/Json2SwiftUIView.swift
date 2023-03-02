@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct RSS: Decodable {
-    let feed: Feed
+    let feed: Feed2
 }
 
-struct Feed: Decodable {
+struct Feed2: Decodable {
     let results: [Result]
 }
 

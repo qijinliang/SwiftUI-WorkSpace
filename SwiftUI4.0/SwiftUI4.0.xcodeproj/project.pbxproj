@@ -160,6 +160,7 @@
 		044947E5294872AD007A1F6A /* VStack2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449475E294872AC007A1F6A /* VStack2SwiftUIView.swift */; };
 		044947E6294872AD007A1F6A /* VStack4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449475F294872AC007A1F6A /* VStack4SwiftUIView.swift */; };
 		044947E7294872AD007A1F6A /* VStackShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04494760294872AC007A1F6A /* VStackShowView.swift */; };
+		04771CBF29B0482A000436E1 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04771CBE29B0482A000436E1 /* NavigationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -317,6 +318,7 @@
 		0449475E294872AC007A1F6A /* VStack2SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VStack2SwiftUIView.swift; sourceTree = "<group>"; };
 		0449475F294872AC007A1F6A /* VStack4SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VStack4SwiftUIView.swift; sourceTree = "<group>"; };
 		04494760294872AC007A1F6A /* VStackShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VStackShowView.swift; sourceTree = "<group>"; };
+		04771CBE29B0482A000436E1 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -472,6 +474,7 @@
 			children = (
 				044946C6294872AC007A1F6A /* NavigationSwiftUIView.swift */,
 				044946C7294872AC007A1F6A /* NavigationShowView.swift */,
+				04771CBE29B0482A000436E1 /* NavigationModel.swift */,
 			);
 			path = NavigationView;
 			sourceTree = "<group>";
@@ -841,6 +844,7 @@
 				044947C5294872AC007A1F6A /* ListSetting.swift in Sources */,
 				044947D0294872AC007A1F6A /* TextMainView.swift in Sources */,
 				044947B5294872AC007A1F6A /* Button5View.swift in Sources */,
+				04771CBF29B0482A000436E1 /* NavigationModel.swift in Sources */,
 				044947A6294872AC007A1F6A /* LazyHGridView.swift in Sources */,
 				04494799294872AC007A1F6A /* Spacer4SwiftUIView.swift in Sources */,
 				044947D5294872AD007A1F6A /* TextShowView.swift in Sources */,

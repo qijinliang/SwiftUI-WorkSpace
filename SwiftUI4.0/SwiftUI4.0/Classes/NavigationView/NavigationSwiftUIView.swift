@@ -1,99 +1,113 @@
-//
-//  NavigationSwiftUIView.swift
-//  SwiftUI-Example
-//
-//  Created by jinliang on 2021/3/11.
-//
-
 import SwiftUI
-
 import Combine
 
-struct Update: Identifiable {
-    var id = UUID()
-    var image: UIImage
-    var title: String
-    var text: String
+
+class AppleModel: ObservableObject {
+    @Published var results: [AppRank] = []
+    
+    
+    init() {
+        guard let url = URL(string: "https://itunes.apple.com/rss/topGrossingApplications/limit=200/genre=6014/json?cc=cn") else {
+            return
+        }
+        
+        
+        URLSession.shared.dataTask(with: url) {(data, resp, err) in
+            guard let data = data else { return }
+            do {
+                let rss = try JSONDecoder().decode(AppRankM.self, from: data)
+                DispatchQueue.main.async {
+                    self.results = rss.feed.entry
+                }
+            }catch {
+                print("Faild to decode: \(error)")
+            }
+        }.resume()
+    }
 }
 
-let updateData = [
-    Update(image: #imageLiteral(resourceName: "美食7"), title: "写给我爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
-    Update(image: #imageLiteral(resourceName: "美食4"), title: "我爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
-    Update(image: #imageLiteral(resourceName: "美食3"), title: "写给我爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
-    Update(image: #imageLiteral(resourceName: "美食6"), title: "我爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
-    Update(image: #imageLiteral(resourceName: "美食2"), title: "写给我爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"),
-    Update(image: #imageLiteral(resourceName: "美食1"), title: "我爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你")
-]
 
 
-class UpdateStore: ObservableObject {
-    @Published var updates: [Update] = updateData
-}
 
 struct NavigationSwiftUIView: View {
     
-    @ObservedObject var store = UpdateStore()
-    
-    func addUpdate() {
-        store.updates.append(Update(image: #imageLiteral(resourceName: "美食1"), title: "最爱的美食", text: "美食，我最爱的女生，在我眼中是那么的可爱，那么的善良，很幸运遇见你，我会好好珍惜你"))
-    }
+    @StateObject private var appRankModel = AppleModel()
     
     var body: some View {
-            List {
-                ForEach(store.updates) { update in
-                    NavigationLink(destination: UpdateDetail(update: update)) {
-                        HStack {
-                            Image(uiImage: update.image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 80, height: 80)
-                                .cornerRadius(80)
-                                .padding(.trailing, 4)
-                            
-                            VStack(alignment: .leading, spacing: 8.0) {
-                                Text(update.title)
-                                    .font(.system(size: 20, weight: .bold))
-                                
-                                Text(update.text)
-                                    .lineLimit(2)
-                                    .font(.subheadline)
-                                    .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
-                            }
-                        }
-                        .padding(.vertical, 8)
-                    }
-                }
-                .onDelete{ index in
-                    self.store.updates.remove(at: index.first!)
-                }
-                .onMove{(source: IndexSet, destination: Int) in
-                    self.store.updates.move(fromOffsets: source, toOffset: destination)
+        List {
+            
+            ForEach(appRankModel.results, id: \.imName.label) { item in
+                NavigationLink(
+                    destination: AppDetailView(
+                        appId: item.id.attributes.imID, item: item)
+                ) {
+                    RankCellView(item: item)
+                        .frame(height: 110)
                 }
             }
-            .navigationBarTitle(Text("美食介绍"))
-            .navigationBarItems(leading: Button(action: addUpdate) {
-                Text("添加")
-            },trailing: EditButton())
+        }
+        .padding(.top, 75)
+        .navigationBarTitle("App应用", displayMode: .inline)
         .edgesIgnoringSafeArea(.all)
     }
 }
 
+struct RankCellView: View {
+    
+    let item: AppRank
+    
+    var body: some View {
+        HStack() {
+            
+            let url = URL(string: item.imImage.last?.label ?? "")
+            AsyncImage(url: url) { image in
+                image
+                    .resizable()
+                    .renderingMode(.original)
+                    .cornerRadius(15)
+                    .frame(width: 75, height: 75)
+            } placeholder: {
+                ProgressView()
+            }
+            
+            
+            VStack(alignment: .leading, spacing: 8.0) {
+                
+                Text(item.imName.label)
+                    .font(.system(size: 20, weight: .bold))
+                
+                
+                Text(item.category.attributes.label)
+                    .lineLimit(2)
+                    .font(.subheadline)
+                    .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
+                
+                Text(item.imArtist.label).font(.footnote).lineLimit(1).foregroundColor(.gray)
+            }
+        }
+        .padding(.vertical, 8)
+    }
+}
 
-struct UpdateDetail: View {
-    var update: Update = updateData[1]
+
+struct AppDetailView: View {
+    
+    
+    var appId: String
+    var item: AppRank?
+    
     var body: some View{
         List {
             VStack(spacing: 20) {
-                Image(uiImage: update.image)
+                Image(systemName: "person")
                     .resizable()
                     .scaledToFit()
                     .frame(maxWidth: .infinity)
-                Text(update.text)
+                Text("tete")
                     .fontWeight(.light)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    
+                
             }
-            .navigationBarTitle(update.title)
         }
         .listStyle(PlainListStyle())
     }
