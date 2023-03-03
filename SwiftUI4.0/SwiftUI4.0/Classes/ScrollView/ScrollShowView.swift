@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ScrollShowView: View {
+    
     var body: some View {
         Form() {
             Section() {
@@ -18,7 +19,6 @@ struct ScrollShowView: View {
                 NavigationLink(destination: ScrollViewFoodView()) {
                     Text("ScrollViewFoodView")
                 }
-                
             }
         }
     }

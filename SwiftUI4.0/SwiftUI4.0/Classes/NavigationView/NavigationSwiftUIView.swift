@@ -10,8 +10,6 @@ class AppleModel: ObservableObject {
         guard let url = URL(string: "https://itunes.apple.com/rss/topGrossingApplications/limit=200/genre=6014/json?cc=cn") else {
             return
         }
-        
-        
         URLSession.shared.dataTask(with: url) {(data, resp, err) in
             guard let data = data else { return }
             do {
@@ -38,8 +36,7 @@ struct NavigationSwiftUIView: View {
             
             ForEach(appRankModel.results, id: \.imName.label) { item in
                 NavigationLink(
-                    destination: AppDetailView(
-                        appId: item.id.attributes.imID, item: item)
+                    destination: AppDetailView()
                 ) {
                     RankCellView(item: item)
                         .frame(height: 110)
@@ -92,26 +89,13 @@ struct RankCellView: View {
 
 struct AppDetailView: View {
     
-    
-    var appId: String
-    var item: AppRank?
-    
-    var body: some View{
-        List {
-            VStack(spacing: 20) {
-                Image(systemName: "person")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(maxWidth: .infinity)
-                Text("tete")
-                    .fontWeight(.light)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                
-            }
+    var body: some View {
+        VStack {
+            Text("234")
         }
-        .listStyle(PlainListStyle())
     }
 }
+
 
 struct NavigationSwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
