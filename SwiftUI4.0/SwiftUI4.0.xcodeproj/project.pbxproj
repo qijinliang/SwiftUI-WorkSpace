@@ -161,6 +161,7 @@
 		044947E6294872AD007A1F6A /* VStack4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449475F294872AC007A1F6A /* VStack4SwiftUIView.swift */; };
 		044947E7294872AD007A1F6A /* VStackShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04494760294872AC007A1F6A /* VStackShowView.swift */; };
 		04771CBF29B0482A000436E1 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04771CBE29B0482A000436E1 /* NavigationModel.swift */; };
+		047A19342A28379900B48EDE /* SheetJson2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A19332A28379900B48EDE /* SheetJson2View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -319,6 +320,7 @@
 		0449475F294872AC007A1F6A /* VStack4SwiftUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VStack4SwiftUIView.swift; sourceTree = "<group>"; };
 		04494760294872AC007A1F6A /* VStackShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VStackShowView.swift; sourceTree = "<group>"; };
 		04771CBE29B0482A000436E1 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
+		047A19332A28379900B48EDE /* SheetJson2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetJson2View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -737,6 +739,7 @@
 				04494752294872AC007A1F6A /* SheetMainView.swift */,
 				04494753294872AC007A1F6A /* SheetJsonView.swift */,
 				04494754294872AC007A1F6A /* SheetShowView.swift */,
+				047A19332A28379900B48EDE /* SheetJson2View.swift */,
 			);
 			path = Sheet;
 			sourceTree = "<group>";
@@ -920,6 +923,7 @@
 				044946BA294872A6007A1F6A /* Implicit3.swift in Sources */,
 				04494792294872AC007A1F6A /* SliderMainView.swift in Sources */,
 				044947A3294872AC007A1F6A /* HStack3SwiftUIView.swift in Sources */,
+				047A19342A28379900B48EDE /* SheetJson2View.swift in Sources */,
 				04494798294872AC007A1F6A /* SpacerSwiftUIView.swift in Sources */,
 				044947B2294872AC007A1F6A /* Button9View.swift in Sources */,
 				0449478F294872AC007A1F6A /* TextFieldSwiftUIView.swift in Sources */,
@@ -1127,6 +1131,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI.Test.SwiftUI4-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1155,6 +1160,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI.Test.SwiftUI4-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

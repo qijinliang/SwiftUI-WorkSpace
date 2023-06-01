@@ -15,6 +15,12 @@ struct SheetShowView: View {
                     Text("弹出视图")
                 }
             }
+            
+            Section(header: Text("弹出2").font(.title3).fontWeight(.heavy)) {
+                NavigationLink(destination: SheetJson2View()) {
+                    Text("弹出视图2")
+                }
+            }
         }
     }
 }
