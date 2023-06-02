@@ -162,6 +162,9 @@
 		044947E7294872AD007A1F6A /* VStackShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04494760294872AC007A1F6A /* VStackShowView.swift */; };
 		04771CBF29B0482A000436E1 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04771CBE29B0482A000436E1 /* NavigationModel.swift */; };
 		047A19342A28379900B48EDE /* SheetJson2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A19332A28379900B48EDE /* SheetJson2View.swift */; };
+		047A193B2A298F1900B48EDE /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A193A2A298F1900B48EDE /* Tab.swift */; };
+		047A193D2A298F2E00B48EDE /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A193C2A298F2E00B48EDE /* TabBar.swift */; };
+		047A193F2A298F4D00B48EDE /* TabClipperShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A193E2A298F4D00B48EDE /* TabClipperShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -321,6 +324,9 @@
 		04494760294872AC007A1F6A /* VStackShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VStackShowView.swift; sourceTree = "<group>"; };
 		04771CBE29B0482A000436E1 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 		047A19332A28379900B48EDE /* SheetJson2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetJson2View.swift; sourceTree = "<group>"; };
+		047A193A2A298F1900B48EDE /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		047A193C2A298F2E00B48EDE /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		047A193E2A298F4D00B48EDE /* TabClipperShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabClipperShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -431,6 +437,7 @@
 		044946BF294872AC007A1F6A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				047A19372A298EEB00B48EDE /* Tabbar */,
 				044946C0294872AC007A1F6A /* ScrollView */,
 				044946C5294872AC007A1F6A /* NavigationView */,
 				044946C8294872AC007A1F6A /* Form */,
@@ -768,6 +775,16 @@
 			path = VStack;
 			sourceTree = "<group>";
 		};
+		047A19372A298EEB00B48EDE /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				047A193A2A298F1900B48EDE /* Tab.swift */,
+				047A193C2A298F2E00B48EDE /* TabBar.swift */,
+				047A193E2A298F4D00B48EDE /* TabClipperShape.swift */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -877,6 +894,7 @@
 				044946B1294872A6007A1F6A /* ChangePopup.swift in Sources */,
 				0449468B29487291007A1F6A /* ContentView.swift in Sources */,
 				0449478C294872AC007A1F6A /* RectangleSwiftUIView.swift in Sources */,
+				047A193F2A298F4D00B48EDE /* TabClipperShape.swift in Sources */,
 				04494781294872AC007A1F6A /* Segmented1View.swift in Sources */,
 				04494765294872AC007A1F6A /* NavigationSwiftUIView.swift in Sources */,
 				04494769294872AC007A1F6A /* Form3View.swift in Sources */,
@@ -917,6 +935,7 @@
 				044947A5294872AC007A1F6A /* HStack2SwiftUIView.swift in Sources */,
 				044947E7294872AD007A1F6A /* VStackShowView.swift in Sources */,
 				04494777294872AC007A1F6A /* Layout2SwiftUIView.swift in Sources */,
+				047A193D2A298F2E00B48EDE /* TabBar.swift in Sources */,
 				044947E6294872AD007A1F6A /* VStack4SwiftUIView.swift in Sources */,
 				04494773294872AC007A1F6A /* BingdingShowView.swift in Sources */,
 				044946B5294872A6007A1F6A /* ChangeOffset.swift in Sources */,
@@ -948,6 +967,7 @@
 				0449479A294872AC007A1F6A /* SpacerExampleView.swift in Sources */,
 				044947BA294872AC007A1F6A /* Button7View.swift in Sources */,
 				044947C0294872AC007A1F6A /* GeometryReader2SwiftUIView.swift in Sources */,
+				047A193B2A298F1900B48EDE /* Tab.swift in Sources */,
 				044947DF294872AD007A1F6A /* ZStackSwiftUIView.swift in Sources */,
 				044947BF294872AC007A1F6A /* GemoetryReaderMainView.swift in Sources */,
 				04494790294872AC007A1F6A /* TextFieldMainView.swift in Sources */,

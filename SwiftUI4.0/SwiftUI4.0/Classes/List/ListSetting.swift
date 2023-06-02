@@ -31,18 +31,10 @@ struct ListSetting: View {
                 }
             }
             .navigationBarTitle("设置", displayMode: .inline)
-            .navigationBarItems(leading: backToMineView)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
-    // 返回上一页
-    private var backToMineView: some View {
-        Button(action: {
-        }) {
-            Image(systemName: "arrow.backward")
-                .foregroundColor(.black)
-        }
-    }
     
     // 个人信息
     private var mineMessageView: some View {
