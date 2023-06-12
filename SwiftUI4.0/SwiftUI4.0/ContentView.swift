@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  SwiftUI4.0
 //
-//  Created by Cheney on 2022/12/13.
+//  Created by jinliang on 2022/12/13.
 //
 
 import SwiftUI
