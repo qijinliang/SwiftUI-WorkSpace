@@ -2,12 +2,13 @@
 //  ListSwiftUIView.swift
 //  SwiftUI-Example
 //
-//  Created by jinliang on 2021/3/25.
+//  Created by 金亮 on 2021/3/25.
 //
 
 import SwiftUI
 
 struct ListSwiftUIView: View {
+    
     var body: some View {
         NavigationView {
             Form {

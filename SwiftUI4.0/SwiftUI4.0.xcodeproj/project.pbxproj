@@ -171,6 +171,9 @@
 		04DB27922A3B03EA000C811B /* InnerShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB27912A3B03EA000C811B /* InnerShadow.swift */; };
 		04DB27942A3B04EA000C811B /* Gesture2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB27932A3B04EA000C811B /* Gesture2SwiftUIView.swift */; };
 		04DB27962A3B054D000C811B /* GestureShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB27952A3B054D000C811B /* GestureShowView.swift */; };
+		04DB27982A3B11BD000C811B /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB27972A3B11BD000C811B /* MotionManager.swift */; };
+		04DB279A2A3B14BE000C811B /* Implicit4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB27992A3B14BE000C811B /* Implicit4.swift */; };
+		04DB279C2A3B1535000C811B /* Implicit5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB279B2A3B1535000C811B /* Implicit5.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -339,6 +342,9 @@
 		04DB27912A3B03EA000C811B /* InnerShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerShadow.swift; sourceTree = "<group>"; };
 		04DB27932A3B04EA000C811B /* Gesture2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture2SwiftUIView.swift; sourceTree = "<group>"; };
 		04DB27952A3B054D000C811B /* GestureShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureShowView.swift; sourceTree = "<group>"; };
+		04DB27972A3B11BD000C811B /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		04DB27992A3B14BE000C811B /* Implicit4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Implicit4.swift; sourceTree = "<group>"; };
+		04DB279B2A3B1535000C811B /* Implicit5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Implicit5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,6 +439,8 @@
 				044946A7294872A6007A1F6A /* Implicit3.swift */,
 				044946A8294872A6007A1F6A /* Implicit1.swift */,
 				044946A9294872A6007A1F6A /* ImplicitShowView.swift */,
+				04DB27992A3B14BE000C811B /* Implicit4.swift */,
+				04DB279B2A3B1535000C811B /* Implicit5.swift */,
 			);
 			path = Implicit;
 			sourceTree = "<group>";
@@ -579,6 +587,7 @@
 			children = (
 				044946EE294872AC007A1F6A /* Conmmon.swift */,
 				044946EF294872AC007A1F6A /* Color+Extension.swift */,
+				04DB27972A3B11BD000C811B /* MotionManager.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -928,6 +937,7 @@
 				044947AE294872AC007A1F6A /* JsonMainView.swift in Sources */,
 				044947A9294872AC007A1F6A /* Map1View.swift in Sources */,
 				0449478B294872AC007A1F6A /* MathShowView.swift in Sources */,
+				04DB279C2A3B1535000C811B /* Implicit5.swift in Sources */,
 				04DB278E2A3AFDEB000C811B /* ChartsShow5View.swift in Sources */,
 				044947A0294872AC007A1F6A /* HStack5SwiftUIView.swift in Sources */,
 				044947B6294872AC007A1F6A /* Button8View.swift in Sources */,
@@ -965,6 +975,7 @@
 				044947A3294872AC007A1F6A /* HStack3SwiftUIView.swift in Sources */,
 				047A19342A28379900B48EDE /* SheetJson2View.swift in Sources */,
 				04494798294872AC007A1F6A /* SpacerSwiftUIView.swift in Sources */,
+				04DB27982A3B11BD000C811B /* MotionManager.swift in Sources */,
 				044947B2294872AC007A1F6A /* Button9View.swift in Sources */,
 				0449478F294872AC007A1F6A /* TextFieldSwiftUIView.swift in Sources */,
 				044946AE294872A6007A1F6A /* ChangeShowView.swift in Sources */,
@@ -993,6 +1004,7 @@
 				044947DF294872AD007A1F6A /* ZStackSwiftUIView.swift in Sources */,
 				044947BF294872AC007A1F6A /* GemoetryReaderMainView.swift in Sources */,
 				04494790294872AC007A1F6A /* TextFieldMainView.swift in Sources */,
+				04DB279A2A3B14BE000C811B /* Implicit4.swift in Sources */,
 				044947B0294872AC007A1F6A /* ButtonSwiftUIView.swift in Sources */,
 				04494772294872AC007A1F6A /* BingdingView1.swift in Sources */,
 				044947B8294872AC007A1F6A /* Button6View.swift in Sources */,

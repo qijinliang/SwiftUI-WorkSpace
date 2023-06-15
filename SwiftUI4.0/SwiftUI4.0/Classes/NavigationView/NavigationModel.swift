@@ -2,7 +2,7 @@
 //  NavigationModel.swift
 //  SwiftUI4.0
 //
-//  Created by jinliang on 2023/3/2.
+//  Created by 金亮 on 2023/3/2.
 //
 import Foundation
 import SwiftUI

@@ -49,7 +49,7 @@ struct ListSetting: View {
                     .overlay(Circle().stroke(Color(.systemGray5), lineWidth: 1))
                 
                 VStack(alignment: .leading, spacing: 5) {
-                    Text("jinliang")
+                    Text("金亮")
                         .font(.system(size: 17))
                         .foregroundColor(.primary)
                     Text("iOS 程序员")

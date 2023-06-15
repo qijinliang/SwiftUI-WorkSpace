@@ -20,7 +20,15 @@ struct ImplicitShowView: View {
                 }
                 
                 NavigationLink(destination: Implicit3()) {
-                    Text("进度条loading动画")
+                    Text("多个按钮动画")
+                }
+                
+                NavigationLink(destination: Implicit4()) {
+                    Text("消息加载动画")
+                }
+                
+                NavigationLink(destination: Implicit5()) {
+                    Text("时钟动画")
                 }
             }
         }

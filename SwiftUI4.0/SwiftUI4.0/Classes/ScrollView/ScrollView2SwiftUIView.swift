@@ -2,7 +2,7 @@
 //  ScrollView2SwiftUIView.swift
 //  SwiftUI-Example
 //
-//  Created by jinliang on 2021/7/03.
+//  Created by 金亮 on 2021/7/03.
 //
 
 import SwiftUI
