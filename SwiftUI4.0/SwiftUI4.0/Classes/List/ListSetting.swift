@@ -41,7 +41,7 @@ struct ListSetting: View {
         Button(action: {
         }) {
             HStack(spacing: 15) {
-                Image("美食1")
+                Image("Head")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 60)

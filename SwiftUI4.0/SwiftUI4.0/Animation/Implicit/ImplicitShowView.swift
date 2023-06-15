@@ -16,7 +16,7 @@ struct ImplicitShowView: View {
                 }
                 
                 NavigationLink(destination: Implicit2()) {
-                    Text("圆形动态加载")
+                    Text("3D动画加载")
                 }
                 
                 NavigationLink(destination: Implicit3()) {

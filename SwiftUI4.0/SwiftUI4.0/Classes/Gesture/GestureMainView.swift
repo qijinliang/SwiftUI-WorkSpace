@@ -10,7 +10,7 @@ import SwiftUI
 struct GestureMainView: View {
     var body: some View {
         Section {
-            NavigationLink(destination: GestureSwiftUIView()) {
+            NavigationLink(destination: GestureShowView()) {
                 Text("Gesture")
             }
         }

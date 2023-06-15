@@ -22,6 +22,9 @@ struct MathShowView: View {
                 NavigationLink(destination: RectangleSwiftUIView()){
                     Text("Rectangle")
                 }
+                NavigationLink(destination: InnerShadowSwiftUIView()){
+                    Text("InnerShadow")
+                }
             }
         }
     }

@@ -167,6 +167,10 @@
 		047A193F2A298F4D00B48EDE /* TabClipperShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A193E2A298F4D00B48EDE /* TabClipperShape.swift */; };
 		04DB278C2A3AFC1D000C811B /* LazyHGridView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB278B2A3AFC1D000C811B /* LazyHGridView2.swift */; };
 		04DB278E2A3AFDEB000C811B /* ChartsShow5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB278D2A3AFDEB000C811B /* ChartsShow5View.swift */; };
+		04DB27902A3B0226000C811B /* SheetJson3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB278F2A3B0226000C811B /* SheetJson3View.swift */; };
+		04DB27922A3B03EA000C811B /* InnerShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB27912A3B03EA000C811B /* InnerShadow.swift */; };
+		04DB27942A3B04EA000C811B /* Gesture2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB27932A3B04EA000C811B /* Gesture2SwiftUIView.swift */; };
+		04DB27962A3B054D000C811B /* GestureShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB27952A3B054D000C811B /* GestureShowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -331,6 +335,10 @@
 		047A193E2A298F4D00B48EDE /* TabClipperShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabClipperShape.swift; sourceTree = "<group>"; };
 		04DB278B2A3AFC1D000C811B /* LazyHGridView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridView2.swift; sourceTree = "<group>"; };
 		04DB278D2A3AFDEB000C811B /* ChartsShow5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsShow5View.swift; sourceTree = "<group>"; };
+		04DB278F2A3B0226000C811B /* SheetJson3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetJson3View.swift; sourceTree = "<group>"; };
+		04DB27912A3B03EA000C811B /* InnerShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerShadow.swift; sourceTree = "<group>"; };
+		04DB27932A3B04EA000C811B /* Gesture2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture2SwiftUIView.swift; sourceTree = "<group>"; };
+		04DB27952A3B054D000C811B /* GestureShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureShowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,8 +355,8 @@
 		0449467C29487291007A1F6A = {
 			isa = PBXGroup;
 			children = (
-				0449468729487291007A1F6A /* SwiftUI4.0 */,
 				0449468629487291007A1F6A /* Products */,
+				0449468729487291007A1F6A /* SwiftUI4.0 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -496,12 +504,12 @@
 			isa = PBXGroup;
 			children = (
 				044946C9294872AC007A1F6A /* Form1View.swift */,
-				044946CA294872AC007A1F6A /* FormShowView.swift */,
+				044946CE294872AC007A1F6A /* Form2View.swift */,
 				044946CB294872AC007A1F6A /* Form3View.swift */,
+				044946CF294872AC007A1F6A /* Form4View.swift */,
 				044946CC294872AC007A1F6A /* Form5View.swift */,
 				044946CD294872AC007A1F6A /* FormMainView.swift */,
-				044946CE294872AC007A1F6A /* Form2View.swift */,
-				044946CF294872AC007A1F6A /* Form4View.swift */,
+				044946CA294872AC007A1F6A /* FormShowView.swift */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -531,11 +539,11 @@
 		044946DA294872AC007A1F6A /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				044946DB294872AC007A1F6A /* LayoutShowView.swift */,
 				044946DC294872AC007A1F6A /* Layout2SwiftUIView.swift */,
-				044946DD294872AC007A1F6A /* LayoutMainView.swift */,
-				044946DE294872AC007A1F6A /* LayoutSwiftUIView.swift */,
 				044946DF294872AC007A1F6A /* Layout3View.swift */,
+				044946DD294872AC007A1F6A /* LayoutMainView.swift */,
+				044946DB294872AC007A1F6A /* LayoutShowView.swift */,
+				044946DE294872AC007A1F6A /* LayoutSwiftUIView.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -543,13 +551,13 @@
 		044946E0294872AC007A1F6A /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				044946E1294872AC007A1F6A /* ChartsMainView.swift */,
-				044946E2294872AC007A1F6A /* ChartsShow4View.swift */,
-				044946E3294872AC007A1F6A /* ChartsShow2View.swift */,
-				044946E4294872AC007A1F6A /* ChartsShowView.swift */,
 				044946E5294872AC007A1F6A /* Chart SwiftUIView.swift */,
+				044946E1294872AC007A1F6A /* ChartsMainView.swift */,
+				044946E3294872AC007A1F6A /* ChartsShow2View.swift */,
 				044946E6294872AC007A1F6A /* ChartsShow3View.swift */,
+				044946E2294872AC007A1F6A /* ChartsShow4View.swift */,
 				04DB278D2A3AFDEB000C811B /* ChartsShow5View.swift */,
+				044946E4294872AC007A1F6A /* ChartsShowView.swift */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -578,11 +586,12 @@
 		044946F0294872AC007A1F6A /* Mathematics */ = {
 			isa = PBXGroup;
 			children = (
-				044946F1294872AC007A1F6A /* MathMainView.swift */,
-				044946F2294872AC007A1F6A /* LineGraphSwiftUIView.swift */,
 				044946F3294872AC007A1F6A /* FanshapedSwiftUIView.swift */,
+				044946F2294872AC007A1F6A /* LineGraphSwiftUIView.swift */,
+				044946F1294872AC007A1F6A /* MathMainView.swift */,
 				044946F4294872AC007A1F6A /* MathShowView.swift */,
 				044946F5294872AC007A1F6A /* RectangleSwiftUIView.swift */,
+				04DB27912A3B03EA000C811B /* InnerShadow.swift */,
 			);
 			path = Mathematics;
 			sourceTree = "<group>";
@@ -591,9 +600,9 @@
 			isa = PBXGroup;
 			children = (
 				044946F7294872AC007A1F6A /* TextField2View.swift */,
+				044946FA294872AC007A1F6A /* TextFieldMainView.swift */,
 				044946F8294872AC007A1F6A /* TextFieldShowView.swift */,
 				044946F9294872AC007A1F6A /* TextFieldSwiftUIView.swift */,
-				044946FA294872AC007A1F6A /* TextFieldMainView.swift */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -674,17 +683,17 @@
 		04494720294872AC007A1F6A /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				04494721294872AC007A1F6A /* ButtonSwiftUIView.swift */,
-				04494722294872AC007A1F6A /* Button4View.swift */,
-				04494723294872AC007A1F6A /* Button9View.swift */,
-				04494724294872AC007A1F6A /* ButtonShowView.swift */,
 				04494725294872AC007A1F6A /* Button2View.swift */,
-				04494726294872AC007A1F6A /* Button5View.swift */,
-				04494727294872AC007A1F6A /* Button8View.swift */,
 				04494728294872AC007A1F6A /* Button3View.swift */,
+				04494722294872AC007A1F6A /* Button4View.swift */,
+				04494726294872AC007A1F6A /* Button5View.swift */,
 				04494729294872AC007A1F6A /* Button6View.swift */,
-				0449472A294872AC007A1F6A /* ButtonMainView.swift */,
 				0449472B294872AC007A1F6A /* Button7View.swift */,
+				04494727294872AC007A1F6A /* Button8View.swift */,
+				04494723294872AC007A1F6A /* Button9View.swift */,
+				0449472A294872AC007A1F6A /* ButtonMainView.swift */,
+				04494724294872AC007A1F6A /* ButtonShowView.swift */,
+				04494721294872AC007A1F6A /* ButtonSwiftUIView.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -692,8 +701,10 @@
 		0449472C294872AC007A1F6A /* Gesture */ = {
 			isa = PBXGroup;
 			children = (
-				0449472D294872AC007A1F6A /* GestureSwiftUIView.swift */,
+				04DB27932A3B04EA000C811B /* Gesture2SwiftUIView.swift */,
 				0449472E294872AC007A1F6A /* GestureMainView.swift */,
+				04DB27952A3B054D000C811B /* GestureShowView.swift */,
+				0449472D294872AC007A1F6A /* GestureSwiftUIView.swift */,
 			);
 			path = Gesture;
 			sourceTree = "<group>";
@@ -701,13 +712,13 @@
 		0449472F294872AC007A1F6A /* GemoetryReader */ = {
 			isa = PBXGroup;
 			children = (
-				04494730294872AC007A1F6A /* GeometryReaderSwiftUIView.swift */,
-				04494731294872AC007A1F6A /* GeometryReader3SwiftUIView.swift */,
 				04494732294872AC007A1F6A /* GemoetryReaderMainView.swift */,
-				04494733294872AC007A1F6A /* GeometryReader2SwiftUIView.swift */,
-				04494734294872AC007A1F6A /* GeometryReader5SwiftUIView.swift */,
-				04494735294872AC007A1F6A /* GeometryReader4SwiftUIView.swift */,
 				04494736294872AC007A1F6A /* GemoetryReaderShowView.swift */,
+				04494733294872AC007A1F6A /* GeometryReader2SwiftUIView.swift */,
+				04494731294872AC007A1F6A /* GeometryReader3SwiftUIView.swift */,
+				04494735294872AC007A1F6A /* GeometryReader4SwiftUIView.swift */,
+				04494734294872AC007A1F6A /* GeometryReader5SwiftUIView.swift */,
+				04494730294872AC007A1F6A /* GeometryReaderSwiftUIView.swift */,
 			);
 			path = GemoetryReader;
 			sourceTree = "<group>";
@@ -730,18 +741,18 @@
 		04494744294872AC007A1F6A /* Text */ = {
 			isa = PBXGroup;
 			children = (
-				04494745294872AC007A1F6A /* Text6View.swift */,
-				04494746294872AC007A1F6A /* TextMainView.swift */,
 				04494747294872AC007A1F6A /* Text1View.swift */,
-				04494748294872AC007A1F6A /* Text10View.swift */,
-				04494749294872AC007A1F6A /* Text7View.swift */,
 				0449474A294872AC007A1F6A /* Text2View.swift */,
-				0449474B294872AC007A1F6A /* TextShowView.swift */,
-				0449474C294872AC007A1F6A /* Text4View.swift */,
-				0449474D294872AC007A1F6A /* Text9View.swift */,
 				0449474E294872AC007A1F6A /* Text3View.swift */,
+				0449474C294872AC007A1F6A /* Text4View.swift */,
 				0449474F294872AC007A1F6A /* Text5View.swift */,
+				04494745294872AC007A1F6A /* Text6View.swift */,
+				04494749294872AC007A1F6A /* Text7View.swift */,
 				04494750294872AC007A1F6A /* Text8View.swift */,
+				0449474D294872AC007A1F6A /* Text9View.swift */,
+				04494748294872AC007A1F6A /* Text10View.swift */,
+				04494746294872AC007A1F6A /* TextMainView.swift */,
+				0449474B294872AC007A1F6A /* TextShowView.swift */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -749,10 +760,11 @@
 		04494751294872AC007A1F6A /* Sheet */ = {
 			isa = PBXGroup;
 			children = (
-				04494752294872AC007A1F6A /* SheetMainView.swift */,
-				04494753294872AC007A1F6A /* SheetJsonView.swift */,
-				04494754294872AC007A1F6A /* SheetShowView.swift */,
 				047A19332A28379900B48EDE /* SheetJson2View.swift */,
+				04494753294872AC007A1F6A /* SheetJsonView.swift */,
+				04494752294872AC007A1F6A /* SheetMainView.swift */,
+				04494754294872AC007A1F6A /* SheetShowView.swift */,
+				04DB278F2A3B0226000C811B /* SheetJson3View.swift */,
 			);
 			path = Sheet;
 			sourceTree = "<group>";
@@ -899,6 +911,7 @@
 				044946B7294872A6007A1F6A /* PathShowVIew.swift in Sources */,
 				044946B1294872A6007A1F6A /* ChangePopup.swift in Sources */,
 				0449468B29487291007A1F6A /* ContentView.swift in Sources */,
+				04DB27962A3B054D000C811B /* GestureShowView.swift in Sources */,
 				0449478C294872AC007A1F6A /* RectangleSwiftUIView.swift in Sources */,
 				047A193F2A298F4D00B48EDE /* TabClipperShape.swift in Sources */,
 				04494781294872AC007A1F6A /* Segmented1View.swift in Sources */,
@@ -973,6 +986,7 @@
 				04494791294872AC007A1F6A /* SliderShowView.swift in Sources */,
 				0449479B294872AC007A1F6A /* Spacer3SwiftUIView.swift in Sources */,
 				0449479A294872AC007A1F6A /* SpacerExampleView.swift in Sources */,
+				04DB27942A3B04EA000C811B /* Gesture2SwiftUIView.swift in Sources */,
 				044947BA294872AC007A1F6A /* Button7View.swift in Sources */,
 				044947C0294872AC007A1F6A /* GeometryReader2SwiftUIView.swift in Sources */,
 				047A193B2A298F1900B48EDE /* Tab.swift in Sources */,
@@ -1003,6 +1017,7 @@
 				04494771294872AC007A1F6A /* DatePickerShowView.swift in Sources */,
 				044947E0294872AD007A1F6A /* ZStack3View.swift in Sources */,
 				044947BD294872AC007A1F6A /* GeometryReaderSwiftUIView.swift in Sources */,
+				04DB27922A3B03EA000C811B /* InnerShadow.swift in Sources */,
 				04494770294872AC007A1F6A /* DatePickerView.swift in Sources */,
 				044947BB294872AC007A1F6A /* GestureSwiftUIView.swift in Sources */,
 				04494786294872AC007A1F6A /* Conmmon.swift in Sources */,
@@ -1014,6 +1029,7 @@
 				04494761294872AC007A1F6A /* ScrollMainView.swift in Sources */,
 				0449478E294872AC007A1F6A /* TextFieldShowView.swift in Sources */,
 				0449477E294872AC007A1F6A /* ChartsShowView.swift in Sources */,
+				04DB27902A3B0226000C811B /* SheetJson3View.swift in Sources */,
 				0449476A294872AC007A1F6A /* Form5View.swift in Sources */,
 				044946B4294872A6007A1F6A /* ChangePoint.swift in Sources */,
 				04494774294872AC007A1F6A /* BingdingView2.swift in Sources */,
