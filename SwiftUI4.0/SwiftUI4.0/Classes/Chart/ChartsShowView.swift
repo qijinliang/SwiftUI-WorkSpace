@@ -23,6 +23,9 @@ struct ChartsShowView: View {
                 NavigationLink(destination: ChartsShow4View()) {
                     Text("ChartView4")
                 }
+                NavigationLink(destination: ChartsShow5View()) {
+                    Text("ChartView5")
+                }
             }
         }
     }

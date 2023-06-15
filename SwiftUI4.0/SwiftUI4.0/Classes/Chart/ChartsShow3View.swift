@@ -26,6 +26,7 @@ struct ChartsShow3View: View {
                 }
             }
         }
+        .frame(width: 300, height: 300)
     }
 }
 

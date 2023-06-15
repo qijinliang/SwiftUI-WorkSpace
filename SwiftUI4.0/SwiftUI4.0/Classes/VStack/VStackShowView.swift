@@ -86,6 +86,10 @@ struct VStackShowView: View {
                 NavigationLink(destination: LazyHGridView()) {
                     Text("LazyHGridView")
                 }
+                
+                NavigationLink(destination: LazyHGridView2()) {
+                    Text("LazyHGridView2")
+                }
             }
         }
     }

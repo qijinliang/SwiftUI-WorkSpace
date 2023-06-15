@@ -165,6 +165,8 @@
 		047A193B2A298F1900B48EDE /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A193A2A298F1900B48EDE /* Tab.swift */; };
 		047A193D2A298F2E00B48EDE /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A193C2A298F2E00B48EDE /* TabBar.swift */; };
 		047A193F2A298F4D00B48EDE /* TabClipperShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A193E2A298F4D00B48EDE /* TabClipperShape.swift */; };
+		04DB278C2A3AFC1D000C811B /* LazyHGridView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB278B2A3AFC1D000C811B /* LazyHGridView2.swift */; };
+		04DB278E2A3AFDEB000C811B /* ChartsShow5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB278D2A3AFDEB000C811B /* ChartsShow5View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -327,6 +329,8 @@
 		047A193A2A298F1900B48EDE /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		047A193C2A298F2E00B48EDE /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		047A193E2A298F4D00B48EDE /* TabClipperShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabClipperShape.swift; sourceTree = "<group>"; };
+		04DB278B2A3AFC1D000C811B /* LazyHGridView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridView2.swift; sourceTree = "<group>"; };
+		04DB278D2A3AFDEB000C811B /* ChartsShow5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsShow5View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -545,6 +549,7 @@
 				044946E4294872AC007A1F6A /* ChartsShowView.swift */,
 				044946E5294872AC007A1F6A /* Chart SwiftUIView.swift */,
 				044946E6294872AC007A1F6A /* ChartsShow3View.swift */,
+				04DB278D2A3AFDEB000C811B /* ChartsShow5View.swift */,
 			);
 			path = Chart;
 			sourceTree = "<group>";
@@ -640,6 +645,7 @@
 				04494713294872AC007A1F6A /* HStack2SwiftUIView.swift */,
 				04494714294872AC007A1F6A /* LazyHGridView.swift */,
 				04494715294872AC007A1F6A /* HStack6SwiftUIView.swift */,
+				04DB278B2A3AFC1D000C811B /* LazyHGridView2.swift */,
 			);
 			path = HStack;
 			sourceTree = "<group>";
@@ -899,6 +905,7 @@
 				04494765294872AC007A1F6A /* NavigationSwiftUIView.swift in Sources */,
 				04494769294872AC007A1F6A /* Form3View.swift in Sources */,
 				044947D4294872AD007A1F6A /* Text2View.swift in Sources */,
+				04DB278C2A3AFC1D000C811B /* LazyHGridView2.swift in Sources */,
 				044947C6294872AC007A1F6A /* ListGroupedView.swift in Sources */,
 				044947C4294872AC007A1F6A /* ListView.swift in Sources */,
 				044947AD294872AC007A1F6A /* Json2SwiftUIView.swift in Sources */,
@@ -908,6 +915,7 @@
 				044947AE294872AC007A1F6A /* JsonMainView.swift in Sources */,
 				044947A9294872AC007A1F6A /* Map1View.swift in Sources */,
 				0449478B294872AC007A1F6A /* MathShowView.swift in Sources */,
+				04DB278E2A3AFDEB000C811B /* ChartsShow5View.swift in Sources */,
 				044947A0294872AC007A1F6A /* HStack5SwiftUIView.swift in Sources */,
 				044947B6294872AC007A1F6A /* Button8View.swift in Sources */,
 				044947DE294872AD007A1F6A /* ZStack2SwiftUIView.swift in Sources */,
@@ -1136,9 +1144,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI4.0/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6H9S4KQ3C9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1152,8 +1163,10 @@
 				);
 				MARKETING_VERSION = 1.0;
 				NEW_SETTING = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI.Test.SwiftUI4-0";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.pokemon.pokemonunite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = cn.pokemon.pokemonunite_Development_SignProvision;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1165,9 +1178,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI4.0/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6H9S4KQ3C9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1181,8 +1197,10 @@
 				);
 				MARKETING_VERSION = 1.0;
 				NEW_SETTING = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SwiftUI.Test.SwiftUI4-0";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.pokemon.pokemonunite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = cn.pokemon.pokemonunite_Development_SignProvision;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

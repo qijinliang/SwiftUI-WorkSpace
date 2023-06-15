@@ -33,6 +33,7 @@ struct ChartsShow4View: View {
                 .lineStyle(StrokeStyle(lineWidth: 4))
             }
         }
+        .frame(width: 300, height: 300)
     }
 }
 
