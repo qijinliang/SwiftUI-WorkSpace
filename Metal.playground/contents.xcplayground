@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='macos' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='01 渲染立体圆形'/>
+        <page name='02 渲染立体三角形形'/>
+        <page name='03 渲染火车'/>
+    </pages>
+</playground>
